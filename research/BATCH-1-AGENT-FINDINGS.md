@@ -49,3 +49,27 @@ it); reconciliation tolerances, sampling, materiality, retention periods, acknow
 templates, state unclaimed property rule table. Open Unbound items: `TVR-ORG-003-Q`,
 `TVR-CMP-004-Q`, `CNV-LEG-002` California interpretation, `UNB-NAV-051` reliance on
 unverified Strata append-only capability.
+
+## Scanner validation and external assurance (DD-SCN-001, DD-EXT-001, DD-COST-001/002)
+
+- No mature open-source SAST analyzes F# source (Semgrep, Opengrep, CodeQL, Roslyn,
+  Security Code Scan: none support F#). Language-independent tools (OSV-Scanner, Syft,
+  Grype, Gitleaks, Trivy, ZAP, Nuclei, Schemathesis, garak, PyRIT) apply unchanged.
+- FSharp.Analyzers.SDK (MIT) exposes typed compiler information and emits SARIF; rule
+  analyzers for SEC-* are feasible; full F# taint analysis is research-scale.
+- Semgrep rules license (since 2024-12-13) restricts use to internal, non-competing,
+  non-SaaS; engine remains LGPL-2.1. CodeQL is not free for private repositories.
+- No general scanner accreditation exists; NIST SATE V explicitly disclaims tool
+  rating. Approved-vendor requirements are activity-specific: PCI ASV (11.3.2), FedRAMP
+  3PAO, DORA TLPT. PCI pen testing allows qualified internal resources with
+  organizational independence (text verified from SAQ D v4.0; v4.0.1 PDF license-gated).
+- SOC 2 does not itself mandate penetration testing (secondary source; AICPA text not
+  retrieved; verify).
+- Real-world SAST detection is far below benchmark scores (Li et al. 2023: 12.7 percent;
+  Lipp et al. 2022: 47 to 80 percent missed).
+- Recommended ownership: Tutela owns rule registry, F# analyzers, findings normalization
+  and benchmark; Praxis runs gates and provenance; Dokimos measures; Folio renders.
+- Public cost data is weak; only GSA CALC+ ceiling labor rates, BLS wages, GAO FedRAMP
+  ranges and labeled vendor marketing are available.
+- PCI applicability to Unbound is unestablished; if card data never touches Echelon
+  systems ASV scans are likely avoidable (card contributions deferred per CNV-PAY-008).
