@@ -168,3 +168,25 @@ Contradictions and gaps in Unbound:
   vendor-generated records and audit trails is a differentiation opportunity.
 - Unseeded: COPPA, 11 U.S.C. 365(n), IRC 6001 and 6104, 28 CFR 202, specific state
   privacy statutes. Verify 11 CCR 7050/7051 citations and OFAC retention period.
+
+## FCT, ACT, TXI, FRD, PAY question batch
+
+187 questions, 41 answer units (all proposed-target-state; ANS-FCT-004 and ANS-TXI-006
+not-available because no SOC 1 or SOC 2 exists).
+
+- Payment role ambiguity: CNV-LEG-001 ("SHALL NOT be able to execute a payment") versus
+  UNB-XIN-REG-001, UNB-XIN-EVA-011 and CNV-ARC-003 (Unbound transmits instructions). Some
+  ODFIs may treat a file-transmitting vendor as closer to a Third-Party Sender. Counsel.
+- UCC 4A security procedure allocation between sponsor, bank and Unbound unaddressed.
+- No requirement to render stored ACH account numbers unreadable (Nacha Supplementing
+  Data Security Requirements); payment file encryption and signing unspecified.
+- Check operations unspecified (printer/mailer, signatures, check stock custody).
+- Emergency payments during outage unresolved (TVR-PAY-004-Q); no ACH end-to-end
+  idempotency key (TVR-PAY-002 blocked).
+- Superseded baseline text (UNB-XIN-ACC-002 by CNV-FIN-007; UNB-ACC-004/012 narrowed by
+  CNV-FIN-012 and RR-UNB-ACC-012-r1) can mislead readers citing old IDs.
+- Brief corrected: SOC 2 directive runs SOC2-001 to SOC2-036.
+- Unseeded: Regulation E, UCC Articles 3 and 4, Regulation CC, Regulation J / Fedwire
+  OC 6, AICPA SOC 1 Guide, PCAOB AS 2201, AICPA NFP guide, Nacha TPSP audit guidance,
+  FinCEN FIN-2023-Alert003, FBI IC3 BEC data, 2 CFR 200.303, ISO 20022, BAI2/BTRS, X9
+  positive pay standards.

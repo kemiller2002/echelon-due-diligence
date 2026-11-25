@@ -39,7 +39,7 @@ differ.
   enterprise control matrix of 90 controls `UNB-CTRL-*` all with status `Designed` and
   operating evidence, test execution and auditor review all `No`
   (`requirements/governance/MASTER-ENTERPRISE-CONTROL-MATRIX.csv`).
-- SOC 2 readiness directive `SOC2-001`..`SOC2-032`
+- SOC 2 readiness directive `SOC2-001`..`SOC2-036`
   (`requirements/governance/SOC2-CONTROLS-EVIDENCE-AND-ENTERPRISE-DIRECTIVE.md`): a design
   directive, explicitly not a claim of SOC 2 compliance.
 - Continuous control monitoring architecture
