@@ -145,3 +145,26 @@ Contradictions and gaps in Unbound:
 - DORA and EBA guidelines not applicable to Echelon absent EU financial entity customers.
 - Largest open legal question: GLBA / FTC Safeguards Rule status of DAF sponsors and of
   Echelon (OQ-DD-POL-001).
+
+## PRV, DCL, RET, PRT, TRM, ESC question batch
+
+171 questions, 38 answer units (28 proposed-target-state, 10 unknown).
+
+- GLBA coverage of nonprofit sponsors is doubtful (Unbound cross-industry research);
+  target answer protects donor data to GLBA-equivalent standard without claiming the law
+  applies.
+- CCPA likely does not reach nonprofit sponsors (not a "business"); some state laws (for
+  example Colorado, Oregon) cover nonprofits. CCPA service-provider terms are legal-
+  regulatory only for for-profit customers.
+- CNV-PLT-004 ten-year retention floor is a design choice; counsel review per record
+  class (SOC2-023).
+- Append-only ledger (UNB-DATA-001) versus lawful deletion (UNB-DATA-007, SOC2-032):
+  proposed identity vault with crypto-shredding; regulators may still treat retained
+  ciphertext as personal data. Counsel resolution required before production.
+- Business plan 10.04 and 10.05 are boilerplate; no-training commitment is a target only.
+- CNV-GOV-009 covers dependency escrow, not escrow offered to customers; it names
+  Conditor (exists as kemiller2002/conditor; not yet inspected here).
+- The public Ren MSA returns only "customer-provided materials" on exit; portability of
+  vendor-generated records and audit trails is a differentiation opportunity.
+- Unseeded: COPPA, 11 U.S.C. 365(n), IRC 6001 and 6104, 28 CFR 202, specific state
+  privacy statutes. Verify 11 CCR 7050/7051 citations and OFAC retention period.
