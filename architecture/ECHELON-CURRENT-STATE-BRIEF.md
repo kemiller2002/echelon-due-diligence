@@ -36,7 +36,7 @@ differ.
 
 - Requirements only. `unbound@9b38de47`. 1,653 baseline records
   (`requirements/baseline/baseline.jsonl`), 82 convergence clauses (`CNV-*`), a master
-  enterprise control matrix of 89 controls `UNB-CTRL-*` all with status `Designed` and
+  enterprise control matrix of 90 controls `UNB-CTRL-*` all with status `Designed` and
   operating evidence, test execution and auditor review all `No`
   (`requirements/governance/MASTER-ENTERPRISE-CONTROL-MATRIX.csv`).
 - SOC 2 readiness directive `SOC2-001`..`SOC2-032`

@@ -124,3 +124,24 @@ Contradictions and gaps in Unbound:
    documents board-vendor overlap in the market); no privacy policy, DPA template or AI
    training policy.
 7. No bank, custodian, crypto or screening provider selected.
+
+## Financial services source register (DD-SRC-FIN-001)
+
+66 records (54 verified). Material status findings:
+- Nacha fraud monitoring Phase 2 effective June 19, 2026 (practically June 22) removed
+  the volume threshold: risk-based fraud monitoring now applies to all TPSPs, including
+  Unbound as TPSP under CNV-PAY-001. This is a direct, in-force obligation.
+- OFAC binds Echelon directly (strict liability for US persons).
+- SEC Regulation S-P amendments: compliance dates December 3, 2025 (larger) and June 3,
+  2026 (smaller) have passed; service provider 72-hour notice expectations reach
+  Unbound only through broker-dealer or adviser affiliates.
+- Interagency TPRM: a September 15, 2026 proposal (OCC, Fed, FDIC, NCUA) would replace
+  the 2023 guidance and the community bank guide; comments due December 16, 2026.
+- FFIEC CAT sunset (removed August 31, 2025; no successor). SEC adviser outsourcing
+  proposal withdrawn June 17, 2025. IRS 2023 proposed DAF regulations still proposed.
+- IRC 170 amended by Pub. L. 119-21 (July 4, 2025): 0.5 percent floor; non-itemizer cash
+  deduction excludes DAF contributions (affects donor-facing tax content).
+- FinCEN investment adviser AML rule effective date moved to January 1, 2028.
+- DORA and EBA guidelines not applicable to Echelon absent EU financial entity customers.
+- Largest open legal question: GLBA / FTC Safeguards Rule status of DAF sponsors and of
+  Echelon (OQ-DD-POL-001).
