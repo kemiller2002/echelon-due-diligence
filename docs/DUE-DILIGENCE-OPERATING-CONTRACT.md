@@ -62,7 +62,7 @@ correct and useful result.
 | Evidence requirement | `evidence-requirements/<CAT>.jsonl` | `schemas/dd/evidence-requirement.schema.json` | `EVR-<CAT>-<NNN>` |
 | Proposed product requirement | `product-profiles/<product>/proposed-requirements.jsonl` | `schemas/dd/proposed-requirement.schema.json` | `DD-UNB-<AREA>-<NNN>` |
 | Objection (adversarial review) | `validation/objections.jsonl` | `schemas/dd/objection.schema.json` | `OBJ-<PERSPECTIVE>-<NNN>` |
-| Recommendation | `recommendations/recommendations.jsonl` | `schemas/dd/recommendation.schema.json` | `REC-<TARGET>-<NNN>` |
+| Recommendation | `recommendations/*.jsonl` | `schemas/dd/recommendation.schema.json` | `REC-<TARGET>-<NNN>` |
 | Open question | `research/open-questions.jsonl` | free-form with `id`, `question`, `context`, `blocking` | `OQ-DD-<NNN>` |
 
 Category codes are defined in `questions/TAXONOMY.json`. Pre-allocated source
