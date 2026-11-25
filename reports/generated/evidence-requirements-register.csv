@@ -308,6 +308,7 @@ EVR-GOV-005,Conflict-of-interest disclosures,not yet assigned,periodic-manual,P1
 EVR-GOV-006,Adopted policy register,Praxis (proposed),event-driven-automated,per-event,first-party,authenticated-prospect,proposed-target-state
 EVR-GOV-007,Principal sanctions screening results,not yet assigned,event-driven-automated,P30D,first-party,nda,proposed-target-state
 EVR-GOV-008,Regulatory perimeter memo and change log,Outside counsel (not yet engaged),periodic-manual,P1Y,second-party,nda,proposed-target-state
+EVR-GOV-009,Customer requirement gap register extract,not yet assigned,periodic-manual,P90D,first-party,customer-only,proposed-target-state
 EVR-GRT-001,Recommendation and affirmation records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-GRT-002,Grant approval decision records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-GRT-003,Approval sampling results report,not yet assigned,periodic-manual,P90D,first-party,customer-only,proposed-target-state

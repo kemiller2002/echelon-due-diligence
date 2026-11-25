@@ -21,7 +21,10 @@ DDQ-A11Y-0006,A11Y,SRC-EN-301-549,,maps-to,reasonably-inferred
 DDQ-A11Y-0006,A11Y,SRC-EDUCAUSE-HECVAT,,maps-to,reasonably-inferred
 DDQ-A11Y-0007,A11Y,SRC-ITI-VPAT,,maps-to,reasonably-inferred
 DDQ-A11Y-0007,A11Y,SRC-SECTION-508,,maps-to,reasonably-inferred
+DDQ-A11Y-0007,A11Y,SRC-Q-FIDELITY-SUPPLIER-POLICIES,,maps-to,directly-documented
+DDQ-A11Y-0007,A11Y,SRC-Q-YALE-ACCESSIBLE-PURCHASING,,maps-to,directly-documented
 DDQ-A11Y-0008,A11Y,SRC-ITI-VPAT,,maps-to,reasonably-inferred
+DDQ-A11Y-0008,A11Y,SRC-Q-FIDELITY-SUPPLIER-POLICIES,,maps-to,directly-documented
 DDQ-A11Y-0009,A11Y,SRC-WCAG-2.2,,maps-to,reasonably-inferred
 DDQ-A11Y-0009,A11Y,SRC-SECTION-508,,maps-to,reasonably-inferred
 DDQ-A11Y-0009,A11Y,SRC-EDUCAUSE-HECVAT,,maps-to,reasonably-inferred
@@ -43,6 +46,8 @@ DDQ-A11Y-0015,A11Y,SRC-EU-ACCESSIBILITY-ACT,,informed-by,reasonably-inferred
 DDQ-A11Y-0016,A11Y,SRC-ITI-VPAT,,informed-by,reasonably-inferred
 DDQ-A11Y-0016,A11Y,SRC-2CFR200,,informed-by,reasonably-inferred
 DDQ-A11Y-0017,A11Y,SRC-ITI-VPAT,,maps-to,reasonably-inferred
+DDQ-A11Y-0017,A11Y,SRC-Q-MTU-ICT-ACCESSIBILITY-PROCUREMENT,,maps-to,directly-documented
+DDQ-A11Y-0017,A11Y,SRC-Q-MS-THIRD-PARTY-REG-REQS,,maps-to,directly-documented
 DDQ-A11Y-0018,A11Y,SRC-ADA,,informed-by,reasonably-inferred
 DDQ-A11Y-0018,A11Y,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-A11Y-0019,A11Y,SRC-WCAG-2.2,,informed-by,reasonably-inferred
@@ -83,6 +88,7 @@ DDQ-A11Y-0033,A11Y,SRC-NIST-SP800-63-4,,informed-by,reasonably-inferred
 DDQ-A11Y-0033,A11Y,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-A11Y-0034,A11Y,SRC-WCAG-2.2,2.2.1,maps-to,directly-documented
 DDQ-A11Y-0034,A11Y,SRC-FFIEC-AUTH-GUIDANCE-2021,,informed-by,reasonably-inferred
+DDQ-A11Y-0035,A11Y,SRC-Q-YALE-ACCESSIBLE-PURCHASING,,maps-to,directly-documented
 DDQ-ACT-0001,ACT,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
 DDQ-ACT-0001,ACT,SRC-AICPA-TSC,PI1.3,maps-to,reasonably-inferred
 DDQ-ACT-0001,ACT,SRC-COSO-2013,Principle 10,maps-to,reasonably-inferred
@@ -174,7 +180,7 @@ DDQ-AIA-0007,AIA,SRC-NIST-SP800-53-R5,AC-6,maps-to,directly-documented
 DDQ-AIA-0008,AIA,SRC-ECH-UNB-BASELINE,GOV-AUTH-003,informed-by,directly-documented
 DDQ-AIA-0008,AIA,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 DDQ-AIA-0009,AIA,SRC-ECH-UNB-BASELINE,GOV-AUTH-021,informed-by,directly-documented
-DDQ-AIA-0009,AIA,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,directly-documented
+DDQ-AIA-0009,AIA,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,directly-documented
 DDQ-AIA-0010,AIA,SRC-ECH-UNB-BASELINE,CNV-AIO-001,informed-by,directly-documented
 DDQ-AIA-0010,AIA,SRC-ECH-UNB-BASELINE,GOV-AUTH-019,informed-by,directly-documented
 DDQ-AIA-0011,AIA,SRC-ECH-UNB-BASELINE,GOV-AUTH-025,informed-by,directly-documented
@@ -212,8 +218,10 @@ DDQ-AIA-0023,AIA,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-015,informed-by,directly-docume
 DDQ-AIA-0024,AIA,SRC-ECH-UNB-BASELINE,UNB-AI-STD-002,informed-by,directly-documented
 DDQ-AIA-0024,AIA,SRC-ECH-UNB-BASELINE,RR-UNB-AI-STD-002-r1,informed-by,directly-documented
 DDQ-AIA-0024,AIA,SRC-ISO-42001-2023,A.6,maps-to,reasonably-inferred
+DDQ-AIA-0024,AIA,SRC-Q-PURDUE-AI-VENDOR-Q,,maps-to,directly-documented
+DDQ-AIA-0024,AIA,SRC-Q-MEMPHIS-VENDOR-SEC-PRIV-TEMPLATE,,maps-to,directly-documented
 DDQ-AIA-0025,AIA,SRC-ECH-UNB-BASELINE,AIN-026,informed-by,directly-documented
-DDQ-AIA-0025,AIA,SRC-COLORADO-AI-ACT,,maps-to,reasonably-inferred
+DDQ-AIA-0025,AIA,SRC-COLORADO-SB26-189,,maps-to,reasonably-inferred
 DDQ-AIA-0025,AIA,SRC-GDPR,Art. 22,maps-to,reasonably-inferred
 DDQ-AIA-0026,AIA,SRC-ECH-UNB-BASELINE,AIN-005,informed-by,directly-documented
 DDQ-AIA-0027,AIA,SRC-ECH-UNB-BASELINE,GOV-AUTH-022,informed-by,directly-documented
@@ -267,6 +275,8 @@ DDQ-AIG-0008,AIG,SRC-NIST-AI-RMF-1.0,GOVERN 2.1,maps-to,reasonably-inferred
 DDQ-AIG-0008,AIG,SRC-ISO-42001-2023,5.3,maps-to,reasonably-inferred
 DDQ-AIG-0009,AIG,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
 DDQ-AIG-0009,AIG,SRC-ISO-27001-2022,A.5.10,maps-to,reasonably-inferred
+DDQ-AIG-0009,AIG,SRC-Q-TRUIST-TPISS,,maps-to,directly-documented
+DDQ-AIG-0009,AIG,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-AIG-0010,AIG,SRC-EU-AI-ACT,Art. 4,maps-to,directly-documented
 DDQ-AIG-0010,AIG,SRC-NIST-AI-RMF-1.0,GOVERN 2.2,maps-to,reasonably-inferred
 DDQ-AIG-0011,AIG,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-033,informed-by,directly-documented
@@ -284,9 +294,9 @@ DDQ-AIG-0016,AIG,SRC-NIST-AI-RMF-1.0,MAP 1.1,maps-to,reasonably-inferred
 DDQ-AIG-0016,AIG,SRC-ISO-23894-2023,,maps-to,directly-documented
 DDQ-AIG-0016,AIG,SRC-ISO-42001-2023,6.1.4,maps-to,reasonably-inferred
 DDQ-AIG-0017,AIG,SRC-ISO-42005,,maps-to,directly-documented
-DDQ-AIG-0017,AIG,SRC-COLORADO-AI-ACT,,maps-to,reasonably-inferred
+DDQ-AIG-0017,AIG,SRC-COLORADO-SB26-189,,maps-to,reasonably-inferred
 DDQ-AIG-0017,AIG,SRC-NIST-AI-RMF-1.0,MAP 5.1,maps-to,reasonably-inferred
-DDQ-AIG-0018,AIG,SRC-COLORADO-AI-ACT,,maps-to,reasonably-inferred
+DDQ-AIG-0018,AIG,SRC-COLORADO-SB26-189,,maps-to,reasonably-inferred
 DDQ-AIG-0018,AIG,SRC-GDPR,Art. 22,maps-to,directly-documented
 DDQ-AIG-0018,AIG,SRC-US-STATE-AI-LAWS,,maps-to,reasonably-inferred
 DDQ-AIG-0018,AIG,SRC-ECH-UNB-BASELINE,CNV-AIO-001,informed-by,directly-documented
@@ -312,104 +322,113 @@ DDQ-AIG-0026,AIG,SRC-GDPR,Art. 28,maps-to,reasonably-inferred
 DDQ-AIG-0027,AIG,SRC-ISO-42001-2023,A.7,maps-to,reasonably-inferred
 DDQ-AIG-0027,AIG,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
 DDQ-AIG-0027,AIG,SRC-GDPR,Art. 28,maps-to,reasonably-inferred
+DDQ-AIG-0027,AIG,SRC-Q-NYDFS-IL-20251021-TPSP,,maps-to,directly-documented
+DDQ-AIG-0027,AIG,SRC-Q-ACLU-GENAI-VENDOR-Q,,maps-to,directly-documented
+DDQ-AIG-0027,AIG,SRC-Q-FSISAC-GENAI-VENDOR-GUIDE,,maps-to,directly-documented
 DDQ-AIG-0028,AIG,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
 DDQ-AIG-0029,AIG,SRC-ECH-BUSINESS-PLAN,10-technology-data-and-ai/10.04,informed-by,directly-documented
 DDQ-AIG-0029,AIG,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-028,informed-by,directly-documented
 DDQ-AIG-0030,AIG,SRC-EU-AI-ACT,Art. 6,maps-to,directly-documented
 DDQ-AIG-0030,AIG,SRC-EU-AI-ACT,Art. 25,maps-to,reasonably-inferred
 DDQ-AIG-0030,AIG,SRC-EU-AI-ACT,Art. 26,maps-to,reasonably-inferred
-DDQ-AIG-0031,AIG,SRC-COLORADO-AI-ACT,6-1-1702,maps-to,reasonably-inferred
-DDQ-AIG-0031,AIG,SRC-COLORADO-AI-ACT,6-1-1703,maps-to,reasonably-inferred
+DDQ-AIG-0030,AIG,SRC-EU-AI-OMNIBUS-2026,,maps-to,directly-documented
+DDQ-AIG-0031,AIG,SRC-COLORADO-SB26-189,,maps-to,reasonably-inferred
 DDQ-AIG-0032,AIG,SRC-US-STATE-AI-LAWS,,maps-to,reasonably-inferred
 DDQ-AIG-0032,AIG,SRC-ECH-UNB-BASELINE,UNB-REGMAP-004,informed-by,directly-documented
 DDQ-AIG-0033,AIG,SRC-NAIC-AI-BULLETIN,,maps-to,directly-documented
 DDQ-AIG-0034,AIG,SRC-EU-AI-ACT,Art. 50,maps-to,directly-documented
-DDQ-AIG-0035,AIG,SRC-SR-11-7,,maps-to,directly-documented
+DDQ-AIG-0034,AIG,SRC-EU-AI-OMNIBUS-2026,,maps-to,reasonably-inferred
+DDQ-AIG-0035,AIG,SRC-SR-26-2,,maps-to,reasonably-inferred
 DDQ-AIG-0035,AIG,SRC-TREASURY-AI-FINSVC,,maps-to,reasonably-inferred
-DDQ-AIG-0036,AIG,SRC-SR-11-7,,maps-to,directly-documented
-DDQ-AIG-0037,AIG,SRC-SR-11-7,,maps-to,directly-documented
+DDQ-AIG-0035,AIG,SRC-SR-11-7,,informed-by,reasonably-inferred
+DDQ-AIG-0036,AIG,SRC-SR-26-2,,maps-to,reasonably-inferred
+DDQ-AIG-0037,AIG,SRC-SR-26-2,,maps-to,reasonably-inferred
 DDQ-AIG-0037,AIG,SRC-NIST-AI-RMF-1.0,MEASURE 2.4,maps-to,reasonably-inferred
-DDQ-AIG-0038,AIG,SRC-SR-11-7,,maps-to,reasonably-inferred
+DDQ-AIG-0038,AIG,SRC-SR-26-2,,maps-to,reasonably-inferred
 DDQ-AIG-0038,AIG,SRC-ECH-UNB-BASELINE,RR-AIN-027-r1,informed-by,directly-documented
 DDQ-AIG-0039,AIG,SRC-ISO-42001-2023,A.8,maps-to,reasonably-inferred
 DDQ-AIG-0039,AIG,SRC-NIST-AI-RMF-1.0,GOVERN 4.2,maps-to,reasonably-inferred
 DDQ-AIG-0039,AIG,SRC-NIST-SP800-218A,,maps-to,reasonably-inferred
+DDQ-AIG-0039,AIG,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
+DDQ-AIG-0039,AIG,SRC-Q-FSISAC-GENAI-VENDOR-GUIDE,,maps-to,directly-documented
 DDQ-AIG-0040,AIG,SRC-ECH-UNB-BASELINE,AIN-005,informed-by,directly-documented
 DDQ-AIG-0040,AIG,SRC-ECH-UNB-BASELINE,CNV-AIO-002,informed-by,directly-documented
 DDQ-AIG-0040,AIG,SRC-EU-AI-ACT,Art. 50,maps-to,reasonably-inferred
 DDQ-AIG-0041,AIG,SRC-ECH-UNB-BASELINE,CNV-AIO-001,informed-by,directly-documented
 DDQ-AIG-0042,AIG,SRC-ECH-UNB-BASELINE,UNB-XIN-SAS-011,informed-by,directly-documented
 DDQ-AIG-0042,AIG,SRC-GDPR,Art. 28,maps-to,reasonably-inferred
-DDQ-AIS-0001,AIS,SRC-OWASP-LLM-TOP10-2025,LLM01:2025,maps-to,directly-documented
+DDQ-AIG-0043,AIG,SRC-Q-ACLU-GENAI-VENDOR-Q,,maps-to,directly-documented
+DDQ-AIG-0043,AIG,SRC-Q-AU-AI-PROCUREMENT,,maps-to,reasonably-inferred
+DDQ-AIS-0001,AIS,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,maps-to,directly-documented
 DDQ-AIS-0001,AIS,SRC-MITRE-ATLAS,AML.T0051,maps-to,directly-documented
 DDQ-AIS-0001,AIS,SRC-CSA-AICM,,maps-to,reasonably-inferred
-DDQ-AIS-0002,AIS,SRC-OWASP-LLM-TOP10-2025,LLM01:2025,maps-to,directly-documented
+DDQ-AIS-0002,AIS,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,maps-to,directly-documented
 DDQ-AIS-0002,AIS,SRC-MITRE-ATLAS,AML.T0051,maps-to,directly-documented
 DDQ-AIS-0002,AIS,SRC-ECH-UNB-BASELINE,AIN-012,informed-by,directly-documented
-DDQ-AIS-0003,AIS,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,directly-documented
+DDQ-AIS-0003,AIS,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,directly-documented
 DDQ-AIS-0003,AIS,SRC-ECH-UNB-BASELINE,UNB-AIO-003,informed-by,directly-documented
 DDQ-AIS-0003,AIS,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
-DDQ-AIS-0004,AIS,SRC-OWASP-LLM-TOP10-2025,LLM01:2025,maps-to,directly-documented
+DDQ-AIS-0004,AIS,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,maps-to,directly-documented
 DDQ-AIS-0004,AIS,SRC-ECH-UNB-BASELINE,UNB-AGT-003,informed-by,directly-documented
 DDQ-AIS-0004,AIS,SRC-NIST-AI-100-2,,maps-to,reasonably-inferred
 DDQ-AIS-0005,AIS,SRC-ECH-UNB-BASELINE,CNV-AIO-002,informed-by,directly-documented
-DDQ-AIS-0005,AIS,SRC-OWASP-LLM-TOP10-2025,LLM09:2025,maps-to,reasonably-inferred
-DDQ-AIS-0006,AIS,SRC-OWASP-LLM-TOP10-2025,LLM07:2025,maps-to,directly-documented
-DDQ-AIS-0007,AIS,SRC-OWASP-LLM-TOP10-2025,LLM01:2025,maps-to,reasonably-inferred
+DDQ-AIS-0005,AIS,SRC-OWASP-LLM-TOP10-2026,LLM07:2026,maps-to,reasonably-inferred
+DDQ-AIS-0006,AIS,SRC-OWASP-LLM-TOP10-2026,,maps-to,directly-documented
+DDQ-AIS-0007,AIS,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,maps-to,reasonably-inferred
 DDQ-AIS-0007,AIS,SRC-NIST-SP800-218A,,maps-to,reasonably-inferred
 DDQ-AIS-0007,AIS,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
-DDQ-AIS-0008,AIS,SRC-OWASP-LLM-TOP10-2025,LLM02:2025,maps-to,directly-documented
+DDQ-AIS-0008,AIS,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,directly-documented
 DDQ-AIS-0008,AIS,SRC-ECH-UNB-BASELINE,UNB-AI-STD-001,informed-by,directly-documented
 DDQ-AIS-0008,AIS,SRC-CSA-CCM-V4,DSP,maps-to,reasonably-inferred
-DDQ-AIS-0009,AIS,SRC-OWASP-LLM-TOP10-2025,LLM08:2025,maps-to,directly-documented
-DDQ-AIS-0010,AIS,SRC-OWASP-LLM-TOP10-2025,LLM02:2025,maps-to,reasonably-inferred
-DDQ-AIS-0011,AIS,SRC-OWASP-LLM-TOP10-2025,LLM02:2025,maps-to,reasonably-inferred
+DDQ-AIS-0009,AIS,SRC-OWASP-LLM-TOP10-2026,LLM09:2026,maps-to,directly-documented
+DDQ-AIS-0010,AIS,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,reasonably-inferred
+DDQ-AIS-0011,AIS,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,reasonably-inferred
 DDQ-AIS-0011,AIS,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 DDQ-AIS-0012,AIS,SRC-ECH-UNB-BASELINE,CNV-ARC-002,informed-by,directly-documented
 DDQ-AIS-0012,AIS,SRC-NIST-SP800-53-R5,AC-6,maps-to,reasonably-inferred
-DDQ-AIS-0013,AIS,SRC-OWASP-LLM-TOP10-2025,LLM02:2025,maps-to,reasonably-inferred
+DDQ-AIS-0013,AIS,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,reasonably-inferred
 DDQ-AIS-0013,AIS,SRC-ECH-UNB-BASELINE,CNV-ARC-002,informed-by,directly-documented
-DDQ-AIS-0014,AIS,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,directly-documented
+DDQ-AIS-0014,AIS,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,directly-documented
 DDQ-AIS-0014,AIS,SRC-ECH-UNB-BASELINE,AIN-002,informed-by,directly-documented
-DDQ-AIS-0015,AIS,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,directly-documented
+DDQ-AIS-0015,AIS,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,directly-documented
 DDQ-AIS-0015,AIS,SRC-ECH-UNB-BASELINE,UNB-AI-STD-001,informed-by,directly-documented
 DDQ-AIS-0015,AIS,SRC-MITRE-CWE,,maps-to,reasonably-inferred
 DDQ-AIS-0016,AIS,SRC-ECH-UNB-BASELINE,AIN-032,informed-by,directly-documented
 DDQ-AIS-0016,AIS,SRC-ECH-UNB-BASELINE,GOV-AUTH-023,informed-by,directly-documented
-DDQ-AIS-0016,AIS,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,reasonably-inferred
-DDQ-AIS-0017,AIS,SRC-OWASP-LLM-TOP10-2025,LLM02:2025,maps-to,reasonably-inferred
-DDQ-AIS-0017,AIS,SRC-OWASP-LLM-TOP10-2025,LLM05:2025,maps-to,reasonably-inferred
+DDQ-AIS-0016,AIS,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,reasonably-inferred
+DDQ-AIS-0017,AIS,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,reasonably-inferred
+DDQ-AIS-0017,AIS,SRC-OWASP-LLM-TOP10-2026,LLM10:2026,maps-to,reasonably-inferred
 DDQ-AIS-0017,AIS,SRC-OWASP-AI-EXCHANGE,,maps-to,reasonably-inferred
-DDQ-AIS-0018,AIS,SRC-OWASP-LLM-TOP10-2025,LLM10:2025,maps-to,directly-documented
+DDQ-AIS-0018,AIS,SRC-OWASP-LLM-TOP10-2026,LLM06:2026,maps-to,directly-documented
 DDQ-AIS-0018,AIS,SRC-ECH-UNB-BASELINE,RR-AIN-028-r1,informed-by,directly-documented
-DDQ-AIS-0019,AIS,SRC-OWASP-LLM-TOP10-2025,LLM05:2025,maps-to,directly-documented
+DDQ-AIS-0019,AIS,SRC-OWASP-LLM-TOP10-2026,LLM10:2026,maps-to,directly-documented
 DDQ-AIS-0019,AIS,SRC-OWASP-ASVS,,maps-to,reasonably-inferred
-DDQ-AIS-0020,AIS,SRC-OWASP-LLM-TOP10-2025,LLM05:2025,maps-to,directly-documented
+DDQ-AIS-0020,AIS,SRC-OWASP-LLM-TOP10-2026,LLM10:2026,maps-to,directly-documented
 DDQ-AIS-0020,AIS,SRC-ECH-SCS-0.1,SEC-EXEC-001,informed-by,directly-documented
 DDQ-AIS-0020,AIS,SRC-MITRE-CWE,,maps-to,reasonably-inferred
-DDQ-AIS-0021,AIS,SRC-OWASP-LLM-TOP10-2025,LLM05:2025,maps-to,directly-documented
+DDQ-AIS-0021,AIS,SRC-OWASP-LLM-TOP10-2026,LLM10:2026,maps-to,directly-documented
 DDQ-AIS-0021,AIS,SRC-ECH-SCS-0.1,SEC-UI-001,informed-by,directly-documented
 DDQ-AIS-0021,AIS,SRC-ECH-SCS-0.1,SEC-UI-002,informed-by,directly-documented
 DDQ-AIS-0021,AIS,SRC-OWASP-CHEATSHEETS,,maps-to,reasonably-inferred
 DDQ-AIS-0022,AIS,SRC-ECH-UNB-BASELINE,RR-UNB-AI-STD-003-r1,informed-by,directly-documented
 DDQ-AIS-0022,AIS,SRC-ECH-UNB-BASELINE,AIN-014,informed-by,directly-documented
-DDQ-AIS-0023,AIS,SRC-OWASP-LLM-TOP10-2025,LLM09:2025,maps-to,directly-documented
+DDQ-AIS-0023,AIS,SRC-OWASP-LLM-TOP10-2026,LLM07:2026,maps-to,directly-documented
 DDQ-AIS-0023,AIS,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
 DDQ-AIS-0023,AIS,SRC-ECH-UNB-BASELINE,AIN-004,informed-by,directly-documented
-DDQ-AIS-0024,AIS,SRC-OWASP-LLM-TOP10-2025,LLM03:2025,maps-to,directly-documented
+DDQ-AIS-0024,AIS,SRC-OWASP-LLM-TOP10-2026,LLM04:2026,maps-to,directly-documented
 DDQ-AIS-0024,AIS,SRC-MITRE-ATLAS,AML.T0010,maps-to,directly-documented
 DDQ-AIS-0024,AIS,SRC-NIST-SP800-161-R1,,maps-to,reasonably-inferred
 DDQ-AIS-0025,AIS,SRC-CYCLONEDX,,maps-to,reasonably-inferred
-DDQ-AIS-0025,AIS,SRC-NTIA-SBOM-MIN,,maps-to,reasonably-inferred
-DDQ-AIS-0025,AIS,SRC-OWASP-LLM-TOP10-2025,LLM03:2025,maps-to,reasonably-inferred
-DDQ-AIS-0026,AIS,SRC-OWASP-LLM-TOP10-2025,LLM03:2025,maps-to,reasonably-inferred
+DDQ-AIS-0025,AIS,SRC-CISA-SBOM-MIN,,maps-to,reasonably-inferred
+DDQ-AIS-0025,AIS,SRC-OWASP-LLM-TOP10-2026,LLM04:2026,maps-to,reasonably-inferred
+DDQ-AIS-0026,AIS,SRC-OWASP-LLM-TOP10-2026,LLM04:2026,maps-to,reasonably-inferred
 DDQ-AIS-0026,AIS,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
-DDQ-AIS-0027,AIS,SRC-OWASP-LLM-TOP10-2025,LLM04:2025,maps-to,directly-documented
+DDQ-AIS-0027,AIS,SRC-OWASP-LLM-TOP10-2026,LLM05:2026,maps-to,directly-documented
 DDQ-AIS-0027,AIS,SRC-NIST-AI-100-2,,maps-to,reasonably-inferred
 DDQ-AIS-0028,AIS,SRC-ECH-SCS-0.1,SEC-CRYPTO-001,informed-by,directly-documented
 DDQ-AIS-0028,AIS,SRC-NIST-SP800-53-R5,IA-5,maps-to,reasonably-inferred
 DDQ-AIS-0028,AIS,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
-DDQ-AIS-0029,AIS,SRC-OWASP-LLM-TOP10-2025,,maps-to,directly-documented
+DDQ-AIS-0029,AIS,SRC-OWASP-LLM-TOP10-2026,,maps-to,directly-documented
 DDQ-AIS-0029,AIS,SRC-CSA-AICM,,maps-to,reasonably-inferred
 DDQ-AIS-0030,AIS,SRC-MITRE-ATLAS,,maps-to,directly-documented
 DDQ-AIS-0030,AIS,SRC-NIST-AI-100-2,,maps-to,reasonably-inferred
@@ -420,7 +439,7 @@ DDQ-AIS-0032,AIS,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
 DDQ-AIS-0032,AIS,SRC-OWASP-AI-EXCHANGE,,maps-to,reasonably-inferred
 DDQ-AIS-0032,AIS,SRC-EU-AI-ACT,Art. 15,maps-to,reasonably-inferred
 DDQ-AIS-0033,AIS,SRC-ECH-UNB-BASELINE,RR-AIN-027-r1,informed-by,directly-documented
-DDQ-AIS-0033,AIS,SRC-OWASP-LLM-TOP10-2025,LLM01:2025,maps-to,reasonably-inferred
+DDQ-AIS-0033,AIS,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,maps-to,reasonably-inferred
 DDQ-AIS-0034,AIS,SRC-NIST-SP800-115,,maps-to,reasonably-inferred
 DDQ-AIS-0034,AIS,SRC-OWASP-WSTG,,maps-to,reasonably-inferred
 DDQ-AIS-0035,AIS,SRC-ISO-29147-30111,,maps-to,reasonably-inferred
@@ -432,7 +451,7 @@ DDQ-AIS-0037,AIS,SRC-ECH-UNB-BASELINE,CNV-PLT-010,informed-by,directly-documente
 DDQ-AIS-0037,AIS,SRC-CISA-SSDF-ATTESTATION,,maps-to,reasonably-inferred
 DDQ-AIS-0038,AIS,SRC-ECH-SCS-0.1,SEC-SUPPLY-001,informed-by,directly-documented
 DDQ-AIS-0038,AIS,SRC-OPENSSF-S2C2F,,maps-to,reasonably-inferred
-DDQ-AIS-0038,AIS,SRC-OWASP-LLM-TOP10-2025,LLM03:2025,maps-to,reasonably-inferred
+DDQ-AIS-0038,AIS,SRC-OWASP-LLM-TOP10-2026,LLM04:2026,maps-to,reasonably-inferred
 DDQ-AIS-0039,AIS,SRC-ECH-UNB-BASELINE,CNV-PLT-010,informed-by,directly-documented
 DDQ-AIS-0039,AIS,SRC-SLSA,,maps-to,reasonably-inferred
 DDQ-AIS-0039,AIS,SRC-NIST-SP800-218,,maps-to,reasonably-inferred
@@ -441,6 +460,8 @@ DDQ-AIS-0040,AIS,SRC-GITLEAKS,,maps-to,reasonably-inferred
 DDQ-AIS-0041,AIS,SRC-ECH-SCS-0.1,,informed-by,directly-documented
 DDQ-AIS-0041,AIS,SRC-CISA-SECURE-BY-DESIGN,,maps-to,reasonably-inferred
 DDQ-AIS-0041,AIS,SRC-MITRE-CWE-TOP25,,maps-to,reasonably-inferred
+DDQ-AIS-0042,AIS,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
+DDQ-AIS-0042,AIS,SRC-CSA-AICM,,maps-to,reasonably-inferred
 DDQ-AML-0001,AML,SRC-ECH-UNB-BASELINE,CNV-GRT-006,informed-by,directly-documented
 DDQ-AML-0001,AML,SRC-OFAC-REGS,,maps-to,directly-documented
 DDQ-AML-0001,AML,SRC-OFAC-COMPLIANCE-FRAMEWORK,Internal Controls,maps-to,directly-documented
@@ -468,14 +489,14 @@ DDQ-AML-0012,AML,SRC-ECH-UNB-BASELINE,CNV-GRT-006,informed-by,directly-documente
 DDQ-AML-0012,AML,SRC-OFAC-COMPLIANCE-FRAMEWORK,Testing and Auditing,maps-to,directly-documented
 DDQ-AML-0013,AML,SRC-ECH-UNB-BASELINE,CNV-GRT-006,informed-by,directly-documented
 DDQ-AML-0013,AML,SRC-OFAC-COMPLIANCE-FRAMEWORK,Testing and Auditing,maps-to,reasonably-inferred
-DDQ-AML-0013,AML,SRC-SR-11-7,,maps-to,reasonably-inferred
+DDQ-AML-0013,AML,SRC-SR-26-2,,maps-to,reasonably-inferred
 DDQ-AML-0014,AML,SRC-ECH-UNB-BASELINE,CNV-GRT-006,informed-by,directly-documented
 DDQ-AML-0014,AML,SRC-NIST-AI-RMF-1.0,MEASURE 2.11,maps-to,reasonably-inferred
 DDQ-AML-0015,AML,SRC-ECH-UNB-BASELINE,CNV-GRT-006,informed-by,directly-documented
 DDQ-AML-0015,AML,SRC-OFAC-COMPLIANCE-FRAMEWORK,Internal Controls,maps-to,reasonably-inferred
 DDQ-AML-0016,AML,SRC-ECH-UNB-BASELINE,UNB-AGT-002,informed-by,directly-documented
 DDQ-AML-0016,AML,SRC-ECH-UNB-BASELINE,RR-UNB-AI-STD-003-r1,informed-by,directly-documented
-DDQ-AML-0016,AML,SRC-SR-11-7,,maps-to,reasonably-inferred
+DDQ-AML-0016,AML,SRC-SR-26-2,,maps-to,reasonably-inferred
 DDQ-AML-0017,AML,SRC-ECH-UNB-BASELINE,CNV-GRT-006,informed-by,directly-documented
 DDQ-AML-0017,AML,SRC-OFAC-COMPLIANCE-FRAMEWORK,Training,maps-to,reasonably-inferred
 DDQ-AML-0017,AML,SRC-OFAC-COMPLIANCE-FRAMEWORK,Management Commitment,maps-to,reasonably-inferred
@@ -572,7 +593,7 @@ DDQ-API-0016,API,SRC-ECH-UNB-BASELINE,TVR-SEC-004,derived-from,directly-document
 DDQ-API-0017,API,SRC-OWASP-API-TOP10-2023,API6:2023,maps-to,directly-documented
 DDQ-API-0017,API,SRC-ECH-UNB-BASELINE,CNV-PLT-012,derived-from,directly-documented
 DDQ-API-0018,API,SRC-OWASP-API-TOP10-2023,API4:2023,maps-to,directly-documented
-DDQ-API-0018,API,SRC-OWASP-LLM-TOP10-2025,,maps-to,reasonably-inferred
+DDQ-API-0018,API,SRC-OWASP-LLM-TOP10-2026,,maps-to,reasonably-inferred
 DDQ-API-0019,API,SRC-OWASP-ASVS,5.0 V4 API and Web Service,maps-to,reasonably-inferred
 DDQ-API-0019,API,SRC-ECH-UNB-BASELINE,UNB-API-STD-001,derived-from,directly-documented
 DDQ-API-0019,API,SRC-OWASP-API-TOP10-2023,API3:2023,maps-to,directly-documented
@@ -612,8 +633,9 @@ DDQ-API-0033,API,SRC-CIS-BENCHMARKS,,maps-to,reasonably-inferred
 DDQ-API-0034,API,SRC-ECH-UNB-BASELINE,UNB-API-STD-004,derived-from,directly-documented
 DDQ-API-0034,API,SRC-ECH-UNB-BASELINE,UNB-API-002,derived-from,directly-documented
 DDQ-API-0035,API,SRC-ECH-UNB-BASELINE,UNB-AGT-003,derived-from,directly-documented
-DDQ-API-0035,API,SRC-OWASP-LLM-TOP10-2025,,maps-to,reasonably-inferred
+DDQ-API-0035,API,SRC-OWASP-LLM-TOP10-2026,,maps-to,reasonably-inferred
 DDQ-API-0035,API,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
+DDQ-API-0036,API,SRC-Q-FC-SECURITY-PAGE,,maps-to,directly-documented
 DDQ-APP-0001,APP,SRC-OWASP-ASVS,5.0 V1 Encoding and Sanitization,maps-to,reasonably-inferred
 DDQ-APP-0001,APP,SRC-MITRE-CWE,CWE-89,maps-to,directly-documented
 DDQ-APP-0001,APP,SRC-MITRE-CWE-TOP25,,maps-to,reasonably-inferred
@@ -685,7 +707,7 @@ DDQ-APP-0022,APP,SRC-NIST-SP800-53-R5,SC-7,maps-to,reasonably-inferred
 DDQ-APP-0022,APP,SRC-CIS-CONTROLS-V8.1,,maps-to,reasonably-inferred
 DDQ-APP-0023,APP,SRC-OWASP-WSTG,,maps-to,reasonably-inferred
 DDQ-APP-0023,APP,SRC-MITRE-CWE,CWE-918,maps-to,directly-documented
-DDQ-APP-0024,APP,SRC-OWASP-LLM-TOP10-2025,,maps-to,reasonably-inferred
+DDQ-APP-0024,APP,SRC-OWASP-LLM-TOP10-2026,,maps-to,reasonably-inferred
 DDQ-APP-0024,APP,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 DDQ-APP-0024,APP,SRC-MITRE-CWE,CWE-918,maps-to,directly-documented
 DDQ-APP-0024,APP,SRC-ECH-UNB-BASELINE,UNB-AGT-003,derived-from,directly-documented
@@ -741,6 +763,7 @@ DDQ-APP-0042,APP,SRC-MITRE-CWE,CWE-613,maps-to,directly-documented
 DDQ-APP-0042,APP,SRC-NIST-SP800-63-4,,maps-to,reasonably-inferred
 DDQ-APP-0043,APP,SRC-OWASP-ASVS,5.0 V7 Session Management,maps-to,reasonably-inferred
 DDQ-APP-0043,APP,SRC-MITRE-CWE,CWE-384,maps-to,directly-documented
+DDQ-APP-0043,APP,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-APP-0044,APP,SRC-OWASP-ASVS,5.0 V7 Session Management,maps-to,reasonably-inferred
 DDQ-APP-0044,APP,SRC-NIST-SP800-53-R5,AC-12,maps-to,reasonably-inferred
 DDQ-APP-0045,APP,SRC-OWASP-ASVS,5.0 V7 Session Management,maps-to,reasonably-inferred
@@ -748,6 +771,7 @@ DDQ-APP-0045,APP,SRC-MITRE-CWE,CWE-922,maps-to,directly-documented
 DDQ-APP-0045,APP,SRC-OWASP-ASVS,5.0 V3 Web Frontend Security,maps-to,reasonably-inferred
 DDQ-APP-0046,APP,SRC-OWASP-ASVS,5.0 V7 Session Management,maps-to,reasonably-inferred
 DDQ-APP-0046,APP,SRC-FFIEC-AUTH-GUIDANCE-2021,,maps-to,reasonably-inferred
+DDQ-APP-0046,APP,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-APP-0047,APP,SRC-OWASP-ASVS,5.0 V16 Security Logging and Error Handling,maps-to,reasonably-inferred
 DDQ-APP-0047,APP,SRC-MITRE-CWE,CWE-209,maps-to,directly-documented
 DDQ-APP-0047,APP,SRC-NIST-SP800-53-R5,SI-11,maps-to,reasonably-inferred
@@ -809,7 +833,7 @@ DDQ-ARC-0008,ARC,SRC-NIST-SP800-207,,maps-to,reasonably-inferred
 DDQ-ARC-0008,ARC,SRC-NIST-SP800-53-R5,SA-17,maps-to,reasonably-inferred
 DDQ-ARC-0009,ARC,SRC-ECH-SCS-0.1,SEC-UI-002,derived-from,directly-documented
 DDQ-ARC-0009,ARC,SRC-ECH-UNB-BASELINE,CNV-PLT-010,derived-from,directly-documented
-DDQ-ARC-0010,ARC,SRC-OWASP-LLM-TOP10-2025,,maps-to,reasonably-inferred
+DDQ-ARC-0010,ARC,SRC-OWASP-LLM-TOP10-2026,,maps-to,reasonably-inferred
 DDQ-ARC-0010,ARC,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
 DDQ-ARC-0011,ARC,SRC-NIST-SP800-53-R5,CM-2,maps-to,reasonably-inferred
 DDQ-ARC-0011,ARC,SRC-CSA-CCM-V4,CCC-07,maps-to,reasonably-inferred
@@ -887,9 +911,8 @@ DDQ-ASM-0004,ASM,SRC-CIS-CONTROLS-V8.1,1.1,maps-to,reasonably-inferred
 DDQ-ASM-0004,ASM,SRC-NIST-SP800-53-R5,AC-19,maps-to,reasonably-inferred
 DDQ-ASM-0004,ASM,SRC-ISO-27002-2022,8.1,maps-to,reasonably-inferred
 DDQ-ASM-0004,ASM,SRC-VSA-CORE,,maps-to,reasonably-inferred
-DDQ-ASM-0005,ASM,SRC-NTIA-SBOM-MIN,,maps-to,directly-documented
 DDQ-ASM-0005,ASM,SRC-CISA-SBOM-MIN,,informed-by,reasonably-inferred
-DDQ-ASM-0005,ASM,SRC-OMB-M-22-18,,informed-by,reasonably-inferred
+DDQ-ASM-0005,ASM,SRC-OMB-M-26-05,,informed-by,reasonably-inferred
 DDQ-ASM-0005,ASM,SRC-NIST-CSF-2.0,ID.AM-02,maps-to,directly-documented
 DDQ-ASM-0005,ASM,SRC-CYCLONEDX,,maps-to,reasonably-inferred
 DDQ-ASM-0005,ASM,SRC-SPDX,,maps-to,reasonably-inferred
@@ -900,7 +923,7 @@ DDQ-ASM-0007,ASM,SRC-ECH-SCS-0.1,SEC-SUPPLY-001,informed-by,directly-documented
 DDQ-ASM-0007,ASM,SRC-CIS-CONTROLS-V8.1,2.5,maps-to,reasonably-inferred
 DDQ-ASM-0007,ASM,SRC-NIST-SP800-53-R5,CM-7(5),maps-to,reasonably-inferred
 DDQ-ASM-0007,ASM,SRC-SLSA,,informed-by,reasonably-inferred
-DDQ-ASM-0008,ASM,SRC-OWASP-LLM-TOP10-2025,LLM03:2025,informed-by,directly-documented
+DDQ-ASM-0008,ASM,SRC-OWASP-LLM-TOP10-2026,LLM04:2026,informed-by,directly-documented
 DDQ-ASM-0008,ASM,SRC-NIST-AI-600-1,,informed-by,reasonably-inferred
 DDQ-ASM-0008,ASM,SRC-CSA-AICM,,informed-by,reasonably-inferred
 DDQ-ASM-0008,ASM,SRC-ECH-UNB-BASELINE,AIN-027,informed-by,directly-documented
@@ -923,7 +946,7 @@ DDQ-ASM-0012,ASM,SRC-ISO-27018,,informed-by,reasonably-inferred
 DDQ-ASM-0013,ASM,SRC-ECH-UNB-BASELINE,CNV-TEN-001,informed-by,directly-documented
 DDQ-ASM-0013,ASM,SRC-NIST-CSF-2.0,ID.AM-07,maps-to,reasonably-inferred
 DDQ-ASM-0014,ASM,SRC-ECH-UNB-BASELINE,UNB-TEN-009,informed-by,directly-documented
-DDQ-ASM-0014,ASM,SRC-OWASP-LLM-TOP10-2025,LLM08:2025,informed-by,directly-documented
+DDQ-ASM-0014,ASM,SRC-OWASP-LLM-TOP10-2026,LLM09:2026,informed-by,directly-documented
 DDQ-ASM-0014,ASM,SRC-NIST-AI-600-1,,informed-by,reasonably-inferred
 DDQ-ASM-0015,ASM,SRC-NIST-CSF-2.0,ID.AM-04,maps-to,directly-documented
 DDQ-ASM-0015,ASM,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-013,informed-by,directly-documented
@@ -947,6 +970,7 @@ DDQ-ASM-0019,ASM,SRC-NIST-SP800-53-R5,CM-6,maps-to,directly-documented
 DDQ-ASM-0019,ASM,SRC-NIST-SP800-53-R5,CM-3,maps-to,reasonably-inferred
 DDQ-ASM-0019,ASM,SRC-AICPA-TSC,CC7.1,maps-to,reasonably-inferred
 DDQ-ASM-0019,ASM,SRC-NIST-CSF-2.0,PR.PS-01,maps-to,directly-documented
+DDQ-ASM-0019,ASM,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-ASM-0020,ASM,SRC-ECH-UNB-BASELINE,CNV-ARC-004,informed-by,directly-documented
 DDQ-ASM-0020,ASM,SRC-ECH-SCS-0.1,SEC-DB-001,informed-by,directly-documented
 DDQ-ASM-0020,ASM,SRC-NIST-SP800-53-R5,CM-2,maps-to,reasonably-inferred
@@ -980,6 +1004,7 @@ DDQ-AUD-0001,AUD,SRC-AICPA-TSC,,maps-to,directly-documented
 DDQ-AUD-0001,AUD,SRC-AICPA-SSAE-18,,maps-to,directly-documented
 DDQ-AUD-0001,AUD,SRC-ECH-UNB-SOC2-DIRECTIVE,,maps-to,directly-documented
 DDQ-AUD-0001,AUD,SRC-SA-SIG,,informed-by,reasonably-inferred
+DDQ-AUD-0001,AUD,SRC-Q-MS-THIRD-PARTY-REG-REQS,,maps-to,directly-documented
 DDQ-AUD-0002,AUD,SRC-AICPA-SOC2-GUIDE,,maps-to,directly-documented
 DDQ-AUD-0002,AUD,SRC-AICPA-TSC,,maps-to,directly-documented
 DDQ-AUD-0002,AUD,SRC-AICPA-SSAE-18,,maps-to,directly-documented
@@ -997,6 +1022,7 @@ DDQ-AUD-0005,AUD,SRC-AICPA-TSC,,maps-to,directly-documented
 DDQ-AUD-0005,AUD,SRC-AICPA-SSAE-18,,maps-to,directly-documented
 DDQ-AUD-0005,AUD,SRC-ECH-UNB-SOC2-DIRECTIVE,,maps-to,directly-documented
 DDQ-AUD-0005,AUD,SRC-SA-SIG,,informed-by,reasonably-inferred
+DDQ-AUD-0005,AUD,SRC-Q-MD-STD-317-SA-01,,maps-to,directly-documented
 DDQ-AUD-0006,AUD,SRC-AICPA-SOC2-GUIDE,,maps-to,directly-documented
 DDQ-AUD-0006,AUD,SRC-ECH-UNB-SOC2-DIRECTIVE,,maps-to,directly-documented
 DDQ-AUD-0007,AUD,SRC-AICPA-SOC2-GUIDE,,maps-to,directly-documented
@@ -1042,6 +1068,7 @@ DDQ-AUD-0021,AUD,SRC-CREST,,informed-by,reasonably-inferred
 DDQ-AUD-0022,AUD,SRC-ECH-SCS-0.1,,maps-to,directly-documented
 DDQ-AUD-0022,AUD,SRC-NIST-SP800-115,,informed-by,reasonably-inferred
 DDQ-AUD-0022,AUD,SRC-CREST,,informed-by,reasonably-inferred
+DDQ-AUD-0022,AUD,SRC-Q-MS-SECURITY-STANDARDS-IT-CYBER,,maps-to,directly-documented
 DDQ-AUD-0023,AUD,SRC-INTERAGENCY-TPRM-2023,,maps-to,directly-documented
 DDQ-AUD-0023,AUD,SRC-BSCA,12 U.S.C. 1867(c),maps-to,directly-documented
 DDQ-AUD-0023,AUD,SRC-EU-DORA,Art. 30,maps-to,directly-documented
@@ -1052,11 +1079,13 @@ DDQ-AUD-0024,AUD,SRC-BSCA,12 U.S.C. 1867(c),maps-to,directly-documented
 DDQ-AUD-0024,AUD,SRC-EU-DORA,Art. 30,maps-to,directly-documented
 DDQ-AUD-0024,AUD,SRC-EBA-OUTSOURCING-GL,,informed-by,reasonably-inferred
 DDQ-AUD-0024,AUD,SRC-SA-SIG,,informed-by,reasonably-inferred
+DDQ-AUD-0024,AUD,SRC-Q-MS-THIRD-PARTY-REG-REQS,,maps-to,directly-documented
 DDQ-AUD-0025,AUD,SRC-INTERAGENCY-TPRM-2023,,maps-to,directly-documented
 DDQ-AUD-0025,AUD,SRC-BSCA,12 U.S.C. 1867(c),maps-to,directly-documented
 DDQ-AUD-0025,AUD,SRC-EU-DORA,Art. 30,maps-to,directly-documented
 DDQ-AUD-0025,AUD,SRC-EBA-OUTSOURCING-GL,,informed-by,reasonably-inferred
 DDQ-AUD-0025,AUD,SRC-SA-SIG,,informed-by,reasonably-inferred
+DDQ-AUD-0025,AUD,SRC-Q-MS-THIRD-PARTY-REG-REQS,,maps-to,directly-documented
 DDQ-AUD-0026,AUD,SRC-EU-DORA,Art. 30,maps-to,reasonably-inferred
 DDQ-AUD-0026,AUD,SRC-INTERAGENCY-TPRM-2023,,maps-to,directly-documented
 DDQ-AUD-0027,AUD,SRC-ECH-UNB-SOC2-DIRECTIVE,,maps-to,directly-documented
@@ -1065,6 +1094,7 @@ DDQ-AUD-0028,AUD,SRC-BSCA,12 U.S.C. 1867(c),maps-to,directly-documented
 DDQ-AUD-0028,AUD,SRC-EU-DORA,Art. 30,maps-to,directly-documented
 DDQ-AUD-0028,AUD,SRC-EBA-OUTSOURCING-GL,,informed-by,reasonably-inferred
 DDQ-AUD-0028,AUD,SRC-SA-SIG,,informed-by,reasonably-inferred
+DDQ-AUD-0028,AUD,SRC-Q-TRUIST-TPISS,,maps-to,directly-documented
 DDQ-AUD-0029,AUD,SRC-AICPA-TSC,CC4.1,maps-to,reasonably-inferred
 DDQ-AUD-0029,AUD,SRC-AICPA-TSC,CC4.2,maps-to,reasonably-inferred
 DDQ-AUD-0029,AUD,SRC-ISO-27001-2022,9.2,maps-to,reasonably-inferred
@@ -1089,6 +1119,8 @@ DDQ-AUD-0035,AUD,SRC-ECH-UNB-SOC2-DIRECTIVE,,maps-to,directly-documented
 DDQ-AUD-0036,AUD,SRC-AICPA-PEER-REVIEW,,maps-to,directly-documented
 DDQ-AUD-0036,AUD,SRC-ECH-DAF-LANDSCAPE,,maps-to,directly-documented
 DDQ-AUD-0036,AUD,SRC-ECH-UNB-SOC2-DIRECTIVE,,maps-to,directly-documented
+DDQ-AUD-0037,AUD,SRC-Q-ARIZONA-3P-SEC-PRIV-Q,,maps-to,directly-documented
+DDQ-AUD-0038,AUD,SRC-Q-WI-DOA-10816,,maps-to,directly-documented
 DDQ-AUN-0001,AUN,SRC-FTC-SAFEGUARDS-RULE,314.4(c)(5),informed-by,directly-documented
 DDQ-AUN-0001,AUN,SRC-NYDFS-PART-500,500.12,informed-by,directly-documented
 DDQ-AUN-0001,AUN,SRC-NIST-SP800-53-R5,IA-2(1),maps-to,directly-documented
@@ -1134,6 +1166,8 @@ DDQ-AUN-0011,AUN,SRC-CSA-CAIQ-V4,IAM domain,maps-to,reasonably-inferred
 DDQ-AUN-0011,AUN,SRC-SA-SIG,,maps-to,reasonably-inferred
 DDQ-AUN-0012,AUN,SRC-NIST-SP800-63-4,SP 800-63C,maps-to,reasonably-inferred
 DDQ-AUN-0012,AUN,SRC-CIS-CONTROLS-V8.1,6.7,maps-to,reasonably-inferred
+DDQ-AUN-0012,AUN,SRC-Q-TRUIST-TPISS,,maps-to,directly-documented
+DDQ-AUN-0012,AUN,SRC-Q-GS-VENDOR-TECH-RISK-EXPECTATIONS,,maps-to,directly-documented
 DDQ-AUN-0013,AUN,SRC-NIST-SP800-63-4,SP 800-63C,maps-to,directly-documented
 DDQ-AUN-0013,AUN,SRC-MITRE-CWE,CWE-347,informed-by,reasonably-inferred
 DDQ-AUN-0013,AUN,SRC-OWASP-WSTG,,informed-by,reasonably-inferred
@@ -1181,6 +1215,7 @@ DDQ-AUN-0026,AUN,SRC-NIST-SP800-53-R5,AC-11,maps-to,directly-documented
 DDQ-AUN-0026,AUN,SRC-PCI-DSS-4.0.1,Req 8.2.8,informed-by,reasonably-inferred
 DDQ-AUN-0026,AUN,SRC-SA-SIG,,maps-to,reasonably-inferred
 DDQ-AUN-0026,AUN,SRC-EDUCAUSE-HECVAT,,maps-to,reasonably-inferred
+DDQ-AUN-0026,AUN,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-AUN-0027,AUN,SRC-NIST-SP800-53-R5,SC-23,maps-to,directly-documented
 DDQ-AUN-0027,AUN,SRC-OWASP-CHEATSHEETS,,informed-by,reasonably-inferred
 DDQ-AUN-0027,AUN,SRC-MITRE-CWE,CWE-1004,informed-by,reasonably-inferred
@@ -1309,6 +1344,7 @@ DDQ-AUZ-0018,AUZ,SRC-AICPA-TSC,CC5.1,informed-by,reasonably-inferred
 DDQ-AUZ-0018,AUZ,SRC-COSO-2013,,informed-by,reasonably-inferred
 DDQ-AUZ-0018,AUZ,SRC-ECH-UNB-BASELINE,GOV-AUTH-004,informed-by,directly-documented
 DDQ-AUZ-0018,AUZ,SRC-SA-SIG,,maps-to,reasonably-inferred
+DDQ-AUZ-0018,AUZ,SRC-Q-ATBAY-CYBER-APP-2026,,maps-to,directly-documented
 DDQ-AUZ-0019,AUZ,SRC-ECH-UNB-BASELINE,CNV-GOV-003,informed-by,directly-documented
 DDQ-AUZ-0019,AUZ,SRC-NIST-SP800-53-R5,AC-5,maps-to,reasonably-inferred
 DDQ-AUZ-0020,AUZ,SRC-ECH-UNB-BASELINE,GOV-AUTH-004,informed-by,directly-documented
@@ -1350,7 +1386,7 @@ DDQ-AUZ-0032,AUZ,SRC-ISO-27002-2022,8.3,maps-to,directly-documented
 DDQ-AUZ-0032,AUZ,SRC-GLBA,,informed-by,reasonably-inferred
 DDQ-AUZ-0033,AUZ,SRC-ECH-UNB-BASELINE,UNB-AGT-002,informed-by,directly-documented
 DDQ-AUZ-0033,AUZ,SRC-ECH-UNB-BASELINE,GOV-AUTH-003,informed-by,directly-documented
-DDQ-AUZ-0033,AUZ,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,informed-by,directly-documented
+DDQ-AUZ-0033,AUZ,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,informed-by,directly-documented
 DDQ-AUZ-0034,AUZ,SRC-ECH-SCS-0.1,SEC-AUTH-001,informed-by,directly-documented
 DDQ-AUZ-0034,AUZ,SRC-OWASP-WSTG,,informed-by,reasonably-inferred
 DDQ-AUZ-0034,AUZ,SRC-OWASP-ASVS,,informed-by,reasonably-inferred
@@ -1365,14 +1401,14 @@ DDQ-AUZ-0036,AUZ,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-035,informed-by,directly-docume
 DDQ-AUZ-0037,AUZ,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-012,informed-by,directly-documented
 DDQ-AUZ-0037,AUZ,SRC-NIST-SP800-53-R5,AU-6,maps-to,reasonably-inferred
 DDQ-AUZ-0037,AUZ,SRC-AICPA-TSC,CC7.2,maps-to,reasonably-inferred
-DDQ-AUZ-0038,AUZ,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,directly-documented
+DDQ-AUZ-0038,AUZ,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,directly-documented
 DDQ-AUZ-0038,AUZ,SRC-ECH-UNB-BASELINE,UNB-AGT-003,informed-by,directly-documented
 DDQ-AUZ-0038,AUZ,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 DDQ-AUZ-0038,AUZ,SRC-CSA-AICM,,informed-by,reasonably-inferred
 DDQ-AUZ-0039,AUZ,SRC-ECH-UNB-BASELINE,UNB-AI-STD-001,informed-by,directly-documented
 DDQ-AUZ-0039,AUZ,SRC-MITRE-CWE,CWE-441,informed-by,reasonably-inferred
 DDQ-AUZ-0039,AUZ,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
-DDQ-AUZ-0040,AUZ,SRC-OWASP-LLM-TOP10-2025,LLM01:2025,maps-to,directly-documented
+DDQ-AUZ-0040,AUZ,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,maps-to,directly-documented
 DDQ-AUZ-0040,AUZ,SRC-ECH-UNB-BASELINE,AIN-012,informed-by,directly-documented
 DDQ-AUZ-0040,AUZ,SRC-MITRE-ATLAS,,informed-by,reasonably-inferred
 DDQ-AUZ-0040,AUZ,SRC-NIST-AI-100-2,,informed-by,reasonably-inferred
@@ -1514,7 +1550,7 @@ DDQ-BCP-0024,BCP,SRC-EU-DORA,Article 28,maps-to,reasonably-inferred
 DDQ-BCP-0024,BCP,SRC-NIST-AI-RMF-1.0,,informed-by,reasonably-inferred
 DDQ-BCP-0024,BCP,SRC-CSA-AICM,,informed-by,reasonably-inferred
 DDQ-BCP-0024,BCP,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
-DDQ-BCP-0025,BCP,SRC-OWASP-LLM-TOP10-2025,,informed-by,reasonably-inferred
+DDQ-BCP-0025,BCP,SRC-OWASP-LLM-TOP10-2026,,informed-by,reasonably-inferred
 DDQ-BCP-0025,BCP,SRC-NIST-AI-600-1,,informed-by,reasonably-inferred
 DDQ-BCP-0025,BCP,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-BCP-0026,BCP,SRC-FFIEC-BCM-BOOKLET,,maps-to,reasonably-inferred
@@ -1539,6 +1575,8 @@ DDQ-BCP-0031,BCP,SRC-GDPR,Art. 28,informed-by,reasonably-inferred
 DDQ-BCP-0032,BCP,SRC-NIST-AI-RMF-1.0,,informed-by,reasonably-inferred
 DDQ-BCP-0032,BCP,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 DDQ-BCP-0032,BCP,SRC-ECH-UNB-SOC2-DIRECTIVE,,informed-by,directly-documented
+DDQ-BCP-0033,BCP,SRC-Q-SIFMA-COB-ASSESSMENT,,maps-to,directly-documented
+DDQ-BCP-0033,BCP,SRC-Q-OHIO-U-VENDOR-BCP-Q,,maps-to,directly-documented
 DDQ-BKP-0001,BKP,SRC-NIST-SP800-53-R5,CP-9,maps-to,reasonably-inferred
 DDQ-BKP-0001,BKP,SRC-ISO-27002-2022,8.13,maps-to,reasonably-inferred
 DDQ-BKP-0001,BKP,SRC-NIST-CSF-2.0,PR.DS-11,maps-to,reasonably-inferred
@@ -1558,6 +1596,8 @@ DDQ-BKP-0005,BKP,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-BKP-0006,BKP,SRC-EU-DORA,Article 12,maps-to,reasonably-inferred
 DDQ-BKP-0006,BKP,SRC-NYDFS-PART-500,500.16,maps-to,reasonably-inferred
 DDQ-BKP-0006,BKP,SRC-CIS-CONTROLS-V8.1,,maps-to,reasonably-inferred
+DDQ-BKP-0006,BKP,SRC-Q-BEAZLEY-RANSOMWARE-SUPP-2022,,maps-to,directly-documented
+DDQ-BKP-0006,BKP,SRC-Q-ATBAY-CYBER-APP-2026,,maps-to,directly-documented
 DDQ-BKP-0007,BKP,SRC-NIST-CSF-2.0,PR.DS-11,maps-to,reasonably-inferred
 DDQ-BKP-0007,BKP,SRC-CIS-CONTROLS-V8.1,,maps-to,reasonably-inferred
 DDQ-BKP-0008,BKP,SRC-NIST-SP800-53-R5,CP-9(8),maps-to,reasonably-inferred
@@ -1565,15 +1605,19 @@ DDQ-BKP-0008,BKP,SRC-PCI-DSS-4.0.1,,informed-by,reasonably-inferred
 DDQ-BKP-0008,BKP,SRC-ECH-SCS-0.1,,informed-by,directly-documented
 DDQ-BKP-0009,BKP,SRC-NIST-SP800-53-R5,SC-12,maps-to,reasonably-inferred
 DDQ-BKP-0009,BKP,SRC-ECH-SCS-0.1,,informed-by,directly-documented
+DDQ-BKP-0009,BKP,SRC-Q-BEAZLEY-RANSOMWARE-SUPP-2022,,maps-to,reasonably-inferred
+DDQ-BKP-0009,BKP,SRC-Q-AXIS-RANSOMWARE-SUPP,,maps-to,reasonably-inferred
 DDQ-BKP-0010,BKP,SRC-NIST-SP800-53-R5,AC-6,maps-to,reasonably-inferred
 DDQ-BKP-0010,BKP,SRC-AICPA-TSC,CC6.1,maps-to,reasonably-inferred
-DDQ-BKP-0011,BKP,SRC-OWASP-LLM-TOP10-2025,,informed-by,reasonably-inferred
+DDQ-BKP-0011,BKP,SRC-OWASP-LLM-TOP10-2026,,informed-by,reasonably-inferred
 DDQ-BKP-0011,BKP,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 DDQ-BKP-0011,BKP,SRC-ECH-UNB-SOC2-DIRECTIVE,,informed-by,directly-documented
 DDQ-BKP-0012,BKP,SRC-NIST-SP800-53-R5,CP-9(1),maps-to,reasonably-inferred
 DDQ-BKP-0012,BKP,SRC-AICPA-TSC,A1.3,maps-to,reasonably-inferred
 DDQ-BKP-0012,BKP,SRC-NIST-CSF-2.0,PR.DS-11,maps-to,reasonably-inferred
 DDQ-BKP-0012,BKP,SRC-FFIEC-BCM-BOOKLET,,maps-to,reasonably-inferred
+DDQ-BKP-0012,BKP,SRC-Q-ATBAY-CYBER-APP-2026,,maps-to,directly-documented
+DDQ-BKP-0012,BKP,SRC-Q-AXIS-RANSOMWARE-SUPP,,maps-to,directly-documented
 DDQ-BKP-0013,BKP,SRC-NIST-SP800-53-R5,CP-9(1),maps-to,reasonably-inferred
 DDQ-BKP-0013,BKP,SRC-AICPA-TSC,PI1.5,informed-by,reasonably-inferred
 DDQ-BKP-0013,BKP,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
@@ -1607,6 +1651,8 @@ DDQ-CHG-0003,CHG,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-011,derived-from,directly-docum
 DDQ-CHG-0003,CHG,SRC-AICPA-TSC,CC8.1,maps-to,reasonably-inferred
 DDQ-CHG-0004,CHG,SRC-ECH-UNB-BASELINE,CNV-PLT-010,derived-from,directly-documented
 DDQ-CHG-0004,CHG,SRC-INTERAGENCY-TPRM-2023,,maps-to,reasonably-inferred
+DDQ-CHG-0004,CHG,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
+DDQ-CHG-0004,CHG,SRC-Q-MS-THIRD-PARTY-REG-REQS,,maps-to,directly-documented
 DDQ-CHG-0005,CHG,SRC-PCI-DSS-4.0.1,Req 6.5.2,maps-to,reasonably-inferred
 DDQ-CHG-0005,CHG,SRC-NIST-SP800-53-R5,CM-4,maps-to,reasonably-inferred
 DDQ-CHG-0006,CHG,SRC-CSA-CCM-V4,CCC-04,maps-to,reasonably-inferred
@@ -1639,7 +1685,7 @@ DDQ-CHG-0017,CHG,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-011,derived-from,directly-docum
 DDQ-CHG-0018,CHG,SRC-AICPA-SOC2-GUIDE,,maps-to,reasonably-inferred
 DDQ-CHG-0019,CHG,SRC-SLSA,Build L3,maps-to,reasonably-inferred
 DDQ-CHG-0019,CHG,SRC-NIST-SP800-218,PS.1,maps-to,reasonably-inferred
-DDQ-CHG-0020,CHG,SRC-CISA-BOD-22-01,,informed-by,reasonably-inferred
+DDQ-CHG-0020,CHG,SRC-CISA-BOD-26-04,,informed-by,reasonably-inferred
 DDQ-CHG-0020,CHG,SRC-NIST-SP800-53-R5,SI-2,maps-to,reasonably-inferred
 DDQ-CHG-0021,CHG,SRC-CSA-CCM-V4,CCC-09,maps-to,reasonably-inferred
 DDQ-CHG-0021,CHG,SRC-ISO-27001-2022,A.8.32,maps-to,reasonably-inferred
@@ -1775,6 +1821,7 @@ DDQ-CLD-0007,CLD,SRC-INTERAGENCY-TPRM-2023,,informed-by,reasonably-inferred
 DDQ-CLD-0008,CLD,SRC-CSA-CCM-V4,STA,maps-to,directly-documented
 DDQ-CLD-0008,CLD,SRC-CSA-CAIQ-V4,,informed-by,reasonably-inferred
 DDQ-CLD-0008,CLD,SRC-ISO-27017,,informed-by,reasonably-inferred
+DDQ-CLD-0008,CLD,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-CLD-0009,CLD,SRC-ECH-UNB-BASELINE,CNV-PAY-001,derived-from,reasonably-inferred
 DDQ-CLD-0009,CLD,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-022,derived-from,directly-documented
 DDQ-CLD-0009,CLD,SRC-NACHA-RULES,,informed-by,reasonably-inferred
@@ -2084,7 +2131,7 @@ DDQ-DCL-0003,DCL,SRC-NIST-SP800-218,,informed-by,reasonably-inferred
 DDQ-DCL-0003,DCL,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 DDQ-DCL-0004,DCL,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-003,derived-from,directly-documented
 DDQ-DCL-0004,DCL,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-009,informed-by,reasonably-inferred
-DDQ-DCL-0004,DCL,SRC-OWASP-LLM-TOP10-2025,LLM02,maps-to,reasonably-inferred
+DDQ-DCL-0004,DCL,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,reasonably-inferred
 DDQ-DCL-0005,DCL,SRC-ISO-27002-2022,5.13,maps-to,directly-documented
 DDQ-DCL-0005,DCL,SRC-ECH-UNB-BASELINE,UNB-PLAT-003,informed-by,reasonably-inferred
 DDQ-DCL-0006,DCL,SRC-ISO-27002-2022,5.10,maps-to,reasonably-inferred
@@ -2093,7 +2140,7 @@ DDQ-DCL-0006,DCL,SRC-AICPA-TSC,C1.1,maps-to,reasonably-inferred
 DDQ-DCL-0007,DCL,SRC-ISO-27002-2022,8.12,maps-to,directly-documented
 DDQ-DCL-0007,DCL,SRC-CIS-CONTROLS-V8.1,,maps-to,reasonably-inferred
 DDQ-DCL-0007,DCL,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-012,informed-by,reasonably-inferred
-DDQ-DCL-0008,DCL,SRC-OWASP-LLM-TOP10-2025,LLM02,maps-to,reasonably-inferred
+DDQ-DCL-0008,DCL,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,reasonably-inferred
 DDQ-DCL-0008,DCL,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 DDQ-DCL-0008,DCL,SRC-ECH-UNB-BASELINE,UNB-KNOW-036,derived-from,directly-documented
 DDQ-DCL-0009,DCL,SRC-STATE-BREACH-LAWS,,maps-to,reasonably-inferred
@@ -2192,6 +2239,8 @@ DDQ-DR-0001,DR,SRC-SA-SIG,,maps-to,reasonably-inferred
 DDQ-DR-0001,DR,SRC-CSA-CAIQ-V4,,maps-to,reasonably-inferred
 DDQ-DR-0001,DR,SRC-EDUCAUSE-HECVAT,,maps-to,reasonably-inferred
 DDQ-DR-0001,DR,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
+DDQ-DR-0001,DR,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
+DDQ-DR-0001,DR,SRC-Q-SIFMA-COB-ASSESSMENT,,maps-to,directly-documented
 DDQ-DR-0002,DR,SRC-NIST-SP800-34-R1,,maps-to,reasonably-inferred
 DDQ-DR-0002,DR,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-DR-0003,DR,SRC-EU-DORA,Article 30,maps-to,reasonably-inferred
@@ -2218,6 +2267,8 @@ DDQ-DR-0010,DR,SRC-AICPA-TSC,A1.3,maps-to,reasonably-inferred
 DDQ-DR-0010,DR,SRC-FFIEC-BCM-BOOKLET,,maps-to,reasonably-inferred
 DDQ-DR-0010,DR,SRC-NYDFS-PART-500,500.16,maps-to,reasonably-inferred
 DDQ-DR-0010,DR,SRC-EU-DORA,Article 11,maps-to,reasonably-inferred
+DDQ-DR-0010,DR,SRC-Q-OHIO-U-VENDOR-BCP-Q,,maps-to,directly-documented
+DDQ-DR-0010,DR,SRC-Q-SIFMA-COB-ASSESSMENT,,maps-to,directly-documented
 DDQ-DR-0011,DR,SRC-NIST-SP800-34-R1,,maps-to,reasonably-inferred
 DDQ-DR-0011,DR,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-DR-0012,DR,SRC-AICPA-TSC,A1.3,maps-to,reasonably-inferred
@@ -2251,6 +2302,8 @@ DDQ-DR-0024,DR,SRC-AICPA-SOC2-GUIDE,,maps-to,reasonably-inferred
 DDQ-DR-0024,DR,SRC-ECH-UNB-SOC2-DIRECTIVE,,informed-by,directly-documented
 DDQ-DR-0025,DR,SRC-EU-DORA,Article 11,maps-to,reasonably-inferred
 DDQ-DR-0025,DR,SRC-INTERAGENCY-TPRM-2023,,maps-to,reasonably-inferred
+DDQ-DR-0026,DR,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
+DDQ-DR-0026,DR,SRC-Q-SIFMA-COB-ASSESSMENT,,maps-to,reasonably-inferred
 DDQ-ENC-0001,ENC,SRC-NIST-SP800-53-R5,SC-28,maps-to,directly-documented
 DDQ-ENC-0001,ENC,SRC-NIST-CSF-2.0,PR.DS-01,maps-to,directly-documented
 DDQ-ENC-0001,ENC,SRC-CIS-CONTROLS-V8.1,3.11,maps-to,reasonably-inferred
@@ -2293,6 +2346,7 @@ DDQ-ENC-0013,ENC,SRC-CSA-CCM-V4,CEK,maps-to,reasonably-inferred
 DDQ-ENC-0013,ENC,SRC-ISO-27002-2022,A.8.24,maps-to,directly-documented
 DDQ-ENC-0013,ENC,SRC-PCI-DSS-4.0.1,Req 3.6,maps-to,reasonably-inferred
 DDQ-ENC-0013,ENC,SRC-SA-SIG,,informed-by,reasonably-inferred
+DDQ-ENC-0013,ENC,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-ENC-0014,ENC,SRC-NIST-SP800-53-R5,SC-12,maps-to,reasonably-inferred
 DDQ-ENC-0014,ENC,SRC-PCI-DSS-4.0.1,Req 3.6,maps-to,reasonably-inferred
 DDQ-ENC-0014,ENC,SRC-CSA-CCM-V4,CEK,maps-to,reasonably-inferred
@@ -2301,6 +2355,7 @@ DDQ-ENC-0015,ENC,SRC-CSA-CCM-V4,CEK,maps-to,reasonably-inferred
 DDQ-ENC-0016,ENC,SRC-NIST-SP800-53-R5,SC-12,maps-to,reasonably-inferred
 DDQ-ENC-0016,ENC,SRC-CSA-CCM-V4,CEK,maps-to,reasonably-inferred
 DDQ-ENC-0016,ENC,SRC-PCI-DSS-4.0.1,Req 3.7,maps-to,reasonably-inferred
+DDQ-ENC-0016,ENC,SRC-Q-TRUIST-TPISS,,maps-to,directly-documented
 DDQ-ENC-0017,ENC,SRC-NIST-SP800-53-R5,SC-12,maps-to,reasonably-inferred
 DDQ-ENC-0017,ENC,SRC-CSA-CCM-V4,CEK,maps-to,reasonably-inferred
 DDQ-ENC-0018,ENC,SRC-NIST-SP800-53-R5,AU-2,maps-to,reasonably-inferred
@@ -2334,7 +2389,7 @@ DDQ-ENC-0028,ENC,SRC-NIST-SP800-53-R5,IA-5,maps-to,reasonably-inferred
 DDQ-ENC-0028,ENC,SRC-ECH-UNB-BASELINE,UNB-CUST-017,derived-from,directly-documented
 DDQ-ENC-0029,ENC,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-003,derived-from,directly-documented
 DDQ-ENC-0029,ENC,SRC-MITRE-CWE,CWE-532,maps-to,directly-documented
-DDQ-ENC-0029,ENC,SRC-OWASP-LLM-TOP10-2025,LLM02,informed-by,reasonably-inferred
+DDQ-ENC-0029,ENC,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,informed-by,reasonably-inferred
 DDQ-ENC-0030,ENC,SRC-NACHA-DATA-SECURITY,,informed-by,directly-documented
 DDQ-ENC-0030,ENC,SRC-NACHA-RULES,,informed-by,reasonably-inferred
 DDQ-ENC-0030,ENC,SRC-ECH-UNB-BASELINE,UNB-PAY-005,derived-from,directly-documented
@@ -2432,17 +2487,17 @@ DDQ-END-0015,END,SRC-SLSA,,informed-by,reasonably-inferred
 DDQ-END-0015,END,SRC-MITRE-ATTACK,T1195,informed-by,reasonably-inferred
 DDQ-END-0016,END,SRC-NIST-SP800-218A,,informed-by,reasonably-inferred
 DDQ-END-0016,END,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
-DDQ-END-0016,END,SRC-OWASP-LLM-TOP10-2025,LLM06,informed-by,reasonably-inferred
+DDQ-END-0016,END,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,informed-by,reasonably-inferred
 DDQ-END-0016,END,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,derived-from,directly-documented
 DDQ-END-0017,END,SRC-ECH-SCS-0.1,SEC-CRYPTO-001,informed-by,reasonably-inferred
-DDQ-END-0017,END,SRC-OWASP-LLM-TOP10-2025,LLM02,informed-by,reasonably-inferred
+DDQ-END-0017,END,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,informed-by,reasonably-inferred
 DDQ-END-0017,END,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 DDQ-END-0018,END,SRC-ECH-UNB-BASELINE,CNV-PLT-010,derived-from,directly-documented
 DDQ-END-0018,END,SRC-SLSA,,informed-by,reasonably-inferred
 DDQ-END-0018,END,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,derived-from,directly-documented
 DDQ-END-0019,END,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,derived-from,directly-documented
 DDQ-END-0019,END,SRC-NIST-SP800-218A,,informed-by,reasonably-inferred
-DDQ-END-0020,END,SRC-OWASP-LLM-TOP10-2025,LLM01,informed-by,reasonably-inferred
+DDQ-END-0020,END,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,informed-by,reasonably-inferred
 DDQ-END-0020,END,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 DDQ-END-0020,END,SRC-NIST-SP800-218A,,informed-by,reasonably-inferred
 DDQ-END-0021,END,SRC-ECH-SCS-0.1,SEC-SUPPLY-001,derived-from,directly-documented
@@ -2454,7 +2509,7 @@ DDQ-ESC-0001,ESC,SRC-SOFTWARE-ESCROW-PRACTICE,,maps-to,directly-documented
 DDQ-ESC-0001,ESC,SRC-FFIEC-OUTSOURCING-BOOKLET,,informed-by,reasonably-inferred
 DDQ-ESC-0001,ESC,SRC-INTERAGENCY-TPRM-2023,,informed-by,reasonably-inferred
 DDQ-ESC-0002,ESC,SRC-SOFTWARE-ESCROW-PRACTICE,,maps-to,directly-documented
-DDQ-ESC-0002,ESC,SRC-NTIA-SBOM-MIN,,informed-by,reasonably-inferred
+DDQ-ESC-0002,ESC,SRC-CISA-SBOM-MIN,,informed-by,reasonably-inferred
 DDQ-ESC-0002,ESC,SRC-NIST-SP800-218,PS.3,informed-by,reasonably-inferred
 DDQ-ESC-0003,ESC,SRC-SOFTWARE-ESCROW-PRACTICE,,maps-to,directly-documented
 DDQ-ESC-0004,ESC,SRC-SOFTWARE-ESCROW-PRACTICE,,maps-to,reasonably-inferred
@@ -2472,7 +2527,7 @@ DDQ-ESC-0012,ESC,SRC-SOFTWARE-ESCROW-PRACTICE,,informed-by,reasonably-inferred
 DDQ-ESC-0012,ESC,SRC-CISA-SECURE-BY-DESIGN,,informed-by,reasonably-inferred
 DDQ-ESC-0013,ESC,SRC-SLSA,,derived-from,directly-documented
 DDQ-ESC-0013,ESC,SRC-NIST-SP800-218,PS.3,maps-to,directly-documented
-DDQ-ESC-0013,ESC,SRC-NTIA-SBOM-MIN,,maps-to,reasonably-inferred
+DDQ-ESC-0013,ESC,SRC-CISA-SBOM-MIN,,maps-to,reasonably-inferred
 DDQ-ESC-0013,ESC,SRC-ECH-SCS-0.1,SEC-SUPPLY-001,informed-by,reasonably-inferred
 DDQ-ESC-0014,ESC,SRC-ECH-UNB-BASELINE,UNB-TEN-016,derived-from,directly-documented
 DDQ-ESC-0014,ESC,SRC-ECH-UNB-BASELINE,UNB-KNOW-038,derived-from,directly-documented
@@ -2514,7 +2569,6 @@ DDQ-FCT-0013,FCT,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
 DDQ-FCT-0013,FCT,SRC-AICPA-TSC,PI1.3,maps-to,reasonably-inferred
 DDQ-FCT-0014,FCT,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
 DDQ-FCT-0014,FCT,SRC-ECH-UNB-CONTROL-MATRIX,,derived-from,directly-documented
-DDQ-FCT-0015,FCT,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
 DDQ-FCT-0016,FCT,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
 DDQ-FCT-0017,FCT,SRC-AICPA-SSAE-18,AT-C 320,derived-from,directly-documented
 DDQ-FCT-0017,FCT,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
@@ -2588,6 +2642,7 @@ DDQ-FEE-0013,FEE,SRC-ECH-DAF-LANDSCAPE,,informed-by,directly-documented
 DDQ-FEE-0013,FEE,SRC-ECH-UNB-BASELINE,CNV-ECO-002,derived-from,directly-documented
 DDQ-FEE-0014,FEE,SRC-ECH-UNB-BASELINE,RR-ADM-048-r1,derived-from,directly-documented
 DDQ-FEE-0015,FEE,SRC-ECH-UNB-BASELINE,RR-ADM-028-r1,derived-from,directly-documented
+DDQ-FEE-0015,FEE,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
 DDQ-FEE-0016,FEE,SRC-ECH-UNB-BASELINE,CNV-ECO-002,derived-from,directly-documented
 DDQ-FEE-0017,FEE,SRC-ECH-UNB-BASELINE,CNV-FIN-006,derived-from,directly-documented
 DDQ-FEE-0018,FEE,SRC-ECH-UNB-BASELINE,CNV-FIN-006,derived-from,directly-documented
@@ -2635,6 +2690,8 @@ DDQ-FRD-0006,FRD,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
 DDQ-FRD-0006,FRD,SRC-NACHA-RULES,,maps-to,reasonably-inferred
 DDQ-FRD-0006,FRD,SRC-MITRE-CAPEC,,maps-to,reasonably-inferred
 DDQ-FRD-0007,FRD,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
+DDQ-FRD-0007,FRD,SRC-Q-TMHCC-NETGUARD-APP-2026,,maps-to,directly-documented
+DDQ-FRD-0007,FRD,SRC-Q-INDIANA-CYBER-INSURANCE-TOOLKIT,,maps-to,directly-documented
 DDQ-FRD-0008,FRD,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
 DDQ-FRD-0009,FRD,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
 DDQ-FRD-0009,FRD,SRC-NACHA-RULES,,maps-to,reasonably-inferred
@@ -2689,7 +2746,7 @@ DDQ-FRD-0034,FRD,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
 DDQ-FRD-0034,FRD,SRC-NACHA-FRAUD-MONITORING-2026,,maps-to,reasonably-inferred
 DDQ-FRD-0035,FRD,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
 DDQ-FRD-0036,FRD,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
-DDQ-FRD-0036,FRD,SRC-SR-11-7,,maps-to,reasonably-inferred
+DDQ-FRD-0036,FRD,SRC-SR-26-2,,maps-to,reasonably-inferred
 DDQ-FST-0001,FST,SRC-INTERAGENCY-TPRM-2023,,maps-to,directly-documented
 DDQ-FST-0001,FST,SRC-TPRM-COMMUNITY-BANK-GUIDE-2024,,maps-to,directly-documented
 DDQ-FST-0001,FST,SRC-FFIEC-OUTSOURCING-BOOKLET,,informed-by,reasonably-inferred
@@ -2774,6 +2831,7 @@ DDQ-FST-0025,FST,SRC-INTERAGENCY-TPRM-2023,,maps-to,directly-documented
 DDQ-FST-0025,FST,SRC-TPRM-COMMUNITY-BANK-GUIDE-2024,,informed-by,reasonably-inferred
 DDQ-FST-0026,FST,SRC-ECH-BUSINESS-PLAN,,informed-by,reasonably-inferred
 DDQ-FST-0026,FST,SRC-INTERAGENCY-TPRM-2023,,maps-to,directly-documented
+DDQ-FST-0027,FST,SRC-Q-MS-THIRD-PARTY-REG-REQS,,maps-to,directly-documented
 DDQ-GOV-0001,GOV,SRC-INTERAGENCY-TPRM-2023,,maps-to,directly-documented
 DDQ-GOV-0001,GOV,SRC-SA-SIG,,informed-by,reasonably-inferred
 DDQ-GOV-0001,GOV,SRC-ECH-BUSINESS-PLAN,,informed-by,directly-documented
@@ -2878,6 +2936,10 @@ DDQ-GOV-0035,GOV,SRC-STATE-CHARITABLE-SOLICITATION,,informed-by,reasonably-infer
 DDQ-GOV-0036,GOV,SRC-NIST-CSF-2.0,GV.OC-03,maps-to,reasonably-inferred
 DDQ-GOV-0036,GOV,SRC-ISO-27001-2022,A.5.31,maps-to,reasonably-inferred
 DDQ-GOV-0036,GOV,SRC-ECH-UNB-BASELINE,,maps-to,directly-documented
+DDQ-GOV-0037,GOV,SRC-Q-GS-VENDOR-CODE,,maps-to,directly-documented
+DDQ-GOV-0037,GOV,SRC-Q-MS-SUPPLIER-CODE,,maps-to,directly-documented
+DDQ-GOV-0037,GOV,SRC-Q-BOA-SUPPLIER-EXPECTATIONS,,maps-to,directly-documented
+DDQ-GOV-0038,GOV,SRC-Q-BOA-SUPPLIER-EXPECTATIONS,,maps-to,directly-documented
 DDQ-GRT-0001,GRT,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-GRT-0002,GRT,SRC-IRC-4967,,informed-by,reasonably-inferred
 DDQ-GRT-0002,GRT,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
@@ -2963,6 +3025,7 @@ DDQ-HR-0001,HR,SRC-NIST-SP800-53-R5,PS-3,maps-to,reasonably-inferred
 DDQ-HR-0001,HR,SRC-ISO-27001-2022,A.6.1,maps-to,reasonably-inferred
 DDQ-HR-0001,HR,SRC-CSA-CCM-V4,HRS-01,maps-to,reasonably-inferred
 DDQ-HR-0001,HR,SRC-SA-SIG,,informed-by,reasonably-inferred
+DDQ-HR-0001,HR,SRC-Q-FIDELITY-SUPPLIER-POLICIES,,maps-to,directly-documented
 DDQ-HR-0002,HR,SRC-NIST-SP800-53-R5,PS-3,maps-to,reasonably-inferred
 DDQ-HR-0002,HR,SRC-ISO-27001-2022,A.6.1,maps-to,reasonably-inferred
 DDQ-HR-0002,HR,SRC-CSA-CCM-V4,HRS-01,maps-to,reasonably-inferred
@@ -2981,6 +3044,7 @@ DDQ-HR-0006,HR,SRC-OFAC-REGS,,maps-to,directly-documented
 DDQ-HR-0006,HR,SRC-OFAC-COMPLIANCE-FRAMEWORK,,informed-by,reasonably-inferred
 DDQ-HR-0007,HR,SRC-INTERAGENCY-TPRM-2023,,informed-by,reasonably-inferred
 DDQ-HR-0007,HR,SRC-FFIEC-IS-BOOKLET,,informed-by,reasonably-inferred
+DDQ-HR-0007,HR,SRC-Q-FIDELITY-SUPPLIER-POLICIES,,maps-to,directly-documented
 DDQ-HR-0008,HR,SRC-NIST-CSF-2.0,PR.AT-01,maps-to,reasonably-inferred
 DDQ-HR-0008,HR,SRC-ISO-27001-2022,A.6.3,maps-to,reasonably-inferred
 DDQ-HR-0008,HR,SRC-NIST-SP800-53-R5,AT-2,maps-to,reasonably-inferred
@@ -3012,6 +3076,7 @@ DDQ-HR-0016,HR,SRC-NIST-SP800-53-R5,PS-4,maps-to,reasonably-inferred
 DDQ-HR-0016,HR,SRC-ISO-27001-2022,A.6.5,maps-to,reasonably-inferred
 DDQ-HR-0016,HR,SRC-CSA-CCM-V4,HRS-06,maps-to,reasonably-inferred
 DDQ-HR-0016,HR,SRC-SA-SIG,,informed-by,reasonably-inferred
+DDQ-HR-0016,HR,SRC-Q-TRUIST-TPISS,,maps-to,directly-documented
 DDQ-HR-0017,HR,SRC-AICPA-TSC,CC6.2,maps-to,reasonably-inferred
 DDQ-HR-0017,HR,SRC-NIST-SP800-53-R5,PS-4,maps-to,reasonably-inferred
 DDQ-HR-0017,HR,SRC-ISO-27001-2022,A.6.5,maps-to,reasonably-inferred
@@ -3078,6 +3143,12 @@ DDQ-HR-0036,HR,SRC-NIST-CSF-2.0,GV.RR-02,maps-to,reasonably-inferred
 DDQ-HR-0036,HR,SRC-ISO-27001-2022,A.5.2,maps-to,reasonably-inferred
 DDQ-HR-0036,HR,SRC-ISO-27001-2022,A.5.3,maps-to,reasonably-inferred
 DDQ-HR-0036,HR,SRC-SA-SIG,,informed-by,reasonably-inferred
+DDQ-HR-0036,HR,SRC-Q-TRUIST-TPISS,,maps-to,directly-documented
+DDQ-HR-0036,HR,SRC-Q-WI-DOA-10816,,maps-to,directly-documented
+DDQ-HR-0037,HR,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
+DDQ-HR-0038,HR,SRC-Q-FIDELITY-SUPPLIER-POLICIES,,maps-to,directly-documented
+DDQ-HR-0038,HR,SRC-Q-MS-THIRD-PARTY-REG-REQS,,maps-to,directly-documented
+DDQ-HR-0038,HR,SRC-Q-WI-DOA-10816,,maps-to,directly-documented
 DDQ-IAM-0001,IAM,SRC-AICPA-TSC,CC6.2,maps-to,directly-documented
 DDQ-IAM-0001,IAM,SRC-NIST-SP800-53-R5,AC-2,maps-to,directly-documented
 DDQ-IAM-0001,IAM,SRC-CIS-CONTROLS-V8.1,6.1,maps-to,directly-documented
@@ -3110,6 +3181,8 @@ DDQ-IAM-0007,IAM,SRC-PCI-DSS-4.0.1,Req 7.2.4,informed-by,reasonably-inferred
 DDQ-IAM-0007,IAM,SRC-AICPA-TSC,CC6.3,maps-to,reasonably-inferred
 DDQ-IAM-0007,IAM,SRC-SA-SIG,,maps-to,reasonably-inferred
 DDQ-IAM-0007,IAM,SRC-CSA-CAIQ-V4,IAM domain,maps-to,reasonably-inferred
+DDQ-IAM-0007,IAM,SRC-Q-TRUIST-TPISS,,maps-to,directly-documented
+DDQ-IAM-0007,IAM,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-IAM-0008,IAM,SRC-ECH-UNB-BASELINE,UNB-XIN-IAM-004,informed-by,directly-documented
 DDQ-IAM-0008,IAM,SRC-NIST-SP800-53-R5,AC-5,maps-to,reasonably-inferred
 DDQ-IAM-0008,IAM,SRC-COSO-2013,,informed-by,reasonably-inferred
@@ -3133,6 +3206,7 @@ DDQ-IAM-0013,IAM,SRC-NIST-SP800-53-R5,AC-6(2),maps-to,reasonably-inferred
 DDQ-IAM-0014,IAM,SRC-ECH-UNB-BASELINE,CNV-PLT-010,informed-by,directly-documented
 DDQ-IAM-0014,IAM,SRC-NIST-SP800-207,Section 2.1,informed-by,reasonably-inferred
 DDQ-IAM-0014,IAM,SRC-NIST-SP800-53-R5,AC-6,maps-to,reasonably-inferred
+DDQ-IAM-0014,IAM,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-IAM-0015,IAM,SRC-NIST-SP800-53-R5,AC-6(9),maps-to,directly-documented
 DDQ-IAM-0015,IAM,SRC-NIST-SP800-53-R5,AU-9,maps-to,reasonably-inferred
 DDQ-IAM-0015,IAM,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-006,informed-by,directly-documented
@@ -3201,13 +3275,13 @@ DDQ-IAM-0033,IAM,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 DDQ-IAM-0033,IAM,SRC-CSA-AICM,,informed-by,reasonably-inferred
 DDQ-IAM-0034,IAM,SRC-ECH-UNB-BASELINE,GOV-AUTH-003,informed-by,directly-documented
 DDQ-IAM-0034,IAM,SRC-ECH-UNB-BASELINE,UNB-AI-STD-003,informed-by,directly-documented
-DDQ-IAM-0034,IAM,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,informed-by,directly-documented
+DDQ-IAM-0034,IAM,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,informed-by,directly-documented
 DDQ-IAM-0035,IAM,SRC-ECH-UNB-BASELINE,AUTH-I2,informed-by,directly-documented
 DDQ-IAM-0035,IAM,SRC-ECH-UNB-BASELINE,UNB-AI-STD-001,informed-by,directly-documented
 DDQ-IAM-0035,IAM,SRC-MITRE-CWE,CWE-441,informed-by,reasonably-inferred
 DDQ-IAM-0035,IAM,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 DDQ-IAM-0036,IAM,SRC-ECH-UNB-BASELINE,UNB-AGT-003,informed-by,directly-documented
-DDQ-IAM-0036,IAM,SRC-OWASP-LLM-TOP10-2025,LLM01:2025,informed-by,directly-documented
+DDQ-IAM-0036,IAM,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,informed-by,directly-documented
 DDQ-IAM-0036,IAM,SRC-MITRE-ATLAS,,informed-by,reasonably-inferred
 DDQ-IAM-0037,IAM,SRC-ECH-UNB-BASELINE,GOV-AUTH-024,informed-by,directly-documented
 DDQ-IAM-0037,IAM,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,informed-by,directly-documented
@@ -3247,6 +3321,7 @@ DDQ-IAM-0047,IAM,SRC-IRC-4958,,informed-by,reasonably-inferred
 DDQ-IAM-0048,IAM,SRC-ECH-UNB-BASELINE,UNB-XIN-SAS-007,informed-by,directly-documented
 DDQ-IAM-0048,IAM,SRC-ECH-UNB-BASELINE,UNB-XIN-IAM-001,informed-by,directly-documented
 DDQ-IAM-0048,IAM,SRC-NIST-SP800-63-4,SP 800-63C,informed-by,reasonably-inferred
+DDQ-IAM-0049,IAM,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-INF-0001,INF,SRC-INTERAGENCY-TPRM-2023,,informed-by,reasonably-inferred
 DDQ-INF-0001,INF,SRC-SA-SIG,,informed-by,reasonably-inferred
 DDQ-INF-0001,INF,SRC-CSA-CAIQ-V4,,informed-by,reasonably-inferred
@@ -3271,7 +3346,7 @@ DDQ-INF-0008,INF,SRC-PCI-DSS-4.0.1,Req 6.3.3,maps-to,reasonably-inferred
 DDQ-INF-0008,INF,SRC-CIS-CONTROLS-V8.1,7.3,maps-to,reasonably-inferred
 DDQ-INF-0008,INF,SRC-SA-SIG,,informed-by,reasonably-inferred
 DDQ-INF-0009,INF,SRC-CISA-KEV,,informed-by,directly-documented
-DDQ-INF-0009,INF,SRC-CISA-BOD-22-01,,informed-by,reasonably-inferred
+DDQ-INF-0009,INF,SRC-CISA-BOD-26-04,,informed-by,reasonably-inferred
 DDQ-INF-0009,INF,SRC-FIRST-EPSS,,informed-by,reasonably-inferred
 DDQ-INF-0010,INF,SRC-NIST-SP800-53-R5,SI-2,maps-to,reasonably-inferred
 DDQ-INF-0010,INF,SRC-NIST-SP800-218,,informed-by,reasonably-inferred
@@ -3285,7 +3360,7 @@ DDQ-INF-0013,INF,SRC-CSA-CCM-V4,IVS,maps-to,reasonably-inferred
 DDQ-INF-0013,INF,SRC-MITRE-ATTACK,T1611,informed-by,directly-documented
 DDQ-INF-0013,INF,SRC-CSA-CAIQ-V4,,informed-by,reasonably-inferred
 DDQ-INF-0014,INF,SRC-CYCLONEDX,,informed-by,reasonably-inferred
-DDQ-INF-0014,INF,SRC-NTIA-SBOM-MIN,,informed-by,reasonably-inferred
+DDQ-INF-0014,INF,SRC-CISA-SBOM-MIN,,informed-by,reasonably-inferred
 DDQ-INF-0014,INF,SRC-ECH-SCS-0.1,SEC-SUPPLY-001,derived-from,directly-documented
 DDQ-INF-0015,INF,SRC-ECH-UNB-BASELINE,RR-UNB-PLAT-008-r1,derived-from,directly-documented
 DDQ-INF-0015,INF,SRC-ISO-27017,,informed-by,reasonably-inferred
@@ -3321,15 +3396,18 @@ DDQ-INF-0026,INF,SRC-SA-SIG,,informed-by,reasonably-inferred
 DDQ-INF-0027,INF,SRC-ISO-27002-2022,A.8.31,maps-to,directly-documented
 DDQ-INF-0027,INF,SRC-ISO-27002-2022,A.8.33,maps-to,reasonably-inferred
 DDQ-INF-0027,INF,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-031,derived-from,directly-documented
+DDQ-INF-0027,INF,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-INF-0028,INF,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,derived-from,directly-documented
 DDQ-INF-0028,INF,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
-DDQ-INF-0028,INF,SRC-OWASP-LLM-TOP10-2025,LLM06,informed-by,reasonably-inferred
+DDQ-INF-0028,INF,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,informed-by,reasonably-inferred
 DDQ-INF-0029,INF,SRC-ECH-UNB-BASELINE,CNV-PLT-010,derived-from,directly-documented
 DDQ-INF-0029,INF,SRC-AICPA-TSC,CC5.1,informed-by,reasonably-inferred
 DDQ-INF-0029,INF,SRC-INTERAGENCY-TPRM-2023,,informed-by,reasonably-inferred
 DDQ-INF-0030,INF,SRC-NIST-SP800-53-R5,SA-22,maps-to,directly-documented
 DDQ-INF-0030,INF,SRC-NIST-CSF-2.0,PR.PS-02,maps-to,reasonably-inferred
 DDQ-INF-0030,INF,SRC-MITRE-CWE,CWE-1104,maps-to,directly-documented
+DDQ-INF-0030,INF,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
+DDQ-INF-0030,INF,SRC-Q-BEAZLEY-RANSOMWARE-SUPP-2022,,maps-to,directly-documented
 DDQ-INF-0031,INF,SRC-ECH-UNB-BASELINE,CNV-ARC-004,derived-from,directly-documented
 DDQ-INF-0031,INF,SRC-NIST-SP800-53-R5,SA-22,maps-to,reasonably-inferred
 DDQ-INF-0032,INF,SRC-OWASP-ASVS,,informed-by,reasonably-inferred
@@ -3489,27 +3567,26 @@ DDQ-IPR-0006,IPR,SRC-SPDX,,informed-by,reasonably-inferred
 DDQ-IPR-0007,IPR,SRC-ECH-UNB-BASELINE,,maps-to,directly-documented
 DDQ-IPR-0007,IPR,SRC-SPDX,,informed-by,reasonably-inferred
 DDQ-IPR-0008,IPR,SRC-ECH-UNB-BASELINE,,maps-to,directly-documented
-DDQ-IPR-0008,IPR,SRC-NTIA-SBOM-MIN,,informed-by,reasonably-inferred
+DDQ-IPR-0008,IPR,SRC-CISA-SBOM-MIN,,informed-by,reasonably-inferred
 DDQ-IPR-0009,IPR,SRC-ECH-UNB-BASELINE,,maps-to,directly-documented
 DDQ-IPR-0009,IPR,SRC-SPDX,,informed-by,reasonably-inferred
-DDQ-IPR-0010,IPR,SRC-NTIA-SBOM-MIN,,maps-to,directly-documented
+DDQ-IPR-0010,IPR,SRC-CISA-SBOM-MIN,,maps-to,directly-documented
 DDQ-IPR-0010,IPR,SRC-SPDX,,maps-to,directly-documented
 DDQ-IPR-0010,IPR,SRC-CYCLONEDX,,informed-by,reasonably-inferred
 DDQ-IPR-0010,IPR,SRC-ECH-SCS-0.1,,maps-to,directly-documented
 DDQ-IPR-0010,IPR,SRC-OPENSSF-S2C2F,,informed-by,reasonably-inferred
-DDQ-IPR-0011,IPR,SRC-NTIA-SBOM-MIN,,maps-to,directly-documented
+DDQ-IPR-0011,IPR,SRC-CISA-SBOM-MIN,,maps-to,directly-documented
 DDQ-IPR-0011,IPR,SRC-SPDX,,maps-to,directly-documented
 DDQ-IPR-0011,IPR,SRC-CYCLONEDX,,informed-by,reasonably-inferred
 DDQ-IPR-0011,IPR,SRC-ECH-SCS-0.1,,maps-to,directly-documented
 DDQ-IPR-0011,IPR,SRC-OPENSSF-S2C2F,,informed-by,reasonably-inferred
-DDQ-IPR-0012,IPR,SRC-NTIA-SBOM-MIN,,maps-to,directly-documented
+DDQ-IPR-0012,IPR,SRC-CISA-SBOM-MIN,,maps-to,directly-documented
 DDQ-IPR-0012,IPR,SRC-SPDX,,maps-to,directly-documented
 DDQ-IPR-0012,IPR,SRC-CYCLONEDX,,informed-by,reasonably-inferred
 DDQ-IPR-0012,IPR,SRC-ECH-SCS-0.1,,maps-to,directly-documented
 DDQ-IPR-0012,IPR,SRC-OPENSSF-S2C2F,,informed-by,reasonably-inferred
-DDQ-IPR-0013,IPR,SRC-NTIA-SBOM-MIN,,maps-to,directly-documented
-DDQ-IPR-0013,IPR,SRC-OMB-M-22-18,,informed-by,reasonably-inferred
-DDQ-IPR-0013,IPR,SRC-CISA-SBOM-MIN,,informed-by,reasonably-inferred
+DDQ-IPR-0013,IPR,SRC-OMB-M-26-05,,informed-by,reasonably-inferred
+DDQ-IPR-0013,IPR,SRC-CISA-SBOM-MIN,,maps-to,directly-documented
 DDQ-IPR-0014,IPR,SRC-ECH-BUSINESS-PLAN,,maps-to,directly-documented
 DDQ-IPR-0014,IPR,SRC-ECH-UNB-SOC2-DIRECTIVE,,maps-to,directly-documented
 DDQ-IPR-0014,IPR,SRC-NIST-AI-RMF-1.0,,informed-by,reasonably-inferred
@@ -3519,7 +3596,7 @@ DDQ-IPR-0015,IPR,SRC-ECH-UNB-SOC2-DIRECTIVE,,maps-to,directly-documented
 DDQ-IPR-0015,IPR,SRC-NIST-AI-RMF-1.0,,informed-by,reasonably-inferred
 DDQ-IPR-0015,IPR,SRC-GLBA,,informed-by,reasonably-inferred
 DDQ-IPR-0016,IPR,SRC-CSA-AICM,,informed-by,reasonably-inferred
-DDQ-IPR-0016,IPR,SRC-OWASP-LLM-TOP10-2025,,informed-by,reasonably-inferred
+DDQ-IPR-0016,IPR,SRC-OWASP-LLM-TOP10-2026,,informed-by,reasonably-inferred
 DDQ-IPR-0017,IPR,SRC-ECH-BUSINESS-PLAN,,maps-to,directly-documented
 DDQ-IPR-0017,IPR,SRC-ECH-UNB-SOC2-DIRECTIVE,,maps-to,directly-documented
 DDQ-IPR-0017,IPR,SRC-NIST-AI-RMF-1.0,,informed-by,reasonably-inferred
@@ -3583,6 +3660,8 @@ DDQ-IR-0015,IR,SRC-CSA-CCM-V4,SEF-07,maps-to,reasonably-inferred
 DDQ-IR-0015,IR,SRC-INTERAGENCY-TPRM-2023,,maps-to,reasonably-inferred
 DDQ-IR-0015,IR,SRC-SA-SIG,,maps-to,reasonably-inferred
 DDQ-IR-0015,IR,SRC-EDUCAUSE-HECVAT,,maps-to,reasonably-inferred
+DDQ-IR-0015,IR,SRC-Q-MS-DATA-PROCESSING-TERMS,,maps-to,directly-documented
+DDQ-IR-0015,IR,SRC-Q-TRUIST-TPISS,,maps-to,directly-documented
 DDQ-IR-0016,IR,SRC-STATE-BREACH-LAWS,,maps-to,reasonably-inferred
 DDQ-IR-0016,IR,SRC-CIRN-RULE-2021,,maps-to,reasonably-inferred
 DDQ-IR-0017,IR,SRC-NIST-CSF-2.0,RS.CO-02,maps-to,reasonably-inferred
@@ -3600,8 +3679,9 @@ DDQ-IR-0024,IR,SRC-BSCA,,maps-to,directly-documented
 DDQ-IR-0024,IR,SRC-FFIEC-OUTSOURCING-BOOKLET,,maps-to,reasonably-inferred
 DDQ-IR-0025,IR,SRC-SEC-REG-SP-2024,17 CFR 248.30,maps-to,directly-documented
 DDQ-IR-0026,IR,SRC-SEC-REG-SP-2024,,maps-to,directly-documented
+DDQ-IR-0026,IR,SRC-Q-SEC-REG-SP-2024-FACT-SHEET,,maps-to,directly-documented
 DDQ-IR-0027,IR,SRC-SEC-REG-SP-2024,,maps-to,directly-documented
-DDQ-IR-0027,IR,SRC-SEC-ADVISER-OUTSOURCING-PROPOSAL,,informed-by,reasonably-inferred
+DDQ-IR-0027,IR,SRC-SEC-PROPOSAL-WITHDRAWAL-2025,,informed-by,directly-documented
 DDQ-IR-0028,IR,SRC-SEC-REG-SP-2024,,maps-to,reasonably-inferred
 DDQ-IR-0028,IR,SRC-ECH-DAF-LANDSCAPE,,informed-by,reasonably-inferred
 DDQ-IR-0029,IR,SRC-STATE-BREACH-LAWS,,maps-to,reasonably-inferred
@@ -3723,7 +3803,7 @@ DDQ-ISP-0023,ISP,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-004,informed-by,directly-docume
 DDQ-ISP-0024,ISP,SRC-ECH-UNB-BASELINE,CNV-GOV-001,informed-by,directly-documented
 DDQ-ISP-0024,ISP,SRC-AICPA-SSAE-18,,informed-by,reasonably-inferred
 DDQ-ISP-0025,ISP,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-034,informed-by,directly-documented
-DDQ-ISP-0025,ISP,SRC-CISA-BOD-22-01,,informed-by,reasonably-inferred
+DDQ-ISP-0025,ISP,SRC-CISA-BOD-26-04,,informed-by,reasonably-inferred
 DDQ-ISP-0025,ISP,SRC-PCI-DSS-4.0.1,,informed-by,reasonably-inferred
 DDQ-ISP-0026,ISP,SRC-FTC-SAFEGUARDS-RULE,314.4(e),informed-by,directly-documented
 DDQ-ISP-0026,ISP,SRC-NYDFS-PART-500,500.14,informed-by,directly-documented
@@ -3750,7 +3830,7 @@ DDQ-ISP-0031,ISP,SRC-NIST-SP800-218A,,informed-by,reasonably-inferred
 DDQ-ISP-0031,ISP,SRC-ISO-42001-2023,,informed-by,reasonably-inferred
 DDQ-ISP-0031,ISP,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 DDQ-ISP-0032,ISP,SRC-ECH-UNB-BASELINE,UNB-AGT-003,informed-by,directly-documented
-DDQ-ISP-0032,ISP,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,informed-by,directly-documented
+DDQ-ISP-0032,ISP,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,informed-by,directly-documented
 DDQ-ISP-0032,ISP,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 DDQ-ISP-0033,ISP,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,informed-by,directly-documented
 DDQ-ISP-0033,ISP,SRC-NIST-AI-RMF-1.0,,informed-by,reasonably-inferred
@@ -3813,6 +3893,8 @@ DDQ-LEG-0016,LEG,SRC-ECH-BUSINESS-PLAN,,informed-by,reasonably-inferred
 DDQ-LEG-0016,LEG,SRC-SA-SIG,,informed-by,reasonably-inferred
 DDQ-LEG-0017,LEG,SRC-ECH-BUSINESS-PLAN,,informed-by,reasonably-inferred
 DDQ-LEG-0017,LEG,SRC-NIST-AI-600-1,,informed-by,reasonably-inferred
+DDQ-LEG-0017,LEG,SRC-Q-ACLU-GENAI-VENDOR-Q,,maps-to,directly-documented
+DDQ-LEG-0017,LEG,SRC-Q-AU-AI-PROCUREMENT,,maps-to,reasonably-inferred
 DDQ-LEG-0018,LEG,SRC-INTERAGENCY-TPRM-2023,,maps-to,directly-documented
 DDQ-LEG-0018,LEG,SRC-ECH-BUSINESS-PLAN,,informed-by,reasonably-inferred
 DDQ-LEG-0018,LEG,SRC-SA-SIG,,informed-by,reasonably-inferred
@@ -3861,9 +3943,10 @@ DDQ-LEG-0038,LEG,SRC-ECH-UNB-BASELINE,,informed-by,reasonably-inferred
 DDQ-LEG-0038,LEG,SRC-SA-SIG,,informed-by,reasonably-inferred
 DDQ-LEG-0039,LEG,SRC-NIST-AI-RMF-1.0,,informed-by,reasonably-inferred
 DDQ-LEG-0039,LEG,SRC-ECH-UNB-BASELINE,,maps-to,directly-documented
-DDQ-LEG-0040,LEG,SRC-COLORADO-AI-ACT,,informed-by,reasonably-inferred
+DDQ-LEG-0040,LEG,SRC-COLORADO-SB26-189,,informed-by,reasonably-inferred
 DDQ-LEG-0040,LEG,SRC-EU-AI-ACT,,informed-by,reasonably-inferred
 DDQ-LEG-0040,LEG,SRC-US-STATE-AI-LAWS,,informed-by,reasonably-inferred
+DDQ-LEG-0040,LEG,SRC-EU-AI-OMNIBUS-2026,,informed-by,reasonably-inferred
 DDQ-LEG-0041,LEG,SRC-NIST-AI-RMF-1.0,,informed-by,reasonably-inferred
 DDQ-LEG-0041,LEG,SRC-ECH-UNB-BASELINE,,maps-to,directly-documented
 DDQ-MON-0001,MON,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-012,derived-from,directly-documented
@@ -3902,6 +3985,7 @@ DDQ-MON-0013,MON,SRC-SEC-17A-4,,maps-to,reasonably-inferred
 DDQ-MON-0013,MON,SRC-SEC-ADVISERS-BOOKS-RECORDS,,maps-to,reasonably-inferred
 DDQ-MON-0014,MON,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-003,derived-from,directly-documented
 DDQ-MON-0014,MON,SRC-MITRE-CWE,CWE-532,maps-to,reasonably-inferred
+DDQ-MON-0014,MON,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-MON-0015,MON,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-032,maps-to,directly-documented
 DDQ-MON-0015,MON,SRC-GDPR,Art. 17,maps-to,reasonably-inferred
 DDQ-MON-0015,MON,SRC-CCPA-CPRA,,maps-to,reasonably-inferred
@@ -3945,8 +4029,8 @@ DDQ-MON-0035,MON,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,derived-from,directly-docum
 DDQ-MON-0035,MON,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 DDQ-MON-0035,MON,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
 DDQ-MON-0036,MON,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-003,maps-to,directly-documented
-DDQ-MON-0036,MON,SRC-OWASP-LLM-TOP10-2025,LLM02:2025,maps-to,reasonably-inferred
-DDQ-MON-0037,MON,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,reasonably-inferred
+DDQ-MON-0036,MON,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,reasonably-inferred
+DDQ-MON-0037,MON,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,reasonably-inferred
 DDQ-MON-0037,MON,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,maps-to,directly-documented
 DDQ-MON-0038,MON,SRC-NIST-SP800-53-R5,AU-8,maps-to,reasonably-inferred
 DDQ-MON-0038,MON,SRC-CSA-CCM-V4,LOG-06,maps-to,reasonably-inferred
@@ -3997,7 +4081,7 @@ DDQ-NET-0011,NET,SRC-MITRE-CWE,CWE-918,maps-to,directly-documented
 DDQ-NET-0011,NET,SRC-OWASP-CHEATSHEETS,,informed-by,reasonably-inferred
 DDQ-NET-0011,NET,SRC-MITRE-ATTACK,T1552,informed-by,reasonably-inferred
 DDQ-NET-0012,NET,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
-DDQ-NET-0012,NET,SRC-OWASP-LLM-TOP10-2025,LLM06,informed-by,reasonably-inferred
+DDQ-NET-0012,NET,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,informed-by,reasonably-inferred
 DDQ-NET-0012,NET,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,derived-from,directly-documented
 DDQ-NET-0013,NET,SRC-NIST-SP800-53-R5,CM-7,maps-to,reasonably-inferred
 DDQ-NET-0013,NET,SRC-ECH-UNB-BASELINE,UNB-CUST-017,informed-by,reasonably-inferred
@@ -4034,6 +4118,8 @@ DDQ-NET-0025,NET,SRC-CIS-CONTROLS-V8.1,Control 9,informed-by,reasonably-inferred
 DDQ-NET-0025,NET,SRC-MITRE-ATTACK,T1584,informed-by,reasonably-inferred
 DDQ-NET-0026,NET,SRC-NIST-SP800-53-R5,SC-22,maps-to,reasonably-inferred
 DDQ-NET-0026,NET,SRC-CIS-CONTROLS-V8.1,Control 9,maps-to,reasonably-inferred
+DDQ-NET-0026,NET,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
+DDQ-NET-0026,NET,SRC-Q-BEAZLEY-RANSOMWARE-SUPP-2022,,maps-to,reasonably-inferred
 DDQ-NET-0027,NET,SRC-NIST-SP800-53-R5,SC-8,maps-to,directly-documented
 DDQ-NET-0027,NET,SRC-PCI-DSS-4.0.1,Req 4,informed-by,reasonably-inferred
 DDQ-NET-0027,NET,SRC-AICPA-TSC,CC6.7,maps-to,reasonably-inferred
@@ -4150,8 +4236,8 @@ DDQ-PEN-0008,PEN,SRC-PCI-DSS-4.0.1,Req 11.4.2,informed-by,reasonably-inferred
 DDQ-PEN-0009,PEN,SRC-ECH-SCS-0.1,External assurance and economics,derived-from,directly-documented
 DDQ-PEN-0009,PEN,SRC-NIST-SP800-115,,maps-to,reasonably-inferred
 DDQ-PEN-0010,PEN,SRC-ECH-SCS-0.1,Enforcement model,derived-from,directly-documented
-DDQ-PEN-0011,PEN,SRC-OWASP-LLM-TOP10-2025,LLM01:2025,maps-to,reasonably-inferred
-DDQ-PEN-0011,PEN,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,reasonably-inferred
+DDQ-PEN-0011,PEN,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,maps-to,reasonably-inferred
+DDQ-PEN-0011,PEN,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,reasonably-inferred
 DDQ-PEN-0011,PEN,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 DDQ-PEN-0012,PEN,SRC-PCI-DSS-4.0.1,Req 11.4.5,informed-by,reasonably-inferred
 DDQ-PEN-0013,PEN,SRC-NIST-SP800-53-R5,CA-8(1),maps-to,reasonably-inferred
@@ -4273,7 +4359,7 @@ DDQ-PRF-0003,PRF,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-PRF-0004,PRF,SRC-NIST-SP800-53-R5,SC-5,maps-to,reasonably-inferred
 DDQ-PRF-0004,PRF,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-PRF-0005,PRF,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
-DDQ-PRF-0006,PRF,SRC-OWASP-LLM-TOP10-2025,LLM10:2025,maps-to,reasonably-inferred
+DDQ-PRF-0006,PRF,SRC-OWASP-LLM-TOP10-2026,LLM06:2026,maps-to,reasonably-inferred
 DDQ-PRF-0006,PRF,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-PRF-0007,PRF,SRC-AICPA-TSC,A1.1,informed-by,reasonably-inferred
 DDQ-PRF-0007,PRF,SRC-EDUCAUSE-HECVAT,,maps-to,reasonably-inferred
@@ -4449,11 +4535,12 @@ DDQ-PRV-0040,PRV,SRC-ECH-UNB-BASELINE,ADM-013,derived-from,directly-documented
 DDQ-PRV-0040,PRV,SRC-CSA-CCM-V4,,maps-to,reasonably-inferred
 DDQ-PRV-0041,PRV,SRC-NIST-AI-RMF-1.0,,maps-to,reasonably-inferred
 DDQ-PRV-0041,PRV,SRC-ISO-42005,,maps-to,reasonably-inferred
-DDQ-PRV-0041,PRV,SRC-OWASP-LLM-TOP10-2025,LLM02,maps-to,reasonably-inferred
+DDQ-PRV-0041,PRV,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,reasonably-inferred
 DDQ-PRV-0041,PRV,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-030,derived-from,directly-documented
 DDQ-PRV-0042,PRV,SRC-NIST-SP800-53-R5,PM-25,maps-to,directly-documented
 DDQ-PRV-0042,PRV,SRC-ISO-27002-2022,8.33,maps-to,directly-documented
 DDQ-PRV-0042,PRV,SRC-CSA-CCM-V4,,maps-to,reasonably-inferred
+DDQ-PRV-0042,PRV,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-PRV-0043,PRV,SRC-CCPA-CPRA,,maps-to,reasonably-inferred
 DDQ-PRV-0043,PRV,SRC-OWASP-CHEATSHEETS,,informed-by,reasonably-inferred
 DDQ-PRV-0043,PRV,SRC-ECH-UNB-BASELINE,UNB-TEC-002,informed-by,reasonably-inferred
@@ -4470,11 +4557,11 @@ DDQ-PRV-0048,PRV,SRC-ECH-UNB-BASELINE,UNB-SUCC-001,informed-by,reasonably-inferr
 DDQ-PRV-0048,PRV,SRC-ECH-UNB-BASELINE,UNB-GAP-015,informed-by,reasonably-inferred
 DDQ-PRV-0049,PRV,SRC-US-STATE-PRIVACY-LAWS,,maps-to,reasonably-inferred
 DDQ-PRV-0050,PRV,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
-DDQ-PRV-0050,PRV,SRC-OWASP-LLM-TOP10-2025,LLM02,maps-to,reasonably-inferred
+DDQ-PRV-0050,PRV,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,reasonably-inferred
 DDQ-PRV-0050,PRV,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-028,derived-from,directly-documented
 DDQ-PRV-0050,PRV,SRC-ECH-BUSINESS-PLAN,10.04,informed-by,reasonably-inferred
 DDQ-PRV-0051,PRV,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
-DDQ-PRV-0051,PRV,SRC-OWASP-LLM-TOP10-2025,,maps-to,reasonably-inferred
+DDQ-PRV-0051,PRV,SRC-OWASP-LLM-TOP10-2026,,maps-to,reasonably-inferred
 DDQ-PRV-0051,PRV,SRC-ECH-UNB-BASELINE,CNV-GOV-010,informed-by,reasonably-inferred
 DDQ-PRV-0051,PRV,SRC-ECH-UNB-BASELINE,UNB-KNOW-036,informed-by,reasonably-inferred
 DDQ-PRV-0052,PRV,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
@@ -4587,12 +4674,13 @@ DDQ-REG-0010,REG,SRC-INTERAGENCY-TPRM-2023,,maps-to,reasonably-inferred
 DDQ-REG-0010,REG,SRC-FFIEC-OUTSOURCING-BOOKLET,,maps-to,reasonably-inferred
 DDQ-REG-0011,REG,SRC-FINRA-RN-21-29,,maps-to,directly-documented
 DDQ-REG-0011,REG,SRC-INTERAGENCY-TPRM-2023,,maps-to,reasonably-inferred
-DDQ-REG-0011,REG,SRC-SEC-ADVISER-OUTSOURCING-PROPOSAL,,maps-to,reasonably-inferred
+DDQ-REG-0011,REG,SRC-SEC-PROPOSAL-WITHDRAWAL-2025,,informed-by,directly-documented
 DDQ-REG-0012,REG,SRC-FFIEC-IT-HANDBOOK,,maps-to,reasonably-inferred
 DDQ-REG-0012,REG,SRC-SA-SIG,,maps-to,reasonably-inferred
 DDQ-REG-0013,REG,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-009,informed-by,directly-documented
 DDQ-REG-0013,REG,SRC-ECH-UNB-BASELINE,GOV-AUTH-022,informed-by,directly-documented
 DDQ-REG-0014,REG,SRC-INTERAGENCY-TPRM-2023,Contract Negotiation,maps-to,reasonably-inferred
+DDQ-REG-0014,REG,SRC-Q-MS-DATA-PROCESSING-TERMS,,maps-to,directly-documented
 DDQ-REG-0015,REG,SRC-EU-DORA,Art. 30,maps-to,directly-documented
 DDQ-REG-0015,REG,SRC-EBA-OUTSOURCING-GL,,maps-to,reasonably-inferred
 DDQ-REG-0016,REG,SRC-OFAC-REGS,,maps-to,directly-documented
@@ -4704,6 +4792,8 @@ DDQ-RET-0028,RET,SRC-ISO-27002-2022,8.10,maps-to,reasonably-inferred
 DDQ-RET-0028,RET,SRC-ECH-UNB-BASELINE,UNB-TEN-011,derived-from,directly-documented
 DDQ-RET-0029,RET,SRC-ECH-UNB-BASELINE,UNB-IMM-008,derived-from,directly-documented
 DDQ-RET-0029,RET,SRC-GDPR,Art. 28,maps-to,reasonably-inferred
+DDQ-RET-0029,RET,SRC-Q-NYDFS-IL-20251021-TPSP,,maps-to,directly-documented
+DDQ-RET-0029,RET,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
 DDQ-RET-0030,RET,SRC-ISO-27002-2022,5.20,maps-to,reasonably-inferred
 DDQ-RET-0030,RET,SRC-NIST-SP800-161-R1,,informed-by,reasonably-inferred
 DDQ-RET-0031,RET,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-009,derived-from,directly-documented
@@ -4786,6 +4876,7 @@ DDQ-RRP-0037,RRP,SRC-COSO-2013,Principle 10,informed-by,reasonably-inferred
 DDQ-RRP-0038,RRP,SRC-ECH-UNB-BASELINE,CNV-FIN-011,derived-from,directly-documented
 DDQ-RRP-0039,RRP,SRC-ECH-UNB-BASELINE,REQ-X-039,derived-from,directly-documented
 DDQ-RRP-0039,RRP,SRC-ECH-UNB-BASELINE,UNB-NAV-010,derived-from,directly-documented
+DDQ-RRP-0040,RRP,SRC-IRC-170,,maps-to,directly-documented
 DDQ-RSK-0001,RSK,SRC-AICPA-TSC,CC3.1,maps-to,reasonably-inferred
 DDQ-RSK-0001,RSK,SRC-AICPA-TSC,CC3.2,maps-to,reasonably-inferred
 DDQ-RSK-0001,RSK,SRC-NIST-CSF-2.0,GV.RM-01,maps-to,reasonably-inferred
@@ -4903,7 +4994,7 @@ DDQ-SCN-0010,SCN,SRC-ECH-SCS-0.1,SEC-CRYPTO-001,derived-from,directly-documented
 DDQ-SCN-0011,SCN,SRC-GITLEAKS,,maps-to,reasonably-inferred
 DDQ-SCN-0012,SCN,SRC-NIST-SP800-53-R5,IA-5,maps-to,reasonably-inferred
 DDQ-SCN-0012,SCN,SRC-CSA-CCM-V4,,maps-to,reasonably-inferred
-DDQ-SCN-0013,SCN,SRC-OWASP-LLM-TOP10-2025,LLM02:2025,maps-to,reasonably-inferred
+DDQ-SCN-0013,SCN,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,reasonably-inferred
 DDQ-SCN-0013,SCN,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-003,maps-to,directly-documented
 DDQ-SCN-0014,SCN,SRC-NIST-SP800-53-R5,SA-11(8),maps-to,reasonably-inferred
 DDQ-SCN-0014,SCN,SRC-OWASP-ZAP,,maps-to,reasonably-inferred
@@ -4964,7 +5055,7 @@ DDQ-SCS-0005,SCS,SRC-NIST-SP800-53-R5,SA-22,maps-to,reasonably-inferred
 DDQ-SCS-0005,SCS,SRC-MITRE-CWE,CWE-1104,maps-to,directly-documented
 DDQ-SCS-0005,SCS,SRC-OPENSSF-SCORECARD,Maintained,maps-to,directly-documented
 DDQ-SCS-0006,SCS,SRC-NIST-SP800-218A,,maps-to,reasonably-inferred
-DDQ-SCS-0006,SCS,SRC-OWASP-LLM-TOP10-2025,,maps-to,reasonably-inferred
+DDQ-SCS-0006,SCS,SRC-OWASP-LLM-TOP10-2026,,maps-to,reasonably-inferred
 DDQ-SCS-0007,SCS,SRC-OPENSSF-SCORECARD,Pinned-Dependencies,maps-to,directly-documented
 DDQ-SCS-0007,SCS,SRC-ECH-SCS-0.1,SEC-SUPPLY-001,derived-from,directly-documented
 DDQ-SCS-0007,SCS,SRC-SLSA,,maps-to,reasonably-inferred
@@ -4975,20 +5066,19 @@ DDQ-SCS-0009,SCS,SRC-NIST-SP800-218,PS.3,maps-to,directly-documented
 DDQ-SCS-0010,SCS,SRC-OPENSSF-SCORECARD,Dependency-Update-Tool,maps-to,directly-documented
 DDQ-SCS-0010,SCS,SRC-OPENSSF-S2C2F,,maps-to,reasonably-inferred
 DDQ-SCS-0010,SCS,SRC-NIST-SP800-218,RV.2,maps-to,directly-documented
-DDQ-SCS-0011,SCS,SRC-NTIA-SBOM-MIN,,maps-to,reasonably-inferred
+DDQ-SCS-0011,SCS,SRC-CISA-SBOM-MIN,,maps-to,reasonably-inferred
 DDQ-SCS-0011,SCS,SRC-SPDX,,maps-to,reasonably-inferred
 DDQ-SCS-0011,SCS,SRC-CYCLONEDX,,maps-to,reasonably-inferred
-DDQ-SCS-0011,SCS,SRC-OMB-M-22-18,,maps-to,reasonably-inferred
-DDQ-SCS-0012,SCS,SRC-NTIA-SBOM-MIN,Data Fields,maps-to,reasonably-inferred
+DDQ-SCS-0011,SCS,SRC-OMB-M-26-05,,informed-by,reasonably-inferred
+DDQ-SCS-0012,SCS,SRC-CISA-SBOM-MIN,Data Fields,maps-to,reasonably-inferred
 DDQ-SCS-0012,SCS,SRC-CISA-SBOM-MIN,,maps-to,reasonably-inferred
-DDQ-SCS-0013,SCS,SRC-OMB-M-22-18,,maps-to,reasonably-inferred
-DDQ-SCS-0013,SCS,SRC-CISA-SSDF-ATTESTATION,,maps-to,reasonably-inferred
+DDQ-SCS-0013,SCS,SRC-OMB-M-26-05,,maps-to,directly-documented
+DDQ-SCS-0013,SCS,SRC-CISA-SSDF-ATTESTATION,,informed-by,reasonably-inferred
 DDQ-SCS-0013,SCS,SRC-FAR,,maps-to,reasonably-inferred
 DDQ-SCS-0014,SCS,SRC-SLSA,,maps-to,reasonably-inferred
 DDQ-SCS-0014,SCS,SRC-CYCLONEDX,,maps-to,reasonably-inferred
 DDQ-SCS-0015,SCS,SRC-CISA-SBOM-MIN,,maps-to,reasonably-inferred
-DDQ-SCS-0015,SCS,SRC-NTIA-SBOM-MIN,,maps-to,reasonably-inferred
-DDQ-SCS-0016,SCS,SRC-NTIA-SBOM-MIN,Practices and Processes,maps-to,reasonably-inferred
+DDQ-SCS-0016,SCS,SRC-CISA-SBOM-MIN,Practices and Processes,maps-to,reasonably-inferred
 DDQ-SCS-0016,SCS,SRC-NIST-SP800-218,PS.3,maps-to,directly-documented
 DDQ-SCS-0017,SCS,SRC-OPENVEX,,maps-to,reasonably-inferred
 DDQ-SCS-0017,SCS,SRC-CISA-SBOM-MIN,,maps-to,reasonably-inferred
@@ -5122,7 +5212,7 @@ DDQ-SDL-0027,SDL,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,derived-from,directly-docum
 DDQ-SDL-0028,SDL,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 DDQ-SDL-0028,SDL,SRC-NIST-SP800-218,PO.5,maps-to,directly-documented
 DDQ-SDL-0028,SDL,SRC-NIST-SP800-53-R5,AC-6,maps-to,reasonably-inferred
-DDQ-SDL-0029,SDL,SRC-OWASP-LLM-TOP10-2025,,maps-to,reasonably-inferred
+DDQ-SDL-0029,SDL,SRC-OWASP-LLM-TOP10-2026,,maps-to,reasonably-inferred
 DDQ-SDL-0029,SDL,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 DDQ-SDL-0029,SDL,SRC-MITRE-ATLAS,,maps-to,reasonably-inferred
 DDQ-SDL-0030,SDL,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
@@ -5145,8 +5235,8 @@ DDQ-SDL-0037,SDL,SRC-OWASP-ASVS,5.0 V3 Web Frontend Security,maps-to,reasonably-
 DDQ-SDL-0038,SDL,SRC-ECH-SCS-0.1,SEC-LANG-002,derived-from,directly-documented
 DDQ-SDL-0038,SDL,SRC-NIST-SP800-218,PW.6,maps-to,directly-documented
 DDQ-SDL-0039,SDL,SRC-CISA-SSDF-ATTESTATION,,maps-to,reasonably-inferred
-DDQ-SDL-0039,SDL,SRC-OMB-M-22-18,,maps-to,reasonably-inferred
-DDQ-SDL-0040,SDL,SRC-OMB-M-22-18,,maps-to,reasonably-inferred
+DDQ-SDL-0039,SDL,SRC-OMB-M-26-05,,informed-by,reasonably-inferred
+DDQ-SDL-0040,SDL,SRC-OMB-M-26-05,,informed-by,reasonably-inferred
 DDQ-SDL-0040,SDL,SRC-CISA-SSDF-ATTESTATION,,maps-to,reasonably-inferred
 DDQ-SDL-0041,SDL,SRC-NYDFS-PART-500,500.8,maps-to,reasonably-inferred
 DDQ-SDL-0041,SDL,SRC-FTC-SAFEGUARDS-RULE,314.4(c)(4),maps-to,reasonably-inferred
@@ -5174,8 +5264,11 @@ DDQ-SUB-0004,SUB,SRC-GDPR,Art. 28,maps-to,reasonably-inferred
 DDQ-SUB-0005,SUB,SRC-GDPR,Art. 28(2),maps-to,directly-documented
 DDQ-SUB-0005,SUB,SRC-EU-SCC-2021,Clause 9,maps-to,directly-documented
 DDQ-SUB-0005,SUB,SRC-ECH-UNB-BASELINE,UNB-XIN-SAS-011,informed-by,directly-documented
+DDQ-SUB-0005,SUB,SRC-Q-MS-THIRD-PARTY-REG-REQS,,maps-to,directly-documented
 DDQ-SUB-0006,SUB,SRC-GDPR,Art. 28(2),maps-to,directly-documented
 DDQ-SUB-0006,SUB,SRC-EU-SCC-2021,Clause 9,maps-to,reasonably-inferred
+DDQ-SUB-0006,SUB,SRC-Q-MS-DATA-PROCESSING-TERMS,,maps-to,directly-documented
+DDQ-SUB-0006,SUB,SRC-Q-NYDFS-IL-20251021-TPSP,,maps-to,directly-documented
 DDQ-SUB-0007,SUB,SRC-ECH-UNB-BASELINE,UNB-XIN-SAS-011,informed-by,directly-documented
 DDQ-SUB-0008,SUB,SRC-ECH-UNB-BASELINE,UNB-XIN-SAS-011,informed-by,directly-documented
 DDQ-SUB-0009,SUB,SRC-GDPR,Art. 28,maps-to,reasonably-inferred
@@ -5233,17 +5326,19 @@ DDQ-SUP-0011,SUP,SRC-SA-SIG,,maps-to,reasonably-inferred
 DDQ-SUP-0012,SUP,SRC-ISO-27018,,informed-by,reasonably-inferred
 DDQ-SUP-0012,SUP,SRC-NIST-SP800-53-R5,AC-6,maps-to,reasonably-inferred
 DDQ-SUP-0012,SUP,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
+DDQ-SUP-0012,SUP,SRC-Q-GKCCF-PRIVACY-POLICY,,maps-to,directly-documented
+DDQ-SUP-0012,SUP,SRC-Q-VANGUARD-CHARITABLE-PRIVACY,,maps-to,directly-documented
 DDQ-SUP-0013,SUP,SRC-NACHA-RULES,,informed-by,reasonably-inferred
 DDQ-SUP-0013,SUP,SRC-FFIEC-AUTH-GUIDANCE-2021,,maps-to,reasonably-inferred
 DDQ-SUP-0013,SUP,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-SUP-0014,SUP,SRC-EU-AI-ACT,Article 50,informed-by,reasonably-inferred
 DDQ-SUP-0014,SUP,SRC-US-STATE-AI-LAWS,,informed-by,reasonably-inferred
 DDQ-SUP-0014,SUP,SRC-NIST-AI-600-1,,informed-by,reasonably-inferred
-DDQ-SUP-0015,SUP,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,reasonably-inferred
+DDQ-SUP-0015,SUP,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,reasonably-inferred
 DDQ-SUP-0015,SUP,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 DDQ-SUP-0015,SUP,SRC-ECH-UNB-SOC2-DIRECTIVE,,informed-by,directly-documented
 DDQ-SUP-0016,SUP,SRC-NIST-AI-RMF-1.0,,informed-by,reasonably-inferred
-DDQ-SUP-0016,SUP,SRC-COLORADO-AI-ACT,,informed-by,reasonably-inferred
+DDQ-SUP-0016,SUP,SRC-COLORADO-SB26-189,,informed-by,reasonably-inferred
 DDQ-SUP-0017,SUP,SRC-NIST-AI-600-1,,informed-by,reasonably-inferred
 DDQ-SUP-0017,SUP,SRC-GDPR,,informed-by,reasonably-inferred
 DDQ-SUP-0018,SUP,SRC-ISO-20000-1,,maps-to,reasonably-inferred
@@ -5331,8 +5426,8 @@ DDQ-TEN-0023,TEN,SRC-NIST-SP800-115,,informed-by,reasonably-inferred
 DDQ-TEN-0024,TEN,SRC-ECH-UNB-BASELINE,UNB-TEN-009,informed-by,directly-documented
 DDQ-TEN-0024,TEN,SRC-NIST-SP800-53-R5,SC-4,maps-to,reasonably-inferred
 DDQ-TEN-0024,TEN,SRC-ISO-27018,,informed-by,reasonably-inferred
-DDQ-TEN-0025,TEN,SRC-OWASP-LLM-TOP10-2025,LLM08:2025,maps-to,directly-documented
-DDQ-TEN-0025,TEN,SRC-OWASP-LLM-TOP10-2025,LLM02:2025,maps-to,directly-documented
+DDQ-TEN-0025,TEN,SRC-OWASP-LLM-TOP10-2026,LLM09:2026,maps-to,directly-documented
+DDQ-TEN-0025,TEN,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,directly-documented
 DDQ-TEN-0025,TEN,SRC-ECH-UNB-BASELINE,UNB-RCN-PLT-004,informed-by,directly-documented
 DDQ-TEN-0025,TEN,SRC-NIST-AI-600-1,,informed-by,reasonably-inferred
 DDQ-TEN-0025,TEN,SRC-CSA-AICM,,informed-by,reasonably-inferred
@@ -5350,6 +5445,8 @@ DDQ-TEN-0029,TEN,SRC-NIST-SP800-53-R5,SC-12,maps-to,directly-documented
 DDQ-TEN-0029,TEN,SRC-ECH-UNB-BASELINE,UNB-TEN-006,informed-by,directly-documented
 DDQ-TEN-0029,TEN,SRC-CSA-CAIQ-V4,CEK domain,maps-to,reasonably-inferred
 DDQ-TEN-0029,TEN,SRC-SA-SIG,,maps-to,reasonably-inferred
+DDQ-TEN-0029,TEN,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,directly-documented
+DDQ-TEN-0029,TEN,SRC-Q-TRUIST-TPISS,,maps-to,directly-documented
 DDQ-TEN-0030,TEN,SRC-ECH-UNB-BASELINE,UNB-TEN-008,informed-by,directly-documented
 DDQ-TEN-0030,TEN,SRC-CSA-CCM-V4,CEK domain,maps-to,reasonably-inferred
 DDQ-TEN-0030,TEN,SRC-EU-DORA,,informed-by,reasonably-inferred
@@ -5548,10 +5645,14 @@ DDQ-TRM-0023,TRM,SRC-INTERAGENCY-TPRM-2023,,maps-to,reasonably-inferred
 DDQ-TRM-0023,TRM,SRC-2CFR200,,informed-by,reasonably-inferred
 DDQ-TRM-0024,TRM,SRC-EBA-OUTSOURCING-GL,,informed-by,reasonably-inferred
 DDQ-TRM-0024,TRM,SRC-INTERAGENCY-TPRM-2023,,informed-by,reasonably-inferred
+DDQ-TRM-0024,TRM,SRC-Q-MS-THIRD-PARTY-REG-REQS,,maps-to,directly-documented
 DDQ-TRM-0025,TRM,SRC-GDPR,Art. 28,maps-to,reasonably-inferred
 DDQ-TRM-0025,TRM,SRC-INTERAGENCY-TPRM-2023,,maps-to,reasonably-inferred
 DDQ-TRM-0026,TRM,SRC-ECH-DAF-LANDSCAPE,research/ren-legal-entities-public-msa-contract-portability-audit-2026-11-12.md,informed-by,directly-documented
 DDQ-TRM-0026,TRM,SRC-ECH-DAF-LANDSCAPE,data/switching-cost-control-matrix-2026.csv L16,informed-by,directly-documented
+DDQ-TRM-0027,TRM,SRC-Q-NYDFS-IL-20251021-TPSP,,maps-to,directly-documented
+DDQ-TRM-0027,TRM,SRC-Q-MS-MIN-SECURITY-STANDARDS,,maps-to,reasonably-inferred
+DDQ-TRM-0028,TRM,SRC-Q-MS-THIRD-PARTY-REG-REQS,,maps-to,directly-documented
 DDQ-TXI-0001,TXI,SRC-ECH-UNB-BASELINE,,derived-from,directly-documented
 DDQ-TXI-0001,TXI,SRC-AICPA-TSC,PI1.3,maps-to,reasonably-inferred
 DDQ-TXI-0001,TXI,SRC-MITRE-CWE,CWE-837,maps-to,reasonably-inferred
@@ -5636,7 +5737,7 @@ DDQ-VUL-0007,VUL,SRC-CVSS-4.0,,maps-to,directly-documented
 DDQ-VUL-0007,VUL,SRC-CSA-CCM-V4,TVM-08,maps-to,reasonably-inferred
 DDQ-VUL-0008,VUL,SRC-FIRST-EPSS,,maps-to,directly-documented
 DDQ-VUL-0009,VUL,SRC-CISA-KEV,,maps-to,directly-documented
-DDQ-VUL-0009,VUL,SRC-CISA-BOD-22-01,,informed-by,reasonably-inferred
+DDQ-VUL-0009,VUL,SRC-CISA-BOD-26-04,,informed-by,reasonably-inferred
 DDQ-VUL-0010,VUL,SRC-CVSS-4.0,,maps-to,reasonably-inferred
 DDQ-VUL-0010,VUL,SRC-OPENVEX,,informed-by,reasonably-inferred
 DDQ-VUL-0011,VUL,SRC-OPENVEX,,maps-to,directly-documented
@@ -5652,7 +5753,7 @@ DDQ-VUL-0015,VUL,SRC-INTERAGENCY-TPRM-2023,,maps-to,reasonably-inferred
 DDQ-VUL-0015,VUL,SRC-OCC-BULLETIN-2023-17,,maps-to,reasonably-inferred
 DDQ-VUL-0016,VUL,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-016,maps-to,directly-documented
 DDQ-VUL-0016,VUL,SRC-NIST-SP800-53-R5,SI-2,maps-to,reasonably-inferred
-DDQ-VUL-0017,VUL,SRC-NTIA-SBOM-MIN,,maps-to,reasonably-inferred
+DDQ-VUL-0017,VUL,SRC-CISA-SBOM-MIN,,maps-to,reasonably-inferred
 DDQ-VUL-0017,VUL,SRC-CISA-KEV,,maps-to,reasonably-inferred
 DDQ-VUL-0018,VUL,SRC-ECH-SCS-0.1,Enforcement model,derived-from,directly-documented
 DDQ-VUL-0018,VUL,SRC-CSA-CCM-V4,TVM-03,maps-to,reasonably-inferred
@@ -5662,7 +5763,7 @@ DDQ-VUL-0019,VUL,SRC-COSO-ERM-2017,,informed-by,reasonably-inferred
 DDQ-VUL-0020,VUL,SRC-AICPA-SOC2-GUIDE,,informed-by,reasonably-inferred
 DDQ-VUL-0021,VUL,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,maps-to,directly-documented
 DDQ-VUL-0021,VUL,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
-DDQ-VUL-0021,VUL,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,reasonably-inferred
+DDQ-VUL-0021,VUL,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,reasonably-inferred
 DDQ-VUL-0022,VUL,SRC-ISO-29147-30111,,maps-to,directly-documented
 DDQ-VUL-0022,VUL,SRC-NIST-CSF-2.0,ID.RA-08,maps-to,directly-documented
 DDQ-VUL-0022,VUL,SRC-NIST-SP800-53-R5,RA-5(11),maps-to,directly-documented
@@ -5681,7 +5782,7 @@ DDQ-VUL-0029,VUL,SRC-ISO-27002-2022,8.34,maps-to,reasonably-inferred
 DDQ-VUL-0030,VUL,SRC-CSA-CCM-V4,TVM-09,maps-to,reasonably-inferred
 DDQ-VUL-0030,VUL,SRC-INTERAGENCY-TPRM-2023,,maps-to,reasonably-inferred
 DDQ-VUL-0031,VUL,SRC-ISO-29147-30111,,maps-to,reasonably-inferred
-DDQ-VUL-0032,VUL,SRC-NTIA-SBOM-MIN,,informed-by,reasonably-inferred
+DDQ-VUL-0032,VUL,SRC-CISA-SBOM-MIN,,informed-by,reasonably-inferred
 DDQ-VUL-0033,VUL,SRC-INTERAGENCY-TPRM-2023,,maps-to,reasonably-inferred
 DDQ-VUL-0033,VUL,SRC-ISO-27036,,maps-to,reasonably-inferred
 DDQ-VUL-0034,VUL,SRC-NIST-SP800-53-R5,SI-2,maps-to,reasonably-inferred
@@ -5693,8 +5794,9 @@ DDQ-VUL-0036,VUL,SRC-CIS-CONTROLS-V8.1,2.2,maps-to,reasonably-inferred
 DDQ-VUL-0037,VUL,SRC-NIST-SP800-218A,,maps-to,reasonably-inferred
 DDQ-VUL-0037,VUL,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 DDQ-VUL-0037,VUL,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,maps-to,directly-documented
-DDQ-VUL-0038,VUL,SRC-OWASP-LLM-TOP10-2025,LLM03:2025,maps-to,reasonably-inferred
+DDQ-VUL-0038,VUL,SRC-OWASP-LLM-TOP10-2026,LLM04:2026,maps-to,reasonably-inferred
 DDQ-VUL-0038,VUL,SRC-NIST-SP800-218A,,maps-to,reasonably-inferred
+DDQ-VUL-0039,VUL,SRC-Q-TRUIST-TPISS,,maps-to,directly-documented
 DDQ-WLB-0001,WLB,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-WLB-0002,WLB,SRC-ECH-UNB-BASELINE,,informed-by,directly-documented
 DDQ-WLB-0002,WLB,SRC-STATE-CHARITABLE-SOLICITATION,,informed-by,reasonably-inferred
@@ -5789,7 +5891,7 @@ ECTL-AIA-001,control,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 ECTL-AIA-002,control,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 ECTL-AIA-002,control,SRC-NIST-SP800-207,,maps-to,reasonably-inferred
 ECTL-AIA-003,control,SRC-NIST-SP800-53-R5,AC-6,maps-to,directly-documented
-ECTL-AIA-003,control,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,reasonably-inferred
+ECTL-AIA-003,control,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,reasonably-inferred
 ECTL-AIA-004,control,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 ECTL-AIA-005,control,SRC-NIST-AI-RMF-1.0,GOVERN 3.2,maps-to,reasonably-inferred
 ECTL-AIA-005,control,SRC-EU-AI-ACT,Art. 14,maps-to,reasonably-inferred
@@ -5814,7 +5916,7 @@ ECTL-AIA-015,control,SRC-CIS-CONTROLS-V8.1,,maps-to,reasonably-inferred
 ECTL-AIG-001,control,SRC-NIST-AI-RMF-1.0,GOVERN 1.6,maps-to,directly-documented
 ECTL-AIG-001,control,SRC-ISO-42001-2023,,maps-to,reasonably-inferred
 ECTL-AIG-001,control,SRC-CSA-AICM,,maps-to,reasonably-inferred
-ECTL-AIG-002,control,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,reasonably-inferred
+ECTL-AIG-002,control,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,reasonably-inferred
 ECTL-AIG-003,control,SRC-ISO-42001-2023,5.2,maps-to,directly-documented
 ECTL-AIG-003,control,SRC-NIST-AI-RMF-1.0,GOVERN 1.2,maps-to,reasonably-inferred
 ECTL-AIG-003,control,SRC-EU-AI-ACT,Art. 4,maps-to,reasonably-inferred
@@ -5835,46 +5937,47 @@ ECTL-AIG-008,control,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
 ECTL-AIG-008,control,SRC-ISO-42001-2023,A.7,maps-to,reasonably-inferred
 ECTL-AIG-008,control,SRC-GDPR,Art. 28,maps-to,reasonably-inferred
 ECTL-AIG-009,control,SRC-EU-AI-ACT,Art. 6,maps-to,reasonably-inferred
-ECTL-AIG-009,control,SRC-COLORADO-AI-ACT,,maps-to,reasonably-inferred
+ECTL-AIG-009,control,SRC-COLORADO-SB26-189,,maps-to,reasonably-inferred
 ECTL-AIG-009,control,SRC-US-STATE-AI-LAWS,,maps-to,reasonably-inferred
 ECTL-AIG-009,control,SRC-NAIC-AI-BULLETIN,,maps-to,reasonably-inferred
-ECTL-AIG-010,control,SRC-SR-11-7,,maps-to,reasonably-inferred
+ECTL-AIG-009,control,SRC-EU-AI-OMNIBUS-2026,,maps-to,reasonably-inferred
+ECTL-AIG-010,control,SRC-SR-26-2,,maps-to,reasonably-inferred
 ECTL-AIG-010,control,SRC-TREASURY-AI-FINSVC,,maps-to,reasonably-inferred
 ECTL-AIG-011,control,SRC-EU-AI-ACT,Art. 50,maps-to,reasonably-inferred
 ECTL-AIG-011,control,SRC-ISO-42001-2023,A.8,maps-to,reasonably-inferred
-ECTL-AIG-011,control,SRC-COLORADO-AI-ACT,,maps-to,reasonably-inferred
-ECTL-AIS-001,control,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,directly-documented
-ECTL-AIS-001,control,SRC-OWASP-LLM-TOP10-2025,LLM01:2025,maps-to,reasonably-inferred
+ECTL-AIG-011,control,SRC-COLORADO-SB26-189,,maps-to,reasonably-inferred
+ECTL-AIS-001,control,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,directly-documented
+ECTL-AIS-001,control,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,maps-to,reasonably-inferred
 ECTL-AIS-001,control,SRC-NIST-SP800-53-R5,AC-6,maps-to,reasonably-inferred
-ECTL-AIS-002,control,SRC-OWASP-LLM-TOP10-2025,LLM01:2025,maps-to,directly-documented
+ECTL-AIS-002,control,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,maps-to,directly-documented
 ECTL-AIS-002,control,SRC-MITRE-ATLAS,AML.T0051,maps-to,reasonably-inferred
 ECTL-AIS-002,control,SRC-OWASP-AI-EXCHANGE,,maps-to,reasonably-inferred
-ECTL-AIS-003,control,SRC-OWASP-LLM-TOP10-2025,LLM01:2025,maps-to,reasonably-inferred
-ECTL-AIS-003,control,SRC-OWASP-LLM-TOP10-2025,LLM09:2025,maps-to,reasonably-inferred
-ECTL-AIS-004,control,SRC-OWASP-LLM-TOP10-2025,LLM02:2025,maps-to,directly-documented
-ECTL-AIS-004,control,SRC-OWASP-LLM-TOP10-2025,LLM08:2025,maps-to,directly-documented
+ECTL-AIS-003,control,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,maps-to,reasonably-inferred
+ECTL-AIS-003,control,SRC-OWASP-LLM-TOP10-2026,LLM07:2026,maps-to,reasonably-inferred
+ECTL-AIS-004,control,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,directly-documented
+ECTL-AIS-004,control,SRC-OWASP-LLM-TOP10-2026,LLM09:2026,maps-to,directly-documented
 ECTL-AIS-004,control,SRC-CSA-CCM-V4,DSP,maps-to,reasonably-inferred
-ECTL-AIS-005,control,SRC-OWASP-LLM-TOP10-2025,LLM02:2025,maps-to,reasonably-inferred
+ECTL-AIS-005,control,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,reasonably-inferred
 ECTL-AIS-005,control,SRC-OWASP-WSTG,,maps-to,reasonably-inferred
-ECTL-AIS-006,control,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,directly-documented
-ECTL-AIS-006,control,SRC-OWASP-LLM-TOP10-2025,LLM10:2025,maps-to,directly-documented
+ECTL-AIS-006,control,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,directly-documented
+ECTL-AIS-006,control,SRC-OWASP-LLM-TOP10-2026,LLM06:2026,maps-to,directly-documented
 ECTL-AIS-006,control,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
-ECTL-AIS-007,control,SRC-OWASP-LLM-TOP10-2025,LLM05:2025,maps-to,directly-documented
+ECTL-AIS-007,control,SRC-OWASP-LLM-TOP10-2026,LLM10:2026,maps-to,directly-documented
 ECTL-AIS-007,control,SRC-OWASP-ASVS,,maps-to,reasonably-inferred
-ECTL-AIS-008,control,SRC-OWASP-LLM-TOP10-2025,LLM09:2025,maps-to,reasonably-inferred
-ECTL-AIS-009,control,SRC-OWASP-LLM-TOP10-2025,LLM03:2025,maps-to,directly-documented
+ECTL-AIS-008,control,SRC-OWASP-LLM-TOP10-2026,LLM07:2026,maps-to,reasonably-inferred
+ECTL-AIS-009,control,SRC-OWASP-LLM-TOP10-2026,LLM04:2026,maps-to,directly-documented
 ECTL-AIS-009,control,SRC-MITRE-ATLAS,AML.T0010,maps-to,reasonably-inferred
 ECTL-AIS-009,control,SRC-CYCLONEDX,,maps-to,reasonably-inferred
 ECTL-AIS-009,control,SRC-SLSA,,maps-to,reasonably-inferred
-ECTL-AIS-010,control,SRC-OWASP-LLM-TOP10-2025,LLM03:2025,maps-to,reasonably-inferred
-ECTL-AIS-010,control,SRC-OWASP-LLM-TOP10-2025,LLM04:2025,maps-to,reasonably-inferred
+ECTL-AIS-010,control,SRC-OWASP-LLM-TOP10-2026,LLM04:2026,maps-to,reasonably-inferred
+ECTL-AIS-010,control,SRC-OWASP-LLM-TOP10-2026,LLM05:2026,maps-to,reasonably-inferred
 ECTL-AIS-010,control,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
-ECTL-AIS-011,control,SRC-OWASP-LLM-TOP10-2025,,maps-to,directly-documented
+ECTL-AIS-011,control,SRC-OWASP-LLM-TOP10-2026,,maps-to,directly-documented
 ECTL-AIS-011,control,SRC-MITRE-ATLAS,,maps-to,directly-documented
 ECTL-AIS-011,control,SRC-NIST-AI-100-2,,maps-to,reasonably-inferred
 ECTL-AIS-012,control,SRC-NIST-AI-RMF-1.0,MEASURE 2.7,maps-to,reasonably-inferred
 ECTL-AIS-012,control,SRC-NIST-SP800-53-R5,SI-4,maps-to,reasonably-inferred
-ECTL-AIS-013,control,SRC-OWASP-LLM-TOP10-2025,,maps-to,reasonably-inferred
+ECTL-AIS-013,control,SRC-OWASP-LLM-TOP10-2026,,maps-to,reasonably-inferred
 ECTL-AIS-013,control,SRC-MITRE-ATLAS,,maps-to,reasonably-inferred
 ECTL-AIS-013,control,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
 ECTL-AIS-014,control,SRC-NIST-AI-600-1,,maps-to,reasonably-inferred
@@ -5886,7 +5989,7 @@ ECTL-AIS-015,control,SRC-NIST-SP800-218,,maps-to,reasonably-inferred
 ECTL-AIS-016,control,SRC-NIST-SP800-218,PW.7,maps-to,reasonably-inferred
 ECTL-AIS-016,control,SRC-NIST-SP800-218A,,maps-to,reasonably-inferred
 ECTL-AIS-016,control,SRC-OPENSSF-S2C2F,,maps-to,reasonably-inferred
-ECTL-AIS-016,control,SRC-OWASP-LLM-TOP10-2025,LLM03:2025,maps-to,reasonably-inferred
+ECTL-AIS-016,control,SRC-OWASP-LLM-TOP10-2026,LLM04:2026,maps-to,reasonably-inferred
 ECTL-AIS-017,control,SRC-NIST-SP800-218A,,maps-to,reasonably-inferred
 ECTL-AIS-017,control,SRC-NIST-IR-8397,,maps-to,reasonably-inferred
 ECTL-AML-001,control,SRC-OFAC-COMPLIANCE-FRAMEWORK,Internal Controls,maps-to,directly-documented
@@ -5896,7 +5999,7 @@ ECTL-AML-002,control,SRC-OFAC-COMPLIANCE-FRAMEWORK,Internal Controls,maps-to,rea
 ECTL-AML-003,control,SRC-OFAC-COMPLIANCE-FRAMEWORK,Internal Controls,maps-to,reasonably-inferred
 ECTL-AML-003,control,SRC-OFAC-REGS,,maps-to,reasonably-inferred
 ECTL-AML-004,control,SRC-OFAC-COMPLIANCE-FRAMEWORK,Testing and Auditing,maps-to,reasonably-inferred
-ECTL-AML-004,control,SRC-SR-11-7,,maps-to,reasonably-inferred
+ECTL-AML-004,control,SRC-SR-26-2,,maps-to,reasonably-inferred
 ECTL-AML-005,control,SRC-NIST-AI-RMF-1.0,MEASURE 2.11,maps-to,reasonably-inferred
 ECTL-AML-006,control,SRC-OFAC-COMPLIANCE-FRAMEWORK,Internal Controls,maps-to,directly-documented
 ECTL-AML-007,control,SRC-OFAC-REGS,31 CFR 501.603,maps-to,directly-documented
@@ -6005,11 +6108,11 @@ ECTL-ASM-001,control,SRC-NIST-SP800-53-R5,CM-8,maps-to,directly-documented
 ECTL-ASM-001,control,SRC-NIST-CSF-2.0,ID.AM-01,maps-to,directly-documented
 ECTL-ASM-001,control,SRC-NYDFS-PART-500,500.13,informed-by,directly-documented
 ECTL-ASM-001,control,SRC-PCI-DSS-4.0.1,Req 12.5.1,informed-by,reasonably-inferred
-ECTL-ASM-002,control,SRC-NTIA-SBOM-MIN,,maps-to,directly-documented
+ECTL-ASM-002,control,SRC-CISA-SBOM-MIN,,maps-to,directly-documented
 ECTL-ASM-002,control,SRC-CYCLONEDX,,informed-by,reasonably-inferred
 ECTL-ASM-002,control,SRC-SPDX,,informed-by,reasonably-inferred
 ECTL-ASM-002,control,SRC-NIST-CSF-2.0,ID.AM-02,maps-to,directly-documented
-ECTL-ASM-002,control,SRC-OWASP-LLM-TOP10-2025,LLM03:2025,informed-by,reasonably-inferred
+ECTL-ASM-002,control,SRC-OWASP-LLM-TOP10-2026,LLM04:2026,informed-by,reasonably-inferred
 ECTL-ASM-003,control,SRC-CIS-CONTROLS-V8.1,2.2,maps-to,reasonably-inferred
 ECTL-ASM-003,control,SRC-NIST-SP800-53-R5,CM-7,maps-to,reasonably-inferred
 ECTL-ASM-003,control,SRC-OPENSSF-S2C2F,,informed-by,reasonably-inferred
@@ -6102,8 +6205,8 @@ ECTL-AUZ-009,control,SRC-OWASP-ASVS,,informed-by,reasonably-inferred
 ECTL-AUZ-010,control,SRC-NIST-SP800-115,,maps-to,directly-documented
 ECTL-AUZ-010,control,SRC-PTES,,informed-by,reasonably-inferred
 ECTL-AUZ-010,control,SRC-CREST,,informed-by,reasonably-inferred
-ECTL-AUZ-011,control,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,directly-documented
-ECTL-AUZ-011,control,SRC-OWASP-LLM-TOP10-2025,LLM01:2025,informed-by,directly-documented
+ECTL-AUZ-011,control,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,directly-documented
+ECTL-AUZ-011,control,SRC-OWASP-LLM-TOP10-2026,LLM01:2026,informed-by,directly-documented
 ECTL-AUZ-011,control,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 ECTL-AUZ-011,control,SRC-MITRE-ATLAS,,informed-by,reasonably-inferred
 ECTL-AUZ-012,control,SRC-ISO-27002-2022,8.3,maps-to,directly-documented
@@ -6297,7 +6400,7 @@ ECTL-END-004,control,SRC-ISO-27002-2022,A.6.7,maps-to,reasonably-inferred
 ECTL-END-005,control,SRC-NIST-SP800-218,PO.5.2,maps-to,reasonably-inferred
 ECTL-END-005,control,SRC-NIST-SP800-218A,,informed-by,reasonably-inferred
 ECTL-END-005,control,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
-ECTL-END-005,control,SRC-OWASP-LLM-TOP10-2025,LLM06,informed-by,reasonably-inferred
+ECTL-END-005,control,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,informed-by,reasonably-inferred
 ECTL-END-006,control,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-017,derived-from,directly-documented
 ECTL-END-006,control,SRC-NIST-SP800-218A,,informed-by,reasonably-inferred
 ECTL-ESC-001,control,SRC-SOFTWARE-ESCROW-PRACTICE,,maps-to,reasonably-inferred
@@ -6408,7 +6511,7 @@ ECTL-IAM-008,control,SRC-NIST-SP800-53-R5,IA-9,maps-to,directly-documented
 ECTL-IAM-008,control,SRC-GITLEAKS,,informed-by,reasonably-inferred
 ECTL-IAM-009,control,SRC-CIS-CONTROLS-V8.1,5.5,maps-to,directly-documented
 ECTL-IAM-009,control,SRC-NIST-CSF-2.0,PR.AA-01,maps-to,directly-documented
-ECTL-IAM-010,control,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,informed-by,directly-documented
+ECTL-IAM-010,control,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,informed-by,directly-documented
 ECTL-IAM-010,control,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
 ECTL-IAM-010,control,SRC-NIST-CSF-2.0,PR.AA-05,maps-to,reasonably-inferred
 ECTL-IAM-011,control,SRC-OWASP-AGENTIC-AI,,informed-by,reasonably-inferred
@@ -6475,7 +6578,7 @@ ECTL-INV-014,control,SRC-ECH-UNB-BASELINE,UNB-NAV-015,derived-from,directly-docu
 ECTL-INV-015,control,SRC-ECH-UNB-BASELINE,UNB-NAV-017,derived-from,directly-documented
 ECTL-IPR-001,control,SRC-ECH-SCS-0.1,,maps-to,directly-documented
 ECTL-IPR-001,control,SRC-ECH-UNB-BASELINE,,maps-to,directly-documented
-ECTL-IPR-001,control,SRC-NTIA-SBOM-MIN,,informed-by,reasonably-inferred
+ECTL-IPR-001,control,SRC-CISA-SBOM-MIN,,informed-by,reasonably-inferred
 ECTL-IPR-002,control,SRC-ISO-27001-2022,A.5.32,informed-by,reasonably-inferred
 ECTL-IPR-003,control,SRC-CSA-AICM,,informed-by,reasonably-inferred
 ECTL-IPR-003,control,SRC-ECH-UNB-SOC2-DIRECTIVE,,maps-to,directly-documented
@@ -6656,7 +6759,7 @@ ECTL-PRV-010,control,SRC-ECH-UNB-SOC2-DIRECTIVE,SOC2-030,derived-from,directly-d
 ECTL-PRV-011,control,SRC-NIST-SP800-53-R5,PM-25,maps-to,directly-documented
 ECTL-PRV-011,control,SRC-ISO-27002-2022,8.33,maps-to,directly-documented
 ECTL-PRV-012,control,SRC-OWASP-ASVS,,maps-to,reasonably-inferred
-ECTL-PRV-014,control,SRC-OWASP-LLM-TOP10-2025,,maps-to,reasonably-inferred
+ECTL-PRV-014,control,SRC-OWASP-LLM-TOP10-2026,,maps-to,reasonably-inferred
 ECTL-PRV-014,control,SRC-CSA-AICM,,maps-to,reasonably-inferred
 ECTL-PRV-015,control,SRC-OWASP-AGENTIC-AI,,maps-to,reasonably-inferred
 ECTL-PRV-015,control,SRC-NIST-SP800-207,,informed-by,reasonably-inferred
@@ -6774,7 +6877,7 @@ ECTL-SCS-001,control,SRC-CIS-CONTROLS-V8.1,16.4,maps-to,reasonably-inferred
 ECTL-SCS-002,control,SRC-OPENSSF-SCORECARD,Pinned-Dependencies,maps-to,directly-documented
 ECTL-SCS-002,control,SRC-SLSA,,maps-to,reasonably-inferred
 ECTL-SCS-002,control,SRC-ECH-SCS-0.1,SEC-SUPPLY-001,derived-from,directly-documented
-ECTL-SCS-003,control,SRC-NTIA-SBOM-MIN,,maps-to,reasonably-inferred
+ECTL-SCS-003,control,SRC-CISA-SBOM-MIN,,maps-to,reasonably-inferred
 ECTL-SCS-003,control,SRC-SPDX,,maps-to,reasonably-inferred
 ECTL-SCS-003,control,SRC-CYCLONEDX,,maps-to,reasonably-inferred
 ECTL-SCS-003,control,SRC-NIST-SP800-218,PS.3,maps-to,directly-documented
@@ -6814,7 +6917,7 @@ ECTL-SDL-006,control,SRC-NIST-SP800-218,PO.5,maps-to,directly-documented
 ECTL-SDL-007,control,SRC-ECH-SCS-0.1,SEC-LANG-001,derived-from,directly-documented
 ECTL-SDL-007,control,SRC-NIST-SP800-218,PW.6,maps-to,directly-documented
 ECTL-SDL-008,control,SRC-CISA-SSDF-ATTESTATION,,maps-to,reasonably-inferred
-ECTL-SDL-008,control,SRC-OMB-M-22-18,,maps-to,reasonably-inferred
+ECTL-SDL-008,control,SRC-OMB-M-26-05,,informed-by,reasonably-inferred
 ECTL-SDL-009,control,SRC-ISO-27001-2022,A.8.31,maps-to,reasonably-inferred
 ECTL-SDL-009,control,SRC-ISO-27001-2022,A.8.33,maps-to,reasonably-inferred
 ECTL-SDL-009,control,SRC-NIST-SP800-218,PO.5,maps-to,directly-documented
@@ -6837,7 +6940,7 @@ ECTL-SUB-006,control,SRC-NIST-AI-RMF-1.0,GOVERN 6.1,maps-to,reasonably-inferred
 ECTL-SUP-001,control,SRC-ISO-20000-1,,maps-to,reasonably-inferred
 ECTL-SUP-004,control,SRC-AICPA-TSC,CC6.1,maps-to,reasonably-inferred
 ECTL-SUP-004,control,SRC-NIST-SP800-53-R5,AC-6,maps-to,reasonably-inferred
-ECTL-SUP-005,control,SRC-OWASP-LLM-TOP10-2025,LLM06:2025,maps-to,reasonably-inferred
+ECTL-SUP-005,control,SRC-OWASP-LLM-TOP10-2026,LLM03:2026,maps-to,reasonably-inferred
 ECTL-SUP-005,control,SRC-NIST-AI-600-1,,informed-by,reasonably-inferred
 ECTL-SUP-006,control,SRC-ISO-20000-1,,maps-to,reasonably-inferred
 ECTL-TEN-001,control,SRC-ISO-27017,CLD.9.5.1,maps-to,directly-documented
@@ -6864,8 +6967,8 @@ ECTL-TEN-009,control,SRC-NIST-SP800-53-R5,CA-7,maps-to,reasonably-inferred
 ECTL-TEN-009,control,SRC-NIST-CSF-2.0,DE.CM-01,informed-by,reasonably-inferred
 ECTL-TEN-010,control,SRC-ISO-27018,,informed-by,reasonably-inferred
 ECTL-TEN-010,control,SRC-NIST-SP800-53-R5,SC-4,maps-to,reasonably-inferred
-ECTL-TEN-011,control,SRC-OWASP-LLM-TOP10-2025,LLM08:2025,maps-to,directly-documented
-ECTL-TEN-011,control,SRC-OWASP-LLM-TOP10-2025,LLM02:2025,maps-to,directly-documented
+ECTL-TEN-011,control,SRC-OWASP-LLM-TOP10-2026,LLM09:2026,maps-to,directly-documented
+ECTL-TEN-011,control,SRC-OWASP-LLM-TOP10-2026,LLM02:2026,maps-to,directly-documented
 ECTL-TEN-011,control,SRC-NIST-AI-600-1,,informed-by,reasonably-inferred
 ECTL-TEN-012,control,SRC-NIST-SP800-53-R5,SC-12,maps-to,directly-documented
 ECTL-TEN-012,control,SRC-NIST-SP800-53-R5,SC-28,maps-to,reasonably-inferred
