@@ -43,15 +43,22 @@ first-party; none of it is independent assurance.
    capability-absence classes,** and only with build evidence: SQL injection, OS command
    injection, dynamic code evaluation, unsafe deserialization, and memory corruption,
    each restricted to application F# assemblies whose compiled IL lacks the relevant
-   references. 32 of 353 rows target L1, and 11 of those are platform-specific weaknesses
-   (PHP, Struts, Android, J2EE and similar) that are out of scope only while a language inventory gate
-   proves it. None of these is L1 today.
+   references. 20 of 353 rows target L1 (corrected 2026-11-25 from 32: the 11 platform-specific
+   weaknesses (PHP, Struts, Android, J2EE and similar) are now marked `not-applicable`, a statement of
+   absence that holds only while a language inventory gate proves it, not elimination; CWE-457 was
+   re-rated to L2). 12 of the 20 depend on a component that does not exist, and CWE-89 and CWE-564 are
+   conditional on a Strata runtime query interface that does not exist. None of these is L1 today.
+   Every by-construction claim is limited to server-side F# assemblies: F# compiled to WebAssembly and
+   run in the browser is attacker-controlled and out of scope (column `claim_scope`).
 2. **The largest assurance gains over conventional scanning are in classes that scanners
    do not model:** missing authorization (CWE-862), tenant isolation (CWE-639, CWE-668),
    workflow and idempotency integrity (CWE-841, CWE-837, CWE-362), money arithmetic
    (CWE-682, CWE-1339, CWE-190), and exhaustive handling of exceptional states (OWASP
    2025 A10). Types can make a missing check a compile error; scanners rarely find these
-   at all. 202 rows are rated `beyond` scanning, 62 `complementary`, 89 `comparable`.
+   at all. These are hypotheses: the column is now `hypothesized_architecture_vs_scanning`
+   (201 `beyond`, 63 `complementary`, 89 `comparable`) beside
+   `demonstrated_architecture_vs_scanning`, which is `not-demonstrated` for all 353 rows, because an
+   unbuilt architecture is being compared with shipping scanners.
 3. **The architecture gives less than scanning in specific places,** not whole classes:
    known-vulnerable components, secrets, transport and header configuration, and
    infrastructure misconfiguration, where mature scanners are the primary control and
@@ -143,7 +150,8 @@ first-party; none of it is independent assurance.
    `supporting_levels` lists the weaker levels that also contribute.
 4. Rated conventional scanning (SAST, DAST, SCA, secret and configuration scanning)
    as `yes`, `partial` or `no`, and compared it with the architecture as `beyond`,
-   `comparable` or `complementary`.
+   `comparable` or `complementary` (a hypothesis about an unbuilt architecture, recorded
+   as `hypothesized_architecture_vs_scanning` since the 2026-11-25 fix pass).
 
 The ratings are research judgments supported by the cited documentation; they are not
 measurements. The proposed F# fixture corpus (REC-SBC-016) is the way to replace the
@@ -256,6 +264,9 @@ all is `proposed-target-state`.
 ### 5.3 No application-authored JavaScript outside Limen (SEC-UI-002)
 
 - **Mechanism.** Application logic is F# compiled to WebAssembly or runs server side.
+  Only the server-side part can carry security claims: a WebAssembly guest runs on an
+  attacker-controlled machine, so no authorization, tenant, money, eligibility or
+  workflow decision may rely on it (fix pass 2026-11-25, OBJ-PENTEST-003).
   The only JavaScript is the Limen kernel. CSP `script-src 'self'` and Trusted Types with
   no policy prevent other script from running in conforming browsers.
 - **Strongest achievable.** L3 with L5 bundle inventory and L9 CSP reporting.
@@ -298,7 +309,10 @@ all is `proposed-target-state`.
 - **Mechanism.** Security-relevant decisions are unions; FS0025 as error forces every
   match to handle every case, so adding a case forces every decision site to change.
 - **Strongest achievable.** L4 for CWE-478 and the A10:2025 family within F# code;
-  L1 for CWE-484 (F# has no fall-through).
+  L1 for CWE-484 (F# has no fall-through). Corrected 2026-11-25: FS0025 does not reject
+  generic catch handlers or discarded return values, so CWE-396 and CWE-252 are L5 (a
+  custom analyzer or IL gate that does not exist yet) and CWE-636 (failing securely, a
+  semantic property) is L7.
 - **Bypasses and limits.** Wildcard (`_`) cases compile and silently absorb new cases;
   `when` guards can make matches incomplete in ways the compiler accepts with a catch-all;
   matches over strings, integers or .NET enums are rarely exhaustive in a meaningful way;
@@ -408,8 +422,11 @@ all is `proposed-target-state`.
 - **Mechanism.** Two independent layers: a `TenantContext` type required by every data
   interface (SEC-TENANT-001), and PostgreSQL row-level security forced for the
   application role (SEC-DB-003).
-- **Strongest achievable.** L2 for CWE-639 and CWE-668 within interfaces requiring the
-  tenant type, with database enforcement as a second layer.
+- **Strongest achievable.** L2 for CWE-668 and for the cross-tenant part of CWE-639
+  within interfaces requiring the tenant type, with database enforcement as a second
+  layer. Corrected 2026-11-25: intra-tenant object access (donor to donor in one sponsor,
+  advisor beyond delegation, partner partition to partner partition) is not addressed by
+  tenant isolation, so CWE-639 as a whole is rated L7 in the AUTHZ family.
 - **Bypasses and limits.** Superuser, owner and `BYPASSRLS` roles bypass row security;
   referential integrity checks always bypass it (covert channel); session-level
   `SET` on pooled connections can carry a tenant into the next request, so tenant
@@ -512,29 +529,30 @@ and may act only through typed, authorized commands (CWE-1426, CWE-1427).
 ## 7. CWE architectural prevention matrix
 
 The canonical matrix is `security-by-construction/cwe-architectural-prevention-matrix.csv`
-(353 rows, 25 columns). The generated summary is
+(353 rows, 28 columns since the 2026-11-25 fix pass added `claim_scope`, `prerequisite_components_exist` and `demonstrated_architecture_vs_scanning`). The generated summary is
 `security-by-construction/CWE-ARCHITECTURAL-PREVENTION-MATRIX.md` (DD-SBC-002).
 
 Coverage: all 25 entries of the 2025 Top 25; every weakness in the CWE 5.0 view of
 OWASP Top 10 2025 RC1 (246 weaknesses plus grouping-level CWE-16); the weaknesses of
 the OWASP Top 10 2021 view; and 79 additions for financial web applications.
 
-Strongest achievable level distribution (targets): L1 32, L2 89, L3 178, L4 18, L5 22,
-L7 2, L9 1, L10 11. The concentration at L2 and L3 reflects that most classes can be
+Strongest achievable level distribution (targets, after the 2026-11-25 fix pass): L1 20,
+L2 89, L3 178, L4 15, L5 24, L7 4, L9 1, L10 11, not-applicable 11 (previously L1 32, L4 18,
+L5 22, L7 2, with the 11 platform rows counted as L1). The concentration at L2 and L3 reflects that most classes can be
 moved behind types or restricted interfaces but not eliminated.
 
 Selected rows:
 
-| CWE | Top 25 rank | Strongest achievable | Scope summary | Scanning | Architecture vs scanning |
+| CWE | Top 25 rank | Strongest achievable | Scope summary | Scanning | Architecture vs scanning (hypothesized) |
 |---|---|---|---|---|---|
 | CWE-79 | 1 | L3 | Limen-rendered pages under strict CSP and Trusted Types | partial | beyond |
-| CWE-89 | 2 | L1 | Application assemblies with no driver references and a Strata interface without raw SQL | partial | beyond |
+| CWE-89 | 2 | L1 (conditional on an unbuilt Strata interface) | Server-side application assemblies with no driver references and a Strata interface without raw SQL | partial | beyond (hypothesized) |
 | CWE-352 | 3 | L3 | Routes registered through a central anti-forgery check | partial | beyond |
 | CWE-862 | 4 | L2 | Operations whose signatures require an `Authorized` value | no | beyond |
 | CWE-787 | 5 | L1 | Verifiable managed application IL; excludes runtime and native code | partial | beyond |
 | CWE-502 | 15 | L1 | .NET 9 or later without the compatibility package; DTO decoding without type metadata | yes | beyond |
 | CWE-863 | 17 | L7 | Policy correctness checked against a specification | no | beyond |
-| CWE-639 | 24 | L2 | Interfaces requiring `TenantContext` plus forced RLS | no | beyond |
+| CWE-639 | 24 | L7 (cross-tenant part L2) | Interfaces requiring `TenantContext` plus forced RLS; intra-tenant object authorization tested against a specification | no | beyond (hypothesized) |
 | CWE-770 | 25 | L3 | Bounded input types and server limits | partial | complementary |
 | CWE-190 | n/a | L4 | Domain assemblies compiled with overflow checks | partial | beyond |
 | CWE-1339 | n/a | L2 | Money as a decimal-backed type | partial | beyond |

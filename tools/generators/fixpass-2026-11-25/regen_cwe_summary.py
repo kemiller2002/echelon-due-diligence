@@ -40,8 +40,8 @@ o25 = sum("owasp-top10-2025" in r["inclusion_basis"] for r in rows)
 o21 = sum("owasp-top10-2021" in r["inclusion_basis"] for r in rows)
 fin = sum(r["inclusion_basis"] == "financial-application-relevance" for r in rows)
 lv = cnt("strongest_achievable_level")
-l1_unbuilt = sum(1 for r in rows if r["strongest_achievable_level"] == "L1" and not r["prerequisite_components_exist"].startswith("partial"))
-unbuilt = sum(1 for r in rows if r["prerequisite_components_exist"].startswith("no"))
+l1_unbuilt = sum(1 for r in rows if r["strongest_achievable_level"] == "L1" and r["prerequisite_components_exist"].startswith("no:"))
+unbuilt = sum(1 for r in rows if r["prerequisite_components_exist"].startswith("no:"))
 partial = sum(1 for r in rows if r["prerequisite_components_exist"].startswith("partial"))
 hyp = "hypothesized_architecture_vs_scanning"
 
@@ -88,8 +88,8 @@ for l in LV:
     A("| %s | %s | %d |" % (l, LV_NAME[l], lv.get(l, 0)))
 A("| not-applicable | Platform absent from the product (statement of absence, not elimination) | %d |" % lv.get("not-applicable", 0))
 A("")
-A("L1 rows: %d, all outside the not-applicable platform family. %d of them have no implementing component even at "
-  "pattern level, and the CWE-89 and CWE-564 L1 targets are conditional on a Strata runtime query interface that "
+A("L1 rows: %d, all outside the not-applicable platform family. %d of them depend on a component that does not exist "
+  "(prerequisite_components_exist starts with no), and the CWE-89 and CWE-564 L1 targets are conditional on a Strata runtime query interface that "
   "does not exist.\n" % (lv.get("L1", 0), l1_unbuilt))
 A("## Prerequisite components\n")
 A("| `prerequisite_components_exist` | Rows |\n|---|---|")
