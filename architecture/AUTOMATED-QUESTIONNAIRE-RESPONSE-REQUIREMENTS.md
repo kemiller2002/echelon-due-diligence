@@ -2,7 +2,7 @@
 id: DD-ARC-004
 title: Automated questionnaire response system, architecture and requirements
 status: draft
-version: 0.1.0
+version: 0.2.0
 created: 2026-11-25
 updated: 2026-11-25
 tags: [architecture, questionnaire-automation, ai-governance, requirements]
@@ -80,19 +80,27 @@ therefore no agent ever releases, and no agent ever "clears" a gap
 7. **Draft** (supervised agent). Fit the approved statement to the item's answer shape.
    Constraint: the draft may shorten, reformat or choose the matching picklist value; it
    may not add a capability, scope, number, date, certification or commitment absent from
-   the approved statement. Enforced by a claim-diff check (step 9).
+   the approved statement. Enforced by a claim-diff check (step 9), specified in
+   section 4.1. Before rendering, the item's polarity and answer semantics are resolved
+   (section 4.2); a picklist value is chosen from the answer semantics, never from the
+   wording of the approved statement alone.
 8. **Contradiction detection** (deterministic plus agent assist). Detect (a) two items in
    the same questionnaire answered from answer units with incompatible statuses, (b) an
    answer inconsistent with the customer's previously delivered packages (history
    store), (c) a draft whose yes/no value contradicts the statement kind (for example
    "Yes" to "Do you have a SOC 2 Type II report?" while the answer unit is `planned`).
 9. **Verification gate** (independent rule engine). Every draft passes: claim-diff
-   against approved text; status-to-wording rule (`planned` and `not-available` answers
-   cannot be rendered as "Yes"); disclosure rule; evidence freshness; no
+   against the approved assertion set (section 4.1, deterministic, not a language
+   model); status-to-wording rule applied to the polarity-resolved answer semantics
+   (`planned` and `not-available` answers cannot assert the capability exists, whatever
+   the item's polarity or picklist labels; section 4.2); disclosure rule; human
+   approval of the source answer unit (operating contract, Human review and release); evidence freshness; no
    unreferenced numbers or dates; no text copied from the incoming questionnaire into
    factual claims.
-10. **Human review** (authorized human). Queue ordered by risk: new questions, low
-    confidence, disclosure-sensitive, contradiction, legal/contractual items, any "No" or
+10. **Human review** (authorized human). Each item is shown beside the matched
+    canonical question, its answer unit ID and a highlight of semantic differences
+    between the item and the canonical question (section 4.3). Queue ordered by risk:
+    new questions, low confidence, negated, compound or polarity-uncertain items, disclosure-sensitive, contradiction, legal/contractual items, any "No" or
     "Not yet" answers on critical items, and any item the customer flagged as a
     must-have.
 11. **Assemble** (deterministic). Write answers into the original file in place, preserve
@@ -124,7 +132,7 @@ Priority: P0 required for first use; P1 required before external customers; P2 l
 | AQR-EVD-002 | Never fabricate, synthesize or alter evidence; packages contain only stored evidence artifacts by content hash. | P0 | Hash comparison of packaged artifacts with the evidence store |
 | AQR-DIS-001 | Disclosure is decided by customer entitlement and classification, never by what the questionnaire requests. | P0 | Fixtures requesting restricted data (network diagrams, pen test findings, other customers' names) |
 | AQR-DIS-002 | Never disclose other customers' identities, data, incidents or contract terms. | P0 | Canary data in the knowledge base must never appear in outputs |
-| AQR-CON-001 | Detect contradictions within a response and against prior delivered responses to the same customer. | P1 | Seeded contradiction fixtures |
+| AQR-CON-001 | Detect contradictions within a response and against prior delivered responses to the same customer. | P1 | Seeded contradiction fixtures, including pairs reconciled in the 2026-11-25 fix pass (ANS-HR-006 versus ANS-ISP-007, ANS-LEG-003 versus ANS-IR-004, ANS-PAY-008 versus ANS-RCN-004) |
 | AQR-GAP-001 | Detect items implying a control Echelon lacks and open a gap record linked to the item. | P1 | Gap fixtures; gap records created with traceability |
 | AQR-REV-001 | Human review queue ordered by risk; reviewer identity, decision and edits recorded; reviewer may not be the person who requested release for P0-critical items. | P0 | Audit log inspection; separation test |
 | AQR-REL-001 | Only an authorized human can release a package; release records the approver, entitlement basis and hash of the released files. | P0 | Attempted agent release must fail |
@@ -132,8 +140,58 @@ Priority: P0 required for first use; P1 required before external customers; P2 l
 | AQR-LRN-001 | Unmatched items become candidate canonical questions, deduplicated against the bank; acceptance requires a human. | P1 | Candidate queue inspection; duplicate detection metrics |
 | AQR-LRN-002 | New gaps generate proposed requirements with originating item references. | P1 | Trace from item to `DD-*` requirement |
 | AQR-SEC-001 | Uploaded questionnaires are customer confidential; tenant-scoped storage, retention limit, deletion on request, no use for model training. | P0 | Data handling review and tests |
-| AQR-SEC-002 | Model providers used for matching and drafting receive no evidence artifacts marked above `authenticated-prospect` and no customer identifiers beyond what is necessary. | P1 | Egress inspection |
+| AQR-SEC-002 | Model providers used for matching and drafting receive no evidence artifacts marked above `authenticated-prospect` and no customer identifiers beyond what is necessary. | P0 | Egress inspection |
 | AQR-OBS-001 | Metrics: items per package, automatic match rate, human edit rate per answer unit, contradictions caught, time to release, post-release corrections. | P2 | Dashboard and ledger |
+| AQR-CLM-001 | Each approved answer unit carries an approved assertion set: the claims in its approved `customer_statement` extracted as structured assertions (subject, capability or property, status or modality, scope nouns, numbers with units, dates, durations, certifications and report types, named parties), reviewed and approved by the same human who approves the answer unit. | P0 | Every approved answer unit has an assertion set with the approver recorded; build fails otherwise |
+| AQR-CLM-002 | A draft may contain only assertions entailed by the approved assertion set of its resolved answer unit. Assertions are extracted from the draft with the same schema; any draft assertion without a matching approved assertion blocks release of that item. | P0 | Fixture corpus of added, strengthened and paraphrased claims (including picklist choices such as "Fully implemented"); zero escapes |
+| AQR-CLM-003 | Deterministic checks run on every draft independent of any model: every number, unit, date, duration, percentage, certification or report name (SOC 1, SOC 2, Type I or II, ISO, PCI), framework identifier and scope noun (product, environment, entity, region, customer population) in the draft must appear in the approved assertion set with the same value; modality may only weaken (planned stays planned). | P0 | Property tests over generated drafts; seeded mismatches for each token class |
+| AQR-CLM-004 | Extraction is never the only control: if the extractor's confidence is below threshold, assertions cannot be aligned, or a model was used to extract or compare, the item routes to human review with the residual differences shown. A model-based comparison may add flags but can never clear an item. | P0 | Gate test: a model-only pass cannot release an item |
+| AQR-POL-001 | Before rendering, each item's polarity and answer semantics are determined: affirmative, negated ("Have you never...", "Is it true that you do not..."), compound (two or more concerns), conditional, or picklist with vendor-specific labels. The answer is computed as semantics first (capability exists, partly exists, planned, does not exist, not applicable) and then mapped to the item's polarity and labels. | P0 | Fixture corpus of negated, double-negated, compound and picklist items with expected renderings |
+| AQR-POL-002 | Any polarity or picklist mapping uncertainty, any compound item spanning answer units with different statuses, and any picklist whose labels cannot express a qualifier route to human review. Where the answer shape cannot carry the qualifier, the most conservative permitted value is rendered (No or Partial) with the qualifier in a comment column or the companion ledger. | P0 | Gate test; fixtures where the only available labels would overstate a planned control |
+| AQR-POL-003 | The status-to-wording rule (AQR-ANS-002) is evaluated on the polarity-resolved semantics, never on the surface value: for a negated item, "Yes" can be the honest answer and must still be checked against status. | P0 | Property test over status, polarity and picklist combinations |
+| AQR-MAT-003 | The review screen shows each item's original text beside the matched canonical question text, its answer unit ID and title, the match confidence and a highlight of semantic differences (scope, population, time frame, negation). A reviewer cannot approve an item without this view. | P0 | UI test; review audit log records the displayed match |
+| AQR-MAT-004 | Released items are sampled each period for independent re-matching by a person who did not review them; the post-release mismatch rate is a release metric with a stated threshold, and exceeding it suspends automatic matching for affected categories. | P1 | Sampling log; mismatch rate trend; suspension test |
+| AQR-MAT-005 | Match confidence is calibrated against the labeled benchmark (BL-012, OQ-DD-AQR-001) and recalibrated when the canonical bank or model changes; thresholds are set from measured precision, not assumed. | P1 | Calibration report per release (reliability curve, expected calibration error) |
+| AQR-SEC-003 | Customer questionnaires, addenda and contracts are processed by a model provider only after the customer has been told AI tools process them and which provider does, and only through a route with no training and no retention beyond processing under terms compatible with the customer's NDA; otherwise processing is deterministic or manual. | P0 | Provider terms on file; customer notice record per package |
+
+### 4.1 Claim-diff mechanism (added 2026-11-25, BL-017)
+
+The claim-diff check is deterministic and does not rely on a language model to decide.
+
+1. When a human approves an answer unit, its approved `customer_statement` is reduced to
+   an approved assertion set (AQR-CLM-001). Extraction may be agent-assisted, but the
+   human approves the resulting assertions together with the statement.
+2. Each draft is reduced to assertions with the same schema (AQR-CLM-002). The draft may
+   contain only assertions entailed by the approved set: equal, or weaker in modality or
+   scope (for example "planned" may stay "planned"; "some products" may not become "all
+   products").
+3. Deterministic token checks (AQR-CLM-003) compare numbers, dates, durations,
+   certifications, report types, framework identifiers and scope nouns exactly.
+4. Any residual difference, low extraction confidence, or use of a model in extraction
+   or comparison routes the item to human review (AQR-CLM-004). A model can raise flags
+   but cannot clear an item.
+
+### 4.2 Negated questions and picklists (added 2026-11-25, BL-017)
+
+The status-to-wording rule applies to meaning, not to the surface value. AQR first
+computes answer semantics from the answer unit (exists, partly exists, planned, does not
+exist, not applicable), then determines the item's polarity (affirmative, negated,
+double negated, compound, conditional) and the meaning of each picklist label, and only
+then maps semantics to a value (AQR-POL-001). "Have you never had a penetration test?"
+is honestly answered "Yes" today, and that rendering is still checked against status
+(AQR-POL-003). Any uncertainty about polarity or label meaning routes to review; where
+the shape cannot carry a qualifier, the most conservative value is used with the
+qualifier in a comment or the ledger (AQR-POL-002).
+
+### 4.3 Wrong match to a true answer (added 2026-11-25, BL-017)
+
+A faithful answer to the wrong question passes every content gate. Mitigations: the
+reviewer always sees the item beside the matched canonical question with a semantic
+difference highlight (AQR-MAT-003); released items are sampled for independent
+re-matching and the post-release mismatch rate is a release metric (AQR-MAT-004); match
+confidence is calibrated against a labeled benchmark and recalibrated on change
+(AQR-MAT-005). Reviewers under volume suffer automation bias, so sampling and the
+mismatch metric are the backstop, not reviewer attention alone.
 
 ## 5. Prompt-injection and abuse resistance
 
@@ -180,8 +238,13 @@ decides which existing system hosts the evidence store.
 
 ## 9. Residual risks
 
-- Matching errors that a reviewer does not notice. Mitigation: per-item references make
-  review fast; post-release correction workflow.
+- Matching errors that a reviewer does not notice. Mitigation: side-by-side display of
+  the item and the matched canonical question (AQR-MAT-003), sampled independent
+  re-matching with a mismatch-rate metric (AQR-MAT-004), calibrated confidence
+  (AQR-MAT-005), per-item references and a post-release correction workflow.
+- Assertion extraction can miss a claim expressed in an unusual form. Mitigation:
+  deterministic token checks run regardless (AQR-CLM-003) and unaligned text routes to
+  review (AQR-CLM-004).
 - Approved statements that were wrong at the source. AQR faithfully propagates them; the
   control is answer-unit review and evidence freshness, not AQR.
 - Customers who require answers in their own portal (web forms): ingest via export only;
