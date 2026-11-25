@@ -190,3 +190,36 @@ not-available because no SOC 1 or SOC 2 exists).
   OC 6, AICPA SOC 1 Guide, PCAOB AS 2201, AICPA NFP guide, Nacha TPSP audit guidance,
   FinCEN FIN-2023-Alert003, FBI IC3 BEC data, 2 CFR 200.303, ISO 20022, BAI2/BTRS, X9
   positive pay standards.
+
+## Real-world questionnaires, DAF and FS profiles, trust centers, insurance (DD-QNR-001 and others)
+
+63 SRC-Q sources (61 verified by retrieval). Key findings:
+- Morgan Stanley and Truist publish the most detailed public supplier requirements
+  (GenAI use disclosure; 24-hour breach notice; per-subprocessor prior written consent;
+  US-only remote access; 5-day remediation of assessor findings).
+- Fidelity Supplier Policies: deep background checks; third-party WCAG 2.2 AA report;
+  self-assessment not accepted.
+- No DAF sponsor publishes vendor security requirements. Fidelity Charitable is
+  administered by FMR via National Charitable Services (audited statements note 7);
+  supplier expectations are inferred, not documented. Fidelity Charitable tells donors
+  never to share credentials with third-party tools: Unbound integrations must not rely
+  on donor credentials. Ren publicly cites only a SOC 2 Type 1.
+- RIA vendor diligence now rests on Regulation S-P (72-hour vendor breach notice).
+- Trust centers: SOC 3 public, SOC 2 under NDA; full pen test reports to restricted
+  customer groups.
+- Insurance applications: MFA everywhere, EDR, immutable/offline backups with restore
+  tests, payment dual approval and call-back; some carriers treat "yes" answers as
+  warranties for the policy period.
+- 38 new question topics in DD-QNR-001 to fold into the canonical bank (batch 2).
+
+## BCP, DR, BKP, AVL, PRF, SUP, A11Y question batch
+
+173 questions, 46 answer units. Partially-implemented records limited to the Forma
+repository pilot (Chromium-only accessibility contracts and brand contrast gate).
+- UNB-RES-003 (per capability) versus RR-UNB-RES-003-r2 (per data class) recovery
+  objectives conflict; candidate values unapproved and untested.
+- UNB-PLAT-003 assigns all documents to Folio, but Folio does not provide tagged PDF or
+  PDF/UA; CNV-EXP-001 leaves the PDF renderer unchosen. Accessible PDF is a gap.
+- No SLA, support model, severity matrix or status page (UNB-GAP-028 open); UNB-GAP-031
+  (accessibility legal assessment) open.
+- Tensions: immutable backups versus deletion; fail-closed refusals counted as downtime.
