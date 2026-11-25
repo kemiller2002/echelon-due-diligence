@@ -240,3 +240,22 @@ infrastructure decisions recorded in answer units.
 - .NET is not itself FIPS validated; FIPS answers must name the OS module (OpenSSL/CNG).
 - Unseeded: FIPS 140-3 / CMVP, NIST SP 800-57, 800-52, 800-131A, FIPS 203/204/205,
   NIST IR 8547, CNSA 2.0, PostgreSQL versioning policy, cloud provider SOC docs.
+
+## GOV, FST, RSK, AUD, LEG, INS, IPR, HR, PHY question batch
+
+279 questions, 61 answer units (35 proposed-target-state, 24 unknown, 1 unsupported:
+ANS-AUD-004 no ISO/STAR/PCI/FedRAMP; 1 implemented-not-independently-verified: ANS-HR-006
+Praxis actor attribution of repository work, scoped and qualified).
+- Echelon Foundry, LLC formation values are all TODO
+  (`echelon-organization-administration@2763e576:entities/echelon-foundry/formation/entity-values.md`):
+  members, management, registered agent, bank signers and IP assignment. No evidence of
+  filing located. IP title holder and licensor of record are unknown. This blocks
+  truthful answers to ownership, contracting party and IP questions.
+- CNV-GOV-009 makes a commercial license a launch blocker while nearly the whole stack is
+  PolyForm Noncommercial 1.0.0.
+- Component version numbers disagree between release tags, registry and Unbound vendored
+  copies (Unbound 07-ECHELON-CAPABILITY-ASSESSMENT.md).
+- No inventory of AI providers used for engineering or their training and retention
+  terms.
+- Unseeded: PolyForm Noncommercial 1.0.0, FCRA, FDIA Section 19, US Copyright Office AI
+  guidance, AICPA AU-C 570, ISO/IEC 27005, insurance market practice sources.
