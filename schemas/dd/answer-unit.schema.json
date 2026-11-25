@@ -299,6 +299,45 @@
           }
         }
       }
+    },
+    "review": {
+      "type": "object",
+      "description": "Human review state. Absent means unreviewed. Only approved answer units may be exported to customers (AQR, trust center).",
+      "required": [
+        "state"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": [
+            "unreviewed",
+            "reviewed",
+            "approved",
+            "rejected"
+          ]
+        },
+        "reviewer": {
+          "type": "string",
+          "description": "Named human; agents may not approve"
+        },
+        "reviewer_kind": {
+          "type": "string",
+          "enum": [
+            "human"
+          ]
+        },
+        "date": {
+          "type": "string"
+        },
+        "basis": {
+          "type": "string",
+          "description": "What the reviewer checked (evidence IDs, documents)"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
     }
   }
 }

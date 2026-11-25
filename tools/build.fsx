@@ -229,6 +229,55 @@ let honestyFindings =
               finding Warning "INDEPENDENCE" (locOf r)
                   (sprintf "%s claims independent assurance with status %s" (strOr "id" "?" r.Node) status) ])
 
+// Text-level lint: a planned or not-available statement must read as such. This is a
+// heuristic, not proof; it catches statements whose wording asserts a present capability
+// while the structured fields say it does not exist.
+let futureOrNegativeMarkers =
+    [ "plan"; "will "; "intend"; "target"; "not "; "no "; "does not"; "do not"; "has not"; "have not"
+      "future"; "roadmap"; "yet"; "proposed"; "designed to"; "under development"; "unavailable"
+      "cannot"; "unknown"; "not available"; "upon request" ]
+
+let statementTextFindings =
+    byKind "answer-unit"
+    |> List.choose (fun r ->
+        let kind = strOr "customer_statement_kind" "" r.Node
+        let text = (strOr "customer_statement" "" r.Node).ToLowerInvariant()
+        let hedged = futureOrNegativeMarkers |> List.exists (fun m -> text.Contains m)
+        if (kind = "planned" || kind = "not-available") && not hedged && text <> "" then
+            Some(finding Warning "STATEMENT-TEXT" (locOf r)
+                     (sprintf "%s is %s but its statement text does not read as planned or unavailable" (strOr "id" "?" r.Node) kind))
+        else
+            None)
+
+// Review gate: agents may draft, only named humans approve. Unreviewed answer units are
+// research records, not customer-releasable statements.
+let reviewFindings =
+    let units = byKind "answer-unit"
+    let state (r: Record) =
+        match tryProp "review" r.Node with
+        | :? JsonObject as v -> strOr "state" "unreviewed" v
+        | _ -> "unreviewed"
+    let approvedWithoutHuman =
+        units
+        |> List.filter (fun r ->
+            match tryProp "review" r.Node with
+            | :? JsonObject as v -> strOr "state" "" v = "approved" && (strOr "reviewer_kind" "" v <> "human" || strOr "reviewer" "" v = "")
+            | _ -> false)
+        |> List.map (fun r -> finding Error "REVIEW-NO-HUMAN" (locOf r) (sprintf "%s approved without a named human reviewer" (strOr "id" "?" r.Node)))
+    let currentFactUnapproved =
+        units
+        |> List.filter (fun r ->
+            let k = strOr "customer_statement_kind" "" r.Node
+            (k = "current-fact" || k = "qualified-current-fact") && state r <> "approved")
+        |> List.map (fun r -> finding Warning "CURRENT-FACT-UNAPPROVED" (locOf r) (strOr "id" "?" r.Node))
+    let unreviewed = units |> List.filter (fun r -> state r <> "approved") |> List.length
+    approvedWithoutHuman
+    @ currentFactUnapproved
+    @ (if unreviewed > 0 then
+           [ finding Warning "UNREVIEWED" "answers/" (sprintf "%d of %d answer units lack human approval; none may be released to customers" unreviewed units.Length) ]
+       else
+           [])
+
 let emDash = '—'
 
 let emDashFindings =
@@ -431,6 +480,8 @@ let allFindings =
     @ duplicateIdFindings
     @ referenceFindings
     @ honestyFindings
+    @ statementTextFindings
+    @ reviewFindings
     @ emDashFindings
     @ duplicateQuestionFindings
     @ orphanFindings
