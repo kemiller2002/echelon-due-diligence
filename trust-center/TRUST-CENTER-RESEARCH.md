@@ -2,7 +2,7 @@
 id: DD-TC-001
 title: Trust center research and recommended disclosure tiering
 status: draft
-version: 0.1.0
+version: 0.2.0
 created: 2026-11-25
 updated: 2026-11-25
 tags: [due-diligence, trust-center, disclosure, assurance]
@@ -44,7 +44,7 @@ Whistic documentation did not surface in searches and is not covered.
 
 ### Document types observed
 
-SOC 3 (public), SOC 2 Type II (gated), SOC 1 (gated, finance-relevant), ISO 27001 and
+SOC 3 (public), SOC 2 Type II (gated), SOC 1 (gated to existing customers and their auditors because of its use restriction; finance-relevant), ISO 27001 and
 27701 certificates (often public), pen test executive summary or letter (gated), full pen
 test report (narrowest tier), prefilled CAIQ or SIG (public or gated), self-attestations,
 policies (public summaries or gated full text), architecture and data flow diagrams,
@@ -94,7 +94,7 @@ Tiers:
 | Prefilled standard questionnaire (CAIQ, HECVAT-style, SIG Lite) | Authenticated prospect | Plaid publishes publicly; gating by email gives lead tracking and audit trail without NDA friction | Can be drafted with `proposed-target-state` answers | SRC-Q-PLAID-SECURITY-PORTAL-2023, SRC-Q-CSA-BUILDING-TRUST-CENTER-2024 |
 | VPAT or ACR | Authenticated prospect | Universities and FS buyers request it pre-purchase | Does not exist | SRC-Q-YALE-ACCESSIBLE-PURCHASING, SRC-Q-FIDELITY-SUPPLIER-POLICIES |
 | SOC 2 Type II report and bridge letter | NDA | Restricted use; buyers need it before signing | Does not exist | SRC-Q-SENSIBA-SOC2-SHARING-2023, SRC-Q-CONVEYOR-DOC-ACCESS, SRC-Q-VANTA-TC-NDA, SRC-Q-ARIZONA-3P-SEC-PRIV-Q |
-| SOC 1 Type II (if ever obtained for financial processing) | NDA | Restricted use; relevant to sponsor financial statement auditors | Does not exist | SRC-Q-MS-THIRD-PARTY-REG-REQS |
+| SOC 1 Type II (if ever obtained for financial processing) | Existing customer (and the customer's auditor via the auditor tier); never NDA prospects, never auto-approved | Restricted use: intended for the service organization, its user entities and their auditors, so prospects are not intended users (corrected 2026-11-25, OBJ-SOC2AUD-011) | Does not exist | SRC-Q-MS-THIRD-PARTY-REG-REQS |
 | Pen test executive summary or attestation letter | NDA | Common gated artifact | Does not exist | SRC-Q-GITLAB-CUSTOMER-ASSURANCE, SRC-Q-PLAID-SECURITY-PORTAL-2023 |
 | Full policies (infosec, IR, BC/DR, access control) | NDA | Operational detail useful to attackers; buyers request full text | Not adopted | SRC-Q-CSA-BUILDING-TRUST-CENTER-2024, SRC-Q-MS-MIN-SECURITY-STANDARDS |
 | High-level architecture and data flow diagrams | NDA | Requested by universities and FS buyers | Design-stage only (Unbound requirements) | SRC-Q-UTS-MIN-SECURITY-REQS |

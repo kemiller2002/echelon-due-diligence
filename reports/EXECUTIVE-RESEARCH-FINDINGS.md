@@ -17,8 +17,8 @@ Nothing here is a customer-facing claim. Full traceability is in
 ## The answer in one paragraph
 
 Echelon now knows, question by question, what it can and cannot say to a customer, and
-the honest answer today is that it can prove almost nothing. Of 522 answer units
-covering 2,380 canonical questions, none is verified operational. Most are proposed
+the honest answer today is that it can prove almost nothing. Of 535 answer units
+covering 2,404 canonical questions, none is verified operational. Most are proposed
 target states, many are unknown, and none has been approved by a human for customer
 release. That is the correct starting point, not a failure: Unbound is unbuilt and
 Echelon is pre-revenue. The research shows the gap to being assessable is dominated by
@@ -32,18 +32,18 @@ independently tested; marketing it early would do more harm than not claiming it
 
 | Asset | Scale | Location |
 |---|---|---|
-| Canonical question bank | 2,380 materially distinct questions, 67 categories, real-world wording as alternatives | `questions/` |
-| Answer units | 522, each separating current practice, intended practice, what is provable and what may be said | `answers/` |
-| Controls and evidence requirements | 640 controls, 596 evidence requirements | `controls/`, `evidence-requirements/` |
-| Source register | 405 sources, versions and licensing verified at issuers where accessible | `sources/` |
+| Canonical question bank | 2,404 materially distinct questions, 67 categories, real-world wording as alternatives | `questions/` |
+| Answer units | 535, each separating current practice, intended practice, what is provable and what may be said | `answers/` |
+| Controls and evidence requirements | 642 controls, 617 evidence requirements | `controls/`, `evidence-requirements/` |
+| Source register | 408 sources, versions and licensing verified at issuers where accessible | `sources/` |
 | Validator and registers | F# build tool enforcing schemas, referential integrity, "no aspirational claim as current fact", statement wording lint, human review gate, em dash ban | `tools/build.fsx`, `reports/generated/` |
-| Adversarial reviews | 207 objections from 10 perspectives | `validation/` |
+| Adversarial reviews | 207 objections from 10 perspectives (64 resolved by changes, 20 rejected with rationale, 123 open) | `validation/` |
 | Unbound gap analysis | 104 proposed requirements (29 P0), 8 verified baseline contradictions | `product-profiles/unbound/`, `gap-analysis/` |
 
 ## Key findings
 
-1. **Most customer requirements are not law.** Of the canonical questions, about 8
-   percent are classified legal-regulatory and about 3 percent supervisory guidance; the
+1. **Most customer requirements are not law.** Of the canonical questions, 7.5
+   percent are classified legal-regulatory and 3 percent supervisory guidance; the
    rest are industry convention, customer preference, contractual convention or
    certification criteria (`reports/generated/REGISTER-SUMMARY.md`). This is where
    alternatives to conventional controls are possible, and also where acceptance depends
@@ -85,7 +85,8 @@ independently tested; marketing it early would do more harm than not claiming it
    perspectives. The knowledge base was judged candid; the blockers are organizational:
    unverified basics, PolyForm Noncommercial licensing of every component, commitments
    one person cannot meet, and almost no planned independent evidence (565 of 595
-   evidence requirements were first-party before the fix pass) (`validation/`).
+   evidence requirements were first-party before the fix pass; 572 of 617 after it, with 38
+   independent requirements now planned) (`validation/`).
 9. **DAF sponsors publish no vendor security requirements.** Their expectations are
    inferred from affiliated financial institutions (Fidelity, Morgan Stanley, Truist
    publish detailed supplier requirements). An incumbent administrator publicly cites

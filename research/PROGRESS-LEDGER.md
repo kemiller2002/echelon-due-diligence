@@ -33,3 +33,27 @@ Append-only. Each entry records what was done, what verified it, and what remain
   real-world questionnaires and trust centers, scanner validation and external assurance
   economics, Echelon system capabilities, security by construction).
 - Wrote automated questionnaire response requirements (AQR-*).
+
+### Session 1 completion (2026-11-25)
+
+Verified by `dotnet fsi tools/build.fsx` (records=4969, errors=0, warnings=8: 7
+CURRENT-FACT-UNAPPROVED and 1 UNREVIEWED, both expected because no answer unit is
+human-approved), `./praxis validate` and `./praxis registry check`.
+
+- Question bank: 2,404 canonical questions, 535 answer units, 642 controls, 617
+  evidence requirements, 408 sources, 104 proposed Unbound requirements, 207 objections
+  (64 accepted-changed, 20 rejected-with-rationale, 123 accepted-open), 52+
+  recommendations.
+- Batch 2 completed: Unbound profile and gap analysis; adversarial reviews from ten
+  perspectives; question bank refinement (real-world topics, stale-reference sweep,
+  dedup DDD-002); fix pass (BL-015 to BL-019, BL-021, BL-022); supplementary sources.
+- Added human review gate and statement wording lint to the validator after
+  adversarial review found no answer was human-approved.
+- All 26 deliverables have a draft (`reports/DELIVERABLES-INDEX.md`).
+
+Not complete (see backlog): diminishing-returns sampling pass (BL-013), citation
+hygiene against superseded Unbound records (BL-024), scheduled contributions questions
+(BL-025), counsel reverification (BL-023), owner fact verification (BL-020), 123 open
+objections, human review of answer units, healthcare profile (BL-014). Token usage per
+agent was recorded by the harness but is not exposed to Praxis telemetry in this
+environment; recorded as unavailable.

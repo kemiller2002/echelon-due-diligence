@@ -2,7 +2,7 @@
 id: DD-EXT-001
 title: External assurance requirements matrix
 status: draft
-version: 0.1.0
+version: 0.2.0
 created: 2026-11-25
 updated: 2026-11-25
 tags: [due-diligence, external-assurance, penetration-testing, soc2, iso27001, pci, cost]
@@ -72,6 +72,8 @@ assessment costs vary.
 | EXT-15 | Compliance monitoring platform | No | No | Yes in principle | Unknown |
 | EXT-16 | Evidence collection | No | No | Yes | Unknown |
 | EXT-17 | Questionnaire completion | No | No | Yes | Unknown |
+| EXT-18 | SOC 1 Type 1 | Contract and user-auditor reliance; no statute | Independent CPA (AT-C 320) | No | Unknown |
+| EXT-19 | SOC 1 Type 2 | Contract and user-auditor reliance; no statute | Independent CPA (AT-C 320) | No | Unknown |
 
 ## Key findings
 
@@ -450,6 +452,44 @@ assessment costs vary.
 - **Substitution risks:** Overstated answers create contractual and misrepresentation risk.
 - **Likely customer acceptance:** High when consistent with reports and evidence.
 - **Total cost of ownership:** Internal time; library maintenance.
+
+### EXT-18 SOC 1 Type 1 examination
+
+- **Why purchased:** Sponsors' financial statement auditors rely on it when Unbound records ledgers, fund balances, NAV and unitization, fees and grant payments that flow into sponsors' financial statements (ANS-AUD-002, ANS-FCT-004, ANS-RCN-005). Added 2026-11-25 fix pass (OBJ-SOC2AUD-002).
+- **Legally required:** No statute requires Echelon to obtain one. User auditors may otherwise need to test Unbound directly or perform substantive procedures; contracts with sponsors may require it.
+- **Independence required:** Yes: independent CPA firm under AICPA attestation standards (SSAE 18, AT-C 320). The same firm should not also perform readiness or design work that would impair independence (AICPA independence rules not reviewed at primary source).
+- **Qualifications or accreditation:** Licensed CPA firm with current AICPA peer review.
+- **Internal work can satisfy:** No. Internal control testing is first-party and cannot substitute.
+- **Open source substitutes:** None.
+- **Scope reduction:** Report as of the production go-live date covering ledger posting, NAV and unitization, fee computation, grant authorization, payment file preparation, reconciliation, change and logical access (ANS-AUD-001 roadmap).
+- **Evidence sharing across products:** Shares control environment, change and access testing with SOC 2, but has separate control objectives, system description and report; restricted use limits sharing to user entities and their auditors.
+- **Continuous performance:** One-time point-in-time report, followed by Type 2.
+- **Typical cost range:** Unknown. No credible public cost source located; a separate examination from SOC 2, so additive to SOC 2 fees.
+- **Cost source type:** unknown
+- **Cost sources:** none (SRC-AICPA-SOC1-GUIDE and SRC-AICPA-SSAE-18 describe the engagement, not its cost)
+- **Substitution risks:** A SOC 2 report does not address control objectives relevant to user entities' financial reporting; presenting it as a SOC 1 substitute misleads user auditors.
+- **Likely customer acceptance:** Expected by sponsors' auditors when Unbound is a financial reporting system (assumption, not measured).
+- **Total cost of ownership:** Auditor fee, system description and control objectives drafting, management assertion, internal preparation; restricted-use distribution handling.
+
+### EXT-19 SOC 1 Type 2 examination
+
+- **Why purchased:** Sponsors' financial statement auditors rely on it when Unbound records ledgers, fund balances, NAV and unitization, fees and grant payments that flow into sponsors' financial statements (ANS-AUD-002, ANS-FCT-004, ANS-RCN-005). Added 2026-11-25 fix pass (OBJ-SOC2AUD-002).
+- **Legally required:** No statute requires Echelon to obtain one. User auditors may otherwise need to test Unbound directly or perform substantive procedures; contracts with sponsors may require it.
+- **Independence required:** Yes: independent CPA firm under AICPA attestation standards (SSAE 18, AT-C 320). The same firm should not also perform readiness or design work that would impair independence (AICPA independence rules not reviewed at primary source).
+- **Qualifications or accreditation:** Licensed CPA firm with current AICPA peer review.
+- **Internal work can satisfy:** No. Internal control testing is first-party and cannot substitute.
+- **Open source substitutes:** None.
+- **Scope reduction:** Period of at least three months sized to cover as much of the first hosted sponsor's fiscal year as possible; where go-live is less than roughly six to nine months before that fiscal year end, no Type 2 can exist in time and the fallback is direct or substantive testing by the sponsor's auditor (ANS-AUD-001).
+- **Evidence sharing across products:** Shares control environment, change and access testing with SOC 2, but has separate control objectives, system description and report; restricted use limits sharing to user entities and their auditors.
+- **Continuous performance:** Annual recurring period aligned to sponsors' fiscal years; bridge letters for gaps.
+- **Typical cost range:** Unknown. No credible public cost source located; a separate examination from SOC 2, so additive to SOC 2 fees.
+- **Cost source type:** unknown
+- **Cost sources:** none (SRC-AICPA-SOC1-GUIDE and SRC-AICPA-SSAE-18 describe the engagement, not its cost)
+- **Substitution risks:** A SOC 2 report does not address control objectives relevant to user entities' financial reporting; presenting it as a SOC 1 substitute misleads user auditors.
+- **Likely customer acceptance:** Expected by sponsors' auditors when Unbound is a financial reporting system (assumption, not measured).
+- **Total cost of ownership:** Recurring auditor fee, evidence operations all year, complementary user entity control documentation per sponsor, bridge letters, remediation. Likely the largest recurring assurance cost for a fund administration platform (judgment, not sourced).
+
+SOC 1 use restriction: a SOC 1 report is intended for the service organization, its user entities and their auditors. It is distributed only to existing customers and their auditors, never to prospects (trust-center/TRUST-CENTER-REQUIREMENTS.md).
 
 ## Limitations and open questions
 

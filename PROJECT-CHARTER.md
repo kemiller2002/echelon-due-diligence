@@ -11,18 +11,19 @@ updated: 2026-11-25
 
 ## Purpose
 
-Define the practical problem this project will solve. Do not assume that
-“Echelon Due Diligence” already names a distinct discipline; that is a research
-question, not a starting fact.
+Make customer due diligence a continuously maintained output of normal business and
+engineering work: know, for every question a customer, auditor, regulator or insurer can
+ask, what Echelon currently does, intends to do, can prove and may truthfully say.
 
 ## Intended users
 
-Not yet established.
+Echelon owners and engineers preparing for customer assessments; later, prospects and
+customers through a generated trust center and automated questionnaire responses.
 
 ## First bounded outcome
 
-Not yet selected. Choose one outcome that can be delivered and evaluated in
-two to four weeks.
+Unbound assessability for a DAF sponsor's third-party risk review (critical path in
+`product-profiles/unbound/UNBOUND-DUE-DILIGENCE-PROFILE.md`).
 
 ## Included
 

@@ -2,7 +2,7 @@
 id: DD-TC-002
 title: Echelon Trust Center requirements
 status: draft
-version: 0.1.0
+version: 0.2.0
 created: 2026-11-25
 updated: 2026-11-25
 tags: [trust-center, requirements, disclosure, evidence]
@@ -56,6 +56,8 @@ knowledge base and removes a second copy that can drift.
 | TC-TIER-005 | Public-sector requesters receive redaction-ready versions by default (public records exposure). | P2 | Artifact variant exists |
 | TC-RED-001 | Publication pipeline blocks content containing: finding-level vulnerability detail, internal hostnames, IP ranges, credentials or tokens, customer names or identifiers, personal data, and exploit steps. | P0 | Canary and pattern tests; secret scanner over generated output |
 | TC-RED-002 | Pen test material is published only as an executive summary or attestation letter at NDA tier; full reports only to an existing-customer access group. | P0 | Tier assignment test |
+| TC-RED-003 | Statements that a preventive or detective control is absent or only planned (for example EDR, monitoring, MFA enforcement, logging, backups, incident response retainer) are published only at the authenticated-prospect or NDA tier, never at the public tier, because a public list of missing defenses is reconnaissance for attackers; they are still disclosed honestly to anyone who asks through a gated tier. The public tier carries the security program approach, commitments, the VDP, the AI disclosure and the status of independent assurance. (Added 2026-11-25, OBJ-PENTEST-019, OBJ-BANKCISO-015.) | P0 | Tier assignment test over answer units whose status is not current |
+| TC-TIER-006 | SOC 1 reports are available only to the existing-customer tier and to the customer's auditor through the auditor tier, never to prospects and never auto-approved under TC-TIER-003; each report's own use restriction paragraph determines its tier. (Added 2026-11-25, OBJ-SOC2AUD-011.) | P0 | Tier assignment and approval workflow tests |
 | TC-EVD-001 | Artifacts disappear or display "expired" automatically when evidence expires, is revoked or is superseded; historical versions remain available to entitled viewers with their period clearly labeled. | P0 | Expiry and revocation fixtures |
 | TC-EVD-002 | Evidence signature verification uses open standards (DSSE, ECDSA P-256 per DD-ARC-003) so viewers and auditors can verify without Echelon tooling. | P1 | Independent verification script |
 | TC-SUB-001 | Subprocessor list shows name, purpose, data categories, location, and date added; customers can subscribe to change notices with the contractual notice period. | P0 before first customer | Notification test |
@@ -81,12 +83,15 @@ vulnerability disclosure policy, AI use disclosure, subprocessor list).
 
 ## 5. Phasing
 
-1. **Now (no artifacts):** public honest-status overview, VDP, AI disclosure; all
-   generated. Value: deflects baseline questions; demonstrates candor.
+1. **Now (no artifacts):** public security program approach, VDP and AI disclosure;
+   control-status detail (including planned and absent controls) only at the
+   authenticated-prospect tier under TC-RED-003; all generated. Value: deflects
+   baseline questions; demonstrates candor without publishing a map of missing
+   defenses.
 2. **After first independent pen test and policies adopted:** NDA tier with pen test
    letter and policy set.
 3. **After SOC 2 Type I or II:** SOC 2 under NDA, SOC 3 public, bridge letters.
-4. **With customers:** customer tier, subprocessor notifications, incident RCAs, auditor
+4. **With customers:** customer tier (including any SOC 1 report, TC-TIER-006), subprocessor notifications, incident RCAs, auditor
    tier backed by the evidence store.
 
 ## 6. Open questions

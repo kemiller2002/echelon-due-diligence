@@ -1,41 +1,32 @@
-# Echelon Due Diligence handoff
+# Handoff: due diligence research, session 1 (2026-11-25)
 
 ## Objective
+Build an evidence-backed due diligence knowledge base for Echelon Foundry and Unbound
+(mission prompt preserved in the PR description and summarized in `README.md`).
 
-Bootstrap Echelon Due Diligence as a greenfield Praxis pilot.
+## Completed
+All 26 deliverables drafted; see `reports/DELIVERABLES-INDEX.md` and
+`reports/EXECUTIVE-RESEARCH-FINDINGS.md`. Canonical records validate with 0 errors.
 
-## Current state
+## Decisions and assumptions
+DDD-001 (JSONL canonical for records), DDD-002 (question dedup log). Agents draft; only
+named humans approve (operating contract). No supporting repository was modified.
 
-- Praxis 3.25.0 greenfield profile installed on 2026-11-25.
-- Project charter is a draft.
-- No first vertical slice, evidence record, hypothesis, or experiment has been
-  accepted.
-- The operating system is under evaluation.
+## How to verify
+`dotnet fsi tools/build.fsx --check` (requires .NET 10 SDK), `./praxis validate`.
 
-## Validation
+## Open questions and risks
+`research/open-questions.jsonl` (decision-level), generated
+`reports/generated/open-questions-register.csv` (record-level),
+`research/OWNER-FACT-VERIFICATION-CHECKLIST.md`, `validation/objections-*.jsonl`
+(123 open).
 
-Run:
-
-```bash
-./praxis registry check
-./praxis validate
-```
-
-## Continuity
-
-An executor session is disposable. Before handing off, commit and push the
-work, record `./praxis work checkpoint --id ID --occurred-at NOW --summary ...
---next-action ...`, and push the `.ros/` state. A successor reads
-`./praxis work context ID --text` and takes over with `./praxis work continue`.
-
-## Unresolved questions
-
-1. What concrete communication problem and user should the first slice serve?
-2. What baseline workflow will be used for comparison?
-3. What data, privacy, safety, and accessibility constraints apply?
-4. Which outcome would distinguish useful engineering from additional process?
-
-## Next action
-
-Complete `PROJECT-CHARTER.md`, choose the first bounded outcome, and record its
-baseline and acceptance criteria in `context/CURRENT-STATE.md`.
+## Next recommended actions (precise continuation)
+1. Owner: complete the fact checklist and start human review of the 40 deciding
+   questions in `product-profiles/unbound/UNBOUND-DUE-DILIGENCE-PROFILE.md` section 3.
+2. Research: BL-024 citation hygiene (457 questions cite superseded Unbound records
+   without the governing CNV clause), then BL-025, then BL-013 diminishing-returns pass
+   (sample 5 to 10 new public questionnaires, count genuinely new questions per 100).
+3. Address remaining accepted-open objections, starting with blocking severity.
+4. Recommendations for other repositories are in `recommendations/*.jsonl`; none has
+   been applied.

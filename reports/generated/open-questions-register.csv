@@ -95,6 +95,7 @@ ANS-A11Y-007,answer-unit,Accessibility legal obligations and contract terms,"Doe
 ANS-A11Y-007,answer-unit,Accessibility legal obligations and contract terms,"Will Unbound serve consumers in the EU, and does the microenterprise exemption apply to Echelon?"
 ANS-ACT-003,answer-unit,Fund accounting under FASB ASC 958 and DAF account classification,Has any CPA reviewed the default treatments proposed in CNV-FIN-008?
 ANS-AIA-002,answer-unit,Least privilege and deterministic authorization for agents,"What permissions do engineering agents hold today in source control, CI and any cloud account?"
+ANS-AIA-007,answer-unit,Reliability of AI-completed questionnaires and customer-facing assertions,"Which AI tools currently process prospect or customer questionnaire material, and under which provider retention and training terms?"
 ANS-AIA-008,answer-unit,"Governance of AI agents in engineering and operations: change approval, segregation and access",Are branch protection and required human reviews enabled on Echelon repositories today?
 ANS-AIA-008,answer-unit,"Governance of AI agents in engineering and operations: change approval, segregation and access",How many humans are available to act as independent approvers?
 ANS-AIG-001,answer-unit,"AI system and AI use inventory, including AI used to build and operate the service","Which AI providers and accounts are used today for engineering work, and under which commercial terms?"
@@ -322,6 +323,9 @@ ANS-PRV-010,answer-unit,Children's and minors' data,Will Unbound ever support cu
 ANS-PRV-011,answer-unit,"Use of customer data for AI training, model providers and AI agent access",Business plan 10.04 does not state Echelon's actual position on training rights; the owner needs to decide it explicitly.
 ANS-PRV-011,answer-unit,"Use of customer data for AI training, model providers and AI agent access","Which model providers and endpoints will be used, and what are their current retention and training terms?"
 ANS-PRV-012,answer-unit,De-identification and aggregation standards,Will any product feature (for example charity intelligence or peer giving insights) require cross-sponsor aggregates?
+ANS-PRV-013,answer-unit,"Privacy documentation set: DPA template, privacy notices and record of processing","Who will own the privacy documents (managing member, fractional privacy officer or counsel)?"
+ANS-PRV-014,answer-unit,"Privacy law applicability register, including Indiana's Consumer Data Protection Act","Does Echelon, as processor for exempt nonprofit sponsors, have any direct duty under IC 24-15?"
+ANS-PRV-014,answer-unit,"Privacy law applicability register, including Indiana's Consumer Data Protection Act",Is Echelon a financial institution under the FTC Safeguards Rule because it prepares payment files?
 ANS-RCN-001,answer-unit,"Reconciliation scope, sources and cadence (bank, custodian, payment rail, subledger, GL)",UNB-HYP-005 records continuous three-way reconciliation as a hypothesis; no measured break-rate or cost evidence exists (daf-landscape reconciliation economics model is explicitly illustrative).
 ANS-RCN-001,answer-unit,"Reconciliation scope, sources and cadence (bank, custodian, payment rail, subledger, GL)",Which sponsor bank and custodian feed formats are actually available for the first sponsor has not been established.
 ANS-RCN-002,answer-unit,"Matching rules, tolerances and auto-clear governance",Default numeric tolerances are deliberately not set (CNV-FIN-004 labels any starting value illustrative); a sponsor will ask for them.
@@ -340,6 +344,7 @@ ANS-RET-004,answer-unit,Deletion from backups,"What backup retention period bala
 ANS-RET-005,answer-unit,Append-only ledgers and audit logs versus deletion obligations,Counsel must resolve jurisdictional retention versus deletion conflicts before production (UNB-DATA-007).
 ANS-RET-006,answer-unit,"Recordkeeping obligations of regulated customers (SEC 17a-4, 204-2, bank, IRS, OFAC)","Would any broker-dealer or RIA partner keep required records in Unbound, or does Unbound only hold the sponsor's records?"
 ANS-RET-006,answer-unit,"Recordkeeping obligations of regulated customers (SEC 17a-4, 204-2, bank, IRS, OFAC)","If an RIA manages DAF assets, are investment records about the DAF account the adviser's required records under Rule 204-2, the sponsor's, or both?"
+ANS-RET-008,answer-unit,"Precedence between deletion requests, regulatory retention and legal hold",Does crypto-shredding satisfy deletion duties under the state laws in the applicability register?
 ANS-RRP-001,answer-unit,Form 990 Schedule D and annual DAF reporting data package,No CPA-approved data dictionary exists yet; Schedule I and F instructions and Form 990-T sources are not seeded.
 ANS-RRP-002,answer-unit,Contribution acknowledgments and IRS substantiation,Counsel-approved acknowledgment templates do not exist yet.
 ANS-RRP-003,answer-unit,Noncash gift reporting: Forms 8283 and 8282,Forms 8283 and 8282 instructions are not in the seeded source list.

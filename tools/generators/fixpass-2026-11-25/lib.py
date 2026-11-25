@@ -10,7 +10,7 @@ import os
 
 DATE = "2026-11-25"
 BY = "fix-pass-agent"
-EM = "—"
+EM = "\u2014"
 
 
 class Store:

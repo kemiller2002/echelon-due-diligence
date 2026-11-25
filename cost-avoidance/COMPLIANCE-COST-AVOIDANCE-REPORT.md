@@ -2,7 +2,7 @@
 id: DD-COST-002
 title: Compliance cost avoidance strategy and substitution risks
 status: draft
-version: 0.1.0
+version: 0.2.0
 created: 2026-11-25
 updated: 2026-11-25
 tags: [due-diligence, cost-avoidance, compliance, soc2, assurance, hypotheses]
@@ -36,8 +36,8 @@ dependency order.
 | 1 | Decide scope before buying: map actual regulatory, auditor, insurer and customer requirements | All | H1: avoids purchasing assessments nobody requires (for example ASV scans if PCI does not apply, FedRAMP, ISO if buyers accept SOC 2) | Count of planned purchases dropped with written rationale | Low if decisions are documented and revisited |
 | 2 | Keep payment card data out of Echelon systems | EXT-03, PCI parts of EXT-01 and EXT-02 | H2: avoids PCI ASV scans and PCI-driven testing | PCI applicability decision from acquirer or QSA | Medium: scope decisions can be wrong; must be confirmed |
 | 3 | Open-source, language-independent scanning in CI across repositories | EXT-02, EXT-01 prep, EXT-16 | H3: avoids commercial SCA, secret and IaC scanner licenses with acceptable coverage | Findings found versus missed in later pen tests; triage hours | Medium: advisory lag, no vendor support, Semgrep rules license limits, CodeQL needs license for private code |
-| 4 | Machine-readable evidence keyed to control IDs (Praxis provenance plus Tutela verification) | EXT-04, EXT-05, EXT-06, EXT-07, EXT-16 | H4: reduces auditor sample requests and internal preparation hours | Auditor hours billed; internal hours per audit; number of evidence requests | Medium: auditors must assess reliability of entity-produced information; custom pipelines may need more auditor testing |
-| 5 | One shared control environment and system description for all Echelon products | EXT-05, EXT-06, EXT-07, EXT-11, EXT-12 | H5: one SOC 2 and one ISMS cover several products | Report scope accepted by auditor; customer acceptance | Medium: a broad scope makes one failure affect all products |
+| 4 | Machine-readable evidence keyed to control IDs (Praxis provenance plus Tutela verification) | EXT-04, EXT-05, EXT-06, EXT-07, EXT-16, EXT-18, EXT-19 | H4: reduces auditor sample requests and internal preparation hours | Auditor hours billed; internal hours per audit; number of evidence requests | Medium: auditors must assess reliability of entity-produced information; custom pipelines may need more auditor testing |
+| 5 | One shared control environment and system description for all Echelon products | EXT-05, EXT-06, EXT-07, EXT-11, EXT-12 (SOC 1 shares the control environment but needs its own report) | H5: one SOC 2 and one ISMS cover several products | Report scope accepted by auditor; customer acceptance | Medium: a broad scope makes one failure affect all products |
 | 6 | Single answer library and trust center | EXT-17 | H6: cuts questionnaire hours | Hours per questionnaire; reuse rate | Medium: stale or overstated answers create misrepresentation risk |
 | 7 | Architecture that narrows pen test focus (DD-COST-001) | EXT-01 | H7: fewer tester-days for same coverage | Tester-days per release; findings per day | Medium: tester anchoring; must not exclude assets |
 | 8 | Internal readiness rather than purchased readiness | EXT-04 | H8: avoids readiness fees | External fees avoided versus internal hours | Low to medium: blind spots; first audit may find more exceptions |
@@ -51,12 +51,18 @@ dependency order.
 | Item | Reason | Source |
 |---|---|---|
 | SOC 2 Type I or II report | Independent CPA attestation | `SRC-AICPA-SOC2` |
+| SOC 1 Type 1 and Type 2 reports (EXT-18, EXT-19), where sponsors rely on Unbound for financial reporting | Independent CPA attestation under AT-C 320; separate examination, system description and control objectives from SOC 2, so its fees add to SOC 2 fees; likely the largest recurring assurance cost of a fund administration platform (judgment, not sourced) | `SRC-AICPA-SOC1-GUIDE`, `SRC-AICPA-SSAE-18` |
 | ISO/IEC 27001 certificate | Accredited certification body | `SRC-ISO-17021-1`, `SRC-ISO-27006` |
 | PCI ASV scan (if PCI applies) | ASV only under 11.3.2 | `SRC-PCI-ASV-PROGRAM`, `SRC-PCI-DSS-V4-SAQ-D` |
 | FedRAMP penetration test (if pursued) | 3PAO | `SRC-FEDRAMP-PENTEST-GUIDANCE` |
 | DORA TLPT participation (if required) | Art. 26 and 27 tester rules | `SRC-TIBER-EU` |
 | Independent pen test named in contracts or insurance | Contract terms | Contract-specific |
 | Legal opinions | Licensed counsel | n/a |
+
+SOC 1 timing follows the single assurance roadmap in ANS-AUD-001 (added 2026-11-25): SOC 2
+Type I and, where sponsors rely on Unbound for financial reporting, SOC 1 Type 1 at go-live,
+then Type 2 periods sized to sponsors' fiscal years, with direct or substantive testing by
+the sponsor's auditor as the fallback when no SOC 1 Type 2 can exist in time.
 
 ## 4. Total cost of ownership view
 

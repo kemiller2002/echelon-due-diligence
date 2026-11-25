@@ -46,6 +46,7 @@ EVR-AIG-008,AI provider data terms register,not yet assigned,periodic-manual,P90
 EVR-AIG-009,AI law applicability determinations,not yet assigned,periodic-manual,P180D,first-party,nda,proposed-target-state
 EVR-AIG-010,Model documentation package,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-AIG-011,AI use statement and tenant AI configuration,not yet assigned,event-driven-automated,per-event,first-party,public,proposed-target-state
+EVR-AIG-012,Counsel AI law applicability memorandum,Outside counsel (not engaged),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
 EVR-AIS-001,Injection containment design record and dossier integrity checks,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
 EVR-AIS-002,Agent authorization decision log,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
 EVR-AIS-003,AI store partition configuration,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
@@ -61,6 +62,7 @@ EVR-AIS-012,Independent AI red team report summary,not yet assigned,external-att
 EVR-AIS-013,Construction rule enforcement report,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
 EVR-AIS-014,Release gate and protected path records,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
 EVR-AIS-015,Change provenance and AI-authored defect metrics,Praxis (provenance); not yet assigned (metrics),continuous-automated,P30D,first-party,nda,partially-implemented
+EVR-AIS-016,Protected-path configuration and change log for agent instruction files,not yet assigned (intended: source control platform settings export and audit log),periodic-automated,P1D,first-party,nda,proposed-target-state
 EVR-AML-001,Screening coverage report,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
 EVR-AML-002,Release fence records,not yet assigned,continuous-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-AML-003,List ingestion and freshness log,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
@@ -73,6 +75,8 @@ EVR-AML-009,Identity regime applicability determinations,not yet assigned,period
 EVR-AML-010,Monitoring rule definitions and case export log,not yet assigned,event-driven-automated,per-event,first-party,auditor-only,proposed-target-state
 EVR-AML-011,Grantee verification records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-AML-012,Tier 2 routing and foreign-grant framework records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AML-013,Independent testing of sanctions screening coverage and effectiveness,Independent AML or sanctions testing firm (not engaged),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
+EVR-AML-014,Counsel opinion on Echelon's BSA status and independent AML testing of sponsor-facing features,Outside counsel and the sponsor's independent AML tester (neither engaged),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
 EVR-API-001,"Object, property and function authorization negative test results",not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
 EVR-API-002,API credential inventory and lifecycle records,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
 EVR-API-003,Rate limit and business-flow limit configuration and test results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
@@ -94,6 +98,7 @@ EVR-APP-011,Error response and log content inspection,not yet assigned,periodic-
 EVR-APP-012,Input limit and resource exhaustion test results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
 EVR-APP-013,ASVS verification matrix per release,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
 EVR-APP-014,Independent application penetration test report,External testing firm (not yet engaged),external-attestation,P1Y,independent-third-party,nda,proposed-target-state
+EVR-APP-015,Document renderer isolation configuration and negative test results,not yet assigned (intended: Unbound release pipeline; not built),event-driven-automated,per-event,first-party,nda,proposed-target-state
 EVR-ARC-001,Threat model records per system and material change,Tutela (exists as a discipline and toolset; no product threat model located),event-driven-automated,per-event,first-party,nda,proposed-target-state
 EVR-ARC-002,Trust boundary and data flow inventory,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
 EVR-ARC-003,Architectural assurance matrix,Tutela plus Folio (proposed),event-driven-automated,per-event,first-party,nda,proposed-target-state
@@ -220,6 +225,8 @@ EVR-DAF-007,Operator access and reserved-authority action log,not yet assigned,c
 EVR-DAF-008,Inactivity and minimum-balance evaluation records,not yet assigned,periodic-automated,P1D,first-party,customer-only,proposed-target-state
 EVR-DAF-009,Excise gate decisions and incident records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-DAF-010,Regulatory register entries and impact simulations,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DAF-011,Outside tax counsel review of the regulatory applicability register for DAF rules,Outside tax counsel (not engaged),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
+EVR-DAF-012,Conversion reconciliation report and parallel-run sign-off,not yet assigned (intended: Unbound conversion tooling; not built),event-driven-automated,per-event,first-party,nda,proposed-target-state
 EVR-DCL-001,Classification coverage report,not yet assigned (candidate: CI over Strata and API definitions),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-DCL-002,Egress refusal and label log,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
 EVR-DCL-003,Restricted data access and scan report,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
@@ -281,6 +288,7 @@ EVR-FEE-005,Fee shortfall memo claim register,not yet assigned,event-driven-auto
 EVR-FEE-006,Contribution component breakdown,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-FEE-007,Related-party check log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-FEE-008,Echelon related-party and compensation disclosure,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-FEE-009,Independent recomputation of fees and SOC 1 testing of fee change control,Independent CPA firm (not engaged),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
 EVR-FRD-001,Step-up events bound to commands,not yet assigned (intended: Unbound identity component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-FRD-002,Credential change and notice records,not yet assigned (intended: Unbound identity component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-FRD-003,Destination evidence records,not yet assigned (intended: Unbound payment component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
@@ -320,6 +328,7 @@ EVR-GRT-008,Payee change and substitution evidence,not yet assigned,event-driven
 EVR-GRT-009,Payment exception and return records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-GRT-010,Issued grant letter registry entries,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-GRT-011,Recognition election and outbound disclosure log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-GRT-012,SOC 1 Type 2 testing of grant authorization and eligibility controls,Independent CPA firm (not engaged),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
 EVR-HR-001,Screening completion records,Screening provider (not yet engaged),event-driven-automated,per-event,second-party,nda,unknown
 EVR-HR-002,Training completion and phishing metrics,not yet assigned,periodic-automated,P1Y,first-party,nda,unknown
 EVR-HR-003,Signed personnel agreements,not yet assigned,event-driven-automated,per-event,first-party,internal,unknown
@@ -427,6 +436,9 @@ EVR-PAY-007,Check lifecycle records,not yet assigned (intended: Unbound check ra
 EVR-PAY-008,Unclaimed property disposition register,not yet assigned (intended: Unbound payment component; not built),periodic-automated,P1Y,first-party,customer-only,proposed-target-state
 EVR-PAY-009,Integration credential inventory and rotation log,not yet assigned (intended: Unbound integration adapters; not built),periodic-automated,P90D,first-party,internal,proposed-target-state
 EVR-PAY-010,Payment release records,not yet assigned (intended: Unbound payment release gate; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PAY-011,SOC 1 Type 2 testing of payment preparation and release controls,Independent CPA firm (not engaged),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
+EVR-PAY-012,Independent penetration and business-logic test of payment flows,Independent penetration testing firm (not engaged),external-attestation,P1Y,independent-third-party,nda,proposed-target-state
+EVR-PAY-013,Nacha Rules compliance audit as Third-Party Service Provider,Qualified independent ACH auditor (not engaged),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
 EVR-PEN-001,Independent penetration test letter of attestation,External penetration testing firm (not yet engaged),external-attestation,P1Y,independent-third-party,nda,proposed-target-state
 EVR-PEN-002,Full penetration test report,External penetration testing firm (not yet engaged),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
 EVR-PEN-003,Penetration test scope and rules of engagement record,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
@@ -462,6 +474,10 @@ EVR-PRV-010,Portal tracking inventory,not yet assigned,event-driven-automated,pe
 EVR-PRV-011,Minor record access report,not yet assigned,periodic-automated,P90D,first-party,customer-only,unknown
 EVR-PRV-012,Model call and agent access log,not yet assigned (candidate: model gateway and access broker),continuous-automated,P1D,first-party,customer-only,proposed-target-state
 EVR-PRV-013,Aggregate release log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,unknown
+EVR-PRV-014,"Privacy documentation set: DPA template, privacy notices and record of processing",not yet assigned (intended: Praxis-governed documents),event-driven-automated,per-event,first-party,authenticated-prospect,proposed-target-state
+EVR-PRV-015,Outside counsel review of the DPA template and privacy notices,Outside privacy counsel (not engaged),external-attestation,P1Y,independent-third-party,nda,proposed-target-state
+EVR-PRV-016,Privacy law applicability register with counsel sign-off,Outside privacy counsel (not engaged); register maintained by Echelon,periodic-manual,P1Y,independent-third-party,nda,proposed-target-state
+EVR-PRV-017,Legal process log and transparency report,not yet assigned (intended: legal process register),periodic-manual,P1Y,first-party,public,proposed-target-state
 EVR-RCN-001,Reconciliation run and match log,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
 EVR-RCN-002,Feed freshness status,not yet assigned,continuous-automated,PT1H,first-party,customer-only,proposed-target-state
 EVR-RCN-003,Tolerance and match-rule version history,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
@@ -474,6 +490,7 @@ EVR-RCN-009,Reconciliation evidence bundle,not yet assigned,event-driven-automat
 EVR-RCN-010,Replay comparison report,not yet assigned,periodic-automated,P1M,first-party,auditor-only,proposed-target-state
 EVR-RCN-011,Unknown-outcome case record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-RCN-012,Migration reconciliation report,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RCN-013,SOC 1 Type 2 testing of reconciliation controls,Independent CPA firm (not engaged),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
 EVR-REG-001,Regulatory applicability register export,not yet assigned,periodic-manual,P180D,first-party,nda,proposed-target-state
 EVR-REG-002,Funds-flow and operator-status conformance results,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-REG-003,Obligation-to-evidence compliance dashboard snapshot,not yet assigned,continuous-automated,P30D,first-party,customer-only,proposed-target-state
@@ -483,6 +500,7 @@ EVR-REG-006,Complaint register and trend report,not yet assigned,continuous-auto
 EVR-REG-007,Regulatory watch list and impact reviews,not yet assigned,periodic-manual,P30D,first-party,nda,proposed-target-state
 EVR-REG-008,Incident notification records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-REG-009,Regulatory report data and retention configuration,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-REG-010,Counsel memorandum on support for trustee banks' fiduciary oversight under 12 CFR Part 9,Outside banking counsel (not engaged),external-attestation,P1Y,independent-third-party,nda,proposed-target-state
 EVR-RET-001,Disposition run record,not yet assigned,periodic-automated,P1D,first-party,customer-only,proposed-target-state
 EVR-RET-002,Legal hold register,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-RET-003,Key destruction and sanitization record,not yet assigned (candidate: managed key service audit log),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
@@ -490,6 +508,7 @@ EVR-RET-004,Backup expiry and restore-replay test,not yet assigned,periodic-auto
 EVR-RET-005,Post-erasure chain verification,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-RET-006,Records production drill,not yet assigned,periodic-manual,P1Y,first-party,customer-only,unknown
 EVR-RET-007,Deletion certificate and evidence bundle,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RET-008,Retention precedence rule set with counsel approval and key-destruction block evidence,not yet assigned (intended: Unbound retention service; not built),event-driven-automated,per-event,first-party,nda,proposed-target-state
 EVR-RRP-001,DAF annual reporting data package,not yet assigned,periodic-automated,P1Y,first-party,customer-only,proposed-target-state
 EVR-RRP-002,Acknowledgment issuance record,not yet assigned (intended renderer: Folio),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-RRP-003,Form 8283/8282 tracking record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
@@ -555,6 +574,7 @@ EVR-TEN-010,Key service configuration and destruction certificates,not yet assig
 EVR-TEN-011,Per-tenant performance and contention monitoring,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
 EVR-TEN-012,Partner scope and branding validation records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-TEN-013,Lifecycle and ExitPackage manifest,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TEN-014,Independent tenant isolation test report and customer-run two-tenant test results,Independent penetration testing firm (not engaged); customers,external-attestation,P1Y,independent-third-party,nda,proposed-target-state
 EVR-TPR-001,Vendor inventory export,not yet assigned,periodic-automated,P90D,first-party,nda,proposed-target-state
 EVR-TPR-002,Inventory reconciliation report,not yet assigned,periodic-automated,P90D,first-party,internal,proposed-target-state
 EVR-TPR-003,Vendor due diligence file,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
@@ -595,3 +615,4 @@ EVR-WLB-005,Isolation profile register and negative test results,not yet assigne
 EVR-WLB-006,Partner data access and mapping change log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-WLB-007,Partner API access and deprovisioning metrics,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
 EVR-WLB-008,Partner lifecycle case records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-WLB-009,Counsel review of co-branded disclosures and state platform registration acknowledgments,Outside counsel (not engaged); state attorneys general (acknowledgment only),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
