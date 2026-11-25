@@ -1648,6 +1648,23 @@
         "name": "step",
         "mechanism": "step-lifecycle"
       }
+    },
+    {
+      "type": "step.completed",
+      "occurredAt": "2026-11-25T18:48:11.993Z",
+      "stepId": "STEP-20261125T173749188Z-15208fb3",
+      "actor": {
+        "kind": "agent",
+        "id": "anthropic/claude-code",
+        "provider": "anthropic",
+        "model": "unknown",
+        "runtime": "claude-code"
+      },
+      "source": {
+        "type": "ros-cli",
+        "name": "step",
+        "mechanism": "step-lifecycle"
+      }
     }
   ],
   "repository": {
@@ -1792,12 +1809,12 @@
       "name": "Foundation: structure, schemas, taxonomy, seed source register",
       "description": null,
       "classification": [],
-      "status": "active",
+      "status": "completed",
       "plannedAt": "2026-11-25T17:37:49.188Z",
       "startedAt": "2026-11-25T17:37:49.188Z",
-      "completedAt": null,
-      "endedAt": null,
-      "updatedAt": "2026-11-25T17:37:49.188Z",
+      "completedAt": "2026-11-25T18:48:11.993Z",
+      "endedAt": "2026-11-25T18:48:11.993Z",
+      "updatedAt": "2026-11-25T18:48:11.993Z",
       "actor": {
         "kind": "agent",
         "id": "anthropic/claude-code",
@@ -2118,6 +2135,19 @@
           "from": null,
           "to": "active",
           "occurredAt": "2026-11-25T17:37:49.188Z",
+          "reason": null,
+          "actor": {
+            "kind": "agent",
+            "id": "anthropic/claude-code",
+            "provider": "anthropic",
+            "model": "unknown",
+            "runtime": "claude-code"
+          }
+        },
+        {
+          "from": "active",
+          "to": "completed",
+          "occurredAt": "2026-11-25T18:48:11.993Z",
           "reason": null,
           "actor": {
             "kind": "agent",
