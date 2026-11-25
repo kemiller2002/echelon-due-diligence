@@ -73,3 +73,23 @@ unverified Strata append-only capability.
   ranges and labeled vendor marketing are available.
 - PCI applicability to Unbound is unestablished; if card data never touches Echelon
   systems ASV scans are likely avoidable (card contributions deferred per CNV-PAY-008).
+
+## VUL, PEN, SCN, MON, IR question batch
+
+196 questions, 47 answer units (36 proposed-target-state, 9 unknown, 1 not-applicable,
+1 partially-implemented: ANS-MON-008 relies on Praxis agent attribution for repository
+changes; review in adversarial pass whether that overstates production logging).
+
+Unseeded sources needed: RFC 9116; NIST SP 800-40 Rev. 4; NIST SP 800-92 (and r1 draft);
+NIST SP 800-86; NIST SP 800-216; CISA BOD 20-01; CISA SSVC; CISA #StopRansomware guide;
+OFAC 2021 ransomware advisory; OMB M-21-31; CIRCIA; NAIC Insurance Data Security Model
+Law; Interagency Guidance on Response Programs (Supplement A to the GLBA safeguards
+guidelines).
+
+Gaps: no VDP, SECURITY.md or security.txt in any Echelon repository; no security
+scanning in Praxis CI; no owner for SAST or runtime monitoring; no security log
+retention period (SOC2-023 forbids inventing one; IR-008 proposes seven years as an
+open question); no named security officer, IR retainer, breach counsel, cyber insurance
+or 24x7 coverage; incident history of corporate systems unknown. Target SLAs (KEV 7
+days, critical 15 days, customer notice within 24 hours of reasonable suspicion) are
+research recommendations pending owner decision.
