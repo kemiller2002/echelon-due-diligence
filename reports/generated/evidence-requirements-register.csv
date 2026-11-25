@@ -541,6 +541,19 @@ EVR-SUP-004,Support access grant and session log,not yet assigned,event-driven-a
 EVR-SUP-005,AI support agent configuration and evaluation record,not yet assigned,periodic-automated,P30D,first-party,customer-only,proposed-target-state
 EVR-SUP-006,Problem management and known-error register,not yet assigned,event-driven-automated,P30D,first-party,customer-only,proposed-target-state
 EVR-SUP-007,Support personnel location and subcontractor register,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-TEN-001,Tenant isolation profile register,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TEN-002,Routing and pooling negative test results,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TEN-003,Tenant context construction and analyzer report,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-TEN-004,Grant and RLS gate report,"Strata (pilot; exists, not operated for production) plus not yet assigned check",event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TEN-005,Database routine and naming review,not yet assigned,event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-TEN-006,Isolation test matrix results,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TEN-007,Canary probe telemetry,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-TEN-008,Secondary store isolation map,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-TEN-009,AI retrieval logs and data-use register,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TEN-010,Key service configuration and destruction certificates,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TEN-011,Per-tenant performance and contention monitoring,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-TEN-012,Partner scope and branding validation records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TEN-013,Lifecycle and ExitPackage manifest,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
 EVR-TPR-001,Vendor inventory export,not yet assigned,periodic-automated,P90D,first-party,nda,proposed-target-state
 EVR-TPR-002,Inventory reconciliation report,not yet assigned,periodic-automated,P90D,first-party,internal,proposed-target-state
 EVR-TPR-003,Vendor due diligence file,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
