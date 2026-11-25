@@ -1,0 +1,160 @@
+from common import *
+
+recs = []
+a = recs.append
+W3C_LIC = ("W3C Document License (2023 version, fetched): permission to copy and distribute the document in any medium for any purpose without fee or royalty, provided the license notice, copyright and status are included; modifications and derivative works of the normative text are not granted by this license (W3C allows derivative works of some materials under separate terms).")
+
+a(R("SRC-ISO-22301-2019", "ISO 22301:2019 Security and resilience - Business continuity management systems - Requirements (with Amd 1:2024)", "ISO/TC 292", "standard", "certification-criteria",
+    "ISO 22301:2019 plus Amd 1:2024 (climate action changes); a revision (ISO/CD 22301) is reported under development", "2019 (month not captured)",
+    "https://www.iso.org/standard/75106.html",
+    "Certifiable BCMS. Financial-institution customers expect documented BC/DR plans and tests (FFIEC BCM booklet context) more than certification. Optional reference for Unbound's continuity program. Not law.",
+    ISO_ONLY_LIC, "iso.org blocked automated fetch (HTTP 403); revision status from search snippets.", "current",
+    V(True, "Fetched ISO/TC 292 committee published-standards page (committee.iso.org) listing ISO 22301:2019 and Amd 1:2024 2026-11-25; revision status not verified.",
+      "https://committee.iso.org/sites/tc292/home/projects/published/ongoing-1.html"),
+    jur=["global"], ind=["cross-industry"], rel=["SRC-ISO-22313", "SRC-ISO-27031", "SRC-NIST-SP800-34-R1"]))
+a(R("SRC-ISO-22313", "ISO 22313:2020 Security and resilience - Business continuity management systems - Guidance on the use of ISO 22301", "ISO/TC 292", "standard", "voluntary-standard",
+    "2020 edition", "2020 (month not captured)", "https://committee.iso.org/sites/tc292/home/projects/published/ongoing-1.html",
+    "Guidance companion to ISO 22301. Optional. Not law.", ISO_ONLY_LIC, "Search snippet indicates stage 90.92 (to be revised); not verified.", "current",
+    V(True, "Fetched ISO/TC 292 committee published-standards page 2026-11-25.",
+      "https://committee.iso.org/sites/tc292/home/projects/published/ongoing-1.html"),
+    jur=["global"], ind=["cross-industry"], rel=["SRC-ISO-22301-2019"],
+    notes="Seed title had no edition; current is 2020."))
+a(R("SRC-NIST-SP800-34-R1", "SP 800-34 Rev. 1, Contingency Planning Guide for Federal Information Systems", "National Institute of Standards and Technology (NIST)", "industry-guidance", "voluntary-standard",
+    "Rev. 1 (updated 2010-11-11)", "2010-05", "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "Voluntary contingency planning reference (BIA, plan templates). Old but still cited in questionnaires. Not binding.",
+    NIST_LIC, "Dated (2010); cloud-native recovery patterns are not covered.", "current",
+    V(True, "Fetched CSRC page 2026-11-25.", "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"),
+    jur=["US"], ind=["cross-industry"], rel=["SRC-ISO-22301-2019"]))
+a(R("SRC-ISO-27031", "ISO/IEC 27031:2025 Cybersecurity - Information and communication technology readiness for business continuity", "ISO/IEC JTC 1/SC 27 (ISO and IEC)", "standard", "voluntary-standard",
+    "Edition 2.0 (2025); replaces 27031:2011", "2025-05-16", "https://webstore.iec.ch/en/publication/107542",
+    "Voluntary ICT readiness guidance; relevant to Unbound DR design. Not law.", ISO_LIC + " Price CHF 179.", "Guidance.", "current",
+    V(True, "Fetched IEC Webstore record 2026-11-25.", "https://webstore.iec.ch/en/publication/107542"),
+    jur=["global"], ind=["cross-industry"], rel=["SRC-ISO-22301-2019"],
+    notes="Version correction: current edition is 2025."))
+a(R("SRC-BCI-GPG", "BCI Good Practice Guidelines (GPG) 7.0", "Business Continuity Institute (BCI)", "industry-guidance", "market-practice",
+    "Edition 7.0 (issuer states it will be reviewed every year)", "unknown",
+    "https://www.thebci.org/certification-training/good-practice-guidelines.html",
+    "Practitioner body of knowledge; useful for continuity program design. Not binding.",
+    "Commercial BCI publication; purchase or membership required (terms not read). Cite only.", "Publication date not shown.", "current",
+    V(True, "Fetched BCI GPG page 2026-11-25 ('Good Practice Guidelines (GPG) 7.0 edition').",
+      "https://www.thebci.org/certification-training/good-practice-guidelines.html"),
+    jur=["global"], ind=["cross-industry"], rel=["SRC-DRII-PP"]))
+a(R("SRC-DRII-PP", "Professional Practices for Business Continuity Management", "DRI International", "industry-guidance", "market-practice",
+    "unknown (edition not shown)", "unknown", "https://drii.org/resources/professionalpractices/EN",
+    "Practitioner body of knowledge (ten professional practices). Not binding.",
+    "Free to view online; copyright DRI International (terms not read).", "Edition and date not captured.", "current",
+    V(True, "Fetched DRII professional practices page 2026-11-25; edition not shown.", "https://drii.org/resources/professionalpractices/EN"),
+    jur=["global"], ind=["cross-industry"], rel=["SRC-BCI-GPG"]))
+a(R("SRC-WCAG-2.2", "Web Content Accessibility Guidelines (WCAG) 2.2", "World Wide Web Consortium (W3C)", "standard", "voluntary-standard",
+    "W3C Recommendation, version dated 2024-12-12", "2024-12-12",
+    "https://www.w3.org/TR/WCAG22/",
+    "Voluntary technical standard that becomes binding when referenced by law or contract (ADA Title II rule references WCAG 2.1 AA; EN 301 549 V4.1.1 references WCAG 2.2). Recommended target (AA) for Unbound donor-facing UI. Sponsors and public-sector-adjacent customers will ask for an ACR/VPAT.",
+    W3C_LIC, "Conformance is per page or process; claims need testing evidence.", "current",
+    V(True, "Fetched W3C TR page and W3C document license 2026-11-25.", "https://www.w3.org/TR/WCAG22/"),
+    jur=["global"], ind=["cross-industry"], rel=["SRC-WCAG-2.1", "SRC-ITI-VPAT", "SRC-EN-301-549", "SRC-ADA"]))
+a(R("SRC-WCAG-2.1", "Web Content Accessibility Guidelines (WCAG) 2.1", "World Wide Web Consortium (W3C)", "standard", "voluntary-standard",
+    "W3C Recommendation, version dated 2025-05-06", "2025-05-06",
+    "https://www.w3.org/TR/WCAG21/",
+    "Referenced by the DOJ ADA Title II web rule (Level AA). Meeting WCAG 2.2 AA generally satisfies 2.1 AA (2.2 removed 4.1.1 Parsing). Relevant as legal reference point.",
+    W3C_LIC, "Superseded in practice by 2.2 but still the legal reference in US rules.", "current",
+    V(True, "Fetched W3C TR page 2026-11-25.", "https://www.w3.org/TR/WCAG21/"),
+    jur=["global"], ind=["cross-industry"], rel=["SRC-WCAG-2.2", "SRC-ADA"]))
+a(R("SRC-SECTION-508", "Section 508 of the Rehabilitation Act: ICT Accessibility Standards and Guidelines (36 CFR part 1194)", "US Access Board", "regulation", "binding-regulation",
+    "Revised 508 Standards (latest eCFR amendment 2018-03-23; incorporates WCAG 2.0 AA)", "2017 (final rule; exact date not re-verified)",
+    "https://www.access-board.gov/ict/",
+    "Binds federal agencies procuring ICT, not private vendors directly. Not applicable to Unbound's market, though the VPAT 508 edition derives from it.",
+    US_GOV_LIC, "Exact final-rule date not verified; eCFR shows amendments 2017-03-24, 2018-01-23, 2018-03-23.", "current",
+    V(True, "Fetched Access Board ICT standards page and eCFR versioner API for 36 CFR 1194 2026-11-25; final-rule publication date not re-verified.",
+      "https://www.access-board.gov/ict/"),
+    jur=["US-federal"], ind=["government"], rel=["SRC-ITI-VPAT"]))
+a(R("SRC-ITI-VPAT", "Voluntary Product Accessibility Template (VPAT) 2.5Rev", "Information Technology Industry Council (ITI)", "contract-template", "market-practice",
+    "2.5Rev (April 2025): editions 508, EU (EN 301 549), WCAG, INT", "2025-04-24",
+    "https://www.itic.org/policy/accessibility/vpat",
+    "Market convention for Accessibility Conformance Reports. Customers that care about accessibility will request one. Echelon should produce an ACR from actual testing (WCAG edition or INT). Not law.",
+    "VPAT is a registered trademark of ITI; templates are free to download and use for creating ACRs (detailed terms not read).",
+    "The EU edition dated April 2025 predates EN 301 549 V4.1.1 (2026-09).", "current",
+    V(True, "Fetched ITI VPAT page 2026-11-25.", "https://www.itic.org/policy/accessibility/vpat"),
+    jur=["global"], ind=["cross-industry"], rel=["SRC-WCAG-2.2", "SRC-SECTION-508", "SRC-EN-301-549"],
+    notes="Version confirmation: VPAT 2.5Rev (April 2025) is current per ITI."))
+a(R("SRC-EN-301-549", "EN 301 549 V4.1.1 Accessibility requirements for ICT products and services (Harmonised European Standard)", "ETSI, CEN and CENELEC", "standard", "voluntary-standard",
+    "V4.1.1 (2026-09); references WCAG 2.2", "2026-09",
+    "https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf",
+    "Harmonised standard used for EU public procurement and presumption of conformity under EU accessibility law (citation in the OJ not verified). Not applicable to Unbound absent EU customers.",
+    "ETSI copyright notice (from the PDF): no reproduction without prior written authorization, except extracts strictly necessary for technical implementation of a normative deliverable. Free download from ETSI.",
+    "Whether V4.1.1 has been cited in the Official Journal as harmonised under the EAA was not verified.", "current",
+    V(True, "Downloaded the ETSI PDF 2026-11-25 (title page, copyright notice, WCAG 2.2 references).",
+      "https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf"),
+    jur=["EU"], ind=["cross-industry"], rel=["SRC-EU-ACCESSIBILITY-ACT", "SRC-WCAG-2.2"],
+    notes="Version correction: current is V4.1.1 (2026-09); V3.2.1 (2021) is superseded."))
+a(R("SRC-ADA", "Americans with Disabilities Act, Titles II and III, and DOJ Title II web and mobile accessibility rule (28 CFR part 35, subpart H)", "US Congress; US Department of Justice", "statute", "binding-law",
+    "Title II web rule (89 FR 31320, published 2024-04-24) with compliance dates extended by interim final rule (91 FR 20902, effective 2026-04-20)", "2024-04-24",
+    "https://www.federalregister.gov/documents/2026/04/20/2026-07663/extension-of-compliance-dates-for-nondiscrimination-on-the-basis-of-disability-accessibility-of-web",
+    "Title II binds state and local governments (WCAG 2.1 AA); compliance now due 2027-04-26 for entities of 50,000 or more population and 2028-04-26 for smaller entities and special districts. Not applicable to Unbound unless a public entity (for example a state university foundation that is a public entity) is a customer, in which case it flows down by contract. Title III (public accommodations) has no codified web standard; courts are split on whether websites of businesses without physical places are covered; DAF sponsors' donor portals face litigation risk, which they will push to vendors contractually. Rating: Title III indirect contractual, medium likelihood; Title II unlikely.",
+    US_GOV_LIC, "Title III web obligations are case-law driven and unsettled.", "current",
+    V(True, "Federal Register API 2026-11-25: 2024 final rule metadata and 2026 IFR abstract with extended dates.",
+      "https://www.federalregister.gov/api/v1/documents/2026-07663.json"),
+    jur=["US-federal"], ind=["cross-industry"], rel=["SRC-WCAG-2.1"],
+    notes="Date correction: Title II compliance dates extended from 2026-04-24 and 2027-04-26 to 2027-04-26 and 2028-04-26."))
+a(R("SRC-EU-ACCESSIBILITY-ACT", "Directive (EU) 2019/882 on the accessibility requirements for products and services (European Accessibility Act)", "European Parliament and Council of the European Union", "statute", "binding-law",
+    "Directive 2019/882 (applies to products and services placed on the market or provided after 2025-06-28)", "2019-04-17",
+    "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng",
+    "Binding through member state transposition for listed consumer products and services (including consumer banking services and e-commerce). Not applicable to Unbound absent EU consumer-facing services.",
+    EU_LIC, "Transposition varies by member state.", "current",
+    V(True, "Fetched EUR-Lex directive text 2026-11-25 (Article 2 scope and 2025-06-28 date).", "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng"),
+    jur=["EU"], ind=["consumer-services"], eff="2025-06-28", rel=["SRC-EN-301-549"]))
+a(R("SRC-ISO-20000-1", "ISO/IEC 20000-1:2018 Information technology - Service management - Part 1: Service management system requirements (with Amd 1:2024)", "ISO/IEC JTC 1/SC 40 (ISO and IEC)", "standard", "certification-criteria",
+    "Edition 3.0 (2018) plus Amd 1:2024 (climate action changes)", "2018-09-14",
+    "https://webstore.iec.ch/en/publication/63873",
+    "Certifiable IT service management system. Rarely requested of small SaaS vendors. Optional reference for change, incident and capacity management. Not law.",
+    ISO_LIC + " Price CHF 179; Amd 1 free.", "Low market demand in this segment.", "current",
+    V(True, "Fetched IEC Webstore records 2026-11-25.", "https://webstore.iec.ch/en/publication/63873"),
+    jur=["global"], ind=["cross-industry"],
+    notes="Seed title had no edition; current is 2018 with Amd 1:2024."))
+a(R("SRC-ISO-37301", "ISO 37301:2021 Compliance management systems - Requirements with guidance for use (with Amd 1:2024)", "ISO/TC 309", "standard", "certification-criteria",
+    "2021 edition plus Amd 1:2024 (climate action changes)", "2021 (month not captured)",
+    "https://committee.iso.org/home/tc309",
+    "Certifiable compliance management system. Useful structure for Echelon's compliance obligations register; customers rarely require it. Not law.",
+    ISO_ONLY_LIC, "iso.org blocked; listing from ISO/TC 309 committee site.", "current",
+    V(True, "Fetched ISO/TC 309 committee page (committee.iso.org) listing ISO 37301:2021 and Amd 1:2024 2026-11-25.", "https://committee.iso.org/home/tc309"),
+    jur=["global"], ind=["cross-industry"]))
+a(R("SRC-2CFR200", "Uniform Administrative Requirements, Cost Principles, and Audit Requirements for Federal Awards (2 CFR part 200), procurement standards 200.317 to 200.327", "Office of Management and Budget (OMB)", "regulation", "binding-regulation",
+    "2 CFR 200 as revised in 2024 (latest eCFR amendment date 2024-10-01)", "2024 (revision; exact publication date not captured)",
+    "https://www.ecfr.gov/current/title-2/subtitle-A/chapter-II/part-200",
+    "Binds non-federal entities spending federal awards when they procure. A DAF sponsor would be bound only when buying with federal grant funds, which is atypical. Rating: unlikely.",
+    US_GOV_LIC, "Section numbering of procurement standards not re-verified after the 2024 revision.", "current",
+    V(True, "eCFR versioner API for title 2 part 200 2026-11-25 (latest amendment 2024-10-01).",
+      "https://www.ecfr.gov/api/versioner/v1/versions/title-2.json?part=200"),
+    jur=["US-federal"], ind=["nonprofit", "government"]))
+a(R("SRC-FAR", "Federal Acquisition Regulation (FAR), including security and supply-chain clauses, under the Revolutionary FAR Overhaul", "FAR Council (GSA, DoD, NASA) and OFPP", "regulation", "binding-regulation",
+    "FAC 2026-01 (effective 2026-03-13); Revolutionary FAR Overhaul in progress with class deviations", "2026-03-13 (FAC 2026-01 effective date)",
+    "https://www.acquisition.gov/far-overhaul",
+    "Binds federal contractors through contract clauses. Not applicable to Unbound's market. Clause numbering is changing under the overhaul; do not rely on legacy clause citations without checking.",
+    US_GOV_LIC, "Overhaul ongoing; agency deviations vary.", "current",
+    V(True, "Fetched acquisition.gov FAR and FAR Overhaul pages 2026-11-25.", "https://www.acquisition.gov/browse/index/far"),
+    jur=["US-federal"], ind=["government"], rel=["SRC-CMMC-2.0", "SRC-FEDRAMP"],
+    notes="Material change since seed: FAR is being rewritten (RFO)."))
+a(R("SRC-STATERAMP", "GovRAMP (formerly StateRAMP) and Texas TX-RAMP", "GovRAMP (nonprofit); Texas Department of Information Resources / Texas Cyber Command", "certification-scheme", "certification-criteria",
+    "Programs (current framework versions not captured)", "unknown", "https://govramp.org/",
+    "Required by participating state and local governments for cloud services. Not applicable to Unbound unless selling to state agencies (Texas TX-RAMP for Texas state agencies). Note the DIR site says HB 150 (89R) transferred DIR cybersecurity functions to the Texas Cyber Command.",
+    "Program documents; terms not read.", "Rebrand date from StateRAMP to GovRAMP not verified.", "current",
+    V(True, "Fetched govramp.org and Texas DIR TX-RAMP page 2026-11-25.", "https://dir.texas.gov/information-security/texas-risk-and-authorization-management-program-tx-ramp"),
+    jur=["US-states"], ind=["government"], rel=["SRC-FEDRAMP"],
+    notes="Name correction: StateRAMP now operates as GovRAMP."))
+a(R("SRC-SOFTWARE-ESCROW-PRACTICE", "Software escrow industry practice (umbrella; providers' public materials)", "Escrow providers (for example NCC Group Escode, Iron Mountain)", "umbrella", "market-practice",
+    "Umbrella", "unknown", "https://www.escode.com/",
+    "Customer convention: financial institutions sometimes require source code or SaaS continuity escrow for critical vendors. For a small vendor like Echelon serving bank-affiliated sponsors, escrow (or SaaS environment escrow) is a plausible contractual ask; not law.",
+    "Provider sample agreements are proprietary.", "Iron Mountain site rate-limited (HTTP 429); provider claims not evaluated.", "current",
+    V(False, "Umbrella; fetched NCC Escode home page 2026-11-25; no independent verification of practice prevalence.", "https://www.escode.com/"),
+    jur=["global"], ind=["financial-services", "cross-industry"]))
+a(R("SRC-ISO-27036", "ISO/IEC 27036 Cybersecurity - Supplier relationships (Parts 1 to 3)", "ISO/IEC JTC 1/SC 27 (ISO and IEC)", "standard", "voluntary-standard",
+    "Part 1:2021 (ed. 2.0), Part 2:2022 (ed. 2.0), Part 3:2023 (ed. 2.0)", "2021-09-09 (Part 1); 2022-06-15 (Part 2); 2023-06-13 (Part 3)",
+    "https://webstore.iec.ch/en/publication/76858",
+    "Voluntary supplier security requirements; useful both for Echelon's own supplier management and for anticipating acquirer expectations. Not law.",
+    ISO_LIC + " Prices CHF 67 (Part 1), 181 (Part 2), 159 (Part 3).", "Part 4 (cloud) and others not checked.", "current",
+    V(True, "Fetched IEC Webstore records for Parts 1, 2 and 3 2026-11-25.", "https://webstore.iec.ch/en/publication/71243"),
+    jur=["global"], ind=["cross-industry"], rel=["SRC-NIST-SP800-161-R1"]))
+
+if __name__ == "__main__":
+    import sys
+    write(sys.argv[1], recs)
+    print(len(recs))
