@@ -43,8 +43,8 @@ first-party; none of it is independent assurance.
    capability-absence classes,** and only with build evidence: SQL injection, OS command
    injection, dynamic code evaluation, unsafe deserialization, and memory corruption,
    each restricted to application F# assemblies whose compiled IL lacks the relevant
-   references. 32 of 353 rows target L1, and 14 of those are platform-specific weaknesses
-   (PHP, Struts, Android, J2EE) that are out of scope only while a language inventory gate
+   references. 32 of 353 rows target L1, and 11 of those are platform-specific weaknesses
+   (PHP, Struts, Android, J2EE and similar) that are out of scope only while a language inventory gate
    proves it. None of these is L1 today.
 2. **The largest assurance gains over conventional scanning are in classes that scanners
    do not model:** missing authorization (CWE-862), tenant isolation (CWE-639, CWE-668),
@@ -134,10 +134,10 @@ first-party; none of it is independent assurance.
    in view CWE-1344 (OWASP Top 10 2021), and 79 additional weaknesses chosen for a
    multi-tenant financial web application (numeric correctness, concurrency, resource
    bounds, session management entries new in CWE 5.0, AI integration, export injection).
-   Two grouping-level entries listed by OWASP views (CWE-16) were retained for traceability.
+   One grouping-level entry listed by the OWASP 2025 RC1 view (CWE-16) was retained for traceability.
 2. Assigned each CWE to one of 30 control families. Each family carries default text
-   for controls, scope, bypasses, residual risk, evidence and scanning; about 300
-   per-CWE overrides refine relevance, level and notes.
+   for controls, scope, bypasses, residual risk, evidence and scanning; per-CWE override
+   entries (352, most of them relevance only) refine relevance, level and notes.
 3. Rated `strongest_achievable_level` as the strongest level the architecture could
    support for that CWE within the stated scope if the listed evidence existed;
    `supporting_levels` lists the weaker levels that also contribute.

@@ -93,3 +93,34 @@ open question); no named security officer, IR retainer, breach counsel, cyber in
 or 24x7 coverage; incident history of corporate systems unknown. Target SLAs (KEV 7
 days, critical 15 days, customer notice within 24 hours of reasonable suspicion) are
 research recommendations pending owner decision.
+
+## DAF, GRT, CHV, CON, DON, WLB question batch
+
+272 questions, 53 answer units (51 proposed-target-state, 2 requires-external-validation:
+2023 proposed DAF regulations; state fundraising-platform registration in California and
+Hawaii).
+
+Brief error: seeded prefixes UNB-GRA/CHA/SUC/PAR do not exist; actual prefixes are
+UNB-GRANT-*, UNB-CHAR-*, UNB-SUCC-*, UNB-PART-*. Validate other batches' citations.
+
+Unseeded sources needed: IRS Form 8283/8282 instructions and Treas. Reg. 1.170A appraisal
+rules; IRS Notice 2017-73; IRC 4943 and 6115; Treas. Reg. 53.4945-5(a)(5); Form 4720
+instructions; CAN-SPAM; TCPA; W3C CSP and HTML postMessage; Cal. Gov. Code 12599.9;
+Hawaii HRS 467B-2.3; IRS Pub 561 and digital asset guidance; Limen repository record.
+
+Contradictions and gaps in Unbound:
+1. UNB-RCN-WF-005 (donee model in release 1, citing RCD-034) versus CNV-GRT-013 (agent
+   model default for complex-asset gifts).
+2. CNV-FIN-008 limits release 1 to the standard DAF account type; community foundation
+   fund types (designated, agency, field-of-interest, scholarship) are excluded.
+3. No requirement addresses the 2023 proposed DAF regulations or adverse media screening.
+4. UNB-GAP-011 (complex assets) and UNB-GAP-012 (non-cash substantiation) are gap
+   placeholders only. Unspecified: death-verification sources, executor visibility,
+   35 percent controlled entity data source, custom domain and TLS management, sessions
+   under third-party cookie restrictions, expenditure responsibility workflow.
+5. Limen lacks element or shadow-root roots (Unbound ADR-M-03), forcing an interim iframe
+   or web-component embedding that sits uneasily with SEC-UI-002.
+6. No Echelon policy on vendor board service or fee sharing with sponsors (daf-landscape
+   documents board-vendor overlap in the market); no privacy policy, DPA template or AI
+   training policy.
+7. No bank, custodian, crypto or screening provider selected.
