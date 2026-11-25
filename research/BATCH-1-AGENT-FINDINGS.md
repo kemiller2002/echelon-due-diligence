@@ -223,3 +223,20 @@ repository pilot (Chromium-only accessibility contracts and brand contrast gate)
 - No SLA, support model, severity matrix or status page (UNB-GAP-028 open); UNB-GAP-031
   (accessibility legal assessment) open.
 - Tensions: immutable backups versus deletion; fail-closed refusals counted as downtime.
+
+## NET, INF, CLD, END, ENC question batch
+
+168 questions, 44 answer units (37 proposed-target-state, 7 unknown: cloud provider,
+DNS and domains, workforce devices). Hosting treated as open throughout; 20 open
+infrastructure decisions recorded in answer units.
+- Tenant isolation default conflict: CNV-ARC-001 (shared cluster, schema and role per
+  sponsor) versus RR-UNB-PLAT-008-r1 (dedicated database per tenant).
+- Database engine both chosen (CNV-ARC-001/004 assume managed PostgreSQL) and unchosen
+  (TENANT-AWARE-PERSISTENCE-DESIGN ADR-001).
+- Strata PG16-only plus CNV-ARC-004 (Strata support required before DB upgrade) could
+  strand Unbound on an unsupported PostgreSQL major (PG16 end of life to verify).
+- Unbound control matrix has no network, infrastructure, cloud, endpoint or encryption
+  controls; key management ADR-006 unresolved.
+- .NET is not itself FIPS validated; FIPS answers must name the OS module (OpenSSL/CNG).
+- Unseeded: FIPS 140-3 / CMVP, NIST SP 800-57, 800-52, 800-131A, FIPS 203/204/205,
+  NIST IR 8547, CNSA 2.0, PostgreSQL versioning policy, cloud provider SOC docs.
