@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence requirement",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "description",
+    "producer",
+    "mechanism",
+    "freshness",
+    "independence",
+    "disclosure_classification",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^EVR-[A-Z0-9]+-[0-9]{3}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "producer": {
+      "type": "string",
+      "description": "System or role that generates it; 'not yet assigned' allowed"
+    },
+    "mechanism": {
+      "type": "string",
+      "enum": [
+        "continuous-automated",
+        "event-driven-automated",
+        "periodic-automated",
+        "periodic-manual",
+        "external-attestation",
+        "not-defined",
+        "unknown"
+      ]
+    },
+    "freshness": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "provenance_fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "signing": {
+      "type": "string"
+    },
+    "retention": {
+      "type": "string"
+    },
+    "independence": {
+      "type": "string",
+      "enum": [
+        "first-party",
+        "second-party",
+        "independent-third-party",
+        "regulatory-examination",
+        "none",
+        "unknown"
+      ]
+    },
+    "disclosure_classification": {
+      "type": "string",
+      "enum": [
+        "public",
+        "authenticated-prospect",
+        "nda",
+        "customer-only",
+        "auditor-only",
+        "internal"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "verified-operational",
+        "implemented-not-independently-verified",
+        "partially-implemented",
+        "approved-policy-implementation-pending",
+        "proposed-target-state",
+        "not-applicable",
+        "unsupported",
+        "unknown",
+        "requires-external-validation"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

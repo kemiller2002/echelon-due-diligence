@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed product requirement from due diligence gap",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "statement",
+    "originating_questions",
+    "source_refs",
+    "existing_requirement_refs",
+    "rationale",
+    "acceptance_criteria",
+    "verification_method",
+    "evidence_requirements",
+    "priority",
+    "dependencies",
+    "cost_impact",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^DD-[A-Z]+-[A-Z0-9]+-[0-9]{3}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "statement": {
+      "type": "string"
+    },
+    "originating_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "relation",
+          "basis"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^SRC-[A-Z0-9.-]+$"
+          },
+          "locator": {
+            "type": "string",
+            "description": "Section, control or clause identifier. Never quoted licensed text."
+          },
+          "relation": {
+            "type": "string",
+            "enum": [
+              "derived-from",
+              "maps-to",
+              "informed-by",
+              "contradicts"
+            ]
+          },
+          "basis": {
+            "type": "string",
+            "enum": [
+              "directly-documented",
+              "reasonably-inferred",
+              "unknown"
+            ]
+          }
+        }
+      }
+    },
+    "existing_requirement_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verification_method": {
+      "type": "string"
+    },
+    "evidence_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3"
+      ]
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cost_impact": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "proposed",
+        "accepted",
+        "rejected",
+        "superseded"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

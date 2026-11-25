@@ -1,0 +1,389 @@
+record_id,kind,category_or_title,open_question
+DDQ-ACT-0036,question,ACT,No ERP connector or export format has been selected or built.
+DDQ-AIG-0031,question,AIG,"Does any Unbound function materially influence a consequential decision about a Colorado individual, such as a decision on financial services, under SB 26-189?"
+DDQ-APP-0003,question,APP,Strata has no verified runtime query interface; confirm the enforcing component.
+DDQ-ASM-0006,question,ASM,Which Echelon components in the Unbound build are under PolyForm Noncommercial terms and what commercial license will cover them?
+DDQ-AUN-0027,question,AUN,"Unbound's browser UI is planned on Limen, whose kernel exposes localStorage; a rule against storing tokens there is not yet defined."
+DDQ-AUZ-0011,question,AUZ,No verified runtime typed query interface exists in Strata; which component will provide scope-required queries?
+DDQ-AUZ-0028,question,AUZ,Does the sponsor's exclusive legal control requirement translate into any platform-level legal obligation? Counsel review needed.
+DDQ-BCP-0018,question,BCP,"Does the operating agreement of Echelon Foundry, LLC provide for successor management?"
+DDQ-CHV-0017,question,CHV,Seed the equivalency determination regulation as a source.
+DDQ-CHV-0032,question,CHV,Whether adverse media screening will be offered is undecided.
+DDQ-CLD-0001,question,CLD,Provider not selected.
+DDQ-CLD-0018,question,CLD,Regions not selected.
+DDQ-CLD-0021,question,CLD,Is Unbound expected to support non-US donors or sponsors?
+DDQ-CON-0016,question,CON,Seed Form 8283 instructions as a source.
+DDQ-CON-0017,question,CON,Seed Form 8282 instructions as a source.
+DDQ-CON-0021,question,CON,IRC 4943 is not seeded as a separate source.
+DDQ-CUS-0020,question,CUS,Unbound's own CUEC list is not yet drafted.
+DDQ-DAF-0008,question,DAF,Release 1 scope excludes non-DAF fund types; confirm whether this blocks community foundation adoption.
+DDQ-DAF-0022,question,DAF,Death verification sources and assurance level are not specified in Unbound requirements.
+DDQ-DAF-0038,question,DAF,Echelon has no policy on board service or fee sharing with sponsors; one is needed before sales.
+DDQ-DAF-0047,question,DAF,No authoritative data source for 35 percent controlled entities is identified.
+DDQ-DAF-0049,question,DAF,Form 4720 preparation support scope is undefined; no Form 4720 source is seeded.
+DDQ-DCL-0012,question,DCL,"Does identity proofing under CNV-PLT-003 require SSN collection, or can it validate attributes without storing SSN?"
+DDQ-DON-0021,question,DON,Seed CAN-SPAM and TCPA sources.
+DDQ-ENC-0013,question,ENC,ADR-006 key management unresolved.
+DDQ-ENC-0021,question,ENC,Whether any target customer requires FIPS validation is unknown.
+DDQ-ENC-0027,question,ENC,Secret scanning status of existing repositories unknown.
+DDQ-ENC-0038,question,ENC,No named reviewer with cryptography competence exists.
+DDQ-ENC-0040,question,ENC,NIST PQC standards (FIPS 203/204/205) and transition guidance are not seeded sources.
+DDQ-END-0001,question,END,Device management not established.
+DDQ-END-0005,question,END,EDR and monitoring function not established.
+DDQ-END-0012,question,END,Contractor use not established.
+DDQ-ESC-0007,question,ESC,Federal bankruptcy code source is not seeded; obtain counsel analysis.
+DDQ-FCT-0021,question,FCT,"Hosting provider and payment partners are not yet selected, so subservice organizations cannot be named."
+DDQ-FEE-0013,question,FEE,No Unbound requirement for advance fee-change notice.
+DDQ-FEE-0027,question,FEE,Echelon pricing model not established.
+DDQ-FEE-0028,question,FEE,Form 990 Schedule L instructions not seeded.
+DDQ-FRD-0014,question,FRD,Echelon has no security awareness program in operation; see HR and ISP categories.
+DDQ-FRD-0015,question,FRD,Payee positive pay availability depends on each sponsor's bank.
+DDQ-FRD-0024,question,FRD,Whether any sponsor has a legal CDD obligation is sponsor-specific; see AML category.
+DDQ-FST-0004,question,FST,Going-concern auditing standards (AICPA AU-C 570) are not seeded as a source.
+DDQ-FST-0016,question,FST,11 U.S.C. 365(n) (licensee rights in bankruptcy) is not seeded as a source; counsel review needed.
+DDQ-GRT-0023,question,GRT,IRS Notice 2017-73 is not seeded as a source.
+DDQ-IAM-0026,question,IAM,Does vendor ability to execute sponsor decisions have tax or legal implications for the sponsor's exclusive legal control? Counsel review needed.
+DDQ-INF-0001,question,INF,Hosting provider not selected.
+DDQ-INF-0008,question,INF,Contractual SLA values not decided.
+DDQ-INF-0022,question,INF,IaC tool and state backend not selected.
+DDQ-INF-0029,question,INF,Team size and second-approver staffing are unknown.
+DDQ-INF-0031,question,INF,Strata PostgreSQL version roadmap beyond PG16.
+DDQ-INV-0006,question,INV,CNV-LEG-001 (adopted) states that no sponsor-maintained investment pools will be offered and that values come from the sponsor's external manager or custodian; UNB-NAV-* and UNB-INV-003 nonetheless specify a full pool NAV and unitization engine. The answer follows CNV-LEG-001; the NAV engine applies only if a new owner decision reverses it.
+DDQ-INV-0006,question,INV,Investment Company Act section 3(c)(10) source not seeded.
+DDQ-INV-0024,question,INV,IRC 4943 source not seeded.
+DDQ-INV-0027,question,INV,No Unbound UPMIFA requirement.
+DDQ-INV-0029,question,INV,No Unbound spending-policy requirement located.
+DDQ-IR-0028,question,IR,Under what conditions does a commercial DAF sponsor's data fall within an affiliated covered institution's customer information?
+DDQ-ISP-0005,question,ISP,What is Echelon's planned headcount and security staffing at first production customer?
+DDQ-NET-0003,question,NET,Default isolation profile conflict between CNV-ARC-001 and RR-UNB-PLAT-008-r1.
+DDQ-NET-0014,question,NET,DDoS service selection depends on hosting decision.
+DDQ-NET-0025,question,NET,Echelon domain and registrar inventory is unknown.
+DDQ-NET-0028,question,NET,Edge/CDN provider not selected.
+DDQ-NET-0030,question,NET,Alert triage function not established.
+DDQ-PAY-0017,question,PAY,Not addressed in Unbound requirements.
+DDQ-PAY-0025,question,PAY,"Check printing and mailing provider, signature handling and check stock custody are not specified in Unbound requirements."
+DDQ-PAY-0031,question,PAY,No explicit Unbound requirement; see answer unit open questions.
+DDQ-PAY-0038,question,PAY,TVR-PAY-004-Q: emergency payments during outage is unresolved.
+DDQ-PRT-0020,question,PRT,What fund history may a transferring sponsor lawfully and contractually share with a receiving sponsor without the donor's consent?
+DDQ-PRV-0002,question,PRV,"Does Strata support per-column metadata tags that could carry data category and purpose, or would this require an extension?"
+DDQ-PRV-0004,question,PRV,"In white-label sponsor programs, is Echelon ever the party that must give a notice, or is the sponsor always the notice-giver?"
+DDQ-PRV-0006,question,PRV,"What is the training equivalent for AI agents with data access: system prompt policy, tool restrictions, or both, and how is it evidenced?"
+DDQ-PRV-0008,question,PRV,Is the CCPA regulation section governing permitted service-provider uses cited correctly as 11 CCR 7050? Verify before external use.
+DDQ-PRV-0009,question,PRV,"Does Echelon meet any CCPA threshold in its own right (for example consumers' data bought, sold or shared), independent of customers?"
+DDQ-PRV-0010,question,PRV,Confirm with counsel the current list of state comprehensive privacy laws without a general nonprofit exemption and their effective dates.
+DDQ-PRV-0012,question,PRV,"Is the distribution partner an independent controller, a joint controller with the sponsor, or a processor of the sponsor, and does it vary by program?"
+DDQ-PRV-0020,question,PRV,"Would Echelon be subject to Bank Service Company Act examination for any bank customer's services, and has that been analyzed?"
+DDQ-PRV-0025,question,PRV,Which retention exceptions to deletion rights apply to sponsor financial records under each relevant state law?
+DDQ-PRV-0035,question,PRV,"Does GDPR apply to any expected customer or data flow at all, given Article 3 territorial scope?"
+DDQ-PRV-0047,question,PRV,COPPA is the primary federal source and is not seeded; request a seed entry.
+DDQ-RCN-0022,question,RCN,TVR-ORG-003-Q unresolved in Unbound.
+DDQ-RCN-0031,question,RCN,Retention period not set; SOC2-023 defers to auditor and counsel.
+DDQ-RET-0004,question,RET,Which IRS recordkeeping rule (for example the general record retention rule for exempt organizations) sets the minimum period for sponsor DAF records? Source not seeded.
+DDQ-RRP-0005,question,RRP,Schedules I and F instructions not seeded.
+DDQ-RRP-0006,question,RRP,Form 990-T source not seeded.
+DDQ-RRP-0017,question,RRP,1099 instructions not seeded.
+DDQ-RRP-0018,question,RRP,No Unbound requirement on TIN collection.
+DDQ-RRP-0020,question,RRP,1099-K instructions not seeded; card contributions deferred (CNV-PAY-008).
+DDQ-RRP-0033,question,RRP,Counsel position on DAF balance escheat not recorded.
+DDQ-TEN-0016,question,TEN,Strata reports non-forced RLS as a disclosure but has no invariant failing the build when a tenant table lacks forced RLS; should one be added (recommendation for the Strata repository)?
+DDQ-TXI-0020,question,TXI,No concurrency tests exist yet; REQ-X-019 lists them as not executed.
+DDQ-TXI-0032,question,TXI,Not measured; no system exists.
+DDQ-VUL-0023,question,VUL,Seed a source for RFC 9116 (security.txt).
+DDQ-WLB-0003,question,WLB,Custom domain management is not specified in Unbound requirements.
+DDQ-WLB-0018,question,WLB,Session mechanism under third-party cookie restrictions is not specified.
+ANS-A11Y-007,answer-unit,Accessibility legal obligations and contract terms,"Does Echelon intend to sell to public universities, state entities or federal agencies?"
+ANS-A11Y-007,answer-unit,Accessibility legal obligations and contract terms,"Will Unbound serve consumers in the EU, and does the microenterprise exemption apply to Echelon?"
+ANS-ACT-003,answer-unit,Fund accounting under FASB ASC 958 and DAF account classification,Has any CPA reviewed the default treatments proposed in CNV-FIN-008?
+ANS-AIA-002,answer-unit,Least privilege and deterministic authorization for agents,"What permissions do engineering agents hold today in source control, CI and any cloud account?"
+ANS-AIA-007,answer-unit,Reliability of AI-completed questionnaires and customer-facing assertions,"Which AI tools currently process prospect or customer questionnaire material, and under which provider retention and training terms?"
+ANS-AIA-008,answer-unit,"Governance of AI agents in engineering and operations: change approval, segregation and access",Are branch protection and required human reviews enabled on Echelon repositories today?
+ANS-AIA-008,answer-unit,"Governance of AI agents in engineering and operations: change approval, segregation and access",How many humans are available to act as independent approvers?
+ANS-AIG-001,answer-unit,"AI system and AI use inventory, including AI used to build and operate the service","Which AI providers and accounts are used today for engineering work, and under which commercial terms?"
+ANS-AIG-002,answer-unit,"AI policy, accountable ownership and acceptable use",Who is the accountable AI risk owner for Echelon Foundry?
+ANS-AIG-005,answer-unit,AI model and AI provider due diligence,Do the AI providers used for engineering offer version pinning and advance deprecation notice under Echelon's current account terms?
+ANS-AIG-006,answer-unit,"AI provider data retention, training use and confidentiality terms",Which provider tiers used today offer contractual no-training and zero-retention terms?
+ANS-AIG-007,answer-unit,"Applicability of AI-specific law (EU AI Act as amended by Regulation (EU) 2026/1744, Colorado ADMT law SB 26-189, state automated decision rules, NAIC bulletin)","Does any Unbound function qualify as covered automated decision-making technology under Colorado SB 26-189, whose developer duties begin 2027-01-01?"
+ANS-AIG-007,answer-unit,"Applicability of AI-specific law (EU AI Act as amended by Regulation (EU) 2026/1744, Colorado ADMT law SB 26-189, state automated decision rules, NAIC bulletin)",Whether any EU customer or EU data subject exposure is planned.
+ANS-AIG-008,answer-unit,"Model risk management support for bank customers (SR 26-2 expectations, which superseded SR 11-7 and OCC 2011-12, applied to vendor models)",Does SR 26-2 change documentation or validation expectations for vendor models or generative AI compared with SR 11-7? The guidance attachment has not been read.
+ANS-AIG-010,answer-unit,Environmental footprint of AI use,Which AI providers used by Echelon publish usable energy or emissions data for the models in use?
+ANS-AIS-005,answer-unit,"AI supply chain: models, AI libraries, agent frameworks, tool servers and data",Which tool integrations and credentials do Echelon's engineering agents currently have?
+ANS-AIS-008,answer-unit,Security of AI-generated code in Echelon's own software,"What proportion of merged changes across Echelon repositories are agent-authored, by agent and model?"
+ANS-AIS-008,answer-unit,Security of AI-generated code in Echelon's own software,Is any human review currently required before merge in Echelon repositories?
+ANS-AML-001,answer-unit,Sanctions screening coverage and timing across parties and the grant lifecycle,"Which list data provider will be used, and does it include OFAC consolidated non-SDN lists and ownership data?"
+ANS-AML-002,answer-unit,Screening list freshness and fail-closed behavior,"What freshness bound will be set, and on what basis (CNV-GRT-006 requires it to be basis-tagged)?"
+ANS-AML-005,answer-unit,Sanctions and AML recordkeeping,Confirm the current OFAC recordkeeping period in 31 CFR 501.601 as of the answer date.
+ANS-AML-006,answer-unit,Support for BSA/AML program obligations of bank and broker-dealer sponsors and partners,"The FinCEN investment adviser AML rule now takes effect January 1, 2028 (SRC-FINCEN-IA-AML-RULE-2024); will it change any target customer's expectations of Unbound before or after that date?"
+ANS-AML-006,answer-unit,Support for BSA/AML program obligations of bank and broker-dealer sponsors and partners,Which target sponsors operate under bank or broker-dealer AML programs that would flow requirements to Unbound?
+ANS-API-002,answer-unit,API authentication and partner API key management,Which identity provider and token format will Unbound use? Not chosen.
+ANS-APP-001,answer-unit,SQL and database injection prevention,"Which component will provide the runtime typed query interface: a Strata extension, an Unbound-owned ledger component (CNV-ARC-004) or a third-party library?"
+ANS-APP-005,answer-unit,Server-side request forgery and outbound request control,Which hosting platform and egress control will be used? None is chosen.
+ANS-APP-009,answer-unit,Session management,Limen's kernel exposes localStorage bindings; does Unbound need a rule that no credential or session material passes through them?
+ANS-ARC-005,answer-unit,Database access architecture and dynamic SQL elimination,"SEC-DB-001 requires all application database access through Strata, while CNV-ARC-004 limits Strata to schema governance. Which governs?"
+ANS-ASM-001,answer-unit,"Infrastructure, cloud resource and endpoint inventory",Which cloud and managed PostgreSQL provider will host Unbound (CNV-ARC-001 requires managed PostgreSQL; provider not selected)?
+ANS-ASM-002,answer-unit,"Software, dependency and AI component inventory","Will Echelon components used in Unbound be covered by an executed commercial license before launch (CNV-GOV-007, CNV-GOV-009)?"
+ANS-AUD-001,answer-unit,"SOC 2 examination status, scope and use","Which trust services categories will the first examination cover, and in what quarter could a Type I be scheduled?"
+ANS-AUD-009,answer-unit,Security documentation for customers subject to public records laws,Does Echelon intend to sell to public universities or state entities whose submissions are subject to public records requests?
+ANS-AUN-001,answer-unit,Multi-factor authentication coverage for workforce and administrators,Do Echelon's current source control and package publishing accounts enforce MFA today? Not verified in this review.
+ANS-AUN-004,answer-unit,Automated user lifecycle via SCIM and federated deprovisioning latency,What deprovisioning latency will be offered contractually per partner tier (TVR-WID-006 value is open)?
+ANS-AUN-005,answer-unit,Password policy aligned to NIST SP 800-63-4 and credential storage,Confirm exact numeric thresholds (minimum lengths for single-factor and multi-factor use) against the final published SP 800-63B-4 text before using them in customer materials.
+ANS-AUN-006,answer-unit,"Session management, token handling and revocation",Does the Limen kernel's storage capability need a rule forbidding session or bearer tokens in localStorage for Unbound?
+ANS-AUZ-002,answer-unit,"Object-level and property-level authorization (BOLA, IDOR, mass assignment)","Which component provides the typed, scope-parameterized query interface that SEC-DB-001 assumes, given Strata is schema management only?"
+ANS-AUZ-006,answer-unit,"DAF role semantics: sponsor authority versus donor, advisor and partner permissions","Counsel to confirm whether platform enforcement of recommend-only donor rights is relevant to the sponsor's exclusive legal control under IRC 4966 and the 2023 proposed regulations, or purely a product choice."
+ANS-AVL-005,answer-unit,Service credits and remedies,Will Echelon's commercial counsel accept credits that are not the exclusive remedy?
+ANS-BCP-001,answer-unit,Business continuity management program and policy,"Who is the accountable executive for continuity, and does a board or equivalent body exist to approve the policy?"
+ANS-BCP-005,answer-unit,Key-person and founder dependence,"How many people can currently deploy, restore, and rotate credentials for Echelon systems?"
+ANS-BCP-005,answer-unit,Key-person and founder dependence,"Is there a written succession arrangement for ownership and signing authority of Echelon Foundry, LLC?"
+ANS-CHG-002,answer-unit,Segregation of duties in development and deployment,How many independent humans with production-relevant authority will Echelon have at launch?
+ANS-CHV-001,answer-unit,Eligibility verification against IRS primary data,IRS bulk data publication cadence and gaps for 2026 need verification before freshness targets are committed.
+ANS-CHV-004,answer-unit,"Foreign grantees, equivalency determinations and intermediaries",Treasury Regulation 53.4945-5(a)(5) on equivalency determinations is not a seeded source.
+ANS-CHV-004,answer-unit,"Foreign grantees, equivalency determinations and intermediaries",Expenditure responsibility workflow is not specified in detail.
+ANS-CHV-005,answer-unit,"Fiscal sponsors, churches, government units, supporting organizations and non-filers",Disqualified supporting organization classification depends on data that IRS bulk files may not provide reliably.
+ANS-CHV-006,answer-unit,"Sanctions screening of grantees, donors and payment parties",Screening data provider not selected; list coverage beyond OFAC (for example other jurisdictions' lists) not decided.
+ANS-CHV-007,answer-unit,"Adverse media, discretionary holds and explainable risk signals",No requirement defines whether adverse media screening is offered at all; current requirements only bound its use in holds.
+ANS-CLD-001,answer-unit,Cloud provider selection and due diligence,"Which cloud provider will host Unbound, and what criteria will decide it?"
+ANS-CLD-001,answer-unit,Cloud provider selection and due diligence,Is any target customer contractually restricted to particular providers (for example a bank that has already approved specific providers)?
+ANS-CLD-003,answer-unit,Shared responsibility model,Which security responsibilities will sponsors contractually retain (for example their own user administration and payment approvals)?
+ANS-CLD-004,answer-unit,Subservice organizations in the SOC 2 report: carve-out versus inclusive method,Which auditor will perform Echelon's SOC 2 and what is the planned first period?
+ANS-CLD-006,answer-unit,Region selection and data residency,Which primary and recovery regions will be used?
+ANS-CLD-006,answer-unit,Region selection and data residency,"Will any sponsor or donor population require non-US residency (for example EU donors under GDPR), and is Unbound expected to support it?"
+ANS-CLD-006,answer-unit,Region selection and data residency,Where do candidate AI model providers process prompts and outputs?
+ANS-CLD-007,answer-unit,Cloud account structure and root credential protection,Who will hold cloud root credentials and the second share at launch?
+ANS-CLD-008,answer-unit,Cloud concentration risk and exit strategy,"What recovery time objective applies to a forced provider exit, and will sponsors accept it?"
+ANS-CLD-009,answer-unit,Managed services and other subservice organizations inventory,"Which managed services (KMS, email, AI models, observability) will be subservice organizations versus vendors outside the system boundary?"
+ANS-CON-001,answer-unit,"Cash contribution intake by ACH, wire and check with provisional status",No bank or payment provider has been selected; rail capabilities are unverified (UNB-PAY-008).
+ANS-CON-003,answer-unit,Publicly traded securities contributions,No custodian has been selected; DTC participant data availability depends on custodian feeds.
+ANS-CON-004,answer-unit,"Non-cash valuation, qualified appraisals and Forms 8283 and 8282",Form 8283 and Form 8282 are not seeded sources.
+ANS-CON-004,answer-unit,"Non-cash valuation, qualified appraisals and Forms 8283 and 8282","UNB-GAP-012 is a gap statement, not a normative requirement; detailed requirements are missing."
+ANS-CON-005,answer-unit,Cryptocurrency and complex asset contributions,UNB-GAP-011 remains a gap; detailed acceptance requirements for each complex asset class are not written.
+ANS-CON-005,answer-unit,Cryptocurrency and complex asset contributions,No crypto custody or liquidation provider has been selected.
+ANS-CON-008,answer-unit,Donor-covered processing fees and fee disclosure,"Card contributions are disabled in release 1 (CNV-PAY-008), so donor-covered card fees are deferred."
+ANS-CON-009,answer-unit,"Contribution acceptance, payor verification and screening",Whether DAF sponsors are subject to BSA/AML program obligations is generally no for public charities; the platform's screening scope beyond OFAC needs counsel confirmation.
+ANS-CUS-001,answer-unit,"Custodian integration architecture, data integrity and freshness",No custodian has been selected or contacted; data licensing and entitlement terms (UNB-CUST-017) are unknown.
+ANS-CUS-001,answer-unit,"Custodian integration architecture, data integrity and freshness",Whether target custodians sign or otherwise authenticate files is unknown.
+ANS-CUS-002,answer-unit,"Asset segregation, legal title and Unbound's non-custodial role",The funds-flow conformance check in CNV-LEG-001 is specified but not built.
+ANS-CUS-003,answer-unit,Custodian statements and statement of record,Whether donors receive custodian statements directly is a sponsor decision not captured in Unbound requirements.
+ANS-CUS-004,answer-unit,Custodian oversight: SOC 1 reliance and complementary user entity controls,"The 3- and 12-month bridge-letter defaults are provisional monitoring values, not audit standards (RR-REQ-X-073-r2)."
+ANS-CUS-005,answer-unit,Trade and cash instructions to custodians,UNB-CUST-007 contemplates execution APIs with human authorization while CNV-LEG-001 forbids Unbound from routing orders for others' accounts; the boundary between permitted relay and prohibited execution needs counsel confirmation per custodian.
+ANS-CUS-006,answer-unit,"Custodian outage, degraded modes and custodian transition",No recovery drill (UNB-CUST-024) has been designed or run.
+ANS-DAF-001,answer-unit,"DAF account lifecycle, fund agreement versioning and point-in-time history",Which sponsor-specific lifecycle states (for example memorial or youth funds) must be supported in release 1?
+ANS-DAF-001,answer-unit,"DAF account lifecycle, fund agreement versioning and point-in-time history",Strata currently has no verified runtime typed query interface; how will point-in-time queries be implemented?
+ANS-DAF-002,answer-unit,Fund type classification for section 4966(d)(2) and accounting treatment,"Release 1 supports only the standard DAF account type (CNV-FIN-008); sponsors needing designated, agency or scholarship funds would be unsupported. Confirm with target sponsors."
+ANS-DAF-004,answer-unit,"Multi-participant accounts, joint instructions and conflict handling",How should the platform behave when a fund agreement is silent on joint authority and the sponsor has no default?
+ANS-DAF-005,answer-unit,"Successor advisors, charitable beneficiaries and succession activation","Death verification sources (death certificate, obituary, third-party death data) and their assurance are not defined."
+ANS-DAF-005,answer-unit,"Successor advisors, charitable beneficiaries and succession activation",Which sponsor defaults apply when successors do not respond within the window?
+ANS-DAF-008,answer-unit,"Inactive accounts, account minimums and small-balance handling",Whether any state treats dormant DAF balances or uncashed grant checks as unclaimed property requires counsel review.
+ANS-DAF-009,answer-unit,"Section 4966, 4967 and 4958 compliance support",Source of truth for 35 percent controlled entity relationships is undefined; donors would self-report.
+ANS-DAF-010,answer-unit,Exposure to the 2023 IRS proposed DAF regulations and rule-change agility,"Verify whether the 2023 proposed DAF regulations (REG-142338-07) have been finalized, withdrawn or remain proposed as of 2026-11-25."
+ANS-DAF-010,answer-unit,Exposure to the 2023 IRS proposed DAF regulations and rule-change agility,Baseline requirements do not mention the proposed regulations except indirectly in CNV-GRT-009; a dedicated requirement is missing.
+ANS-DCL-001,answer-unit,Data classification scheme and schema-level assignment,"Does Strata support arbitrary column metadata for classification tags, and can the F# domain model carry classification at the type level?"
+ANS-DCL-002,answer-unit,"Labeling and handling rules by classification, including AI agents and egress","Can Folio embed classification metadata in generated PDFs, and does it support visible labels in templates? Folio capability is unverified (UNB-PLAT-003)."
+ANS-DCL-003,answer-unit,"Restricted data: bank account numbers, SSNs and TINs, government identifiers","Does Unbound, as a Nacha third-party service provider (CNV-PAY-001), meet the volume threshold that makes the Nacha account-number rule binding, or is it adopted voluntarily?"
+ANS-DCL-003,answer-unit,"Restricted data: bank account numbers, SSNs and TINs, government identifiers","Which Unbound workflows actually require SSN or TIN collection, if any? DAF sponsors issue acknowledgments, not information returns, to donors in most cases."
+ANS-DCL-004,answer-unit,Donor anonymity and disclosure preferences,"Do networked grant-payment partners accept an anonymity flag, and do they honor it in their own charity-facing displays?"
+ANS-DON-005,answer-unit,"Donor communications classification, consent and accuracy",CAN-SPAM (16 CFR 316) and TCPA/FCC rules are cited in requirements but not seeded as sources.
+ANS-DON-006,answer-unit,"Donor data use limits, secondary use, AI training and privacy rights","Echelon has no privacy policy, data processing agreement template or AI training policy; all are needed before sales."
+ANS-DON-006,answer-unit,"Donor data use limits, secondary use, AI training and privacy rights","Applicability of GLBA, CCPA and other state privacy laws to nonprofit sponsors and to Echelon as service provider needs counsel review."
+ANS-DON-007,answer-unit,Deceased and incapacitated donor handling,Executor and estate representative information access policy is not specified.
+ANS-DR-001,answer-unit,Recovery time and recovery point objectives,"Which managed PostgreSQL provider and replication configuration will be used, and can it deliver quorum-durable commits across zones?"
+ANS-ENC-001,answer-unit,Encryption of customer data at rest in production stores and backups,"Which managed PostgreSQL and object storage services will be used, and do they support customer-managed keys for all data including backups and replicas?"
+ANS-ENC-002,answer-unit,Encryption in transit over public networks,"Do any target payment, custodian or bank integrations require legacy TLS versions or mutual TLS with specific certificate authorities?"
+ANS-ENC-003,answer-unit,Encryption in transit inside the hosting environment,Does the selected managed PostgreSQL service allow enforcing TLS-only connections server-side?
+ANS-ENC-004,answer-unit,Key management lifecycle and custody,"Cloud KMS (multi-tenant HSM-backed) or dedicated single-tenant HSM? Which customers, if any, require dedicated HSMs?"
+ANS-ENC-004,answer-unit,Key management lifecycle and custody,"Requirements disagree on default isolation profile (CNV-ARC-001 schema per sponsor versus RR-UNB-PLAT-008-r1 dedicated database), which changes how keys are scoped per tenant."
+ANS-ENC-005,answer-unit,FIPS 140-3 validated cryptographic modules,Does any target customer contractually require FIPS 140-3 validated modules (for example public-sector or federal-adjacent work)?
+ANS-ENC-005,answer-unit,FIPS 140-3 validated cryptographic modules,"Which base image distribution and OpenSSL provider will be used, and what is its CMVP certificate status?"
+ANS-ENC-006,answer-unit,Customer-managed keys and per-tenant key isolation,"Will any sponsor require customer-managed keys at launch, and is cross-provider (sponsor uses a different cloud) support needed?"
+ANS-ENC-007,answer-unit,Secrets management and prevention of hardcoded secrets,Is secret scanning enabled on Echelon's existing repositories today?
+ANS-ENC-008,answer-unit,Field-level encryption of donor PII and bank account numbers,"Is Unbound's ACH volume as a third-party service provider expected to reach the Nacha account-number-protection thresholds, and does the sponsor's ODFI agreement impose the requirement regardless of volume?"
+ANS-ENC-008,answer-unit,Field-level encryption of donor PII and bank account numbers,Which fields are classified restricted (data classification is owned by DCL)?
+ANS-ENC-009,answer-unit,Approved cryptography only: no custom cryptography and restricted .NET cryptographic APIs,"Which F# analyzer or IL-level tool will enforce the banned-API list, and has its detection been benchmarked (scanner validation per the Standard)?"
+ANS-ENC-010,answer-unit,Cryptographic agility and post-quantum readiness,Which post-quantum standards and deprecation dates should Echelon cite? NIST FIPS 203/204/205 and NIST IR 8547 are not seeded sources; verify current status before customer use.
+ANS-ENC-010,answer-unit,Cryptographic agility and post-quantum readiness,When will the selected KMS and edge provider support post-quantum signatures and hybrid key exchange?
+ANS-ENC-011,answer-unit,Cryptographic erasure and key destruction,Will counsel accept cryptographic erasure as deletion for state privacy law and contractual purposes?
+ANS-ENC-012,answer-unit,"Signing keys for builds, evidence, statements and ledger integrity anchors",Where will ledger digest anchors be published so that they are independent of Echelon's own infrastructure?
+ANS-END-001,answer-unit,Workforce device management and inventory,"How many people and devices does Echelon have, and are any devices currently managed?"
+ANS-END-001,answer-unit,Workforce device management and inventory,Which workforce identity provider and device management product will be used?
+ANS-END-002,answer-unit,Endpoint detection and response and malware protection,"Who will monitor EDR alerts, and with what response time commitment?"
+ANS-END-003,answer-unit,"Device disk encryption, lock and lost device response","Which state breach notification safe harbors for encrypted data would apply to a lost device, and does counsel accept device encryption status records as evidence?"
+ANS-END-004,answer-unit,"Personal devices, contractor devices and data on endpoints","Will Echelon use contractors for engineering or support, and will they use their own devices?"
+ANS-END-005,answer-unit,Developer workstation and AI coding agent sandbox security,"Which agent platforms will be approved for Echelon engineering, and do their sandboxes allow Echelon to set egress and credential policy?"
+ANS-END-005,answer-unit,Developer workstation and AI coding agent sandbox security,Should agent sandbox providers be treated as subservice organizations once production code is built with them?
+ANS-ESC-001,answer-unit,Source code escrow availability and deposit contents,"Which target customers require escrow as a condition of contract, and do they accept SaaS escrow including hosting and data, or only source?"
+ANS-ESC-002,answer-unit,"Escrow release conditions, license on release and practical usability",How does US bankruptcy law treat an escrow license on a debtor's rejection of the contract? Source (11 U.S.C. 365(n)) not seeded; counsel review needed.
+ANS-ESC-002,answer-unit,"Escrow release conditions, license on release and practical usability",Is a SaaS customer's license to run released code meaningful without the hosted infrastructure and data?
+ANS-ESC-004,answer-unit,"Alternatives to escrow: source availability, reproducible builds, data and schema continuity, dependency continuity","What licenses apply to Strata, Limen, Forma, Folio and Praxis, and could a customer or successor operator lawfully use them if Echelon ceased operations?"
+ANS-ESC-004,answer-unit,"Alternatives to escrow: source availability, reproducible builds, data and schema continuity, dependency continuity",Would source availability to customers conflict with Echelon's commercial strategy or security posture?
+ANS-FCT-001,answer-unit,Engine-enforced segregation of duties across financial processes,"Who owns the SoD conflict matrix at each sponsor, and how is it versioned and approved?"
+ANS-FCT-003,answer-unit,"Change control over fee schedules, rates and fee computation","Which sponsor role approves fee schedules, and is donor disclosure of schedule changes a contractual or regulatory obligation per sponsor?"
+ANS-FCT-004,answer-unit,SOC 1 relevance and plan for customers' financial statement audits,"Which CPA firm, and what period start date is realistic given no production system exists?"
+ANS-FEE-003,answer-unit,"Fee change control, waivers and donor notice","Gap: no Unbound requirement mandates advance notice to donors or sponsors before a fee increase takes effect, or a notice record linked to the schedule version."
+ANS-FEE-005,answer-unit,"Donor-covered, pass-through and processing fees",Counsel has not confirmed the acknowledgment treatment of voluntary donor-covered fees.
+ANS-FEE-006,answer-unit,"Revenue sharing, advisor compensation and conflict disclosure","Echelon's pricing and any revenue-sharing model with distribution partners is not established in reviewed records (business plan is a plan, not evidence)."
+ANS-FEE-006,answer-unit,"Revenue sharing, advisor compensation and conflict disclosure",No Unbound requirement covers disclosure to the sponsor board of vendor-sponsor related-party relationships (the daf-landscape governance research flags board overlap at other vendors as a diligence question). Form 990 Schedule L source not seeded.
+ANS-FEE-006,answer-unit,"Revenue sharing, advisor compensation and conflict disclosure",The 2023 proposed DAF regulations on investment advisors (REG-142338-07) are not final; re-review is required on finalization (UNB-RCN-ENT-015).
+ANS-FRD-008,answer-unit,"Fraud monitoring program, anomaly detection and Nacha 2026 amendments","For each ODFI relationship, is Unbound a Third-Party Service Provider or closer to a Third-Party Sender (CNV-PAY-001 versus CNV-LEG-001), and does that change which fraud monitoring duties it carries?"
+ANS-FST-001,answer-unit,Financial statements and financial transparency package,"Which fiscal year end will Echelon use, and has a CPA been identified?"
+ANS-FST-003,answer-unit,"Insolvency and cessation protection: escrow, wind-down and customer-controlled data","Which escrow agent and which verification level (deposit, build, full deployment) will Echelon offer?"
+ANS-GOV-001,answer-unit,"Legal entity identity, formation status and contracting entity","Has Echelon Foundry, LLC been filed with the Indiana Secretary of State, and on what date?"
+ANS-GOV-001,answer-unit,"Legal entity identity, formation status and contracting entity","Which entity holds the GitHub organization, cloud accounts and domains today: the LLC or an individual?"
+ANS-GOV-002,answer-unit,"Beneficial ownership, control persons and change of control","Is Echelon Foundry, LLC single-member or multi-member, and is it member-managed or manager-managed?"
+ANS-GOV-004,answer-unit,Key-person dependence and succession,Who would be the designated successor or credential custodian?
+ANS-GOV-004,answer-unit,Key-person dependence and succession,Has Echelon priced key-person insurance?
+ANS-GOV-007,answer-unit,"Regulatory status, registrations and regulatory change management",Has counsel confirmed that Unbound's design falls outside money transmission and investment adviser definitions in target states?
+ANS-GOV-008,answer-unit,"Supplier sustainability, human rights and modern slavery due diligence",Which customers require a formal supplier sustainability or modern slavery statement as a condition of onboarding?
+ANS-GOV-009,answer-unit,Disclosure and remediation plans for customer requirements not yet met,Which target customers publish an accommodation or remediation path for small suppliers?
+ANS-GRT-005,answer-unit,"Pledges, event benefits and other prohibited benefit scenarios",IRS Notice 2017-73 is not a seeded source; bifurcated-grant handling policy needs counsel input.
+ANS-GRT-008,answer-unit,"Returned, uncashed and refunded grant payments",CNV-PAY-003 references a statute-derived state rule row for uncashed grants; the rule content and counsel review are not established.
+ANS-HR-001,answer-unit,Background screening of personnel,The FCRA and FDIA Section 19 are not seeded as sources.
+ANS-IAM-004,answer-unit,Break-glass emergency access,"Who are the two people eligible to activate break-glass at launch, given current staffing is not established?"
+ANS-IAM-008,answer-unit,Customer administrator delegation and customer-side user management,"What artifact proves that a person is an authorized officer of a sponsor for administrator recovery (board resolution, signatory list)?"
+ANS-INF-001,answer-unit,Hosting model and deployment topology,"Which cloud provider, compute service and managed PostgreSQL offering will be used?"
+ANS-INF-001,answer-unit,Hosting model and deployment topology,Contradiction: CNV-ARC-001 and CNV-ARC-004 assume managed PostgreSQL while TENANT-AWARE-PERSISTENCE-DESIGN.md states the database engine is not yet selected (ADR-001).
+ANS-INF-001,answer-unit,Hosting model and deployment topology,Strata supports PostgreSQL 16 only (current-state brief); does the chosen managed service offer PG16 for the support horizon Unbound needs?
+ANS-INF-003,answer-unit,Infrastructure patching and vulnerability remediation,"What remediation SLA will be committed contractually, and will customers accept exploitability-based rather than CVSS-only targets?"
+ANS-INF-004,answer-unit,Container and runtime isolation,"Will Unbound run on a container orchestrator, a serverless container service, or a platform-as-a-service? Each changes who controls admission policy."
+ANS-INF-006,answer-unit,Infrastructure as code and policy as code,"Which IaC tool and state backend will be used, and where is IaC state (which can contain secrets) stored and encrypted?"
+ANS-INF-008,answer-unit,Production access and environment separation,"How many people will hold production break-glass capability at launch, and who are the second approvers?"
+ANS-INF-009,answer-unit,Supported component lifecycle and end-of-life management,What is Strata's roadmap for PostgreSQL 17 and later support?
+ANS-INF-009,answer-unit,Supported component lifecycle and end-of-life management,Verify the PostgreSQL 16 end-of-life date against the PostgreSQL versioning policy page before relying on it in customer answers (not re-verified in this session).
+ANS-INS-001,answer-unit,Cyber liability insurance (first and third party),"What cyber limits are realistically available to a pre-revenue Indiana LLC without a SOC report, and at what premium?"
+ANS-INV-001,answer-unit,"Investment authority, regulatory boundary and adviser involvement",CNV-LEG-001 labels its adviser and UPMIFA analysis 'interpretation'; no counsel opinion on Investment Advisers Act status is recorded.
+ANS-INV-001,answer-unit,"Investment authority, regulatory boundary and adviser involvement",CNV-LEG-001 (adopted) states that no sponsor-maintained investment pools will be offered and that values come from the sponsor's external manager or custodian; UNB-NAV-* and UNB-INV-003 nonetheless specify a full pool NAV and unitization engine. The answer follows CNV-LEG-001; the NAV engine applies only if a new owner decision reverses it.
+ANS-INV-003,answer-unit,"Unitization, valuation inputs and NAV publication",CNV-LEG-001 (adopted) states that no sponsor-maintained investment pools will be offered and that values come from the sponsor's external manager or custodian; UNB-NAV-* and UNB-INV-003 nonetheless specify a full pool NAV and unitization engine. The answer follows CNV-LEG-001; the NAV engine applies only if a new owner decision reverses it.
+ANS-INV-004,answer-unit,"Valuation errors, corrections and remediation",Materiality thresholds for compensating funds are sponsor policy and are not set.
+ANS-INV-005,answer-unit,"Investment policy compliance, liquidity and concentration",IRC section 4943 (excess business holdings) is relevant but not in the seeded source list.
+ANS-INV-006,answer-unit,Prudent investment governance support (UPMIFA) and performance and cost reporting,"Gap: no Unbound requirement addresses UPMIFA directly (only a parenthetical 'interpretation' in CNV-LEG-001). Needed: counsel analysis of UPMIFA section 3 prudence and section 5 delegation applicability per state, and whether any account type (for example designated or endowment-type funds) needs spending-policy support."
+ANS-INV-006,answer-unit,Prudent investment governance support (UPMIFA) and performance and cost reporting,GIPS or other performance standard alignment is not specified; source not seeded.
+ANS-INV-007,answer-unit,Valuation of illiquid and non-cash assets,FASB ASC 820 (fair value) is relevant but not seeded.
+ANS-IPR-001,answer-unit,"IP ownership and chain of title, including AI-generated code",US Copyright Office guidance on AI-generated works is not seeded as a source.
+ANS-IPR-001,answer-unit,"IP ownership and chain of title, including AI-generated code",Is the licensor of record on Echelon components an individual or the LLC?
+ANS-IPR-002,answer-unit,"Echelon component licensing, including PolyForm Noncommercial terms",PolyForm Noncommercial 1.0.0 is not seeded as a source (needed: SRC id for the license text).
+ANS-IPR-002,answer-unit,"Echelon component licensing, including PolyForm Noncommercial terms",Should the Secure Construction Standard's preference for MIT be reconciled with the PolyForm Noncommercial licensing of the stack?
+ANS-IR-001,answer-unit,Incident response plan and severity model,"Who will approve the incident response plan for Echelon Foundry, LLC?"
+ANS-IR-002,answer-unit,"Incident response roles, on-call coverage and external support","Will Echelon retain an incident response firm and breach counsel, and when?"
+ANS-IR-002,answer-unit,"Incident response roles, on-call coverage and external support",Will Echelon obtain cyber insurance (see INS)?
+ANS-IR-005,answer-unit,Bank service provider notification under the 2021 Computer-Security Incident Notification rule,Will any Unbound customer be a banking organization (for example a bank or trust company acting as or for a DAF sponsor)?
+ANS-IR-005,answer-unit,Bank service provider notification under the 2021 Computer-Security Incident Notification rule,Does Unbound constitute covered services under the Bank Service Company Act?
+ANS-IR-006,answer-unit,Service provider notice under amended SEC Regulation S-P (2024),"Will Unbound serve SEC-registered advisers or broker-dealers, or DAF sponsors affiliated with them?"
+ANS-IR-008,answer-unit,"Forensics, evidence preservation and regulator cooperation","Is seven years appropriate for incident evidence, aligned with REQ-X-036, or should counsel set a different period?"
+ANS-IR-012,answer-unit,Incident history disclosure,"Has Echelon Foundry experienced any security incident in corporate systems (email, source hosting, identity) since formation?"
+ANS-ISP-001,answer-unit,"Written information security program, scope and governance","Who is the governing body of Echelon Foundry, LLC that would formally adopt the program?"
+ANS-ISP-001,answer-unit,"Written information security program, scope and governance","Is Echelon itself a financial institution under the FTC Safeguards Rule because of activities described in UNB-XIN-REG-002, independent of its customers' status?"
+ANS-ISP-002,answer-unit,"Security leadership: CISO or qualified individual, independence and succession","Will Echelon use a fractional CISO, and if so which firm and with what oversight by a senior Echelon member (16 CFR 314.4(a) allows a service-provider qualified individual with oversight)?"
+ANS-ISP-003,answer-unit,"Security policy set: content, approval, review and communication",Which body formally adopts policies and what is the approval artifact?
+ANS-ISP-007,answer-unit,AI agents within the security program (agentic engineering and operations),"Which model providers process Echelon source code or customer data, and under what data-use terms?"
+ANS-LEG-003,answer-unit,Incident and breach notification obligations,"Is Echelon a 'bank service provider' under the 2021 notification rule for any intended customer, given Unbound serves DAF sponsors rather than banks?"
+ANS-LEG-008,answer-unit,"Governing law, dispute resolution, notices and service level remedies",The governing law position (Indiana) is an assumption from the entity's formation state and has not been decided.
+ANS-MON-003,answer-unit,Log retention and privacy-aware logging,"What retention period will apply to security logs, and does any customer regulation (for example Rule 17a-4 or Rule 204-2) require longer retention of records held in Unbound?"
+ANS-MON-004,answer-unit,"SIEM, alerting, after-hours coverage and response","Will Echelon use an MDR provider, and would it be a subprocessor with access to customer data?"
+ANS-MON-004,answer-unit,"SIEM, alerting, after-hours coverage and response",Who provides after-hours coverage given current organization size?
+ANS-NET-001,answer-unit,"Network architecture, segmentation and tenant cell isolation","Which cloud provider and network primitives (virtual networks, private endpoints) will Unbound use?"
+ANS-NET-001,answer-unit,"Network architecture, segmentation and tenant cell isolation",Requirements disagree on the default isolation profile: CNV-ARC-001 makes schema-per-sponsor in one cluster the default while RR-UNB-PLAT-008-r1 makes a dedicated database per tenant (profile B) the default; the network design depends on which prevails.
+ANS-NET-002,answer-unit,Public ingress control and web application firewall,"Will Unbound process payment card data at all? If yes, PCI DSS Req 6.4.2 requires an automated technical solution for public-facing web applications, which makes the WAF mandatory rather than defense-in-depth."
+ANS-NET-003,answer-unit,Egress control and outbound connection allowlisting,"Which AI model providers will Unbound call from production, and will that traffic be per-tenant restricted?"
+ANS-NET-004,answer-unit,Denial-of-service resilience and rate limiting,"Is a premium DDoS service with provider response team access required by any target customer, or is baseline provider protection sufficient?"
+ANS-NET-005,answer-unit,Remote administrative access to production,"Which workforce identity provider and access broker will be used, and will break-glass credentials be held in an HSM, a sealed vault, or physical escrow?"
+ANS-NET-006,answer-unit,Zero trust posture and service-to-service authentication,Can the selected managed PostgreSQL service authenticate application workloads with short-lived platform identity tokens instead of passwords?
+ANS-NET-007,answer-unit,"DNS, domain and certificate authority hygiene","Which domains does Echelon own, at which registrar, and who holds administrative access?"
+ANS-NET-007,answer-unit,"DNS, domain and certificate authority hygiene","Which DNS provider will host Unbound zones, and does it support DNSSEC signing with the chosen registrar?"
+ANS-NET-008,answer-unit,TLS termination points and visibility of decrypted traffic,"Will a third-party CDN terminate TLS for authenticated traffic, or only for static assets?"
+ANS-NET-009,answer-unit,"Network traffic visibility, flow logging and intrusion detection","Who will triage network alerts (in-house, managed detection provider), and with what response time?"
+ANS-PAY-001,answer-unit,"Nacha roles: sponsor as Originator, Unbound as Third-Party Service Provider holding no funds","CNV-LEG-001 says Unbound SHALL NOT be able to execute a payment, while UNB-XIN-REG-001 gives the operator instruction-only authority and the dispatcher transmits instructions (UNB-XIN-EVA-011, CNV-ARC-003). Clarify with counsel whether transmitting sponsor-authorized files is consistent with the TPSP characterization and with 'cannot execute'."
+ANS-PAY-002,answer-unit,"ACH debit authorizations, retention, account validation and return-rate monitoring",Regulation E (12 CFR 1005.10) governs preauthorized transfers from consumer accounts; it is not yet in the seeded source list.
+ANS-PAY-004,answer-unit,"Wire transfers, UCC Article 4A security procedures and irrevocable rails","No Unbound requirement addresses the Article 4A security procedure between sponsor and bank, or loss allocation when a verified instruction comes through Unbound. Recommend a requirement."
+ANS-PAY-007,answer-unit,Payment file security and bank integration authentication,"Unbound requirements do not explicitly require rendering stored ACH account numbers unreadable, as the Nacha Supplementing Data Security Requirements do for covered parties. Recommend an explicit requirement."
+ANS-PAY-007,answer-unit,Payment file security and bank integration authentication,"Transport choice (bank API, SFTP, file encryption and signing format) depends on banks not yet selected."
+ANS-PAY-008,answer-unit,"Dual control on payment release, limits and no out-of-band origination",Emergency payments during a platform outage (TVR-PAY-004-Q) are unresolved.
+ANS-PEN-001,answer-unit,"Independent penetration testing: existence, frequency and triggers","When will the first independent test be scheduled, and with which budget?"
+ANS-PEN-001,answer-unit,"Independent penetration testing: existence, frequency and triggers",Will testing precede any pilot with real donor data?
+ANS-PEN-003,answer-unit,"Tester qualifications, firm accreditation and independence","Which accreditation will Echelon require, given cost differences among firms?"
+ANS-PEN-006,answer-unit,Customer-initiated penetration testing rights,Can Unbound provision isolated test tenants with production-equivalent controls?
+ANS-PEN-008,answer-unit,"Threat-led and red team testing, including regulator-mandated programs",Will Echelon pursue EU or UK financial customers?
+ANS-PRT-001,answer-unit,"Export formats, documented schema and self-service export",Can Folio produce PDF/A or another archival format? Folio archival capability is unverified (UNB-PLAT-003).
+ANS-PRT-002,answer-unit,"Export completeness: full history, audit trail, decisions and vendor-generated records","Which third-party licensed data (for example charity intelligence sources) cannot be included in exports under source licenses (SOC2-028, UNB-KNOW-038)?"
+ANS-PRT-004,answer-unit,Migration assistance into and out of the platform,"What predecessor platform exports are actually obtainable from incumbent DAF administrators, given the documented export gaps?"
+ANS-PRT-005,answer-unit,"Interoperability with other DAF platforms, grant networks and donor-level portability","Does any DAF or charitable giving data interchange standard exist (for example among grant-payment networks), and would adopting it help or constrain Unbound?"
+ANS-PRV-001,answer-unit,"Privacy program governance, accountable owner, inventory and notice","Who will hold the Privacy Officer role, and will it be an employee, the founder, or a fractional external provider?"
+ANS-PRV-001,answer-unit,"Privacy program governance, accountable owner, inventory and notice","Will the first SOC 2 examination include the Privacy or Confidentiality criteria, and which do target customers require?"
+ANS-PRV-002,answer-unit,"Processing role (processor, service provider) and applicability of CCPA/CPRA and state privacy laws","Most DAF sponsors are nonprofit public charities that fall outside the CCPA definition of 'business'. Does Echelon have any CCPA service-provider obligation when its customer is not a CCPA business, and does that change for for-profit partner programs?"
+ANS-PRV-002,answer-unit,"Processing role (processor, service provider) and applicability of CCPA/CPRA and state privacy laws","Which state comprehensive privacy laws cover nonprofit controllers that would be Echelon customers, and do any of their processor obligations apply to Echelon directly?"
+ANS-PRV-002,answer-unit,"Processing role (processor, service provider) and applicability of CCPA/CPRA and state privacy laws","Where a state law exempts GLBA-covered financial institutions or GLBA-covered data, does that exemption reach donor data held for a nonprofit sponsor?"
+ANS-PRV-003,answer-unit,"GLBA, Regulation P, Safeguards Rule and Regulation S-P obligations flowing to Echelon","Is a nonprofit DAF sponsor a 'financial institution' under GLBA, and if not, does any GLBA obligation reach Echelon through it? This is not settled and must not be resolved by assumption."
+ANS-PRV-003,answer-unit,"GLBA, Regulation P, Safeguards Rule and Regulation S-P obligations flowing to Echelon","Does Echelon's own activity (payment preparation as a Nacha TPSP, account servicing) make it a financial institution under the FTC Safeguards Rule definitions?"
+ANS-PRV-003,answer-unit,"GLBA, Regulation P, Safeguards Rule and Regulation S-P obligations flowing to Echelon","If Echelon is a financial institution under the Safeguards Rule, does the FTC notification requirement for security events affecting 500 or more consumers apply to it directly?"
+ANS-PRV-004,answer-unit,"Data processing agreement terms: subprocessors, instructions, audit and flow-down","Which AI model providers will be subprocessors, and do their terms permit equivalent flow-down obligations, including no training on customer data?"
+ANS-PRV-005,answer-unit,Data subject rights handling and the append-only record conflict,Which donor rights apply at all when the sponsor is a nonprofit outside CCPA and the donor's state law exempts nonprofits or GLBA data?
+ANS-PRV-005,answer-unit,Data subject rights handling and the append-only record conflict,"Can a donor's request to delete be honored for a fund the sponsor legally owns, given that the donor relinquished control of contributed assets?"
+ANS-PRV-006,answer-unit,"No sale, sharing, advertising use or monetization of customer data","Will Echelon want aggregate, cross-sponsor analytics (for example charity intelligence) in future, and if so under what consent model?"
+ANS-PRV-007,answer-unit,"Data location, residency and international transfers","Will any foreign personnel, contractors or AI model provider endpoints access production data?"
+ANS-PRV-007,answer-unit,"Data location, residency and international transfers",Does the US Department of Justice rule restricting bulk sensitive personal data transfers to countries of concern apply to any planned data flow (source not seeded)?
+ANS-PRV-008,answer-unit,"Privacy by design, privacy impact assessment and production data in development","Can Praxis link a change record to a PIA record and expose that link to a CI gate today, or does this need new Praxis capability?"
+ANS-PRV-009,answer-unit,"Cookies, tracking technologies and third-party scripts in donor portals","Will sponsors in white-label programs demand their own analytics tags on donor pages, and will Echelon refuse?"
+ANS-PRV-010,answer-unit,Children's and minors' data,Will Unbound ever support custodial or youth giving accounts? If so COPPA and state minors' laws need analysis; no COPPA source is seeded.
+ANS-PRV-011,answer-unit,"Use of customer data for AI training, model providers and AI agent access",Business plan 10.04 does not state Echelon's actual position on training rights; the owner needs to decide it explicitly.
+ANS-PRV-011,answer-unit,"Use of customer data for AI training, model providers and AI agent access","Which model providers and endpoints will be used, and what are their current retention and training terms?"
+ANS-PRV-012,answer-unit,De-identification and aggregation standards,Will any product feature (for example charity intelligence or peer giving insights) require cross-sponsor aggregates?
+ANS-PRV-013,answer-unit,"Privacy documentation set: DPA template, privacy notices and record of processing","Who will own the privacy documents (managing member, fractional privacy officer or counsel)?"
+ANS-PRV-014,answer-unit,"Privacy law applicability register, including Indiana's Consumer Data Protection Act","Does Echelon, as processor for exempt nonprofit sponsors, have any direct duty under IC 24-15?"
+ANS-PRV-014,answer-unit,"Privacy law applicability register, including Indiana's Consumer Data Protection Act",Is Echelon a financial institution under the FTC Safeguards Rule because it prepares payment files?
+ANS-RCN-001,answer-unit,"Reconciliation scope, sources and cadence (bank, custodian, payment rail, subledger, GL)",UNB-HYP-005 records continuous three-way reconciliation as a hypothesis; no measured break-rate or cost evidence exists (daf-landscape reconciliation economics model is explicitly illustrative).
+ANS-RCN-001,answer-unit,"Reconciliation scope, sources and cadence (bank, custodian, payment rail, subledger, GL)",Which sponsor bank and custodian feed formats are actually available for the first sponsor has not been established.
+ANS-RCN-002,answer-unit,"Matching rules, tolerances and auto-clear governance",Default numeric tolerances are deliberately not set (CNV-FIN-004 labels any starting value illustrative); a sponsor will ask for them.
+ANS-RCN-003,answer-unit,"Break management: ownership, aging, escalation and fund impact",Sponsor-facing break reporting format and frequency are not specified.
+ANS-RCN-004,answer-unit,Segregation of duties and independence of reconciliation from payment initiation,TVR-ORG-003-Q (small-scale compensation for reconciliation segregation) is open in Unbound; the answer for a sponsor with one or two finance staff is unresolved.
+ANS-RCN-005,answer-unit,Independent attestation of reconciliation and auditor reliance,No CPA firm is engaged; the SOC 1 versus SOC 2 scope agreement required by UNB-RCN-PLT-013 has not been made.
+ANS-RCN-005,answer-unit,Independent attestation of reconciliation and auditor reliance,The error-bound sampling method for auto-passed items is not specified.
+ANS-RCN-006,answer-unit,"Reconciliation evidence, reproducibility and retention",UNB-NAV-051 requires Strata's append-only and ordering guarantees to be verified; the current-state brief records no verified Strata runtime query interface.
+ANS-REG-001,answer-unit,"Regulatory inventory, applicability determinations and Echelon's own regulatory status","Has counsel reviewed whether any planned Unbound feature would require money transmitter, investment adviser or broker registration?"
+ANS-REG-004,answer-unit,Sanctions exposure of Echelon itself,"Ownership and control structure of Echelon Foundry, LLC for 50 percent rule analysis."
+ANS-RET-001,answer-unit,"Retention schedule by record class, legal basis and enforcement","Which CNV-PLT-004 retention periods are legally required, which are conservative defaults, and which are unsupported? Counsel review required."
+ANS-RET-001,answer-unit,"Retention schedule by record class, legal basis and enforcement",How should retention apply to personal data in records whose financial retention period has ended but whose sponsor is in an IRS examination?
+ANS-RET-003,answer-unit,Deletion and media sanitization in a cloud service,"Which hosting provider will be used, and what does its current attestation say about media sanitization?"
+ANS-RET-003,answer-unit,Deletion and media sanitization in a cloud service,Does the current revision of NIST SP 800-88 change the treatment of cryptographic erase relative to earlier revisions? Verify before citing a specific section.
+ANS-RET-004,answer-unit,Deletion from backups,"What backup retention period balances recovery needs (RPO, ransomware dwell time) against deletion timeliness?"
+ANS-RET-005,answer-unit,Append-only ledgers and audit logs versus deletion obligations,Counsel must resolve jurisdictional retention versus deletion conflicts before production (UNB-DATA-007).
+ANS-RET-006,answer-unit,"Recordkeeping obligations of regulated customers (SEC 17a-4, 204-2, bank, IRS, OFAC)","Would any broker-dealer or RIA partner keep required records in Unbound, or does Unbound only hold the sponsor's records?"
+ANS-RET-006,answer-unit,"Recordkeeping obligations of regulated customers (SEC 17a-4, 204-2, bank, IRS, OFAC)","If an RIA manages DAF assets, are investment records about the DAF account the adviser's required records under Rule 204-2, the sponsor's, or both?"
+ANS-RET-008,answer-unit,"Precedence between deletion requests, regulatory retention and legal hold",Does crypto-shredding satisfy deletion duties under the state laws in the applicability register?
+ANS-RRP-001,answer-unit,Form 990 Schedule D and annual DAF reporting data package,No CPA-approved data dictionary exists yet; Schedule I and F instructions and Form 990-T sources are not seeded.
+ANS-RRP-002,answer-unit,Contribution acknowledgments and IRS substantiation,Counsel-approved acknowledgment templates do not exist yet.
+ANS-RRP-003,answer-unit,Noncash gift reporting: Forms 8283 and 8282,Forms 8283 and 8282 instructions are not in the seeded source list.
+ANS-RRP-004,answer-unit,Information returns (Forms 1099) and payee tax identity,"Gap for the Unbound gap analysis: no requirement for information-return applicability rules, payee TIN collection and validation, or 1099-K reconciliation."
+ANS-RRP-004,answer-unit,Information returns (Forms 1099) and payee tax identity,"Sources needed but not seeded: IRS General Instructions for Certain Information Returns and Forms 1099-MISC, 1099-NEC and 1099-K instructions."
+ANS-RRP-005,answer-unit,OFAC blocked property and rejected transaction reporting,TVR-CMP-004-Q (blocking versus rejecting) remains open and needs counsel plus drill.
+ANS-RRP-006,answer-unit,State charitable registration support and Unbound platform registration,CNV-LEG-002 marks the sponsor-direct California interpretation as moderate confidence; counsel confirmation is pending.
+ANS-RRP-006,answer-unit,State charitable registration support and Unbound platform registration,The state jurisdiction table (evidence backlog) has not been verified.
+ANS-RRP-007,answer-unit,Unclaimed property reporting for uncashed grants and dormant accounts,State UnclaimedPropertyRule rows must be populated from statute text; none exist yet.
+ANS-RRP-008,answer-unit,Audit-ready reporting packages and regulatory reporting accuracy evidence,No auditor has reviewed the package design; acceptance of generated evidence is conditional on a user auditor's planned approach (CNV-GOV-001).
+ANS-RSK-001,answer-unit,Enterprise and security risk management framework and method,Is ISO/IEC 27005 to be seeded as a source? It is not in SEED-IDS.
+ANS-RSK-005,answer-unit,Echelon's own third-party and fourth-party risk management,"Which AI model providers and agent runtimes does Echelon use for engineering, and under which commercial terms?"
+ANS-SCN-001,answer-unit,"Static application security testing, including F# coverage","Which system will own the security rule registry, given that Aegis is not a SAST orchestrator?"
+ANS-SCN-004,answer-unit,"Dynamic testing (DAST, API testing, IAST, ASV)",Will Unbound ever accept card payments (which would bring PCI DSS and ASV scanning into scope)?
+ANS-SCS-006,answer-unit,Artifact signing and verification,Praxis offers installation by piping a downloaded script to a shell; is checksum or attestation verification performed by that script?
+ANS-SCS-008,answer-unit,Open-source license compliance,"How will Echelon license its own noncommercial-licensed tools (for example Tutela) for use in a commercial product, and how does that affect escrow and customer audit rights?"
+ANS-SDL-003,answer-unit,Code review and independent verification of changes,How will two-approver review be met if Echelon has one human engineer? Not established.
+ANS-SUB-004,answer-unit,"Data location, processing location and cross-border transfers",Do the AI providers in use offer US-only inference commitments under Echelon's account terms?
+ANS-SUP-003,answer-unit,"Escalation, named contacts and coverage despite small team","How many people will be available for customer support at launch, and who covers when the primary is unavailable?"
+ANS-TEN-001,answer-unit,"Multi-tenant architecture, tenant unit and isolation profiles","Reconcile CNV-ARC-001 (row-level security on every tenant table in a schema-per-sponsor cluster) with PARTNER-SEGREGATION-AND-TENANCY.md, which states a shared-schema row-level-security model is not approved as a default profile. The likely reading is that RLS is defense in depth inside a sponsor schema, not the tenant boundary; this should be stated explicitly."
+ANS-TEN-001,answer-unit,"Multi-tenant architecture, tenant unit and isolation profiles","Which managed PostgreSQL provider and which major version will host the shared cluster, given Strata currently supports only PostgreSQL 16?"
+ANS-TEN-003,answer-unit,Tenant isolation by construction: verified tenant context as a required type,"Which component implements the typed, tenant-bound query layer assumed by SEC-DB-001 and the persistence design?"
+ANS-TPR-003,answer-unit,"Vendor contract requirements, including flow-through of customer and regulator rights","Which current vendors (cloud, source hosting, AI providers) are under standard click-through terms only?"
+ANS-TRM-002,answer-unit,"Data return, access windows and deletion certification at exit","What data must Echelon itself retain after exit (for example its own financial records of fees, or evidence of its own control operation), and on what basis?"
+ANS-TRM-003,answer-unit,"Wind-down if Echelon fails, is acquired or changes control","What runway and reserve can Echelon commit to fund an orderly wind-down, and who would execute it if the founder were unavailable?"
+ANS-TRM-003,answer-unit,"Wind-down if Echelon fails, is acquired or changes control",Would scheduled exports to sponsor-owned storage be accepted by sponsors' security teams?
+ANS-TRM-004,answer-unit,Regulatory continuity for the sponsor through exit,"Which sponsor filings or donor communications have deadlines that could fall inside a transition period, and who is responsible for each?"
+ANS-TRM-005,answer-unit,Fees and contract terms at exit,Can Echelon's economics sustain no-fee exit and termination for convenience while it has few customers?
+ANS-TRM-006,answer-unit,"Service continuity through a customer's recovery, resolution or divestiture",Can a tenant's data be partitioned by legal entity for a divestiture without breaking ledger integrity?
+ANS-TXI-002,answer-unit,"External effects: exactly-once internally, at most one live attempt externally",Which candidate payment providers contractually support idempotent submission and status query (TVR-PAY-002 is blocked on external evidence)?
+ANS-VUL-001,answer-unit,Vulnerability management program and identification coverage,"Which hosting provider and managed services will Unbound use, and what vulnerability information do they provide?"
+ANS-VUL-001,answer-unit,Vulnerability management program and identification coverage,Who is the accountable owner of the vulnerability program?
+ANS-VUL-003,answer-unit,"Remediation SLAs, verification and zero-day response","What SLA values will Echelon commit to contractually, and has counsel reviewed them?"
+ANS-VUL-004,answer-unit,Vulnerability exceptions and risk acceptance,Who can accept risk on behalf of Echelon while the organization has few or no employees?
+ANS-VUL-005,answer-unit,Vulnerability disclosure program and security.txt,Does Echelon have a monitored security contact address?
+ANS-VUL-005,answer-unit,Vulnerability disclosure program and security.txt,Has counsel reviewed safe harbor language?
+ANS-VUL-007,answer-unit,Customer notification of vulnerabilities and advisories,Will Echelon assign CVE identifiers for vulnerabilities in distributed libraries (for example via a CNA or GitHub advisories)?
+ANS-WLB-001,answer-unit,White-label branding governance and protected legal terms,Custom domain and TLS certificate management for white-label portals is not specified in requirements.
+ANS-WLB-002,answer-unit,"Co-branded disclosures, legal meaning and platform registration",Counsel must confirm whether California Gov. Code 12599.9 and Hawaii HRS 467B-2.3 platform registration apply to each deployment model.
+ANS-WLB-002,answer-unit,"Co-branded disclosures, legal meaning and platform registration",State charitable fundraising platform statutes are covered only by the umbrella source SRC-STATE-CHARITABLE-SOLICITATION.
+ANS-WLB-003,answer-unit,"Embedded component security: framing, CSP, message validation and launch tokens","Limen does not yet support element or shadow-root roots (unbound research, ADR-M-03); the interim embedding design is unsettled."
+ANS-WLB-003,answer-unit,"Embedded component security: framing, CSP, message validation and launch tokens",W3C Content Security Policy is not a seeded source.

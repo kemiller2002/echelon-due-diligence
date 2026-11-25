@@ -1,0 +1,452 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echelonfoundry.com/schemas/dd/evidence-record/0.1.0",
+  "title": "Echelon due diligence evidence record",
+  "description": "One immutable observation that supports, contradicts or qualifies a control, answer or requirement. Defined by architecture/EVIDENCE-ARCHITECTURE-SPECIFICATION.md (DD-ARC-003). The signed content is the record without the 'signatures' and 'lifecycle' members; lifecycle changes are appended as separately signed events and never edit the signed content. Compatible with Tutela Security Evidence (tutela@476dc682:schemas/security-evidence.schema.json) through the 'tutela' projection rules in DD-ARC-003.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "id",
+    "title",
+    "evidence_kind",
+    "subject",
+    "traces",
+    "producer",
+    "method",
+    "result",
+    "timestamps",
+    "provenance",
+    "independence",
+    "disclosure",
+    "limitations",
+    "lifecycle"
+  ],
+  "properties": {
+    "schema": {
+      "const": "echelon.dd.evidence-record/0.1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^EVD-[A-Z0-9]+-[0-9]{8}-[0-9a-f]{8}$",
+      "description": "EVD-<PRODUCER>-<YYYYMMDD>-<first 8 hex of record digest>."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_kind": {
+      "enum": [
+        "test-result",
+        "static-analysis",
+        "semantic-analysis",
+        "dependency-scan",
+        "secret-scan",
+        "config-scan",
+        "sbom",
+        "build-provenance",
+        "release-manifest",
+        "schema-validation",
+        "schema-diff",
+        "schema-drift",
+        "boundary-verification",
+        "accessibility-conformance",
+        "state-legality",
+        "quality-observation",
+        "work-completion",
+        "fault-observation",
+        "runtime-observation",
+        "fuzz",
+        "adversarial-test",
+        "manual-review",
+        "policy-approval",
+        "exception-record",
+        "external-attestation",
+        "other"
+      ]
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["product_ids", "repository", "commit"],
+      "properties": {
+        "product_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Echelon product or system identifiers, for example 'unbound' or a Registry system id."
+        },
+        "repository": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "commit": { "$ref": "#/$defs/gitObjectId" },
+        "tree_id": { "$ref": "#/$defs/gitObjectId" },
+        "ref": { "type": "string" },
+        "artifacts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "digest"],
+            "properties": {
+              "name": { "type": "string", "minLength": 1 },
+              "digest": { "$ref": "#/$defs/digest" },
+              "media_type": { "type": "string" },
+              "registry_release": {
+                "type": "string",
+                "description": "Echelon Registry release record path, for example releases/strata/0.1.1.release.json."
+              },
+              "build_provenance": { "$ref": "#/$defs/contentRef" }
+            }
+          }
+        },
+        "environment": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": { "enum": ["source-only", "ci", "test", "staging", "production", "local", "unknown"] },
+            "description": { "type": "string" }
+          }
+        }
+      }
+    },
+    "traces": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["control_ids", "policy_refs"],
+      "properties": {
+        "control_ids": { "type": "array", "items": { "type": "string", "pattern": "^(ECTL-[A-Z]+-[0-9]{3}|UNB-CTRL-[A-Z0-9-]+)$" } },
+        "question_ids": { "type": "array", "items": { "type": "string", "pattern": "^DDQ-[A-Z]+-[0-9]{4}$" } },
+        "answer_unit_ids": { "type": "array", "items": { "type": "string", "pattern": "^ANS-[A-Z]+-[0-9]{3}$" } },
+        "evidence_requirement_ids": { "type": "array", "items": { "type": "string", "pattern": "^EVR-[A-Z]+-[0-9]{3}$" } },
+        "policy_refs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["document", "rule_id"],
+            "properties": {
+              "document": { "type": "string", "description": "repo@commit:path of the policy." },
+              "rule_id": { "type": "string", "description": "For example SEC-DB-001." }
+            }
+          }
+        },
+        "requirement_ids": { "type": "array", "items": { "type": "string" } },
+        "tutela_ids": { "type": "array", "items": { "type": "string" }, "description": "Tutela invariant, threat, finding or unknown identifiers." },
+        "related_records": { "type": "array", "items": { "type": "string" }, "description": "Praxis EV-, DF- or other canonical record identifiers." }
+      }
+    },
+    "producer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["system", "system_version"],
+      "properties": {
+        "system": {
+          "enum": ["praxis", "tutela", "dokimos", "strata", "limen", "forma", "folio", "ordo", "aegis", "vigila", "echelon-registry", "echelon-knowledge-store", "echelon-due-diligence", "external-tool", "human"]
+        },
+        "system_version": { "type": "string", "minLength": 1 },
+        "registry_release": { "type": "string" },
+        "capability_id": { "type": "string", "description": "Echelon Registry capability id when invoked through the Registry." },
+        "tool": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "version"],
+          "properties": {
+            "name": { "type": "string" },
+            "version": { "type": "string" },
+            "digest": { "$ref": "#/$defs/digest" }
+          }
+        },
+        "rule_set": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "version"],
+          "properties": {
+            "id": { "type": "string" },
+            "version": { "type": "string" },
+            "digest": { "$ref": "#/$defs/digest" }
+          }
+        },
+        "databases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "version"],
+            "properties": {
+              "name": { "type": "string" },
+              "version": { "type": "string" },
+              "retrieved_at": { "type": "string", "format": "date-time" }
+            }
+          }
+        },
+        "configuration_digest": { "$ref": "#/$defs/digest" }
+      }
+    },
+    "method": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description"],
+      "properties": {
+        "description": { "type": "string", "minLength": 1 },
+        "command": { "type": "array", "items": { "type": "string" } },
+        "scope_included": { "type": "array", "items": { "type": "string" } },
+        "scope_excluded": { "type": "array", "items": { "type": "string" } },
+        "coverage": { "type": "string" }
+      }
+    },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["outcome", "summary"],
+      "properties": {
+        "outcome": {
+          "enum": ["pass", "fail", "indeterminate", "not-applicable", "informational"],
+          "description": "'indeterminate' is neither pass nor fail and must never be rendered as pass."
+        },
+        "summary": { "type": "string", "minLength": 1 },
+        "exit_code": { "type": "integer" },
+        "finding_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "critical": { "type": "integer", "minimum": 0 },
+            "high": { "type": "integer", "minimum": 0 },
+            "medium": { "type": "integer", "minimum": 0 },
+            "low": { "type": "integer", "minimum": 0 },
+            "informational": { "type": "integer", "minimum": 0 },
+            "unverifiable": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "payload": { "$ref": "#/$defs/contentRef" }
+      }
+    },
+    "timestamps": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observed_at", "recorded_at"],
+      "properties": {
+        "observed_at": { "type": "string", "format": "date-time" },
+        "recorded_at": { "type": "string", "format": "date-time" },
+        "valid_from": { "type": "string", "format": "date-time" },
+        "valid_until": { "type": ["string", "null"], "format": "date-time" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actor", "identity_assurance"],
+      "properties": {
+        "actor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "id"],
+          "description": "Praxis actor shape (praxis@12bf9951:docs/agent-provenance.md).",
+          "properties": {
+            "kind": { "enum": ["agent", "human", "automation", "unknown"] },
+            "id": { "type": "string" },
+            "provider": { "type": "string" },
+            "model": { "type": "string" },
+            "runtime": { "type": "string" }
+          }
+        },
+        "identity_assurance": {
+          "enum": ["asserted", "platform-verified", "key-verified"],
+          "description": "asserted: self-declared; platform-verified: bound to a platform subject id with binding evidence; key-verified: a trusted signature covers the record."
+        },
+        "execution_id": { "type": "string", "pattern": "^EXE-[0-9]{8}T[0-9]{9}Z-[0-9a-f]{8}$" },
+        "work_item_id": { "type": "string" },
+        "run_ref": { "type": "string", "description": "CI run URL or identifier." },
+        "workflow_ref": { "type": "string" },
+        "inputs": { "type": "array", "items": { "$ref": "#/$defs/contentRef" } }
+      }
+    },
+    "independence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["assurance_independence", "independent_of_implementation"],
+      "properties": {
+        "assurance_independence": {
+          "enum": ["first-party", "second-party", "independent-third-party", "regulatory-examination", "none", "unknown"]
+        },
+        "independent_of_implementation": {
+          "type": "boolean",
+          "description": "True only when the verifier did not author the change under verification (TUT-0006)."
+        },
+        "verifier": { "type": "string" }
+      }
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["reviewer", "role", "decision", "reviewed_at"],
+        "properties": {
+          "reviewer": { "$ref": "#/$defs/boundIdentity" },
+          "role": { "type": "string", "description": "Role from the Tutela role registry, for example security-owner." },
+          "decision": { "enum": ["accepted", "rejected", "accepted-with-conditions", "needs-more-evidence"] },
+          "reviewed_at": { "type": "string", "format": "date-time" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "expires_at"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^SEC-EXC-[0-9]{3,}$" },
+          "expires_at": { "type": "string", "format": "date-time" },
+          "document": { "type": "string" }
+        }
+      }
+    },
+    "residual_risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["description", "treatment"],
+        "properties": {
+          "id": { "type": "string" },
+          "description": { "type": "string", "minLength": 1 },
+          "treatment": { "enum": ["accepted", "mitigated", "transferred", "open", "unknown"] },
+          "owner": { "type": "string" },
+          "review_by": { "type": "string", "format": "date" }
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "At least one limitation is mandatory. Absence of findings is never proof of absence (TUT-0004)."
+    },
+    "disclosure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["class", "redacted"],
+      "properties": {
+        "class": {
+          "enum": ["public", "authenticated-prospect", "nda", "customer-only", "auditor-only", "internal"]
+        },
+        "redacted": { "type": "boolean" },
+        "restricted_fields": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "JSON Pointers of members that must be removed below the stated class."
+        },
+        "public_summary": { "type": "string" },
+        "rationale": { "type": "string" }
+      }
+    },
+    "retention": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "policy_ref": { "type": "string" },
+        "retain_until": { "type": ["string", "null"], "format": "date" },
+        "legal_hold": { "type": "boolean" }
+      }
+    },
+    "record_digest": {
+      "$ref": "#/$defs/digest",
+      "description": "Digest of the RFC 8785 canonical JSON of the record without 'signatures', 'lifecycle' and 'record_digest'."
+    },
+    "signatures": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/signature" }
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "events"],
+      "properties": {
+        "state": {
+          "enum": ["draft", "recorded", "verified", "stale", "expired", "superseded", "revoked", "rejected"]
+        },
+        "supersedes": { "type": "array", "items": { "type": "string", "pattern": "^EVD-" } },
+        "superseded_by": { "type": ["string", "null"], "pattern": "^EVD-" },
+        "events": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/lifecycleEvent" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "gitObjectId": {
+      "type": "string",
+      "pattern": "^([0-9a-f]{40}|[0-9a-f]{64})$"
+    },
+    "digest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["algorithm", "value"],
+      "properties": {
+        "algorithm": { "enum": ["sha256", "sha512"] },
+        "value": { "type": "string", "pattern": "^[0-9a-f]{64}([0-9a-f]{64})?$" }
+      }
+    },
+    "contentRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["uri", "digest"],
+      "properties": {
+        "uri": { "type": "string", "minLength": 1 },
+        "digest": { "$ref": "#/$defs/digest" },
+        "media_type": { "type": "string" }
+      }
+    },
+    "boundIdentity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "provider", "subject_id", "binding_verified"],
+      "description": "Compatible with Tutela boundIdentity (tutela@476dc682:schemas/exception.schema.json).",
+      "properties": {
+        "kind": { "enum": ["human", "agent", "workflow"] },
+        "provider": { "type": "string" },
+        "subject_id": { "type": "string", "minLength": 1 },
+        "login": { "type": "string", "description": "Display only; never confers identity." },
+        "binding_verified": { "type": "boolean" },
+        "binding_evidence": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format", "key_id", "algorithm", "signed_digest", "signed_at", "signer"],
+      "properties": {
+        "format": { "enum": ["dsse-v1", "sigstore-bundle", "detached-ecdsa"] },
+        "key_id": { "type": "string", "pattern": "^(sha256:[0-9a-f]{64}|sigstore:.+)$" },
+        "algorithm": { "enum": ["ecdsa-p256-sha256", "ed25519", "sigstore-keyless"] },
+        "signed_digest": { "$ref": "#/$defs/digest" },
+        "signature": { "type": "string", "description": "Base64 signature, or omitted when 'envelope' is given." },
+        "envelope": { "$ref": "#/$defs/contentRef" },
+        "signed_at": { "type": "string", "format": "date-time" },
+        "signer": { "$ref": "#/$defs/boundIdentity" }
+      }
+    },
+    "lifecycleEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["event", "at", "actor", "reason"],
+      "properties": {
+        "event": { "enum": ["recorded", "verified", "marked-stale", "expired", "superseded", "revoked", "rejected", "disclosure-reclassified"] },
+        "at": { "type": "string", "format": "date-time" },
+        "actor": { "$ref": "#/$defs/boundIdentity" },
+        "reason": { "type": "string", "minLength": 1 },
+        "reason_code": {
+          "enum": ["key-compromise", "producer-defect", "subject-changed", "fabrication-suspected", "superseded-by-newer", "scope-error", "disclosure-error", "expired", "other"]
+        },
+        "successor": { "type": "string", "pattern": "^EVD-" },
+        "new_disclosure_class": { "enum": ["public", "authenticated-prospect", "nda", "customer-only", "auditor-only", "internal"] },
+        "signature": { "$ref": "#/$defs/signature" }
+      }
+    }
+  }
+}

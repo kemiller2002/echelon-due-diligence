@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canonical due diligence question",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "question",
+    "category",
+    "subcategory",
+    "business_concern",
+    "risk_addressed",
+    "source_refs",
+    "industries",
+    "jurisdictions",
+    "products",
+    "requirement_classification",
+    "customer_importance",
+    "answer_unit"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^DDQ-[A-Z0-9]+-[0-9]{4}$"
+    },
+    "question": {
+      "type": "string"
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "category": {
+      "type": "string"
+    },
+    "subcategory": {
+      "type": "string"
+    },
+    "business_concern": {
+      "type": "string"
+    },
+    "risk_addressed": {
+      "type": "string"
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "relation",
+          "basis"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^SRC-[A-Z0-9.-]+$"
+          },
+          "locator": {
+            "type": "string",
+            "description": "Section, control or clause identifier. Never quoted licensed text."
+          },
+          "relation": {
+            "type": "string",
+            "enum": [
+              "derived-from",
+              "maps-to",
+              "informed-by",
+              "contradicts"
+            ]
+          },
+          "basis": {
+            "type": "string",
+            "enum": [
+              "directly-documented",
+              "reasonably-inferred",
+              "unknown"
+            ]
+          }
+        }
+      }
+    },
+    "industries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "jurisdictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "regulatory_authority": {
+      "type": "string",
+      "description": "Regulator or 'none' or 'unknown'"
+    },
+    "requirement_classification": {
+      "type": "string",
+      "enum": [
+        "legal-regulatory",
+        "supervisory-guidance",
+        "certification-criteria",
+        "contractual-common",
+        "industry-convention",
+        "customer-preference",
+        "echelon-internal",
+        "unknown"
+      ]
+    },
+    "customer_importance": {
+      "type": "string",
+      "enum": [
+        "critical",
+        "high",
+        "medium",
+        "low",
+        "unknown"
+      ]
+    },
+    "answer_unit": {
+      "type": "string",
+      "pattern": "^ANS-[A-Z0-9]+-[0-9]{3}$"
+    },
+    "answer_scope_note": {
+      "type": "string"
+    },
+    "controls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "policies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "disclosure_classification": {
+      "type": "string",
+      "enum": [
+        "public",
+        "authenticated-prospect",
+        "nda",
+        "customer-only",
+        "auditor-only",
+        "internal"
+      ]
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "change",
+          "by"
+        ],
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "change": {
+            "type": "string"
+          },
+          "by": {
+            "type": "string"
+          },
+          "decision_ref": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Adversarial review objection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "perspective",
+    "target",
+    "objection",
+    "severity",
+    "response",
+    "disposition"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^OBJ-[A-Z0-9]+-[0-9]{3}$"
+    },
+    "perspective": {
+      "type": "string"
+    },
+    "target": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "objection": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "blocking",
+        "major",
+        "minor"
+      ]
+    },
+    "response": {
+      "type": "string"
+    },
+    "disposition": {
+      "type": "string",
+      "enum": [
+        "accepted-changed",
+        "accepted-open",
+        "partially-accepted",
+        "rejected-with-rationale"
+      ]
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "ordo.execution/1",
+  "executionId": "EXE-20261125T173744839Z-c8911619",
+  "workItem": "kemiller2002/echelon-due-diligence:DD-RESEARCH-2026-001",
+  "actor": {
+    "id": "anthropic/claude-code",
+    "kind": "agent",
+    "provider": "anthropic",
+    "model": null,
+    "runtime": "claude-code"
+  },
+  "role": "implementation",
+  "capabilities": [
+    "implementation.modify",
+    "implementation.modify-tests",
+    "evaluator.invoke",
+    "verification.observe",
+    "evidence.record"
+  ],
+  "prohibitions": [
+    "specification.create-promise",
+    "specification.approve",
+    "acceptance.modify",
+    "evaluator.modify",
+    "verification.verdict",
+    "review.accept"
+  ],
+  "baselineRevision": "014148aaf876b0e0c11dbe1f4851a9d00096fec6",
+  "candidateRevision": null,
+  "workspace": "checkout:EXE-20261125T173744839Z-c8911619",
+  "workspaceBinding": {
+    "id": "checkout:EXE-20261125T173744839Z-c8911619",
+    "branch": "claude/echelon-due-diligence-research-6vrnsy",
+    "path": null,
+    "mechanism": "working-directory"
+  },
+  "containment": "semantic-only",
+  "containmentDetail": {
+    "mechanism": "working-directory",
+    "restrictions": [],
+    "evidence": []
+  },
+  "securitySandbox": false,
+  "mutationBoundary": {
+    "scopes": [],
+    "projections": [],
+    "evaluatorReferences": []
+  },
+  "evaluator": null,
+  "humanOnlyTransitions": [],
+  "parentExecution": null,
+  "startedAt": "2026-11-25T17:37:44.964Z",
+  "state": "blocked",
+  "stateReason": "Mission not complete: awaiting owner fact verification, human review of answer units and counsel opinions; open backlog BL-013, BL-023, BL-024, BL-025 and 123 open objections. See HANDOFF.md.",
+  "origin": {
+    "kind": "work-transition",
+    "reference": "work.begin"
+  },
+  "containmentProfile": {
+    "schema": "praxis.containment/1",
+    "source": null,
+    "hostEnforced": false,
+    "restrictions": [
+      {
+        "dimension": "filesystem",
+        "status": "unknown",
+        "mechanism": null,
+        "evidence": null
+      },
+      {
+        "dimension": "process",
+        "status": "unknown",
+        "mechanism": null,
+        "evidence": null
+      },
+      {
+        "dimension": "network",
+        "status": "unknown",
+        "mechanism": null,
+        "evidence": null
+      },
+      {
+        "dimension": "credential",
+        "status": "unknown",
+        "mechanism": null,
+        "evidence": null
+      },
+      {
+        "dimension": "environment",
+        "status": "unknown",
+        "mechanism": null,
+        "evidence": null
+      }
+    ]
+  },
+  "evaluatorCommand": null,
+  "provider": {
+    "sessionId": "b7b453f6-b4f4-5ac1-8185-da750ab26d41",
+    "agentInstanceId": null
+  }
+}

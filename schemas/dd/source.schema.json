@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source register entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "issuer",
+    "type",
+    "authority",
+    "version",
+    "publication_date",
+    "url",
+    "applicability",
+    "license",
+    "limitations",
+    "verification"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^SRC-[A-Z0-9.-]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "issuer": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "statute",
+        "regulation",
+        "supervisory-guidance",
+        "standard",
+        "framework",
+        "questionnaire",
+        "certification-scheme",
+        "contract-template",
+        "industry-guidance",
+        "organization-publication",
+        "academic",
+        "dataset",
+        "tool",
+        "internal-echelon",
+        "umbrella"
+      ]
+    },
+    "authority": {
+      "type": "string",
+      "enum": [
+        "binding-law",
+        "binding-regulation",
+        "supervisory-expectation",
+        "certification-criteria",
+        "voluntary-standard",
+        "contractual-template",
+        "market-practice",
+        "organizational-statement",
+        "internal",
+        "unknown"
+      ]
+    },
+    "version": {
+      "type": "string"
+    },
+    "publication_date": {
+      "type": "string",
+      "description": "ISO date, partial date, or 'unknown'"
+    },
+    "effective_date": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "jurisdictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "industries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "applicability": {
+      "type": "string",
+      "description": "When and why it applies to Echelon or Unbound; 'not established' when unknown."
+    },
+    "license": {
+      "type": "string",
+      "description": "Licensing and reuse restriction, including whether content may be reproduced."
+    },
+    "limitations": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "current",
+        "superseded",
+        "withdrawn",
+        "proposed",
+        "draft",
+        "unknown"
+      ]
+    },
+    "superseded_by": {
+      "type": "string"
+    },
+    "related_sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "verified",
+        "verified_on",
+        "method"
+      ],
+      "properties": {
+        "verified": {
+          "type": "boolean"
+        },
+        "verified_on": {
+          "type": "string"
+        },
+        "method": {
+          "type": "string",
+          "description": "e.g. 'fetched issuer page' or 'not verified: network blocked'"
+        },
+        "evidence_url": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

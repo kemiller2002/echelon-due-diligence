@@ -1,0 +1,343 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Answer unit (one answer to one underlying concern)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "status",
+    "status_rationale",
+    "target_answer",
+    "current_practice",
+    "intended_practice",
+    "provable",
+    "customer_statement",
+    "customer_statement_kind",
+    "assurance_independence",
+    "controls",
+    "evidence_requirements",
+    "owner",
+    "history"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ANS-[A-Z0-9]+-[0-9]{3}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "verified-operational",
+        "implemented-not-independently-verified",
+        "partially-implemented",
+        "approved-policy-implementation-pending",
+        "proposed-target-state",
+        "not-applicable",
+        "unsupported",
+        "unknown",
+        "requires-external-validation"
+      ]
+    },
+    "status_rationale": {
+      "type": "string"
+    },
+    "target_answer": {
+      "type": "string",
+      "description": "Recommended target-state answer."
+    },
+    "current_practice": {
+      "type": "string",
+      "description": "What Echelon currently does. 'Unknown' is acceptable."
+    },
+    "intended_practice": {
+      "type": "string"
+    },
+    "provable": {
+      "type": "string",
+      "description": "What Echelon can prove today and with which evidence."
+    },
+    "customer_statement": {
+      "type": "string",
+      "description": "What may legitimately be communicated to customers now."
+    },
+    "customer_statement_kind": {
+      "type": "string",
+      "enum": [
+        "current-fact",
+        "qualified-current-fact",
+        "planned",
+        "not-available",
+        "withheld"
+      ]
+    },
+    "assurance_independence": {
+      "type": "string",
+      "enum": [
+        "first-party",
+        "second-party",
+        "independent-third-party",
+        "regulatory-examination",
+        "none",
+        "unknown"
+      ]
+    },
+    "external_assurance": {
+      "type": "string"
+    },
+    "controls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "policies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_freshness": {
+      "type": "string",
+      "description": "ISO 8601 duration or event rule"
+    },
+    "evidence_mechanism": {
+      "type": "string",
+      "enum": [
+        "continuous-automated",
+        "event-driven-automated",
+        "periodic-automated",
+        "periodic-manual",
+        "external-attestation",
+        "not-defined",
+        "unknown"
+      ]
+    },
+    "automation_potential": {
+      "type": "string",
+      "enum": [
+        "full",
+        "high",
+        "partial",
+        "low",
+        "none",
+        "unknown"
+      ]
+    },
+    "disclosure_classification": {
+      "type": "string",
+      "enum": [
+        "public",
+        "authenticated-prospect",
+        "nda",
+        "customer-only",
+        "auditor-only",
+        "internal"
+      ]
+    },
+    "implementation_cost": {
+      "type": "string",
+      "enum": [
+        "none",
+        "low",
+        "medium",
+        "high",
+        "very-high",
+        "unknown"
+      ]
+    },
+    "recurring_cost": {
+      "type": "string",
+      "enum": [
+        "none",
+        "low",
+        "medium",
+        "high",
+        "very-high",
+        "unknown"
+      ]
+    },
+    "cost_basis": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "residual_risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "challenge": {
+      "type": "object",
+      "description": "Clarity/EDF challenge of the conventional requirement (section 9).",
+      "properties": {
+        "customer_intent": {
+          "type": "string"
+        },
+        "adverse_outcome": {
+          "type": "string"
+        },
+        "conventional_control_effectiveness": {
+          "type": "string"
+        },
+        "legally_required": {
+          "type": "string"
+        },
+        "contractually_required": {
+          "type": "string"
+        },
+        "historical_convention": {
+          "type": "string"
+        },
+        "architectural_elimination": {
+          "type": "string"
+        },
+        "automatic_enforcement": {
+          "type": "string"
+        },
+        "continuous_evidence": {
+          "type": "string"
+        },
+        "stronger_alternative": {
+          "type": "string"
+        },
+        "alternative_verifiable": {
+          "type": "string"
+        },
+        "customer_acceptance_likelihood": {
+          "type": "string"
+        },
+        "invalidating_conditions": {
+          "type": "string"
+        },
+        "conventional_cost": {
+          "type": "string"
+        },
+        "alternative_cost": {
+          "type": "string"
+        },
+        "alternative_risks": {
+          "type": "string"
+        },
+        "supporting_arguments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "opposing_arguments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "technical_effectiveness": {
+          "type": "string",
+          "enum": [
+            "stronger",
+            "equivalent",
+            "weaker",
+            "unknown"
+          ]
+        },
+        "institutional_acceptance": {
+          "type": "string",
+          "enum": [
+            "likely",
+            "uncertain",
+            "unlikely",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "change",
+          "by"
+        ],
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "change": {
+            "type": "string"
+          },
+          "by": {
+            "type": "string"
+          },
+          "decision_ref": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "description": "Human review state. Absent means unreviewed. Only approved answer units may be exported to customers (AQR, trust center).",
+      "required": [
+        "state"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": [
+            "unreviewed",
+            "reviewed",
+            "approved",
+            "rejected"
+          ]
+        },
+        "reviewer": {
+          "type": "string",
+          "description": "Named human; agents may not approve"
+        },
+        "reviewer_kind": {
+          "type": "string",
+          "enum": [
+            "human"
+          ]
+        },
+        "date": {
+          "type": "string"
+        },
+        "basis": {
+          "type": "string",
+          "description": "What the reviewer checked (evidence IDs, documents)"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
