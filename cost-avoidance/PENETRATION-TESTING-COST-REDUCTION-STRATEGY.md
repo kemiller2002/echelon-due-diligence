@@ -2,7 +2,7 @@
 id: DD-COST-001
 title: Penetration testing cost reduction strategy for the planned independent Unbound test
 status: draft
-version: 0.1.0
+version: 0.2.0
 created: 2026-11-25
 updated: 2026-11-25
 tags: [due-diligence, penetration-testing, cost-avoidance, unbound, independence]
@@ -33,6 +33,21 @@ human-led external network plus authenticated web testing (`SRC-VENDOR-SOFTWARES
 VENDOR MARKETING). Because test fees scale mainly with tester-days, the levers below
 target tester-days spent on low-value work. Every saving is a hypothesis until measured.
 
+**The first test is expected to cost more, not less (revised 2026-11-25, BL-018).** The
+scope Echelon itself specifies in ANS-PEN-002 is larger than a conventional web
+application test: architecture-informed testing with explicit objectives to bypass
+claimed structural controls, the Limen browser boundary and WebAssembly guest
+tampering, Strata-backed data access and deploy-path RLS removal, intra-tenant and
+cross-tenant authorization, payment and grant business logic including race
+conditions, AI agent tool authority, server-side document rendering, cloud
+configuration and an assumed-breach perspective (compromised workforce, CI or agent
+credentials). The first engagement should therefore be budgeted above the
+conventional range cited above, and a white-box structural review of the L1 to L4
+claims is a separate cost on top of it (a black-box pen test cannot confirm those
+claims). The levers below are hypotheses about cost per meaningful finding and about
+later test cycles, once a baseline exists; none is a reduction of the first
+engagement.
+
 ## 2. Non-negotiable constraints
 
 1. **Independence stays intact.** The tester chooses techniques, may test outside the
@@ -48,7 +63,9 @@ target tester-days spent on low-value work. Every saving is a hypothesis until m
 4. **Labeling.** Internal testing and automated evidence are first-party. Only the external
    report is described as independent.
 
-## 3. Levers
+## 3. Levers (later-cycle hypotheses)
+
+Each lever's effect is a hypothesis to be measured against the first test as baseline; the expected benefit is a lower cost per meaningful finding or fewer tester-days in later cycles, not a cheaper first test.
 
 | # | Lever | Mechanism | Effect on tester-days | Independence risk | Control |
 |---|---|---|---|---|---|
@@ -57,9 +74,9 @@ target tester-days spent on low-value work. Every saving is a hypothesis until m
 | P3 | Threat model handover | Tutela threats, invariants, trust boundaries and residual risks given to tester | Focus on highest-impact abuse cases | Medium if used to steer away | Rules of engagement say threat model is input, not limit |
 | P4 | Pre-test hygiene | Run OSV-Scanner, Trivy, Gitleaks, ZAP baseline, Nuclei, Schemathesis and fix results before the test | Tester does not bill for scanner-class findings (hypothesis) | None | Share scan reports so tester can verify |
 | P5 | Known issues register | List accepted risks and open findings with IDs | Avoid re-reporting known items | Medium | Tester may re-rate severity; known issues still appear in report |
-| P6 | Stable, production-like environment | Dedicated test environment with seeded data, reset scripts, no blocking WAF rules for tester IPs (unless testing the WAF is in scope) | Less lost time | None | Document any differences from production |
+| P6 | Stable, production-like environment | Dedicated test environment with seeded data, reset scripts, no blocking WAF rules for tester IPs (unless testing the WAF is in scope) | Less lost time | Low: the test does not measure the deployed defense | Document any differences from production; include one phase with the production WAF configuration enabled and report both |
 | P7 | Focus on authorization and financial invariants | Provide policy model and invariants (balanced journals, idempotent disbursements, separation of duties, tenant isolation) | Higher-value findings per day | Low | Tester designs own cases |
-| P8 | Shared component reuse across products | Test shared Echelon components once per version; later product tests reference that report | Avoid retesting identical builds | Low if versions match exactly | Report states component versions; product-specific surfaces always tested |
+| P8 | Shared component reuse across products | Test shared Echelon components once per version; later product tests reference that report | Avoid retesting identical builds (later cycles only) | Low if versions match exactly | Restricted to library-level findings; every product test still includes composition tests of the reused component (for example Limen with a given F# engine and server API) |
 | P9 | Fixed-fee retest included | Negotiate retest of findings within a window | Avoid separate retest engagement | None | Retest by same firm |
 | P10 | Multi-year engagement with rotation plan | Same firm for continuity, rotate testers or firm periodically | Faster ramp-up (hypothesis) | Medium: familiarity | Rotate individuals; periodic firm change (DORA uses external testers every three tests as one benchmark for rotation, `SRC-TIBER-EU`) |
 | P11 | Combine scopes into one test window | Web, API and cloud configuration reviewed together | Shared setup | None | Scope document lists each target |
@@ -90,7 +107,9 @@ target tester-days spent on low-value work. Every saving is a hypothesis until m
 Record for each test: tester-days quoted and used, days spent on discovery versus
 exploitation, findings by severity and by class, findings that automated layers should
 have caught (feeds scanner improvement), retest outcomes, and total internal hours. Compare
-against the first test as the baseline. No percentage saving is claimed in this document.
+against the first test as the baseline. No percentage saving is claimed in this document,
+and the first test is expected to cost more than a conventional web application test
+(section 1); savings, if any, are hypotheses for the second and later cycles.
 
 ## 7. Risks
 
