@@ -307,3 +307,27 @@ partially-implemented qualified: Praxis agent attribution, this repository's bui
   provenance and this repository's build checks.
 - Removed duplicate source records (SRC-NIST-SP800-218, SRC-OWASP-WSTG, SRC-OWASP-ASVS)
   from assurance-testing.jsonl; security-frameworks.jsonl is authoritative.
+
+## ISP, ASM, IAM, AUN, AUZ, TEN question batch
+
+245 questions, 51 answer units, 22 with challenge analysis. By-construction claims for
+tenant isolation and authorization (ANS-TEN-003, ANS-AUZ-001, ANS-AUZ-002) rated
+technically stronger but institutionally uncertain: examiners expect independent
+cross-tenant testing; guarantees apply to source while risk is in deployed binaries;
+reflection and unchecked defaults bypass private constructors; migrations, maintenance
+tooling, SECURITY DEFINER routines, break-glass access, caches, search indexes and AI
+context sit outside the guarantee.
+- CNV-ARC-001 (schema and role per sponsor plus RLS on every tenant table) versus
+  PARTNER-SEGREGATION-AND-TENANCY.md (shared-schema RLS not approved as default): likely
+  RLS is a second layer inside each sponsor schema; Unbound should state this.
+- Strata has no invariant failing a build when a tenant table lacks forced RLS, and does
+  not report privileges of undeclared roles (recommendation for Strata).
+- Strata research EV-STRATA-2026-E7A9: PostgreSQL catalog metadata, role and database
+  names are visible across a shared cluster; tenant object names must be non-identifying.
+- Limen browser engine decides "what the user is allowed to do" client-side; CNV-PLT-010
+  requires server re-check; no rule prevents session tokens in localStorage.
+- UNB-XIN-REG-002 item (e) suggests Echelon itself may be covered by the FTC Safeguards
+  Rule (OQ-DD-POL-001).
+- Unseeded: WebAuthn/FIDO2, SCIM 2.0, SAML 2.0, OIDC Core, OAuth 2.0 BCP, PostgreSQL
+  row security and SECURITY DEFINER docs, CISA phishing-resistant MFA, OMB M-22-09;
+  SRC-ECH records for Strata, Limen, Praxis, Tutela and the Unbound persistence design.
