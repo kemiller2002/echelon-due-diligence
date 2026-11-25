@@ -363,6 +363,22 @@ let registers =
               [ strOr "id" "" o; strOr "title" "" o; strOr "issuer" "" o; strOr "type" "" o; strOr "authority" "" o
                 strOr "version" "" o; strOr "publication_date" "" o; strOr "status" "" o; strOr "url" "" o
                 strOr "license" "" o; verified; strOr "applicability" "" o ]))
+      "regulatory-applicability-matrix.csv",
+      csv [ "id"; "title"; "issuer"; "authority"; "status"; "jurisdictions"; "applicability" ]
+          (s
+           |> List.filter (fun o ->
+               [ "binding-law"; "binding-regulation"; "supervisory-expectation" ]
+               |> List.contains (strOr "authority" "" o))
+           |> List.map (fun o ->
+               [ strOr "id" "" o; strOr "title" "" o; strOr "issuer" "" o; strOr "authority" "" o
+                 strOr "status" "" o; joined "jurisdictions" o; strOr "applicability" "" o ]))
+      "open-questions-register.csv",
+      csv [ "record_id"; "kind"; "category_or_title"; "open_question" ]
+          ((byKind "question" @ byKind "answer-unit")
+           |> List.collect (fun r ->
+               strList "open_questions" r.Node
+               |> List.map (fun oq ->
+                   [ strOr "id" "" r.Node; r.Kind; strOr "category" (strOr "title" "" r.Node) r.Node; oq ])))
       "framework-crosswalk.csv",
       csv [ "question_id"; "category"; "source_id"; "locator"; "relation"; "basis" ]
           ((q @ c)
