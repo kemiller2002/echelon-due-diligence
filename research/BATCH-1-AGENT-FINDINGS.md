@@ -331,3 +331,22 @@ context sit outside the guarantee.
 - Unseeded: WebAuthn/FIDO2, SCIM 2.0, SAML 2.0, OIDC Core, OAuth 2.0 BCP, PostgreSQL
   row security and SECURITY DEFINER docs, CISA phishing-resistant MFA, OMB M-22-09;
   SRC-ECH records for Strata, Limen, Praxis, Tutela and the Unbound persistence design.
+
+## Supplementary sources (DD-SRC-SUP-001)
+
+81 records (73 verified). Status surprises that affect answers:
+- .NET 8 and 9 end of support 2026-11-10 (Strata and Ordo target net8.0); .NET 10 and 11
+  supported to 2028-11-14.
+- PostgreSQL 14 end of life 2026-11-12; PostgreSQL 19 released 2026-11-19 (check PG16
+  window for Strata).
+- OMB M-21-31 rescinded by M-26-14 (2026-05-22).
+- NIST IR 8547 final (October 2026): quantum-vulnerable public-key algorithms deprecated
+  after 2030, disallowed after 2035. FIPS 140-2 modules no longer usable for new systems
+  after 2026-09-21.
+- CIRCIA final rule unpublished. SEC custody rule re-proposed 2026-10-06.
+- Hawaii charitable fundraising platform rules (2026-07-01) exclude technical-service-only
+  vendors: Unbound should document that position; California Gov. Code 12599.9 applies
+  since 2023.
+- Nacha annual TPSP audit scope (work for a bank or Third-Party Sender) versus Unbound
+  serving the sponsor remains open (OQ-DD-PAY-001).
+- SRC-CISA-BOD-22-01 updated to withdrawn, superseded by SRC-CISA-BOD-26-04.
