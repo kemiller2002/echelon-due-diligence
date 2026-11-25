@@ -259,3 +259,51 @@ Praxis actor attribution of repository work, scoped and qualified).
   terms.
 - Unseeded: PolyForm Noncommercial 1.0.0, FCRA, FDIA Section 19, US Copyright Office AI
   guidance, AICPA AU-C 570, ISO/IEC 27005, insurance market practice sources.
+
+## Security, privacy, AI and operational source register (DD-SRC-SEC-001)
+
+124 records (112 verified). Stale-reference corrections that change answers (batch 2
+must sweep question and answer records that cite the old sources):
+- SR 11-7 and SR 21-8 superseded by SR 26-2 (2026-04-17, Fed/OCC/FDIC). Independently
+  spot-checked at federalreserve.gov on 2026-11-25.
+- EU AI Act amended by Regulation (EU) 2026/1744 (Digital Omnibus): Annex III high-risk
+  obligations from 2027-12-02, Annex I from 2028-08-02.
+- Colorado AI Act repealed and reenacted by SB 26-189 (signed 2026-05-14) as an
+  automated decision-making technology law; developer duties from 2027-01-01.
+- OMB M-22-18 and M-23-16 rescinded by M-26-05 (2026-01-23); CISA attestation form no
+  longer required by agencies; SBOM may still be requested.
+- CISA SBOM minimum elements 2026 version (2026-07-29) replaces NTIA 2021 elements.
+- CISA BOD 22-01 revoked and replaced by BOD 26-04 (2026-06-10).
+- ADA Title II web rule compliance dates extended to 2027-04-26 and 2028-04-26.
+- Current versions: CAIQ/CCM v4.1; CSA AICM v1.1; ISO/IEC 27017:2026, 27018:2025,
+  27701:2025, 27031:2025; NIST SP 800-88 Rev. 2; SP 800-53 Release 5.2.0; OWASP Top
+  10:2025; OWASP LLM Top 10 2026; SLSA 1.2; EN 301 549 V4.1.1; BSIMM16; VSA 2027 labels.
+- AICPA proposed 2027 SOC 2 criteria exposure draft (2026-11-16): Unbound's first SOC 2
+  may be tested against revised criteria.
+- Licensing limits reuse: VSA prohibits use in consulting or hosted vendor-management
+  services; CSA requires license to embed CCM/CAIQ commercially; CIS Controls CC BY-NC-ND;
+  SIG and PCI proprietary; OWASP CC BY-SA. This constrains the AQR and trust center
+  questionnaire library (map to our own canonical questions; do not embed text).
+- 11 open questions in section 7 of the notes; to be filed in research/open-questions.jsonl.
+
+## AIG, AIS, AIA, TPR, SUB, REG, AML question batch
+
+248 questions, 51 answer units (34 proposed-target-state, 13 unknown, 2
+requires-external-validation: AI law applicability, BSA applicability to Echelon; 2
+partially-implemented qualified: Praxis agent attribution, this repository's build checks).
+- Answers state plainly that Echelon builds software largely with AI coding agents, and
+  that review, branch protection and scanning of agent-written code are not yet
+  documented or evidenced.
+- Secure Construction Standard v0.1 has no AI rule despite AI-authored code.
+- Correct ID prefix is GOV-AUTH-001..026 (brief said GOV-AUT); AUTH-T01..T12 tests exist
+  only in the governance document.
+- CNV-GRT-006 records that the reference sanctions matcher fails recall and must not be
+  used in production; no replacement exists.
+- Some Praxis records list the model as `unknown`.
+- Unknown: branch protection and required human review on Echelon repositories; agent
+  permissions and AI provider terms; Echelon ownership (OFAC 50 percent rule).
+- Unseeded: FFIEC BSA/AML Examination Manual, FINRA Rule 3310, 31 CFR Part 1032, FATF
+  Recommendation 8, OFAC 50 percent rule guidance, SRC-ECH records for EDF, Praxis
+  provenance and this repository's build checks.
+- Removed duplicate source records (SRC-NIST-SP800-218, SRC-OWASP-WSTG, SRC-OWASP-ASVS)
+  from assurance-testing.jsonl; security-frameworks.jsonl is authoritative.

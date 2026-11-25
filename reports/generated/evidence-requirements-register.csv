@@ -1,0 +1,583 @@
+id,title,producer,mechanism,freshness,independence,disclosure_classification,status
+EVR-A11Y-001,Conformance claim and scope statement,not yet assigned,periodic-manual,P180D,first-party,public,proposed-target-state
+EVR-A11Y-002,Accessibility Conformance Report (VPAT-based),not yet assigned,periodic-manual,P1Y,first-party,public,proposed-target-state
+EVR-A11Y-003,Automated accessibility test results in CI,"Forma ui-conformance CI job (forma@c8f40b4c, Chromium only, pilot) for design-system components; Unbound pipeline not yet assigned",event-driven-automated,per-event,first-party,customer-only,partially-implemented
+EVR-A11Y-004,Manual and assistive-technology test records,not yet assigned,periodic-manual,P180D,first-party,nda,proposed-target-state
+EVR-A11Y-005,Accessibility defect register and remediation metrics,not yet assigned,continuous-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-A11Y-006,Accessible document validation results,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-A11Y-007,Brand compilation contrast gate output,Forma brand compiler (forma@c8f40b4c) for Forma themes; Unbound sponsor brand compilation not yet built,event-driven-automated,per-event,first-party,customer-only,partially-implemented
+EVR-A11Y-008,Accessibility legal applicability assessment,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-A11Y-009,Accessible support and authentication path record,not yet assigned,periodic-manual,P1Y,first-party,customer-only,proposed-target-state
+EVR-ACT-001,Journal posting validation outcomes,not yet assigned (intended: Unbound ledger component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ACT-002,Append-only privilege and trigger configuration attestation,not yet assigned (intended: Unbound ledger component and deployment pipeline; not built),periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-ACT-003,Integrity checkpoint verification results,not yet assigned (intended: Unbound ledger component; not built),periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-ACT-004,Period state and close certification records,not yet assigned (intended: Unbound ledger component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ACT-005,Audit adjustment register and summary of unadjusted differences,not yet assigned (intended: Unbound ledger component; not built),event-driven-automated,per-event,first-party,auditor-only,proposed-target-state
+EVR-ACT-006,Account treatment approvals,not yet assigned (intended: Unbound ledger component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ACT-007,Re-derivation exception report,not yet assigned (intended: Unbound ledger component; not built),periodic-automated,P1M,first-party,customer-only,proposed-target-state
+EVR-ACT-008,Tenant isolation negative test results,not yet assigned (intended: Unbound test suite; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ACT-009,GL export manifests and ERP reconciliation,not yet assigned (intended: Unbound integration component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ACT-010,Annual DAF bridge package,not yet assigned (intended: Unbound reporting component; not built),periodic-automated,P1Y,first-party,customer-only,proposed-target-state
+EVR-ACT-011,Ledger property-based test reports,not yet assigned (intended: Unbound test suite with Praxis provenance; not built),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ACT-012,Grant cutoff register,not yet assigned (intended: Unbound grants and ledger components; not built),periodic-automated,P1M,first-party,customer-only,proposed-target-state
+EVR-AIA-001,Agent provenance records,Praxis,continuous-automated,per-event,first-party,nda,implemented-not-independently-verified
+EVR-AIA-002,Delegation chain records,not yet assigned,continuous-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIA-003,Authority matrix version and agent permission review,not yet assigned,periodic-manual,P90D,first-party,nda,proposed-target-state
+EVR-AIA-004,Self-grant and out-of-authority denial tests and reports,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIA-005,Reserved authority enforcement tests,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AIA-006,Approval binding and segregation records,not yet assigned,continuous-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIA-007,Quarterly delegation report and sampling results,not yet assigned,periodic-manual,P90D,first-party,customer-only,proposed-target-state
+EVR-AIA-008,Emergency stop test records,not yet assigned,periodic-automated,P90D,first-party,nda,proposed-target-state
+EVR-AIA-009,Decision packages,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AIA-010,Evidence store write-path report and integrity verification,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-AIA-011,AI summary labeling and environment tags,not yet assigned,continuous-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIA-012,Answer library build results,echelon-due-diligence tools/build.fsx,event-driven-automated,per-event,first-party,nda,implemented-not-independently-verified
+EVR-AIA-013,Questionnaire release sign-off,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIA-014,Branch protection and change approval records,not yet assigned,continuous-automated,P1D,first-party,nda,unknown
+EVR-AIA-015,Agent production access report,not yet assigned,periodic-automated,P30D,first-party,nda,proposed-target-state
+EVR-AIG-001,AI inventory snapshot,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIG-002,Tool broker denial records for unregistered agents,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-AIG-003,Approved AI policy record,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-AIG-004,AI control crosswalk,not yet assigned,event-driven-automated,per-event,first-party,authenticated-prospect,proposed-target-state
+EVR-AIG-005,AI risk and impact assessment record,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIG-006,Subgroup error report,not yet assigned,periodic-automated,P90D,first-party,customer-only,proposed-target-state
+EVR-AIG-007,AI provider due diligence file,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-AIG-008,AI provider data terms register,not yet assigned,periodic-manual,P90D,first-party,customer-only,proposed-target-state
+EVR-AIG-009,AI law applicability determinations,not yet assigned,periodic-manual,P180D,first-party,nda,proposed-target-state
+EVR-AIG-010,Model documentation package,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AIG-011,AI use statement and tenant AI configuration,not yet assigned,event-driven-automated,per-event,first-party,public,proposed-target-state
+EVR-AIS-001,Injection containment design record and dossier integrity checks,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIS-002,Agent authorization decision log,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-AIS-003,AI store partition configuration,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIS-004,Cross-tenant canary test results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIS-005,Agent tool set and budget configuration,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIS-006,Output handling tests and sink inventory,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIS-007,AI-aware SBOM,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AIS-008,Agent tool server approval list and credential scope report,not yet assigned,periodic-manual,P90D,first-party,internal,proposed-target-state
+EVR-AIS-009,AI threat model,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIS-010,AI monitoring alerts and missing-trace exceptions,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-AIS-011,Adversarial suite results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIS-012,Independent AI red team report summary,not yet assigned,external-attestation,P1Y,independent-third-party,nda,proposed-target-state
+EVR-AIS-013,Construction rule enforcement report,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIS-014,Release gate and protected path records,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AIS-015,Change provenance and AI-authored defect metrics,Praxis (provenance); not yet assigned (metrics),continuous-automated,P30D,first-party,nda,partially-implemented
+EVR-AML-001,Screening coverage report,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-AML-002,Release fence records,not yet assigned,continuous-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AML-003,List ingestion and freshness log,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-AML-004,Matcher validation report,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AML-005,Subgroup false-alert report,not yet assigned,periodic-automated,P90D,first-party,customer-only,proposed-target-state
+EVR-AML-006,Disposition records,not yet assigned,continuous-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AML-007,"Blocking, rejection and report packages",not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AML-008,Sanctions record retention verification,not yet assigned,periodic-automated,P30D,first-party,auditor-only,proposed-target-state
+EVR-AML-009,Identity regime applicability determinations,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-AML-010,Monitoring rule definitions and case export log,not yet assigned,event-driven-automated,per-event,first-party,auditor-only,proposed-target-state
+EVR-AML-011,Grantee verification records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AML-012,Tier 2 routing and foreign-grant framework records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-API-001,"Object, property and function authorization negative test results",not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-API-002,API credential inventory and lifecycle records,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-API-003,Rate limit and business-flow limit configuration and test results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-API-004,Contract conformance and API inventory check,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-API-005,"Webhook signature, replay and delivery records",not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-API-006,Idempotency and duplicate-effect test results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-API-007,API security configuration baseline snapshot,not yet assigned,periodic-automated,P1D,first-party,nda,proposed-target-state
+EVR-APP-001,Dynamic SQL and database bypass scan result per commit,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-APP-002,Negative injection test suite results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-APP-003,Rendering-sink and script inventory check,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-APP-004,Authenticated dynamic scan of pre-production build,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-APP-005,"Cookie, CSRF and cross-origin configuration snapshot",not yet assigned,periodic-automated,P1D,first-party,nda,proposed-target-state
+EVR-APP-006,Outbound request allowlist and SSRF test results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-APP-007,Deserializer configuration and schema inventory,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-APP-008,File intake pipeline test and malware scan records,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-APP-009,Workflow invariant property and negative test results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-APP-010,Session management configuration and test results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-APP-011,Error response and log content inspection,not yet assigned,periodic-automated,P7D,first-party,nda,proposed-target-state
+EVR-APP-012,Input limit and resource exhaustion test results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-APP-013,ASVS verification matrix per release,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-APP-014,Independent application penetration test report,External testing firm (not yet engaged),external-attestation,P1Y,independent-third-party,nda,proposed-target-state
+EVR-ARC-001,Threat model records per system and material change,Tutela (exists as a discipline and toolset; no product threat model located),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ARC-002,Trust boundary and data flow inventory,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ARC-003,Architectural assurance matrix,Tutela plus Folio (proposed),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ARC-004,Bypass and negative test results for structural claims,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ARC-005,Domain type and state machine conformance report,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ARC-006,Database access architecture evidence,"Strata (exists; schema compile, diff and drift) plus database catalog export (proposed)",event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ARC-007,Browser surface inventory,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ARC-008,Security design review and decision records,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ARC-009,Failure mode and fail-closed test results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ASM-001,Daily infrastructure inventory reconciliation report,not yet assigned,periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-ASM-002,Release SBOM,not yet assigned (SBOM generator in CI),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ASM-003,Dependency gate results,not yet assigned,event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-ASM-004,Generated data inventory and isolation map,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ASM-005,Third-party service register export,not yet assigned,periodic-manual,P90D,first-party,nda,proposed-target-state
+EVR-ASM-006,Strata deployment diff report,"Strata (pilot tool; exists, not operated for production)",event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ASM-007,Configuration drift findings,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-ASM-008,Destruction certificate,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AUD-001,SOC 2 Type II report,Licensed CPA firm (not yet engaged),external-attestation,P1Y,independent-third-party,nda,unknown
+EVR-AUD-002,SOC 1 Type II report,Licensed CPA firm (not yet engaged),external-attestation,P1Y,independent-third-party,nda,unknown
+EVR-AUD-003,Bridge letter,Managing member,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AUD-004,Certification certificates and scope statements,Accredited certification body (none engaged),external-attestation,P1Y,independent-third-party,public,not-applicable
+EVR-AUD-005,Independent penetration test attestation letter,Independent testing firm (not yet engaged),external-attestation,P1Y,independent-third-party,nda,proposed-target-state
+EVR-AUD-006,Continuous control evidence feed,Unbound continuous control monitoring (not built),continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-AUD-007,Assurance claim history and auditor peer review letter,Due diligence repository; CPA firm,event-driven-automated,P1Y,first-party,public,proposed-target-state
+EVR-AUD-008,Independent control sampling results,External reviewer (not yet engaged),periodic-manual,P180D,independent-third-party,nda,proposed-target-state
+EVR-AUN-001,Workforce MFA coverage report,not yet assigned (workforce IdP export),periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-AUN-002,Authenticator type distribution and policy,not yet assigned,periodic-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-AUN-003,Federation negative-test results,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AUN-004,Deprovisioning latency measurements,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-AUN-005,Password policy configuration and test results,not yet assigned,event-driven-automated,per-event,first-party,authenticated-prospect,proposed-target-state
+EVR-AUN-006,Session configuration and revocation tests,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AUN-007,Credential and contact change event log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AUN-008,Step-up binding records and negative tests,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AUN-009,Integration credential register,not yet assigned,periodic-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-AUZ-001,Handler registry and proof-type build check,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-AUZ-002,Command classification gate results,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AUZ-003,Object and property authorization test results and denial events,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AUZ-004,Authorization decision records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AUZ-005,SoD enforcement records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AUZ-006,Delegation register and revocation latency,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-AUZ-007,Role-to-command-class matrix for DAF roles,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AUZ-008,Generated authorization test suite results,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AUZ-009,Independent penetration test summary,not yet assigned (independent tester),external-attestation,P1Y,independent-third-party,nda,requires-external-validation
+EVR-AUZ-010,Agent authority test results,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AUZ-011,Export log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AVL-001,Published service level definition,not yet assigned,periodic-manual,P1Y,first-party,public,proposed-target-state
+EVR-AVL-002,Availability measurement stream,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-AVL-003,Monthly availability report per tenant,not yet assigned,periodic-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-AVL-004,Status page and notification log,not yet assigned,event-driven-automated,per-event,first-party,public,proposed-target-state
+EVR-AVL-005,Incident post-mortem reports,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AVL-006,Change calendar and maintenance notices,Praxis (change provenance) plus not yet assigned notice system,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-AVL-007,Service credit ledger,not yet assigned,periodic-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-AVL-008,Subprocessor dependency and status register,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-AVL-009,Degraded-mode behavior test results,not yet assigned,periodic-automated,P30D,first-party,nda,proposed-target-state
+EVR-BCP-001,Approved business continuity policy and program charter,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-BCP-002,Business impact analysis register,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-BCP-003,Continuity plan set and out-of-band copy attestation,not yet assigned,periodic-automated,P90D,first-party,nda,proposed-target-state
+EVR-BCP-004,Exercise and test reports with remediation tracking,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-BCP-005,Key-person dependency register and portability test result,not yet assigned,periodic-manual,P180D,first-party,nda,proposed-target-state
+EVR-BCP-006,Emergency credential custody record,not yet assigned,periodic-manual,P180D,first-party,auditor-only,proposed-target-state
+EVR-BCP-007,AI provider dependency and fallback test record,not yet assigned,periodic-automated,P90D,first-party,customer-only,proposed-target-state
+EVR-BCP-008,Alternate grant and payment processing drill record,not yet assigned,periodic-manual,P1Y,first-party,customer-only,proposed-target-state
+EVR-BCP-009,Critical subprocessor continuity assessments,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-BCP-010,Customer exit package verification,not yet assigned,periodic-automated,P1Y,first-party,customer-only,proposed-target-state
+EVR-BCP-011,Workforce disruption readiness check,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-BKP-001,Backup inventory and schedule,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-BKP-002,Backup job outcome stream,not yet assigned,continuous-automated,P1D,first-party,auditor-only,proposed-target-state
+EVR-BKP-003,Backup immutability and separation configuration attestation,not yet assigned,periodic-automated,P1D,first-party,nda,proposed-target-state
+EVR-BKP-004,Backup encryption and key recovery record,not yet assigned,periodic-manual,P1Y,first-party,auditor-only,proposed-target-state
+EVR-BKP-005,Restore test with integrity verification,not yet assigned,periodic-automated,P90D,first-party,nda,proposed-target-state
+EVR-BKP-006,Deterministic replay equivalence test,not yet assigned,periodic-automated,P30D,first-party,nda,proposed-target-state
+EVR-BKP-007,Backup expiry and destruction record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CHG-001,Change record per production change,Praxis work protocol plus source control and deployment pipeline (integration proposed),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-CHG-002,Segregation of duties check per deployment,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-CHG-003,"Production access grants, sessions and break-glass records",not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-CHG-004,Emergency change records and retrospective approvals,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-CHG-005,Deployment and rollback test records,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-CHG-006,Infrastructure as code and drift detection results,Strata for database schema (exists); infrastructure tool not chosen,periodic-automated,P1D,first-party,nda,proposed-target-state
+EVR-CHG-007,Customer change notices,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CHV-001,Source ingestion and freshness log,not yet assigned,periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-CHV-002,Eligibility check timeline per payment,not yet assigned,continuous-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CHV-003,Revocation hold records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CHV-004,Foreign grant diligence file,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CHV-005,Entity-type evidence records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CHV-006,Screening results and match dispositions,not yet assigned,continuous-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CHV-007,Discretionary hold register,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CHV-008,Registry change provenance and cross-tenant negative tests,not yet assigned,continuous-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CHV-009,Identity resolution and impersonation case log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CHV-010,Eligibility decision records and verification packs,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CLD-001,Cloud provider selection and reassessment record,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-CLD-002,Provider SOC report review memo with CUEC mapping,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-CLD-003,Shared responsibility matrix,"control register (designed, not built)",periodic-automated,P90D,first-party,authenticated-prospect,proposed-target-state
+EVR-CLD-004,Cloud guardrail policy export and denied actions,cloud provider policy service (not selected),continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-CLD-005,Cloud posture assessment findings,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-CLD-006,Data location inventory,not yet assigned,periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-CLD-007,Account inventory and root credential custody record,not yet assigned,periodic-automated,P1D,first-party,auditor-only,proposed-target-state
+EVR-CLD-008,Cloud exit and portability test report,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-CLD-009,Subservice organization and managed service register,"control register (designed, not built)",periodic-automated,P90D,first-party,customer-only,proposed-target-state
+EVR-CON-001,Contribution intake and matching records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CON-002,Contribution date derivation records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CON-003,Securities gift matching and valuation records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CON-004,Non-cash gift substantiation file,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CON-005,Complex asset acceptance dossier,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CON-006,Reversal and exposure case records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CON-007,Acknowledgment artifact registry,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CON-008,Contribution fee breakdown records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CON-009,Contribution acceptance and screening records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CUS-001,Integration registry record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CUS-002,Feed integrity log,not yet assigned,continuous-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CUS-003,Funds-flow conformance result,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CUS-004,Custody account register,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CUS-005,Custody reconciliation pack,"not yet assigned (intended renderer: Folio, not operated for Unbound)",periodic-automated,P1M,first-party,customer-only,proposed-target-state
+EVR-CUS-006,Custodian assurance review record,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-CUS-007,Instruction authorization trail,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CUS-008,Degraded-mode event log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-CUS-009,Custodian recovery drill record,not yet assigned,periodic-manual,P1Y,first-party,customer-only,proposed-target-state
+EVR-DAF-001,Account lifecycle event log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DAF-002,Fund classification record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DAF-003,Authority fact history and revocation latency measurements,not yet assigned,continuous-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DAF-004,Joint-instruction and conflict case records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DAF-005,Succession activation dossier,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DAF-006,Policy version register and adoption records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DAF-007,Operator access and reserved-authority action log,not yet assigned,continuous-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DAF-008,Inactivity and minimum-balance evaluation records,not yet assigned,periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-DAF-009,Excise gate decisions and incident records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DAF-010,Regulatory register entries and impact simulations,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DCL-001,Classification coverage report,not yet assigned (candidate: CI over Strata and API definitions),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DCL-002,Egress refusal and label log,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-DCL-003,Restricted data access and scan report,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-DCL-004,Disclosure preference application log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DCL-005,Minimization review,not yet assigned,periodic-automated,P1Y,first-party,nda,proposed-target-state
+EVR-DON-001,Identity proofing records,not yet assigned,event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-DON-002,"Authentication, contact change and hold events",not yet assigned,continuous-automated,per-event,first-party,internal,proposed-target-state
+EVR-DON-003,Privacy election history and disclosure log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DON-004,Advisor delegation lifecycle records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DON-005,Message classification and delivery log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DON-006,Data use register and privacy request log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DON-007,Death notice and suspension records,not yet assigned,event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-DR-001,Approved recovery objectives table,not yet assigned,periodic-manual,P1Y,first-party,customer-only,proposed-target-state
+EVR-DR-002,Failover topology and fencing test results,not yet assigned,periodic-automated,P90D,first-party,nda,proposed-target-state
+EVR-DR-003,DR exercise report with measured recovery times,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-DR-004,Recovery dependency map,not yet assigned,periodic-automated,P90D,first-party,nda,proposed-target-state
+EVR-DR-005,Environment rebuild-from-source test,not yet assigned,periodic-automated,P180D,first-party,nda,proposed-target-state
+EVR-DR-006,Tenant-selective restore test result,not yet assigned,periodic-automated,P1Y,first-party,customer-only,proposed-target-state
+EVR-DR-007,Post-restore payment safety verification,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-DR-008,Disaster declaration and customer notification log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ENC-001,Encryption-at-rest coverage attestation,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-ENC-002,External TLS configuration scan,not yet assigned,periodic-automated,P7D,first-party,authenticated-prospect,proposed-target-state
+EVR-ENC-003,Internal connection TLS verification test results,Unbound test suite (not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ENC-004,Key inventory and key policy export,cloud KMS (provider not selected),continuous-automated,P1D,first-party,auditor-only,proposed-target-state
+EVR-ENC-005,Key operation and rotation logs,cloud KMS (provider not selected),continuous-automated,P1D,first-party,auditor-only,proposed-target-state
+EVR-ENC-006,Validated cryptographic module register,not yet assigned,periodic-manual,P90D,first-party,nda,proposed-target-state
+EVR-ENC-007,Tenant key mapping report,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-ENC-008,Secret scanning and rotation records,secret scanner (candidate: Gitleaks) via Praxis CI workflow (candidate),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ENC-009,Field encryption property and negative test results,Unbound test suite (not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ENC-010,Cryptographic API analyzer results,F# analyzer (not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ENC-011,Cryptographic bill of materials,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ENC-012,Key destruction and erasure records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ENC-013,Signature verification and anchor check records,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-END-001,Device inventory and compliance report,device management (not selected),continuous-automated,P1D,first-party,auditor-only,proposed-target-state
+EVR-END-002,EDR coverage and alert disposition,EDR (not selected),continuous-automated,P1D,first-party,auditor-only,proposed-target-state
+EVR-END-003,Disk encryption status and lost device records,device management (not selected),continuous-automated,P1D,first-party,auditor-only,proposed-target-state
+EVR-END-004,Conditional access decisions,workforce IdP (not selected),event-driven-automated,per-event,first-party,auditor-only,proposed-target-state
+EVR-END-005,Agent sandbox configuration attestation,not yet assigned,periodic-automated,P30D,first-party,nda,proposed-target-state
+EVR-END-006,Agent provenance records,Praxis (exists for repository work; not operated for a production service),event-driven-automated,per-event,first-party,nda,partially-implemented
+EVR-ESC-001,Escrow deposit receipt,not yet assigned (escrow agent),event-driven-automated,per-event,second-party,customer-only,unknown
+EVR-ESC-002,Deposit verification result,not yet assigned,event-driven-automated,per-event,second-party,customer-only,unknown
+EVR-ESC-003,Release provenance bundle,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FCT-001,Duty conflict evaluations,not yet assigned (intended: Unbound authorization component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FCT-002,Delegation-of-authority register and limit decisions,not yet assigned (intended: Unbound authorization component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FCT-003,Fee schedule version approvals,not yet assigned (intended: Unbound fee engine; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FCT-004,Fee recomputation reconciliation report,not yet assigned (intended: Unbound fee engine; not built),periodic-automated,P1M,first-party,customer-only,proposed-target-state
+EVR-FCT-005,Control register export,not yet assigned (intended: Unbound control register; not built),continuous-automated,P1M,first-party,customer-only,proposed-target-state
+EVR-FCT-006,Information-produced-by-entity package,not yet assigned (intended: Unbound reporting component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FCT-007,SOC 1 Type 2 report,External CPA firm (not engaged),external-attestation,P1Y,independent-third-party,nda,proposed-target-state
+EVR-FCT-008,Access recertification and collusion analytics results,not yet assigned (intended: Unbound identity and monitoring components; not built),periodic-automated,P90D,first-party,customer-only,proposed-target-state
+EVR-FCT-009,Complementary user entity control list,not yet assigned (intended: Unbound control register; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FCT-010,Exception and break-glass register,not yet assigned (intended: Unbound identity and access component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FCT-011,Agent write-denial and authority decisions,not yet assigned (intended: Unbound AI gateway; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FEE-001,Fee schedule version register,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FEE-002,Fee run record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FEE-003,Fee calculation explanation for donors,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FEE-004,Fee change approval record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FEE-005,Fee shortfall memo claim register,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FEE-006,Contribution component breakdown,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FEE-007,Related-party check log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FEE-008,Echelon related-party and compensation disclosure,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-FRD-001,Step-up events bound to commands,not yet assigned (intended: Unbound identity component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FRD-002,Credential change and notice records,not yet assigned (intended: Unbound identity component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FRD-003,Destination evidence records,not yet assigned (intended: Unbound payment component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FRD-004,Command catalog channel attestation,not yet assigned (intended: Unbound build pipeline; not built),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-FRD-005,Positive pay acknowledgments and exception decisions,not yet assigned (intended: Unbound check rail adapter; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FRD-006,Unmatched debit incidents,not yet assigned (intended: Unbound bank feed adapter; not built),periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-FRD-007,Collusion analytics and entitlement review results,not yet assigned (intended: Unbound monitoring; not built),periodic-automated,P90D,first-party,customer-only,proposed-target-state
+EVR-FRD-008,Identity proofing and exposure records,not yet assigned (intended: Unbound contributions component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FRD-009,Fraud signal routing cases,not yet assigned (intended: Unbound charity and grants components; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FRD-010,Fraud monitoring program register and annual review,not yet assigned (intended: Unbound fraud monitoring component; not built),periodic-manual,P1Y,first-party,customer-only,proposed-target-state
+EVR-FRD-011,Investigation case access logs,not yet assigned (intended: Unbound case management; not built),event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-FST-001,Annual financial statements with CPA report,Outside CPA (not yet engaged),external-attestation,P1Y,independent-third-party,nda,unknown
+EVR-FST-002,Quarterly runway attestation with bank confirmation,Managing member; bank,periodic-manual,P90D,first-party,nda,proposed-target-state
+EVR-FST-003,Escrow deposit receipts and verification report,Escrow agent (not yet selected),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
+EVR-FST-004,UCC and lien search,Indiana Secretary of State UCC records (requested by customer or Echelon),periodic-manual,P1Y,independent-third-party,authenticated-prospect,unknown
+EVR-FST-005,Export round-trip test result,Unbound CI (not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-FST-006,Wind-down plan and reserve evidence,Managing member,periodic-manual,P1Y,first-party,customer-only,proposed-target-state
+EVR-FST-007,Monthly bank reconciliation and approval log,Outside accountant (not yet engaged),periodic-manual,P30D,second-party,internal,proposed-target-state
+EVR-FST-008,Financial event notification log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-GOV-001,Certificate of existence (good standing),Indiana Secretary of State (requested by managing member),periodic-manual,P90D,independent-third-party,authenticated-prospect,unknown
+EVR-GOV-002,Executed operating agreement and ownership schedule,Managing member with counsel,periodic-manual,per-event,first-party,nda,unknown
+EVR-GOV-003,Governance decision log,Praxis,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-GOV-004,Succession designation and continuity test record,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-GOV-005,Conflict-of-interest disclosures,not yet assigned,periodic-manual,P1Y,first-party,customer-only,proposed-target-state
+EVR-GOV-006,Adopted policy register,Praxis (proposed),event-driven-automated,per-event,first-party,authenticated-prospect,proposed-target-state
+EVR-GOV-007,Principal sanctions screening results,not yet assigned,event-driven-automated,P30D,first-party,nda,proposed-target-state
+EVR-GOV-008,Regulatory perimeter memo and change log,Outside counsel (not yet engaged),periodic-manual,P1Y,second-party,nda,proposed-target-state
+EVR-GRT-001,Recommendation and affirmation records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-GRT-002,Grant approval decision records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-GRT-003,Approval sampling results report,not yet assigned,periodic-manual,P90D,first-party,customer-only,proposed-target-state
+EVR-GRT-004,Grant restriction and modification history,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-GRT-005,Recurring instance evaluation records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-GRT-006,Benefit and pledge gate outcomes,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-GRT-007,Decline and reconsideration records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-GRT-008,Payee change and substitution evidence,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-GRT-009,Payment exception and return records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-GRT-010,Issued grant letter registry entries,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-GRT-011,Recognition election and outbound disclosure log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-HR-001,Screening completion records,Screening provider (not yet engaged),event-driven-automated,per-event,second-party,nda,unknown
+EVR-HR-002,Training completion and phishing metrics,not yet assigned,periodic-automated,P1Y,first-party,nda,unknown
+EVR-HR-003,Signed personnel agreements,not yet assigned,event-driven-automated,per-event,first-party,internal,unknown
+EVR-HR-004,Access lifecycle and reconciliation report,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-HR-005,Praxis execution identity and artifact provenance records,Praxis,event-driven-automated,per-event,first-party,authenticated-prospect,implemented-not-independently-verified
+EVR-HR-006,Agent permission manifest and change history,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-HR-007,Contractor roster,not yet assigned,periodic-manual,P90D,first-party,nda,unknown
+EVR-HR-008,Security role designation and coverage arrangements,Managing member,periodic-manual,P90D,first-party,nda,proposed-target-state
+EVR-IAM-001,Provisioning request and approval log,not yet assigned,event-driven-automated,per-event,first-party,auditor-only,proposed-target-state
+EVR-IAM-002,Deprovisioning timeliness report,not yet assigned,periodic-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-IAM-003,Recertification campaign record,not yet assigned,periodic-automated,P90D,first-party,customer-only,proposed-target-state
+EVR-IAM-004,Privileged elevation and session log,not yet assigned,event-driven-automated,per-event,first-party,auditor-only,proposed-target-state
+EVR-IAM-005,Database grant declaration and drift report,"Strata (pilot tool; exists, not operated for production)",event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-IAM-006,Break-glass activation record and tenant notices,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-IAM-007,Access transparency log,not yet assigned (Unbound authorization core),continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-IAM-008,Secret scanning and credential age report,not yet assigned,event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-IAM-009,Workload identity inventory export,not yet assigned,periodic-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-IAM-010,Agent action records with delegation chain,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-IAM-011,Emergency stop test and activation record,not yet assigned,periodic-automated,P90D,first-party,customer-only,proposed-target-state
+EVR-IAM-012,Customer administrator change and recovery log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-IAM-013,Identity lifecycle event log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-INF-001,Image build attestation and SBOM,build pipeline (not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-INF-002,Vulnerability findings and remediation aging,"scanner (candidate: Trivy, osv-scanner)",continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-INF-003,Admission policy decision log,container platform (not selected),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-INF-004,Deployment record with signed provenance,build pipeline (not built); Praxis provenance format is a candidate,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-INF-005,Infrastructure change review record,IaC pipeline (not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-INF-006,Configuration drift report,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-INF-007,Production access grants and usage,access broker (not selected),event-driven-automated,per-event,first-party,auditor-only,proposed-target-state
+EVR-INF-008,Non-production data classification scan,not yet assigned,periodic-automated,P30D,first-party,internal,proposed-target-state
+EVR-INF-009,Component support-status register,not yet assigned,periodic-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-INS-001,Certificates of insurance,Insurance broker (not yet engaged),external-attestation,P1Y,independent-third-party,customer-only,unknown
+EVR-INS-002,Policy declarations and key endorsements,Carrier via broker,external-attestation,P1Y,independent-third-party,nda,unknown
+EVR-INS-003,Carrier loss runs,Carriers,external-attestation,P1Y,independent-third-party,nda,unknown
+EVR-INS-004,Insurance adequacy analysis,Managing member with broker,periodic-manual,P1Y,second-party,nda,proposed-target-state
+EVR-INS-005,Application representation reconciliation,Due diligence repository (proposed),event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-INV-001,Investment authority change log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-INV-002,Regulatory boundary legal opinion,not yet assigned (no counsel engaged),external-attestation,P1Y,second-party,nda,proposed-target-state
+EVR-INV-003,Allocation election record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-INV-004,Drift exception report,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-INV-005,Valuation record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-INV-006,Investment committee delegation record,Sponsor investment committee (not yet assigned),periodic-manual,P1Y,first-party,customer-only,proposed-target-state
+EVR-INV-007,Valuation correction case,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-INV-008,Investment policy compliance report,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-INV-009,Liquidity stress model record,not yet assigned,periodic-manual,P1Y,first-party,customer-only,proposed-target-state
+EVR-INV-010,Manager performance and cost report,not yet assigned (intended renderer: Folio),periodic-automated,P3M,first-party,customer-only,proposed-target-state
+EVR-INV-011,Investment governance decision record,Sponsor board (not yet assigned),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-INV-012,Illiquid valuation file,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-IPR-001,IP assignment agreements register,Managing member with counsel,event-driven-automated,per-event,first-party,nda,unknown
+EVR-IPR-002,SBOM with license identifiers,Praxis CI (proposed),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-IPR-003,Executed commercial license for Echelon components,Managing member with counsel,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-IPR-004,AI provider terms and configuration attestation,not yet assigned,periodic-manual,P90D,first-party,nda,proposed-target-state
+EVR-IPR-005,License gate results,Praxis CI (proposed),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-IPR-006,Third-party code scan results,not yet assigned,event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-IR-001,Approved incident response plan and playbooks,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-IR-002,"Incident roles, on-call roster and external retainer record",not yet assigned,periodic-manual,P90D,first-party,customer-only,proposed-target-state
+EVR-IR-003,Exercise record,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-IR-004,Incident timeline and notification log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-IR-005,Regulatory notification obligation matrix,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-IR-006,Forensic evidence preservation and chain of custody record,not yet assigned,event-driven-automated,per-event,first-party,auditor-only,proposed-target-state
+EVR-IR-007,Post-incident report and corrective action tracker,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-IR-008,Ransomware readiness evidence,not yet assigned,periodic-automated,P90D,first-party,nda,proposed-target-state
+EVR-IR-009,Containment action record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ISP-001,Approved program charter with adoption record,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-ISP-002,Annual program report to governing body,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-ISP-003,Qualified individual appointment record,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-ISP-004,Policy register export,not yet assigned,periodic-automated,P30D,first-party,authenticated-prospect,proposed-target-state
+EVR-ISP-005,Gate decision log for mandatory rules,Praxis CI workflow (proposed extension),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-ISP-006,Exception register snapshot,not yet assigned,periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-ISP-007,Monthly control effectiveness summary,not yet assigned,periodic-automated,P1M,first-party,customer-only,proposed-target-state
+EVR-ISP-008,Training completion and enforcement records,not yet assigned,periodic-automated,P30D,first-party,nda,proposed-target-state
+EVR-ISP-009,Agent execution provenance,Praxis (existing in development repositories; self-declared identity),event-driven-automated,per-event,first-party,customer-only,partially-implemented
+EVR-ISP-010,Independent assurance report or assessment letter,not yet assigned (external auditor or assessor),external-attestation,P1Y,independent-third-party,nda,requires-external-validation
+EVR-LEG-001,Executed agreement set,Managing member with counsel,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-LEG-002,Obligations register extract,not yet assigned,continuous-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-LEG-003,Incident notification log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-LEG-004,Subprocessor register and change notices,"Unbound (specified, not built)",event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-LEG-005,Litigation and claims disclosure certificate,Managing member,periodic-manual,P1Y,first-party,nda,unknown
+EVR-LEG-006,Data return and deletion certificate,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-MON-001,Security event catalog and coverage report,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-MON-002,Log integrity verification results,not yet assigned,periodic-automated,P1D,first-party,nda,proposed-target-state
+EVR-MON-003,Log retention and legal hold configuration evidence,not yet assigned,periodic-automated,P30D,first-party,nda,proposed-target-state
+EVR-MON-004,Alert and response metrics,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-MON-005,Detection catalog and detection test results,not yet assigned,periodic-automated,P30D,first-party,nda,proposed-target-state
+EVR-MON-006,Tenant audit trail export,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-MON-007,Missing heartbeat and evidence completeness record,not yet assigned,continuous-automated,PT1H,first-party,nda,proposed-target-state
+EVR-MON-008,AI agent activity ledger,Praxis (records agent provenance for repository work; runtime agent ledger for Unbound not built),continuous-automated,per-event,first-party,nda,proposed-target-state
+EVR-MON-009,Time synchronization status,not yet assigned,continuous-automated,P1D,first-party,internal,proposed-target-state
+EVR-MON-010,Privileged and break-glass session records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-NET-001,Network topology rendered from infrastructure as code,not yet assigned (IaC pipeline),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-NET-002,Network policy-as-code check results,Praxis CI workflow (candidate; not operated for a production service),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-NET-003,External attack surface scan,not yet assigned,periodic-automated,P7D,first-party,customer-only,proposed-target-state
+EVR-NET-004,Egress allowlist register and denied egress log,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-NET-005,"Edge, WAF and DDoS configuration and event records",edge provider (not selected),continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-NET-006,Administrative session records,access broker (not selected),event-driven-automated,per-event,first-party,auditor-only,proposed-target-state
+EVR-NET-007,Domain and DNS configuration snapshot,not yet assigned,periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-NET-008,Flow log coverage and delivery heartbeat,provider logging service (not selected),periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-NET-009,Independent network and application penetration test,independent testing firm (not engaged),external-attestation,P1Y,independent-third-party,nda,requires-external-validation
+EVR-PAY-001,Program role table and FundsFlow declaration,not yet assigned (intended: Unbound tenant activation; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PAY-002,RailGoLive gate record,not yet assigned (intended: Unbound release governance; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PAY-003,Authorization and revocation records,not yet assigned (intended: Unbound contributions component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PAY-004,Return and NOC processing log,not yet assigned (intended: Unbound payment component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PAY-005,Return-rate and reinitiation report,not yet assigned (intended: Unbound payment monitoring; not built),periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-PAY-006,Wire release and confirmation records,not yet assigned (intended: Unbound payment component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PAY-007,Check lifecycle records,not yet assigned (intended: Unbound check rail adapter; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PAY-008,Unclaimed property disposition register,not yet assigned (intended: Unbound payment component; not built),periodic-automated,P1Y,first-party,customer-only,proposed-target-state
+EVR-PAY-009,Integration credential inventory and rotation log,not yet assigned (intended: Unbound integration adapters; not built),periodic-automated,P90D,first-party,internal,proposed-target-state
+EVR-PAY-010,Payment release records,not yet assigned (intended: Unbound payment release gate; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PEN-001,Independent penetration test letter of attestation,External penetration testing firm (not yet engaged),external-attestation,P1Y,independent-third-party,nda,proposed-target-state
+EVR-PEN-002,Full penetration test report,External penetration testing firm (not yet engaged),external-attestation,P1Y,independent-third-party,customer-only,proposed-target-state
+EVR-PEN-003,Penetration test scope and rules of engagement record,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-PEN-004,Tester and firm qualification record,External penetration testing firm (not yet engaged),external-attestation,P1Y,independent-third-party,nda,proposed-target-state
+EVR-PEN-005,Penetration finding remediation and retest record,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-PEN-006,Customer-initiated testing authorization record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PEN-007,First-party adversarial test results,Tutela (security evidence and release posture model exists; not operated for a production Echelon service),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-PHY-001,Cloud provider assurance reports and review memo,Cloud provider (reports); Echelon reviewer,external-attestation,P1Y,independent-third-party,nda,proposed-target-state
+EVR-PHY-002,Region configuration and drift report,Infrastructure pipeline (not built),continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-PHY-003,Endpoint compliance report,Device management (not selected),continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-PHY-004,Media sanitization certificates,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-PHY-005,Remote work standard acknowledgments,not yet assigned,periodic-manual,P1Y,first-party,internal,proposed-target-state
+EVR-PRF-001,Capacity model and headroom report,not yet assigned,periodic-automated,P30D,first-party,nda,proposed-target-state
+EVR-PRF-002,Per-tenant resource quota configuration and breach log,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-PRF-003,Load and surge test report,not yet assigned,periodic-automated,P90D,first-party,nda,proposed-target-state
+EVR-PRF-004,Performance SLO report,not yet assigned,continuous-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-PRF-005,Batch schedule and cut-off adherence log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PRT-001,Export schema and validation record,not yet assigned,event-driven-automated,per-event,first-party,authenticated-prospect,proposed-target-state
+EVR-PRT-002,Export manifest and reconciliation result,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PRT-003,Extraction performance test,not yet assigned,periodic-automated,P90D,first-party,authenticated-prospect,proposed-target-state
+EVR-PRT-004,Migration reconciliation report,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PRT-005,Published interchange schema,not yet assigned,event-driven-automated,per-event,first-party,public,unknown
+EVR-PRV-001,Generated record of processing,not yet assigned (candidate: Unbound build pipeline using Strata schema metadata),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PRV-002,Privacy program review record,Praxis (governance record format exists; no review has occurred),periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-PRV-003,Internal access by declared purpose,not yet assigned (candidate: Unbound audit event stream),continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-PRV-004,Breach notification timeline record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PRV-005,Annual Safeguards-element report,Qualified individual (not designated),periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-PRV-006,Subprocessor register history,not yet assigned,event-driven-automated,per-event,first-party,authenticated-prospect,proposed-target-state
+EVR-PRV-007,Rights request case record,not yet assigned (candidate: Unbound privacy case workflow),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-PRV-008,Data location attestation,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-PRV-009,PIA register and gate results,Praxis plus CI (planned),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-PRV-010,Portal tracking inventory,not yet assigned,event-driven-automated,per-event,first-party,authenticated-prospect,proposed-target-state
+EVR-PRV-011,Minor record access report,not yet assigned,periodic-automated,P90D,first-party,customer-only,unknown
+EVR-PRV-012,Model call and agent access log,not yet assigned (candidate: model gateway and access broker),continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-PRV-013,Aggregate release log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,unknown
+EVR-RCN-001,Reconciliation run and match log,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-RCN-002,Feed freshness status,not yet assigned,continuous-automated,PT1H,first-party,customer-only,proposed-target-state
+EVR-RCN-003,Tolerance and match-rule version history,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RCN-004,Break register and aging report,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-RCN-005,Post-close adjustment case file,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RCN-006,Duty conflict decision log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RCN-007,Monthly reconciliation completeness certification,not yet assigned,periodic-automated,P1M,first-party,customer-only,proposed-target-state
+EVR-RCN-008,SOC 1 Type 2 report,not yet assigned (no CPA firm engaged),external-attestation,P1Y,independent-third-party,nda,proposed-target-state
+EVR-RCN-009,Reconciliation evidence bundle,not yet assigned,event-driven-automated,per-event,first-party,auditor-only,proposed-target-state
+EVR-RCN-010,Replay comparison report,not yet assigned,periodic-automated,P1M,first-party,auditor-only,proposed-target-state
+EVR-RCN-011,Unknown-outcome case record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RCN-012,Migration reconciliation report,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-REG-001,Regulatory applicability register export,not yet assigned,periodic-manual,P180D,first-party,nda,proposed-target-state
+EVR-REG-002,Funds-flow and operator-status conformance results,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-REG-003,Obligation-to-evidence compliance dashboard snapshot,not yet assigned,continuous-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-REG-004,Examination cooperation terms and package log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-REG-005,Echelon sanctions screening records and attestation,not yet assigned,periodic-automated,P1Y,first-party,nda,proposed-target-state
+EVR-REG-006,Complaint register and trend report,not yet assigned,continuous-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-REG-007,Regulatory watch list and impact reviews,not yet assigned,periodic-manual,P30D,first-party,nda,proposed-target-state
+EVR-REG-008,Incident notification records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-REG-009,Regulatory report data and retention configuration,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RET-001,Disposition run record,not yet assigned,periodic-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-RET-002,Legal hold register,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RET-003,Key destruction and sanitization record,not yet assigned (candidate: managed key service audit log),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RET-004,Backup expiry and restore-replay test,not yet assigned,periodic-automated,P1Y,first-party,customer-only,proposed-target-state
+EVR-RET-005,Post-erasure chain verification,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RET-006,Records production drill,not yet assigned,periodic-manual,P1Y,first-party,customer-only,unknown
+EVR-RET-007,Deletion certificate and evidence bundle,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RRP-001,DAF annual reporting data package,not yet assigned,periodic-automated,P1Y,first-party,customer-only,proposed-target-state
+EVR-RRP-002,Acknowledgment issuance record,not yet assigned (intended renderer: Folio),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RRP-003,Form 8283/8282 tracking record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-RRP-004,Information-return applicability report,not yet assigned,not-defined,P1Y,first-party,customer-only,proposed-target-state
+EVR-RRP-005,OFAC report data package,not yet assigned,event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-RRP-006,Platform registration record,not yet assigned,periodic-manual,P1Y,first-party,public,proposed-target-state
+EVR-RRP-007,Sponsor registration calendar,not yet assigned,periodic-automated,P1M,first-party,customer-only,proposed-target-state
+EVR-RRP-008,Unclaimed property report data,not yet assigned,periodic-automated,P1Y,first-party,customer-only,proposed-target-state
+EVR-RRP-009,Audit package,not yet assigned (intended renderer: Folio),periodic-automated,P1Y,first-party,auditor-only,proposed-target-state
+EVR-RRP-010,Auditor access log,not yet assigned,continuous-automated,per-event,first-party,auditor-only,proposed-target-state
+EVR-RSK-001,Risk register snapshot,Praxis (proposed),continuous-automated,P30D,first-party,nda,proposed-target-state
+EVR-RSK-002,Exception register and gate decisions,Praxis CI workflow (proposed),continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-RSK-003,Critical vendor inventory and assessments,not yet assigned,periodic-automated,P1Y,first-party,customer-only,proposed-target-state
+EVR-RSK-004,Claim reconciliation report,Due diligence build (proposed),event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-RSK-005,Scenario analysis record,Managing member,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-SCN-001,Per-release scan evidence bundle,Praxis (CI workflow and provenance tooling exists; no security scanning step is configured),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SCN-002,Scanner coverage matrix,not yet assigned,periodic-automated,P30D,first-party,nda,proposed-target-state
+EVR-SCN-003,Scanner validation report,not yet assigned (Secure Construction Standard proposes Dokimos; Dokimos is a code-quality system and its scanner benchmarking role is unverified),event-driven-automated,per-event,first-party,public,proposed-target-state
+EVR-SCN-004,Secret detection and response record,not yet assigned,event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-SCN-005,Suppression and false-positive register,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SCN-006,Customer scan summary,not yet assigned (Folio is a candidate renderer for reports),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-SCS-001,Approved dependency register and intake decisions,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SCS-002,Lockfile and pinning verification,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SCS-003,Release SBOM,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SCS-004,VEX statements for component vulnerabilities,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SCS-005,Build provenance attestations,"GitHub Actions artifact attestations (configured in Praxis, Limen and Strata release workflows; no product release exists)",event-driven-automated,per-event,first-party,nda,partially-implemented
+EVR-SCS-006,Deployment-time signature and provenance verification log,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SCS-007,Malicious package and registry protection results,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SCS-008,License compliance report,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SCS-009,OpenSSF Scorecard results for dependencies and own repositories,not yet assigned,periodic-automated,P7D,first-party,public,proposed-target-state
+EVR-SDL-001,Adopted secure development standard and SSDF/SAMM self-assessment,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-SDL-002,Security requirement traceability report,Praxis validation (exists for record integrity; security traceability not configured),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SDL-003,Code review and approval records per change,Source control platform plus Praxis provenance events (proposed integration),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SDL-004,Security testing results per build,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SDL-005,Developer and agent security competence records,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-SDL-006,AI coding agent provenance and permission records,Praxis work protocol and provenance (exists in tool repositories; not operated for a product),event-driven-automated,per-event,first-party,nda,partially-implemented
+EVR-SDL-007,"Language, unsafe code and native interop inventory",not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-SDL-008,Secure software development attestation package,not yet assigned,periodic-manual,P1Y,first-party,customer-only,proposed-target-state
+EVR-SDL-009,Development environment and test data controls evidence,not yet assigned,periodic-automated,P30D,first-party,nda,proposed-target-state
+EVR-SUB-001,Published subprocessor register and history,not yet assigned,event-driven-automated,per-event,first-party,public,proposed-target-state
+EVR-SUB-002,Data-flow release check results,not yet assigned,event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-SUB-003,Subprocessor notice and objection log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-SUB-004,Subprocessor terms register,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-SUB-005,Region configuration verification,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-SUB-006,AI provider subprocessor entries and engineering data exclusion checks,not yet assigned,periodic-automated,P30D,first-party,nda,proposed-target-state
+EVR-SUP-001,Support coverage schedule,not yet assigned,periodic-manual,P90D,first-party,customer-only,proposed-target-state
+EVR-SUP-002,Severity matrix and response-time performance report,not yet assigned,periodic-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-SUP-003,Escalation matrix and named contacts,not yet assigned,periodic-manual,P90D,first-party,customer-only,proposed-target-state
+EVR-SUP-004,Support access grant and session log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-SUP-005,AI support agent configuration and evaluation record,not yet assigned,periodic-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-SUP-006,Problem management and known-error register,not yet assigned,event-driven-automated,P30D,first-party,customer-only,proposed-target-state
+EVR-SUP-007,Support personnel location and subcontractor register,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-TPR-001,Vendor inventory export,not yet assigned,periodic-automated,P90D,first-party,nda,proposed-target-state
+EVR-TPR-002,Inventory reconciliation report,not yet assigned,periodic-automated,P90D,first-party,internal,proposed-target-state
+EVR-TPR-003,Vendor due diligence file,not yet assigned,event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-TPR-004,Integration approval gate records,not yet assigned,event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-TPR-005,Contract term checklist and gap acceptances,not yet assigned,periodic-manual,P1Y,first-party,internal,proposed-target-state
+EVR-TPR-006,SOC report review records and CUEC mapping,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-TPR-007,Vendor signal log and review triggers,not yet assigned,continuous-automated,P30D,first-party,internal,proposed-target-state
+EVR-TPR-008,Dependency and concentration map,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-TPR-009,Exit plans and rehearsal results,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-TPR-010,TPRM policy and independent review report,not yet assigned,periodic-manual,P1Y,first-party,nda,proposed-target-state
+EVR-TRM-001,Exit dry-run report,not yet assigned,periodic-manual,P1Y,first-party,customer-only,proposed-target-state
+EVR-TRM-002,Exit timeline record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TRM-003,Customer-held export delivery log,not yet assigned,continuous-automated,P1D,first-party,customer-only,unknown
+EVR-TRM-004,Exit reconciliation,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TRM-005,Standard agreement and rate card,not yet assigned,periodic-manual,P1Y,first-party,authenticated-prospect,unknown
+EVR-TXI-001,Idempotency outcomes and duplicate-key conflict cases,not yet assigned (intended: Unbound command engine; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TXI-002,Effect receipt ledger reconciled to providers,not yet assigned (intended: Unbound outbox; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TXI-003,Reservation commit records,not yet assigned (intended: Unbound grants component; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TXI-004,Dispatch fence checks,not yet assigned (intended: Unbound payment dispatcher; not built),event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-TXI-005,Feed watermark and gap cases,not yet assigned (intended: Unbound integration adapters; not built),continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-TXI-006,Invariant monitor results,not yet assigned (intended: Unbound monitoring; not built),continuous-automated,PT1H,first-party,customer-only,proposed-target-state
+EVR-TXI-007,Concurrency and replay test reports,not yet assigned (intended: Unbound test suite with Praxis provenance; not built),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-TXI-008,Unknown-outcome aging and resolution records,not yet assigned (intended: Unbound payment component; not built),continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-TXI-009,Callback authentication failures,not yet assigned (intended: Unbound integration adapters; not built),event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-VUL-001,Vulnerability register with lifecycle timestamps,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-VUL-002,Remediation SLA performance report,not yet assigned,periodic-automated,P30D,first-party,nda,proposed-target-state
+EVR-VUL-003,Vulnerability exception register,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-VUL-004,Published vulnerability disclosure policy and security.txt,not yet assigned,periodic-automated,P30D,first-party,public,proposed-target-state
+EVR-VUL-005,External report intake log,not yet assigned,event-driven-automated,per-event,first-party,internal,proposed-target-state
+EVR-VUL-006,Customer vulnerability advisory and VEX record,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-VUL-007,Deployed component patch currency report,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-VUL-008,AI-authored remediation verification record,Praxis (work protocol and provenance records exist as tooling; not yet operated for a production Echelon service),event-driven-automated,per-event,first-party,nda,proposed-target-state
+EVR-WLB-001,Brand Kit version and validation records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-WLB-002,Partner certification and registration records,not yet assigned,periodic-manual,P1Y,first-party,customer-only,proposed-target-state
+EVR-WLB-003,"Widget launch, framing and revocation evidence",not yet assigned,continuous-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-WLB-004,Embedded component adversarial test results,not yet assigned,periodic-automated,per-event,first-party,nda,proposed-target-state
+EVR-WLB-005,Isolation profile register and negative test results,not yet assigned,continuous-automated,P1D,first-party,nda,proposed-target-state
+EVR-WLB-006,Partner data access and mapping change log,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
+EVR-WLB-007,Partner API access and deprovisioning metrics,not yet assigned,continuous-automated,P1D,first-party,customer-only,proposed-target-state
+EVR-WLB-008,Partner lifecycle case records,not yet assigned,event-driven-automated,per-event,first-party,customer-only,proposed-target-state
