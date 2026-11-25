@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Echelon control",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "objective",
+    "control_type",
+    "assurance_level",
+    "implementing_systems",
+    "status",
+    "evidence_requirements",
+    "owner"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ECTL-[A-Z0-9]+-[0-9]{3}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "control_type": {
+      "type": "string",
+      "enum": [
+        "preventive-structural",
+        "preventive-gate",
+        "preventive-procedural",
+        "detective-automated",
+        "detective-manual",
+        "corrective",
+        "administrative"
+      ]
+    },
+    "assurance_level": {
+      "type": "string",
+      "enum": [
+        "L1-eliminated-in-scope",
+        "L2-type-system",
+        "L3-restricted-interface",
+        "L4-compiler-enforced",
+        "L5-build-release-gate",
+        "L6-automated-analysis",
+        "L7-property-tested",
+        "L8-adversarial-tested",
+        "L9-runtime-monitored",
+        "L10-external-or-manual"
+      ]
+    },
+    "implementing_systems": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "policies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_external_controls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cwe": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "framework_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "relation",
+          "basis"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^SRC-[A-Z0-9.-]+$"
+          },
+          "locator": {
+            "type": "string",
+            "description": "Section, control or clause identifier. Never quoted licensed text."
+          },
+          "relation": {
+            "type": "string",
+            "enum": [
+              "derived-from",
+              "maps-to",
+              "informed-by",
+              "contradicts"
+            ]
+          },
+          "basis": {
+            "type": "string",
+            "enum": [
+              "directly-documented",
+              "reasonably-inferred",
+              "unknown"
+            ]
+          }
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "verified-operational",
+        "implemented-not-independently-verified",
+        "partially-implemented",
+        "approved-policy-implementation-pending",
+        "proposed-target-state",
+        "not-applicable",
+        "unsupported",
+        "unknown",
+        "requires-external-validation"
+      ]
+    },
+    "evidence_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "owner": {
+      "type": "string"
+    },
+    "residual_risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

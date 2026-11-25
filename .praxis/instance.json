@@ -1,0 +1,12 @@
+{
+  "schema": "praxis.instance/1",
+  "instanceId": "pxi-1ce96999bd2b4b048268718691d11935",
+  "createdAt": "2026-11-25T17:37:38.753Z",
+  "createdWith": "3.25.0",
+  "repository": {
+    "provider": "github",
+    "repositoryId": null,
+    "repository": "kemiller2002/echelon-due-diligence"
+  },
+  "predecessors": []
+}

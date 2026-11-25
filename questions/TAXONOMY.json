@@ -1,0 +1,408 @@
+{
+ "version": "1.0.0",
+ "updated": "2026-11-25",
+ "categories": [
+  {
+   "code": "GOV",
+   "name": "Corporate ownership and governance",
+   "scope": "Legal entity, ownership, board, officers, conflicts, policies governance",
+   "group": 1
+  },
+  {
+   "code": "FST",
+   "name": "Organizational financial stability",
+   "scope": "Funding, runway, audited financials, going concern, credit",
+   "group": 1
+  },
+  {
+   "code": "RSK",
+   "name": "Enterprise and security risk management",
+   "scope": "Risk assessment method, risk register, risk appetite, exceptions",
+   "group": 1
+  },
+  {
+   "code": "AUD",
+   "name": "Certifications, audits and assurance reports",
+   "scope": "SOC reports, ISO certificates, bridge letters, regulator exams, right to audit",
+   "group": 1
+  },
+  {
+   "code": "LEG",
+   "name": "Legal, contracts and liability",
+   "scope": "MSA, security addenda, liability caps, indemnity, litigation, notices",
+   "group": 1
+  },
+  {
+   "code": "INS",
+   "name": "Insurance",
+   "scope": "Cyber, E&O, crime, fidelity, GL coverage and terms",
+   "group": 1
+  },
+  {
+   "code": "IPR",
+   "name": "Intellectual property",
+   "scope": "Ownership, licensing, open-source compliance, customer data rights, AI training rights",
+   "group": 1
+  },
+  {
+   "code": "HR",
+   "name": "Personnel security",
+   "scope": "Background checks, training, onboarding, offboarding, contractors, discipline",
+   "group": 1
+  },
+  {
+   "code": "PHY",
+   "name": "Physical and environmental security",
+   "scope": "Facilities, data centers, remote work, equipment",
+   "group": 1
+  },
+  {
+   "code": "ISP",
+   "name": "Information security program",
+   "scope": "Program charter, policies, roles, metrics, awareness",
+   "group": 2
+  },
+  {
+   "code": "ASM",
+   "name": "Asset and configuration inventory",
+   "scope": "Hardware, software, data, service inventories and baselines",
+   "group": 2
+  },
+  {
+   "code": "IAM",
+   "name": "Identity and access management",
+   "scope": "Provisioning, reviews, privileged access, joiner-mover-leaver",
+   "group": 2
+  },
+  {
+   "code": "AUN",
+   "name": "Authentication",
+   "scope": "MFA, SSO, passwords, sessions, credential recovery, phishing resistance",
+   "group": 2
+  },
+  {
+   "code": "AUZ",
+   "name": "Authorization",
+   "scope": "Server-side enforcement, RBAC/ABAC, least privilege, delegation",
+   "group": 2
+  },
+  {
+   "code": "TEN",
+   "name": "Tenant isolation",
+   "scope": "Logical and physical multi-tenancy separation, data partitioning, noisy neighbor",
+   "group": 2
+  },
+  {
+   "code": "APP",
+   "name": "Application security",
+   "scope": "Input handling, output encoding, session management, common weakness classes",
+   "group": 3
+  },
+  {
+   "code": "API",
+   "name": "API security",
+   "scope": "API authentication, rate limiting, object-level authorization, versioning",
+   "group": 3
+  },
+  {
+   "code": "SDL",
+   "name": "Secure software development lifecycle",
+   "scope": "Requirements, code review, testing, release, developer training",
+   "group": 3
+  },
+  {
+   "code": "ARC",
+   "name": "Secure architecture and design",
+   "scope": "Threat modeling, trust boundaries, security by construction, design review",
+   "group": 3
+  },
+  {
+   "code": "CHG",
+   "name": "Change and release management",
+   "scope": "Change approval, segregation, deployment, rollback, emergency change",
+   "group": 3
+  },
+  {
+   "code": "SCS",
+   "name": "Software supply-chain security",
+   "scope": "Dependencies, SBOM, provenance, signing, build integrity",
+   "group": 3
+  },
+  {
+   "code": "VUL",
+   "name": "Vulnerability management",
+   "scope": "Identification, scoring, remediation SLAs, exceptions, disclosure program",
+   "group": 4
+  },
+  {
+   "code": "PEN",
+   "name": "Penetration testing",
+   "scope": "Scope, independence, frequency, remediation, report sharing",
+   "group": 4
+  },
+  {
+   "code": "SCN",
+   "name": "Automated security scanning",
+   "scope": "SAST, DAST, SCA, IAST, secrets, IaC scanning, coverage and validation",
+   "group": 4
+  },
+  {
+   "code": "MON",
+   "name": "Security logging and monitoring",
+   "scope": "Log collection, retention, integrity, alerting, SIEM, detection",
+   "group": 4
+  },
+  {
+   "code": "IR",
+   "name": "Incident response and breach notification",
+   "scope": "Plan, roles, testing, customer notification, forensics",
+   "group": 4
+  },
+  {
+   "code": "NET",
+   "name": "Network security",
+   "scope": "Segmentation, firewalls, ingress/egress, DDoS, remote access",
+   "group": 4
+  },
+  {
+   "code": "INF",
+   "name": "Infrastructure and platform security",
+   "scope": "Hosting, hardening, patching, containers, IaC",
+   "group": 4
+  },
+  {
+   "code": "CLD",
+   "name": "Cloud security",
+   "scope": "Cloud provider, shared responsibility, cloud configuration, regions",
+   "group": 4
+  },
+  {
+   "code": "END",
+   "name": "Endpoint and workforce device security",
+   "scope": "Device management, EDR, disk encryption, BYOD",
+   "group": 4
+  },
+  {
+   "code": "ENC",
+   "name": "Encryption and key management",
+   "scope": "At rest, in transit, key custody, rotation, HSM/KMS, cryptographic standards",
+   "group": 4
+  },
+  {
+   "code": "PRV",
+   "name": "Data privacy",
+   "scope": "Privacy program, lawful basis, data subject rights, DPAs, transfers",
+   "group": 5
+  },
+  {
+   "code": "DCL",
+   "name": "Data classification and handling",
+   "scope": "Classification scheme, labeling, handling rules, minimization",
+   "group": 5
+  },
+  {
+   "code": "RET",
+   "name": "Data retention and deletion",
+   "scope": "Retention schedules, legal holds, deletion, sanitization, certificates",
+   "group": 5
+  },
+  {
+   "code": "BCP",
+   "name": "Business continuity",
+   "scope": "BIA, continuity plans, testing, key person dependence, pandemic",
+   "group": 5
+  },
+  {
+   "code": "DR",
+   "name": "Disaster recovery",
+   "scope": "RTO/RPO, failover, DR testing, regional resilience",
+   "group": 5
+  },
+  {
+   "code": "BKP",
+   "name": "Backup and restoration",
+   "scope": "Backup scope, frequency, immutability, restore tests",
+   "group": 5
+  },
+  {
+   "code": "AVL",
+   "name": "Service availability and SLAs",
+   "scope": "Uptime commitments, status pages, maintenance, credits",
+   "group": 5
+  },
+  {
+   "code": "PRF",
+   "name": "Performance and capacity",
+   "scope": "Capacity planning, load testing, performance SLAs",
+   "group": 5
+  },
+  {
+   "code": "SUP",
+   "name": "Customer support and service management",
+   "scope": "Support tiers, escalation, hours, problem management",
+   "group": 5
+  },
+  {
+   "code": "PRT",
+   "name": "Data portability",
+   "scope": "Export formats, completeness, APIs, migration assistance",
+   "group": 5
+  },
+  {
+   "code": "TRM",
+   "name": "Contract termination and exit",
+   "scope": "Transition assistance, data return, deletion certification, wind-down",
+   "group": 5
+  },
+  {
+   "code": "ESC",
+   "name": "Software escrow and continuity of supply",
+   "scope": "Source escrow, release conditions, verification",
+   "group": 5
+  },
+  {
+   "code": "A11Y",
+   "name": "Accessibility",
+   "scope": "WCAG conformance, VPAT/ACR, testing, remediation",
+   "group": 5
+  },
+  {
+   "code": "AIG",
+   "name": "AI governance",
+   "scope": "AI inventory, policy, risk assessment, model and provider due diligence, regulation",
+   "group": 6
+  },
+  {
+   "code": "AIS",
+   "name": "AI security",
+   "scope": "Prompt injection, data leakage, model supply chain, adversarial robustness",
+   "group": 6
+  },
+  {
+   "code": "AIA",
+   "name": "AI agent authorization and accountability",
+   "scope": "Agent permissions, human oversight, decision accountability, evidence reliability",
+   "group": 6
+  },
+  {
+   "code": "TPR",
+   "name": "Third-party risk management",
+   "scope": "Vendor inventory, tiering, assessments, monitoring, concentration",
+   "group": 6
+  },
+  {
+   "code": "SUB",
+   "name": "Subprocessor management",
+   "scope": "Subprocessor list, notice of changes, flow-down obligations",
+   "group": 6
+  },
+  {
+   "code": "REG",
+   "name": "Regulatory compliance management",
+   "scope": "Regulatory inventory, compliance monitoring, examinations, regulator access",
+   "group": 6
+  },
+  {
+   "code": "AML",
+   "name": "Anti-money laundering and sanctions",
+   "scope": "OFAC screening, BSA/AML program support, KYC, suspicious activity",
+   "group": 6
+  },
+  {
+   "code": "FCT",
+   "name": "Financial controls",
+   "scope": "Internal control over financial processes, segregation of duties, approvals",
+   "group": 7
+  },
+  {
+   "code": "ACT",
+   "name": "Accounting and general ledger",
+   "scope": "Fund accounting, journal integrity, period close, audits",
+   "group": 7
+  },
+  {
+   "code": "TXI",
+   "name": "Transaction integrity",
+   "scope": "Idempotency, atomicity, completeness, accuracy, replay protection",
+   "group": 7
+  },
+  {
+   "code": "FRD",
+   "name": "Fraud prevention",
+   "scope": "Account takeover, payment fraud, insider fraud, anomaly detection",
+   "group": 7
+  },
+  {
+   "code": "PAY",
+   "name": "Payments and disbursements",
+   "scope": "ACH/Nacha, wires, checks, positive pay, payment authorization",
+   "group": 7
+  },
+  {
+   "code": "RCN",
+   "name": "Financial reconciliation",
+   "scope": "Bank, custodian, ledger and subledger reconciliation",
+   "group": 7
+  },
+  {
+   "code": "CUS",
+   "name": "Custodial relationships",
+   "scope": "Custodian integration, asset segregation, statements",
+   "group": 7
+  },
+  {
+   "code": "INV",
+   "name": "Investment administration",
+   "scope": "Allocations, rebalancing, NAV/unitization, investment policy",
+   "group": 7
+  },
+  {
+   "code": "FEE",
+   "name": "Fee administration",
+   "scope": "Fee schedules, calculation, change control, disclosure",
+   "group": 7
+  },
+  {
+   "code": "RRP",
+   "name": "Regulatory and tax reporting",
+   "scope": "Form 990 support, acknowledgments, 1099, regulatory filings",
+   "group": 7
+  },
+  {
+   "code": "DAF",
+   "name": "Donor-advised fund administration",
+   "scope": "Account lifecycle, advisory privileges, succession, sponsor policy",
+   "group": 8
+  },
+  {
+   "code": "GRT",
+   "name": "Grant processing",
+   "scope": "Recommendations, approval, restrictions, recurring grants, disbursement",
+   "group": 8
+  },
+  {
+   "code": "CHV",
+   "name": "Charity vetting",
+   "scope": "Eligibility, IRS status, reverification, foreign grantees, sanctions",
+   "group": 8
+  },
+  {
+   "code": "CON",
+   "name": "Contribution processing",
+   "scope": "Cash and non-cash contributions, valuation, acknowledgment, timing",
+   "group": 8
+  },
+  {
+   "code": "DON",
+   "name": "Donor identity and privacy",
+   "scope": "Donor verification, anonymity, consent, donor data use",
+   "group": 8
+  },
+  {
+   "code": "WLB",
+   "name": "White labeling, embedding and partner channels",
+   "scope": "Branding, embedded components, partner segregation, co-branding",
+   "group": 8
+  }
+ ]
+}
