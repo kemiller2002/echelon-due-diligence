@@ -50,8 +50,8 @@
   "humanOnlyTransitions": [],
   "parentExecution": null,
   "startedAt": "2026-11-25T17:37:44.964Z",
-  "state": "active",
-  "stateReason": null,
+  "state": "blocked",
+  "stateReason": "Mission not complete: awaiting owner fact verification, human review of answer units and counsel opinions; open backlog BL-013, BL-023, BL-024, BL-025 and 123 open objections. See HANDOFF.md.",
   "origin": {
     "kind": "work-transition",
     "reference": "work.begin"

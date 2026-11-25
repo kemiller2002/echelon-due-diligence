@@ -4,7 +4,7 @@
   "repository": "echelon-due-diligence",
   "actor": "ros-bootstrap",
   "startedAt": "2026-11-25T17:37:38.720Z",
-  "updatedAt": "2026-11-25T17:37:44Z",
+  "updatedAt": "2026-11-25T18:48:33.862Z",
   "baselineDirtyPaths": [],
   "workItems": [
     {
@@ -24,13 +24,34 @@
     {
       "id": "DD-RESEARCH-2026-001",
       "type": "task",
-      "state": "active",
-      "semanticState": "active",
+      "state": "blocked",
+      "semanticState": "blocked",
       "evidence": [],
-      "updatedAt": "2026-11-25T17:37:44Z",
+      "updatedAt": "2026-11-25T18:48:33.862Z",
       "telemetryExecutionIds": [
         "EXE-20261125T173744839Z-c8911619"
-      ]
+      ],
+      "latestCheckpoint": {
+        "id": "6c254b00ce773d061564949c",
+        "recordedAt": "2026-11-25T18:48:32.057Z",
+        "executionId": "EXE-20261125T173744839Z-c8911619",
+        "repository": "echelon-due-diligence",
+        "branch": "claude/echelon-due-diligence-research-6vrnsy",
+        "commit": "9da92bc1baa9b51d9a8b52217e841e0d37c0b201",
+        "remote": {
+          "name": "origin",
+          "url": "https://github.com/kemiller2002/echelon-due-diligence"
+        },
+        "remoteBranch": "claude/echelon-due-diligence-research-6vrnsy",
+        "remoteCommit": "9da92bc1baa9b51d9a8b52217e841e0d37c0b201",
+        "summary": "Session 1: all 26 due diligence deliverables drafted; 2,404 questions, 535 answer units, 642 controls, 617 evidence requirements, 408 sources, 104 proposed Unbound requirements, 207 adversarial objections; tools/build.fsx errors=0",
+        "nextAction": "Owner fact verification and human review of deciding questions; then BL-024 citation hygiene, BL-025, BL-013 diminishing-returns pass (see HANDOFF.md)",
+        "verification": {
+          "status": "verified",
+          "mechanism": "git-remote-observation"
+        }
+      },
+      "blockReason": "Mission not complete: awaiting owner fact verification, human review of answer units and counsel opinions; open backlog BL-013, BL-023, BL-024, BL-025 and 123 open objections. See HANDOFF.md."
     }
   ]
 }

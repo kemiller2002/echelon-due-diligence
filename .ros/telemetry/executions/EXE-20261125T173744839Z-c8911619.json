@@ -770,14 +770,30 @@
     },
     {
       "metricId": "agent.interruptions",
-      "status": "unknown",
-      "reason": "runtime capability not reported or mapped",
-      "discoveredAt": "2026-11-25T17:37:44.839Z",
+      "status": "derived",
+      "reason": "normalized measurement recorded",
+      "discoveredAt": "2026-11-25T18:48:33.862Z",
       "source": {
-        "type": "environment",
-        "name": "runtime-identity",
-        "mechanism": "whitelisted-claude-environment"
-      }
+        "type": "calculated",
+        "name": "ros-work-protocol",
+        "mechanism": "blocked-transition"
+      },
+      "lastAssessedAt": "2026-11-25T18:48:33.862Z",
+      "recordedAt": "2026-11-25T18:48:33.862Z",
+      "history": [
+        {
+          "status": "unknown",
+          "reason": "runtime capability not reported or mapped",
+          "source": {
+            "type": "environment",
+            "name": "runtime-identity",
+            "mechanism": "whitelisted-claude-environment"
+          },
+          "discoveredAt": "2026-11-25T17:37:44.839Z",
+          "lastAssessedAt": "2026-11-25T17:37:44.839Z",
+          "recordedAt": "2026-11-25T17:37:44.839Z"
+        }
+      ]
     },
     {
       "metricId": "agent.resumes",
@@ -1619,6 +1635,26 @@
       },
       "collectedAt": "2026-11-25T17:37:44.839Z",
       "schemaVersion": "1.0.0"
+    },
+    {
+      "measurementId": "MEAS-609bf4c6bea6a44644e3b1d5",
+      "id": "agent.interruptions",
+      "value": 1,
+      "unit": "count",
+      "currency": null,
+      "quality": "derived",
+      "confidence": null,
+      "scope": "execution",
+      "aggregation": "sum",
+      "dimensions": {},
+      "pricing": null,
+      "source": {
+        "type": "calculated",
+        "name": "ros-work-protocol",
+        "mechanism": "blocked-transition"
+      },
+      "collectedAt": "2026-11-25T18:48:33.862Z",
+      "schemaVersion": "1.0.0"
     }
   ],
   "rawTelemetry": [],
@@ -1665,6 +1701,17 @@
         "name": "step",
         "mechanism": "step-lifecycle"
       }
+    },
+    {
+      "type": "work.blocked",
+      "occurredAt": "2026-11-25T18:48:33.862Z",
+      "reason": "Mission not complete: awaiting owner fact verification, human review of answer units and counsel opinions; open backlog BL-013, BL-023, BL-024, BL-025 and 123 open objections. See HANDOFF.md.",
+      "source": {
+        "type": "ros-clock",
+        "name": "ros",
+        "mechanism": "work-lifecycle"
+      },
+      "eventId": "TEVT-9cfd274202958bf536f161ff"
     }
   ],
   "repository": {
